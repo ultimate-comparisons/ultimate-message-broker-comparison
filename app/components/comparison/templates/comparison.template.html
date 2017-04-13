@@ -28,11 +28,9 @@
             <template ngFor let-crit [ngForOf]="confServ.criteriaSet?.getCriteriaArray()">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <ptooltip [tooltip]="crit.description">
-                            <label>
-                                {{crit.name}}
-                            </label>
-                        </ptooltip>
+                        <label>
+                            {{crit.name}}
+                        </label>
                         <select2 [options]="crit.values" [placeholder]="crit.placeholder"
                                  (result)="criteriaChanged($event, crit)"></select2>
                     </div>
