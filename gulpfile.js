@@ -6,8 +6,7 @@ var gulp = require('gulp'),
     run = require('run-sequence'),
     exec = require('gulp-exec'),
     bibtex2json = require('./citation/bibtex2json'),
-    fs = require('fs'),
-    sh = require('sync-exec');
+    fs = require('fs');
 
 var paths = {
     src: 'app',
@@ -37,19 +36,7 @@ var destfiles = {
 
 // BUILD / UPDATE data files -------------------------------------<
 gulp.task('build-data', function (callback) {
-    run('versioninfo', 'markdown', 'json', 'citation', callback);
-})
-
-gulp.task('versioninfo', function () {
-    var versionfile = './app/VersionInformation.ts.example';
-    var output = './app/VersionInformation.ts';
-    var revision = sh('git rev-parse HEAD');
-    var date = sh('git log -1 --format=%cd --date=short');
-    return gulp.src(versionfile)
-        .pipe(rename(output))
-        .pipe(gulp.dest('.'))
-        .pipe(exec('sed -ie "s/§§date§§/' + date.stdout.trim() + '/" ' + output))
-        .pipe(exec('sed -ie "s/§§commit§§/' + revision.stdout.trim() + '/g" ' + output));
+    run('markdown', 'json', 'citation', callback);
 })
 
 gulp.task('update-data', function () {
