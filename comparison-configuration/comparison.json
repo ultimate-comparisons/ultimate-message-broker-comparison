@@ -1,0 +1,21 @@
+{
+    "title": "Ultimate Comparison",
+    "subtitle": "Ultimate Message Broker Comparison",
+    "selecttitle": "Criteria",
+    "tabletitle": "Comparison of Message Broker",
+    "details": {
+        "header-label": "",
+        "body-main-title": "Description",
+        "body": "Description",
+        "body-attachment-tags": [
+            "License",
+            "Development status",
+            "Features",
+            "Server Platforms",
+            "Protocol",
+            "Client languages",
+            "EAI-Pattern Support"
+        ]
+    },
+    "repository": "https://github.com/FachstudieBTZ/ultimate-comparison-BASE/"
+}

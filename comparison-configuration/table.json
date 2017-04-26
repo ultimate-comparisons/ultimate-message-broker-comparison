@@ -1,0 +1,161 @@
+[
+    {
+        "name": "Name",
+        "tag": "tag",
+        "urlTag": "url",
+        "style": "width: 5%",
+        "display": true,
+        "type": {
+            "tag": "url"
+        },
+        "valign": "top"
+    },
+    {
+        "name": "Short Description",
+        "tag": "descr",
+        "style": "width: 25%",
+        "display": true,
+        "type": {
+            "tag": "text"
+        }
+    },
+    {
+        "name": "License",
+        "tag": "License",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "class": "label label-info",
+            "values": [
+                {
+                    "name": "GNU ",
+                    "description": "http://www.gnu.org/licenses/lgpl.html"
+                },
+                {
+                    "name": "MIT",
+                    "description": "http://choosealicense.com/licenses/mit/"
+                },
+                {
+                    "name": "Apache 2.0",
+                    "description": "http://choosealicense.com/licenses/apache-2.0/"
+                },
+                {
+                    "name": "BSD-3-Clause",
+                    "description": "http://www.opensource.org/licenses/BSD-3-Clause"
+                },
+                {
+                    "name": "MPL 1.1",
+                    "description": "https://www.mozilla.org/media/MPL/1.1/index.0c5913925d40.txt"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Protocol",
+        "tag": "Protocol",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "class": "label label-info",
+            "values": [
+                {"name": "AMQP"},
+                {"name": "AUTO"},
+                {"name": "Beanstalkd"},
+                {
+                    "name": "memcached",
+                    "description": "https://github.com/memcached/memcached/blob/master/doc/protocol.txt"
+                },
+                {"name": "MQTT"},
+                {"name": "OpenWire"},
+                {"name": "REST"},
+                {"name": "RSS and Atom"},
+                {"name": "STOMP"},
+                {"name": "WSIF"},
+                {"name": "WS Notification"},
+                {"name": "XMPP"}
+            ]
+        }
+    },
+    {
+        "name": "Development status",
+        "tag": "Development status",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "class": "label",
+            "values": [
+                {
+                    "name": "Stale",
+                    "description": "No version update since 12 months.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "Active",
+                    "description": "The tool is being actively developed",
+                    "class": "label-success"
+                },
+                {
+                    "name": "Experimental",
+                    "description": "Library has not reached version 1 yet.",
+                    "class": "label-danger"
+                },
+                {
+                    "name": "Stable",
+                    "description": "Library can be used in production.",
+                    "class": "label-success"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Server Platforms",
+        "tag": "Server Platforms",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "class": "label label-info",
+            "values": [
+                {"name": "FreeBSD"},
+                {"name": "Linux"},
+                {"name": "OSX"},
+                {"name": "FreeBSD"},
+                {"name": "OpenBSD"},
+                {"name": "Solaris"},
+                {"name": "TRU64"},
+                {"name": "Windows"},
+                {"name": "VxWorks"}
+            ]
+        }
+    },
+    {
+        "name": "EAI-Pattern Support",
+        "tag": "EAI-Pattern Support",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "Complete",
+                    "class": "label-success"
+                },
+                {
+                    "name": "Partially",
+                    "class": "label-warning"
+                },
+                {
+                    "name": "No",
+                    "class": "label-danger"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Features",
+        "tag": "Features",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "class": "label label-info"
+        }
+    }
+]

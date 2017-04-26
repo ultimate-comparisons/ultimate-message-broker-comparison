@@ -1,0 +1,3210 @@
+[
+  {
+    "tag": "Apache ActiveMQ - http://activemq.apache.org/",
+    "descr": "Apache ActiveMQ™ is the most popular and powerful open source messaging and Integration Patterns server.",
+    "Description": {
+      "plain": "Apache ActiveMQ™ is the most popular and powerful open source messaging and Integration Patterns server.\n\nApache ActiveMQ is fast, supports many Cross Language Clients and Protocols, comes with easy to use Enterprise Integration Patterns and many advanced features while fully supporting JMS 1.1 and J2EE 1.4. Apache ActiveMQ is released under the Apache 2.0 License",
+      "childs": {
+        "0": [
+          "Apache ActiveMQ™ is the most popular and powerful open source messaging and Integration Patterns server.",
+          "Apache ActiveMQ is fast, supports many Cross Language Clients and Protocols, comes with easy to use Enterprise Integration Patterns and many advanced features while fully supporting JMS 1.1 and J2EE 1.4. Apache ActiveMQ is released under the Apache 2.0 License"
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@activeMQ]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@activeMQ]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQ]",
+                  "plain": "[@activeMQ]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 5.14.4 on 2017-02-27 [@activeMQRepository]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 5.14.4 on 2017-02-27 [@activeMQRepository]\n",
+              "childs": [
+                {
+                  "content": "Last version: 5.14.4 on 2017-02-27 [@activeMQRepository]",
+                  "plain": "Last version: 5.14.4 on 2017-02-27 [@activeMQRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "EAI-Pattern Support": {
+      "plain": "- Complete\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Complete",
+              "plain": "Complete\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Featuers": {
+      "plain": "- Clustering\n    - [@rabbitMQCluster]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Clustering",
+              "plain": "Clustering\n",
+              "plainChilds": "    - [@rabbitMQCluster]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQCluster]",
+                  "plain": "[@rabbitMQCluster]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Windows\n    - [@activeMQServer]\n- Linux\n    - [@activeMQServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@activeMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQServer]",
+                  "plain": "[@activeMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@activeMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQServer]",
+                  "plain": "[@activeMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- AMQP\n    - [@activeMQProtocols]\n- AUTO\n    - [@activeMQProtocols]\n- MQTT\n    - [@activeMQProtocols]\n- OpenWire\n    - [@activeMQProtocols]\n- STOMP\n    - [@activeMQProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "AUTO",
+              "plain": "AUTO\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "MQTT",
+              "plain": "MQTT\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OpenWire",
+              "plain": "OpenWire\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Client languages": {
+      "plain": "- .NET\n    - [@activeMQClients]\n- C++\n    - [@activeMQClients]\n- Erlang\n    - [@activeMQClients]\n- Go\n    - [@activeMQClients]\n- Haskell\n    - [@activeMQClients]\n- Java\n    - [@activeMQClients]\n- Jekejeke Prolog\n    - [@activeMQClients]\n- NetLogo\n    - [@activeMQClients]\n- Node.js\n    - [@activeMQClients]\n- Perl\n    - [@activeMQClients]\n- Pike\n    - [@activeMQClients]\n- Python\n    - [@activeMQClients]\n- Racket\n    - [@activeMQClients]\n- Ruby on Rails\n    - [@activeMQClients]\n- Tcl/Tk\n    - [@activeMQClients]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": ".NET",
+              "plain": ".NET\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "C++",
+              "plain": "C++\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Erlang",
+              "plain": "Erlang\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Go",
+              "plain": "Go\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Haskell",
+              "plain": "Haskell\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Java",
+              "plain": "Java\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Jekejeke Prolog",
+              "plain": "Jekejeke Prolog\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "NetLogo",
+              "plain": "NetLogo\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Node.js",
+              "plain": "Node.js\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Perl",
+              "plain": "Perl\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Pike",
+              "plain": "Pike\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Python",
+              "plain": "Python\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Racket",
+              "plain": "Racket\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Ruby on Rails",
+              "plain": "Ruby on Rails\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Tcl/Tk",
+              "plain": "Tcl/Tk\n",
+              "plainChilds": "    - [@activeMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQClients]",
+                  "plain": "[@activeMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Apollo - http://activemq.apache.org/apollo/",
+    "descr": "ActiveMQ's next generation of messaging.",
+    "Description": {
+      "plain": "ActiveMQ apollo is a faster, more reliable, easier to maintain messaging broker built from the foundations of the original ActiveMQ. It accomplishes this using a radically different threading and message dispatching architecture. Like ActiveMQ, apollo is a multi-Protocol broker and supports STOMP, AMQP, MQTT, Openwire, SSL, and WebSockets.",
+      "childs": {
+        "0": [
+          "ActiveMQ apollo is a faster, more reliable, easier to maintain messaging broker built from the foundations of the original ActiveMQ. It accomplishes this using a radically different threading and message dispatching architecture. Like ActiveMQ, apollo is a multi-Protocol broker and supports STOMP, AMQP, MQTT, Openwire, SSL, and WebSockets."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@apollo]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@apollo]\n",
+              "childs": [
+                {
+                  "content": ",[@apollo]",
+                  "plain": "[@apollo]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Stale\n    - Last version: 1.7.1 on 2015-01-29 [@apolloRepository]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Stale",
+              "plain": "Stale\n",
+              "plainChilds": "    - Last version: 1.7.1 on 2015-01-29 [@apolloRepository]\n",
+              "childs": [
+                {
+                  "content": "Last version: 1.7.1 on 2015-01-29 [@apolloRepository]",
+                  "plain": "Last version: 1.7.1 on 2015-01-29 [@apolloRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Windows\n    - [@apolloServer]\n- Linux\n    - [@apolloServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@apolloServer]\n",
+              "childs": [
+                {
+                  "content": ",[@apolloServer]",
+                  "plain": "[@apolloServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@apolloServer]\n",
+              "childs": [
+                {
+                  "content": ",[@apolloServer]",
+                  "plain": "[@apolloServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- STOMP\n    - [@apollo]\n- AMQP\n    - [@apollo]\n- MQTT\n    - [@apollo]\n- OpenWire\n    - [@apollo]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "    - [@apollo]\n",
+              "childs": [
+                {
+                  "content": ",[@apollo]",
+                  "plain": "[@apollo]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "    - [@apollo]\n",
+              "childs": [
+                {
+                  "content": ",[@apollo]",
+                  "plain": "[@apollo]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "MQTT",
+              "plain": "MQTT\n",
+              "plainChilds": "    - [@apollo]\n",
+              "childs": [
+                {
+                  "content": ",[@apollo]",
+                  "plain": "[@apollo]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OpenWire",
+              "plain": "OpenWire\n",
+              "plainChilds": "    - [@apollo]\n",
+              "childs": [
+                {
+                  "content": ",[@apollo]",
+                  "plain": "[@apollo]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Client languages": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Beanstalkd - https://kr.github.io/beanstalkd/",
+    "descr": "Beanstalk is a simple, fast work queue.",
+    "Description": {
+      "plain": "Beanstalk is a simple, fast work queue.\n\nIts interface is generic, but was originally designed for reducing the latency of page views in high-volume web applications by running time-consuming tasks asynchronously.",
+      "childs": {
+        "0": [
+          "Beanstalk is a simple, fast work queue.",
+          "Its interface is generic, but was originally designed for reducing the latency of page views in high-volume web applications by running time-consuming tasks asynchronously."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MIT\n    - [@beanstalkdLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MIT",
+              "plain": "MIT\n",
+              "plainChilds": "    - [@beanstalkdLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdLicense]",
+                  "plain": "[@beanstalkdLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Stale\n    - Last version: 1.10 on 2014-08-05 [@beanstalkdRepository]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Stale",
+              "plain": "Stale\n",
+              "plainChilds": "    - Last version: 1.10 on 2014-08-05 [@beanstalkdRepository]\n",
+              "childs": [
+                {
+                  "content": "Last version: 1.10 on 2014-08-05 [@beanstalkdRepository]",
+                  "plain": "Last version: 1.10 on 2014-08-05 [@beanstalkdRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Windows\n    - [@beanstalkdServer]\n- Linux\n    - 2.6.17 or later [@beanstalkdServer]\n- OSX\n    - [@beanstalkdServer]\n- FreeBSD\n    - [@beanstalkdServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@beanstalkdServer]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdServer]",
+                  "plain": "[@beanstalkdServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - 2.6.17 or later [@beanstalkdServer]\n",
+              "childs": [
+                {
+                  "content": "2.6.17 or later [@beanstalkdServer]",
+                  "plain": "2.6.17 or later [@beanstalkdServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@beanstalkdServer]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdServer]",
+                  "plain": "[@beanstalkdServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "FreeBSD",
+              "plain": "FreeBSD\n",
+              "plainChilds": "    - [@beanstalkdServer]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdServer]",
+                  "plain": "[@beanstalkdServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- Beanstalkd\n    - [@beanstalkdProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Beanstalkd",
+              "plain": "Beanstalkd\n",
+              "plainChilds": "    - [@beanstalkdProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdProtocols]",
+                  "plain": "[@beanstalkdProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Client languages": {
+      "plain": "- .NET\n    - [@beanstalkdClients]\n- C\n    - [@beanstalkdClients]\n- C#\n    - [@beanstalkdClients]\n- C++\n    - [@beanstalkdClients]\n- Clojure\n    - [@beanstalkdClients]\n- Django\n    - [@beanstalkdClients]\n- Common Lisp\n    - [@beanstalkdClients]\n- Erlang\n    - [@beanstalkdClients]\n- Go\n    - [@beanstalkdClients]\n- Haskell\n    - [@beanstalkdClients]\n- Io\n    - [@beanstalkdClients]\n- Java\n    - [@beanstalkdClients]\n- Lua\n    - [@beanstalkdClients]\n- Nim\n    - [@beanstalkdClients]\n- Node.js\n    - [@beanstalkdClients]\n- OCaml\n    - [@beanstalkdClients]\n- Perl\n    - [@beanstalkdClients]\n- PHP\n    - [@beanstalkdClients]\n- Python\n    - [@beanstalkdClients]\n- Rails\n    - [@beanstalkdClients]\n- Ruby\n    - [@beanstalkdClients]\n- Rust\n    - [@beanstalkdClients]\n- Scheme\n    - [@beanstalkdClients]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": ".NET",
+              "plain": ".NET\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "C",
+              "plain": "C\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "C#",
+              "plain": "C#\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "C++",
+              "plain": "C++\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Clojure",
+              "plain": "Clojure\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Django",
+              "plain": "Django\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Common Lisp",
+              "plain": "Common Lisp\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Erlang",
+              "plain": "Erlang\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Go",
+              "plain": "Go\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Haskell",
+              "plain": "Haskell\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Io",
+              "plain": "Io\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Java",
+              "plain": "Java\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Lua",
+              "plain": "Lua\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Nim",
+              "plain": "Nim\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Node.js",
+              "plain": "Node.js\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OCaml",
+              "plain": "OCaml\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Perl",
+              "plain": "Perl\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "PHP",
+              "plain": "PHP\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Python",
+              "plain": "Python\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Rails",
+              "plain": "Rails\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Ruby",
+              "plain": "Ruby\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Rust",
+              "plain": "Rust\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Scheme",
+              "plain": "Scheme\n",
+              "plainChilds": "    - [@beanstalkdClients]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdClients]",
+                  "plain": "[@beanstalkdClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Celery - http://www.celeryproject.org/",
+    "descr": "Distributed Task Queue",
+    "Description": {
+      "plain": "Celery is an asynchronous task queue/job queue based on distributed message passing. It is focused on real-time operation, but supports scheduling as well.\nThe execution units, called tasks, are executed concurrently on a single or more worker servers using multiprocessing, Eventlet, or gevent. Tasks can execute asynchronously (in the background) or synchronously (wait until ready).\n\nCelery is used in production systems to process millions of tasks a day.",
+      "childs": {
+        "0": [
+          "Celery is an asynchronous task queue/job queue based on distributed message passing. It is focused on real-time operation, but supports scheduling as well. The execution units, called tasks, are executed concurrently on a single or more worker servers using multiprocessing, Eventlet, or gevent. Tasks can execute asynchronously (in the background) or synchronously (wait until ready).",
+          "Celery is used in production systems to process millions of tasks a day."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- BSD-3-Clause\n    - [@celeryLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BSD-3-Clause",
+              "plain": "BSD-3-Clause\n",
+              "plainChilds": "    - [@celeryLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@celeryLicense]",
+                  "plain": "[@celeryLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 4.0.2 on 2016-12-16 [@celeryVersions]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 4.0.2 on 2016-12-16 [@celeryVersions]\n",
+              "childs": [
+                {
+                  "content": "Last version: 4.0.2 on 2016-12-16 [@celeryVersions]",
+                  "plain": "Last version: 4.0.2 on 2016-12-16 [@celeryVersions]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Darner - https://github.com/wavii/darner",
+    "descr": "simple, lightweight message queue",
+    "Description": {
+      "plain": "Darner is a very simple message queue server. Unlike in-memory servers such as redis, Darner is designed to handle queues much larger than what can be held in RAM. And unlike enterprise queue servers such as RabbitMQ, Darner keeps all messages out of process, relying instead on the kernel's virtual memory manager via log-structured storage.",
+      "childs": {
+        "0": [
+          "Darner is a very simple message queue server. Unlike in-memory servers such as redis, Darner is designed to handle queues much larger than what can be held in RAM. And unlike enterprise queue servers such as RabbitMQ, Darner keeps all messages out of process, relying instead on the kernel's virtual memory manager via log-structured storage."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@darnerLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@darnerLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerLicense]",
+                  "plain": "[@darnerLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Stale\n    - Last version: 0.2.0 on 2013-03-18 [@darnerRepository]\n- Experimental\n    - [@darnerRepository]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Stale",
+              "plain": "Stale\n",
+              "plainChilds": "    - Last version: 0.2.0 on 2013-03-18 [@darnerRepository]\n",
+              "childs": [
+                {
+                  "content": "Last version: 0.2.0 on 2013-03-18 [@darnerRepository]",
+                  "plain": "Last version: 0.2.0 on 2013-03-18 [@darnerRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Experimental",
+              "plain": "Experimental\n",
+              "plainChilds": "    - [@darnerRepository]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerRepository]",
+                  "plain": "[@darnerRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- OSX\n    - [@darnerServer]\n- Linux\n    - Ubuntu[@darnerServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@darnerServer]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerServer]",
+                  "plain": "[@darnerServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - Ubuntu[@darnerServer]\n",
+              "childs": [
+                {
+                  "content": "Ubuntu[@darnerServer]",
+                  "plain": "Ubuntu[@darnerServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- memcached\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "memcached",
+              "plain": "memcached\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "DelayedJob - https://github.com/collectiveidea/delayed_job",
+    "descr": "encapsulates the common pattern of asynchronously executing longer tasks in the background",
+    "Description": {
+      "plain": "Delayed::Job (or DJ) encapsulates the common pattern of asynchronously executing longer tasks in the background.\n\nIt is a direct extraction from Shopify where the job table is responsible for a multitude of core tasks. Amongst those tasks are:\n- sending massive newsletters\n- image resizing\n- http downloads\n- updating smart collections\n- updating solr, our search server, after product changes\n- batch imports\n- spam checks",
+      "childs": {
+        "0": [
+          "Delayed::Job (or DJ) encapsulates the common pattern of asynchronously executing longer tasks in the background.",
+          "It is a direct extraction from Shopify where the job table is responsible for a multitude of core tasks. Amongst those tasks are: - sending massive newsletters - image resizing - http downloads - updating smart collections - updating solr, our search server, after product changes - batch imports - spam checks"
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MIT\n    - [@delayedJobLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MIT",
+              "plain": "MIT\n",
+              "plainChilds": "    - [@delayedJobLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@delayedJobLicense]",
+                  "plain": "[@delayedJobLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 4.1.2n 2016-05-16 [@delayedJobVersions]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 4.1.2n 2016-05-16 [@delayedJobVersions]\n",
+              "childs": [
+                {
+                  "content": "Last version: 4.1.2n 2016-05-16 [@delayedJobVersions]",
+                  "plain": "Last version: 4.1.2n 2016-05-16 [@delayedJobVersions]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Disque - https://github.com/antirez/disque",
+    "descr": "in-memory, distributed job queue",
+    "Description": {
+      "plain": "Disque is an ongoing experiment to build a distributed, in-memory, message broker. Its goal is to capture the essence of the 'Redis as a jobs queue' use case, which is usually implemented using blocking list operations, and move it into an ad-hoc, self-contained, scalable, and fault tolerant design, with simple to understand properties and guarantees, but still resembling Redis in terms of simplicity, performance, and implementation as a C non-blocking networked server.",
+      "childs": {
+        "0": [
+          "Disque is an ongoing experiment to build a distributed, in-memory, message broker. Its goal is to capture the essence of the 'Redis as a jobs queue' use case, which is usually implemented using blocking list operations, and move it into an ad-hoc, self-contained, scalable, and fault tolerant design, with simple to understand properties and guarantees, but still resembling Redis in terms of simplicity, performance, and implementation as a C non-blocking networked server."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- BSD-3-Clause\n    - [@disqueLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BSD-3-Clause",
+              "plain": "BSD-3-Clause\n",
+              "plainChilds": "    - [@disqueLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@disqueLicense]",
+                  "plain": "[@disqueLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Stale\n    - Last version: 1.0 RC 1 on 2016-01-02 [@disqueVersions]\n- Experimental\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Stale",
+              "plain": "Stale\n",
+              "plainChilds": "    - Last version: 1.0 RC 1 on 2016-01-02 [@disqueVersions]\n",
+              "childs": [
+                {
+                  "content": "Last version: 1.0 RC 1 on 2016-01-02 [@disqueVersions]",
+                  "plain": "Last version: 1.0 RC 1 on 2016-01-02 [@disqueVersions]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Experimental",
+              "plain": "Experimental\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Gearman - http://gearman.org/",
+    "descr": "in-memory, distributed job queue",
+    "Description": {
+      "plain": "Gearman provides a generic application framework to farm out work to other machines or processes that are better suited to do the work. It allows you to do work in parallel, to load balance processing, and to call functions between languages. It can be used in a variety of applications, from high-availability web sites to the transport of database replication events. In other words, it is the nervous system for how distributed processing communicates. A few strong points about Gearman:",
+      "childs": {
+        "0": [
+          "Gearman provides a generic application framework to farm out work to other machines or processes that are better suited to do the work. It allows you to do work in parallel, to load balance processing, and to call functions between languages. It can be used in a variety of applications, from high-availability web sites to the transport of database replication events. In other words, it is the nervous system for how distributed processing communicates. A few strong points about Gearman:"
+        ]
+      }
+    },
+    "License": {
+      "plain": "- BSD-3-Clause\n    - [@gearmanLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BSD-3-Clause",
+              "plain": "BSD-3-Clause\n",
+              "plainChilds": "    - [@gearmanLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@gearmanLicense]",
+                  "plain": "[@gearmanLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Stale\n    - Last version: 1.1.15 on 2017-02-18 [@gearmanVersions]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Stale",
+              "plain": "Stale\n",
+              "plainChilds": "    - Last version: 1.1.15 on 2017-02-18 [@gearmanVersions]\n",
+              "childs": [
+                {
+                  "content": "Last version: 1.1.15 on 2017-02-18 [@gearmanVersions]",
+                  "plain": "Last version: 1.1.15 on 2017-02-18 [@gearmanVersions]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "HornetQ - http://hornetq.jboss.org/",
+    "descr": "open source project to build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system",
+    "Description": {
+      "plain": "HornetQ is an open source project to build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system.",
+      "childs": {
+        "0": [
+          "HornetQ is an open source project to build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@hornetQLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@hornetQLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQLicense]",
+                  "plain": "[@hornetQLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 2.3.25 SP18 on 2017-03-28 [@hornetQVersions]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 2.3.25 SP18 on 2017-03-28 [@hornetQVersions]\n",
+              "childs": [
+                {
+                  "content": "Last version: 2.3.25 SP18 on 2017-03-28 [@hornetQVersions]",
+                  "plain": "Last version: 2.3.25 SP18 on 2017-03-28 [@hornetQVersions]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Huey - https://github.com/coleifer/huey",
+    "descr": "a little task queue for pytho",
+    "Description": {
+      "plain": "a lightweight alternative.\n- written in python\n- only dependency is the Python Redis client\n\nsupports:\n- multi-process, multi-thread or greenlet task execution models\n- schedule tasks to execute at a given time, or after a given delay\n- schedule recurring tasks, like a crontab\n- retry tasks that fail automatically\n- task result storage",
+      "childs": {
+        "0": [
+          "a lightweight alternative. - written in python - only dependency is the Python Redis client",
+          "supports: - multi-process, multi-thread or greenlet task execution models - schedule tasks to execute at a given time, or after a given delay - schedule recurring tasks, like a crontab - retry tasks that fail automatically - task result storage"
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MIT\n    - [@hueyLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MIT",
+              "plain": "MIT\n",
+              "plainChilds": "    - [@hueyLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@hueyLicense]",
+                  "plain": "[@hueyLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 1.2.3 on 2017-02-17 [@hueyVersions]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 1.2.3 on 2017-02-17 [@hueyVersions]\n",
+              "childs": [
+                {
+                  "content": "Last version: 1.2.3 on 2017-02-17 [@hueyVersions]",
+                  "plain": "Last version: 1.2.3 on 2017-02-17 [@hueyVersions]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Apache Kafka - http://kafka.apache.org/",
+    "descr": "distributed streaming platform",
+    "Description": {
+      "plain": "Kafka™ is used for building real-time data pipelines and streaming apps. It is horizontally scalable, fault-tolerant, wicked fast, and runs in production in thousands of companies.",
+      "childs": {
+        "0": [
+          "Kafka™ is used for building real-time data pipelines and streaming apps. It is horizontally scalable, fault-tolerant, wicked fast, and runs in production in thousands of companies."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@kafkaLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@kafkaLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@kafkaLicense]",
+                  "plain": "[@kafkaLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]\n",
+              "childs": [
+                {
+                  "content": "Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]",
+                  "plain": "Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Kestrel - https://github.com/twitter-archive/kestrel",
+    "descr": "in-memory, distributed job queue",
+    "Description": {
+      "plain": "Kestrel is based on Blaine Cook's starling simple, distributed message queue, with added features and bulletproofing, as well as the scalability offered by actors and the JVM.",
+      "childs": {
+        "0": [
+          "Kestrel is based on Blaine Cook's starling simple, distributed message queue, with added features and bulletproofing, as well as the scalability offered by actors and the JVM."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@kestrelLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@kestrelLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@kestrelLicense]",
+                  "plain": "[@kestrelLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Stale\n    - Last version: 2.4.1 on 2012-11-02 [@kestrelVersions]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Stale",
+              "plain": "Stale\n",
+              "plainChilds": "    - Last version: 2.4.1 on 2012-11-02 [@kestrelVersions]\n",
+              "childs": [
+                {
+                  "content": "Last version: 2.4.1 on 2012-11-02 [@kestrelVersions]",
+                  "plain": "Last version: 2.4.1 on 2012-11-02 [@kestrelVersions]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "RabbitMQ - https://www.rabbitmq.com/",
+    "descr": "ActiveMQ's next generation of messaging.",
+    "Description": {
+      "plain": "ActiveMQ Apollo is a faster, more reliable, easier to maintain messaging broker built from the foundations of the original ActiveMQ. It accomplishes this using a radically different threading and message dispatching architecture. Like ActiveMQ, Apollo is a multi-Protocol broker and supports STOMP, AMQP, MQTT, Openwire, SSL, and WebSockets.",
+      "childs": {
+        "0": [
+          "ActiveMQ Apollo is a faster, more reliable, easier to maintain messaging broker built from the foundations of the original ActiveMQ. It accomplishes this using a radically different threading and message dispatching architecture. Like ActiveMQ, Apollo is a multi-Protocol broker and supports STOMP, AMQP, MQTT, Openwire, SSL, and WebSockets."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MPL 1.1\n    - [@rabbitMQLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MPL 1.1",
+              "plain": "MPL 1.1\n",
+              "plainChilds": "    - [@rabbitMQLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQLicense]",
+                  "plain": "[@rabbitMQLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 3.7.0 Milestone 13 on 2017-02-22 [@rabbitMQRepository]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 3.7.0 Milestone 13 on 2017-02-22 [@rabbitMQRepository]\n",
+              "childs": [
+                {
+                  "content": "Last version: 3.7.0 Milestone 13 on 2017-02-22 [@rabbitMQRepository]",
+                  "plain": "Last version: 3.7.0 Milestone 13 on 2017-02-22 [@rabbitMQRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- AMQP\n    - AMQP 0-9-1 [@rabbitMQProtocols]\n- STOMP\n    - [@rabbitMQProtocols]\n- MQTT\n    - [@rabbitMQProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "    - AMQP 0-9-1 [@rabbitMQProtocols]\n",
+              "childs": [
+                {
+                  "content": "AMQP 0-9-1 [@rabbitMQProtocols]",
+                  "plain": "AMQP 0-9-1 [@rabbitMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "    - [@rabbitMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQProtocols]",
+                  "plain": "[@rabbitMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "MQTT",
+              "plain": "MQTT\n",
+              "plainChilds": "    - [@rabbitMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQProtocols]",
+                  "plain": "[@rabbitMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n    - [@rabbitMQServer]\n- Windows\n    - [@rabbitMQServer]\n- OSX\n    - [@rabbitMQServer]\n- Solaris\n    - [@rabbitMQServer]\n- FreeBSD\n    - [@rabbitMQServer]\n- TRU64\n    - [@rabbitMQServer]\n- VxWorks\n    - [@rabbitMQServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@rabbitMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQServer]",
+                  "plain": "[@rabbitMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@rabbitMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQServer]",
+                  "plain": "[@rabbitMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@rabbitMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQServer]",
+                  "plain": "[@rabbitMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Solaris",
+              "plain": "Solaris\n",
+              "plainChilds": "    - [@rabbitMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQServer]",
+                  "plain": "[@rabbitMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "FreeBSD",
+              "plain": "FreeBSD\n",
+              "plainChilds": "    - [@rabbitMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQServer]",
+                  "plain": "[@rabbitMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "TRU64",
+              "plain": "TRU64\n",
+              "plainChilds": "    - [@rabbitMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQServer]",
+                  "plain": "[@rabbitMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "VxWorks",
+              "plain": "VxWorks\n",
+              "plainChilds": "    - [@rabbitMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQServer]",
+                  "plain": "[@rabbitMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Client languages": {
+      "plain": "- .NET\n    - [@rabbitMQClients]\n- C\n    - [@rabbitMQClients]\n- C++\n    - [@rabbitMQClients]\n- Clojure\n    - [@rabbitMQClients]\n- Erlang\n    - [@rabbitMQClients]\n- Go\n    - [@rabbitMQClients]\n- Groovy\n    - [@rabbitMQClients]\n- Grails\n    - [@rabbitMQClients]\n- Haskell\n    - [@rabbitMQClients]\n- Java\n    - [@rabbitMQClients]\n- JRuby\n    - [@rabbitMQClients]\n- Node.js\n    - [@rabbitMQClients]\n- Objective C\n    - [@rabbitMQClients]\n- OCaml\n    - [@rabbitMQClients]\n- Perl\n    - [@rabbitMQClients]\n- PHP\n    - [@rabbitMQClients]\n- Python\n    - [@rabbitMQClients]\n- Ruby\n    - [@rabbitMQClients]\n- Scala\n    - [@rabbitMQClients]\n- Swift\n    - [@rabbitMQClients]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": ".NET",
+              "plain": ".NET\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "C",
+              "plain": "C\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "C++",
+              "plain": "C++\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Clojure",
+              "plain": "Clojure\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Erlang",
+              "plain": "Erlang\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Go",
+              "plain": "Go\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Groovy",
+              "plain": "Groovy\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Grails",
+              "plain": "Grails\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Haskell",
+              "plain": "Haskell\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Java",
+              "plain": "Java\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "JRuby",
+              "plain": "JRuby\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Node.js",
+              "plain": "Node.js\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Objective C",
+              "plain": "Objective C\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OCaml",
+              "plain": "OCaml\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Perl",
+              "plain": "Perl\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "PHP",
+              "plain": "PHP\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Python",
+              "plain": "Python\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Ruby",
+              "plain": "Ruby\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Scala",
+              "plain": "Scala\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Swift",
+              "plain": "Swift\n",
+              "plainChilds": "    - [@rabbitMQClients]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQClients]",
+                  "plain": "[@rabbitMQClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "redis - https://redis.io/",
+    "descr": "in-memory data structure store, used as a database, cache and message broker",
+    "Description": {
+      "plain": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.",
+      "childs": {
+        "0": [
+          "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- BSD-3-Clause\n    - [@redisLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BSD-3-Clause",
+              "plain": "BSD-3-Clause\n",
+              "plainChilds": "    - [@redisLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@redisLicense]",
+                  "plain": "[@redisLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 3.2.8 on 2017-02-12 [@redisRepository]\n- Stable\n    - [@redisRepository]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 3.2.8 on 2017-02-12 [@redisRepository]\n",
+              "childs": [
+                {
+                  "content": "Last version: 3.2.8 on 2017-02-12 [@redisRepository]",
+                  "plain": "Last version: 3.2.8 on 2017-02-12 [@redisRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "    - [@redisRepository]\n",
+              "childs": [
+                {
+                  "content": ",[@redisRepository]",
+                  "plain": "[@redisRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "EAI-Pattern Support": {
+      "plain": "- Partially\n- Publish-Subscribe Channel\n    - https://redis.io/topics/pubsub\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Partially",
+              "plain": "Partially\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Publish-Subscribe Channel",
+              "plain": "Publish-Subscribe Channel\n",
+              "plainChilds": "    - https://redis.io/topics/pubsub\n",
+              "childs": [
+                {
+                  "content": "https://redis.io/topics/pubsub",
+                  "plain": "https://redis.io/topics/pubsub\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Features": {
+      "plain": "- Clustering\n    - [@redisCluster]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Clustering",
+              "plain": "Clustering\n",
+              "plainChilds": "    - [@redisCluster]\n",
+              "childs": [
+                {
+                  "content": ",[@redisCluster]",
+                  "plain": "[@redisCluster]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- FreeBSD\n    - [@redisServer]\n- Linux\n    - [@redisServer]\n- Mac Osc X\n    - [@redisServer]\n- NetBSD\n    - [@redisServer]\n- OpenBSD\n    - [@redisServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "FreeBSD",
+              "plain": "FreeBSD\n",
+              "plainChilds": "    - [@redisServer]\n",
+              "childs": [
+                {
+                  "content": ",[@redisServer]",
+                  "plain": "[@redisServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@redisServer]\n",
+              "childs": [
+                {
+                  "content": ",[@redisServer]",
+                  "plain": "[@redisServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Mac Osc X",
+              "plain": "Mac Osc X\n",
+              "plainChilds": "    - [@redisServer]\n",
+              "childs": [
+                {
+                  "content": ",[@redisServer]",
+                  "plain": "[@redisServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "NetBSD",
+              "plain": "NetBSD\n",
+              "plainChilds": "    - [@redisServer]\n",
+              "childs": [
+                {
+                  "content": ",[@redisServer]",
+                  "plain": "[@redisServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OpenBSD",
+              "plain": "OpenBSD\n",
+              "plainChilds": "    - [@redisServer]\n",
+              "childs": [
+                {
+                  "content": ",[@redisServer]",
+                  "plain": "[@redisServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Client languages": {
+      "plain": "- ActionScript\n    - [@redisClients]\n- Bash\n    - [@redisClients]\n- C\n    - [@redisClients]\n- C#\n    - [@redisClients]\n- C++\n    - [@redisClients]\n- Clojure\n    - [@redisClients]\n- Common Lisp\n    - [@redisClients]\n- Crystal\n    - [@redisClients]\n- D\n    - [@redisClients]\n- Dart\n    - [@redisClients]\n- Delphi\n    - [@redisClients]\n- Elixir\n    - [@redisClients]\n- emacs lisp\n    - [@redisClients]\n- Erlang\n    - [@redisClients]\n- Fancy\n    - [@redisClients]\n- gawk\n    - [@redisClients]\n- GNU Prolog\n    - [@redisClients]\n- Go\n    - [@redisClients]\n- Haskell\n    - [@redisClients]\n- Haxe\n    - [@redisClients]\n- Io\n    - [@redisClients]\n- Java\n    - [@redisClients]\n- Julia\n    - [@redisClients]\n- Lasso\n    - [@redisClients]\n- Lua\n    - [@redisClients]\n- Matlab\n    - [@redisClients]\n- mruby\n    - [@redisClients]\n- Nim\n    - [@redisClients]\n- Node.js\n    - [@redisClients]\n- Objective-C\n    - [@redisClients]\n- OCaml\n    - [@redisClients]\n- Pascal\n    - [@redisClients]\n- Perl\n    - [@redisClients]\n- PHP\n    - [@redisClients]\n- PL/SQL\n    - [@redisClients]\n- Pure Data\n    - [@redisClients]\n- Python\n    - [@redisClients]\n- ref\n    - [@redisClients]\n- Racket\n    - [@redisClients]\n- Rebol\n    - [@redisClients]\n- Ruby\n    - [@redisClients]\n- Rust\n    - [@redisClients]\n- Scala\n    - [@redisClients]\n- Scheme\n    - [@redisClients]\n- Smalltalk\n    - [@redisClients]\n- Swift\n    - [@redisClients]\n- Tcl\n    - [@redisClients]\n- VB\n    - [@redisClients]\n- VCL\n    - [@redisClients]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "ActionScript",
+              "plain": "ActionScript\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Bash",
+              "plain": "Bash\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "C",
+              "plain": "C\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "C#",
+              "plain": "C#\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "C++",
+              "plain": "C++\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Clojure",
+              "plain": "Clojure\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Common Lisp",
+              "plain": "Common Lisp\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Crystal",
+              "plain": "Crystal\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "D",
+              "plain": "D\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Dart",
+              "plain": "Dart\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Delphi",
+              "plain": "Delphi\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Elixir",
+              "plain": "Elixir\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "emacs lisp",
+              "plain": "emacs lisp\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Erlang",
+              "plain": "Erlang\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Fancy",
+              "plain": "Fancy\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "gawk",
+              "plain": "gawk\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "GNU Prolog",
+              "plain": "GNU Prolog\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Go",
+              "plain": "Go\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Haskell",
+              "plain": "Haskell\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Haxe",
+              "plain": "Haxe\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Io",
+              "plain": "Io\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Java",
+              "plain": "Java\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Julia",
+              "plain": "Julia\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Lasso",
+              "plain": "Lasso\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Lua",
+              "plain": "Lua\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Matlab",
+              "plain": "Matlab\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "mruby",
+              "plain": "mruby\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Nim",
+              "plain": "Nim\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Node.js",
+              "plain": "Node.js\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Objective-C",
+              "plain": "Objective-C\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OCaml",
+              "plain": "OCaml\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Pascal",
+              "plain": "Pascal\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Perl",
+              "plain": "Perl\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "PHP",
+              "plain": "PHP\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "PL/SQL",
+              "plain": "PL/SQL\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Pure Data",
+              "plain": "Pure Data\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Python",
+              "plain": "Python\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "ref",
+              "plain": "ref\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Racket",
+              "plain": "Racket\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Rebol",
+              "plain": "Rebol\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Ruby",
+              "plain": "Ruby\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Rust",
+              "plain": "Rust\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Scala",
+              "plain": "Scala\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Scheme",
+              "plain": "Scheme\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Smalltalk",
+              "plain": "Smalltalk\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Swift",
+              "plain": "Swift\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Tcl",
+              "plain": "Tcl\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "VB",
+              "plain": "VB\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "VCL",
+              "plain": "VCL\n",
+              "plainChilds": "    - [@redisClients]\n",
+              "childs": [
+                {
+                  "content": ",[@redisClients]",
+                  "plain": "[@redisClients]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Siberite - https://github.com/wavii/darner",
+    "descr": "simple leveldb backed message queue server",
+    "Description": {
+      "plain": "Siberite is a simple leveldb backed message queue server\n(twitter/kestrel, wavii/darner rewritten in Go).\n\nSiberite is a very simple message queue server. Unlike in-memory servers such as redis, Siberite is designed to handle queues much larger than what can be held in RAM. And unlike enterprise queue servers such as RabbitMQ, Siberite keeps all messages out of process, using goleveldb as a persistent storage.",
+      "childs": {
+        "0": [
+          "Siberite is a simple leveldb backed message queue server (twitter/kestrel, wavii/darner rewritten in Go).",
+          "Siberite is a very simple message queue server. Unlike in-memory servers such as redis, Siberite is designed to handle queues much larger than what can be held in RAM. And unlike enterprise queue servers such as RabbitMQ, Siberite keeps all messages out of process, using goleveldb as a persistent storage."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@siberiteLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@siberiteLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@siberiteLicense]",
+                  "plain": "[@siberiteLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Stale\n    - Last version: 0.2.0 on 2013-03-18 [@siberiteRepository]\n- Experimental\n    - [@siberiteRepository]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Stale",
+              "plain": "Stale\n",
+              "plainChilds": "    - Last version: 0.2.0 on 2013-03-18 [@siberiteRepository]\n",
+              "childs": [
+                {
+                  "content": "Last version: 0.2.0 on 2013-03-18 [@siberiteRepository]",
+                  "plain": "Last version: 0.2.0 on 2013-03-18 [@siberiteRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Experimental",
+              "plain": "Experimental\n",
+              "plainChilds": "    - [@siberiteRepository]\n",
+              "childs": [
+                {
+                  "content": ",[@siberiteRepository]",
+                  "plain": "[@siberiteRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- OSX\n    - [@siberiteRepository]\n- Linux\n    - [@siberiteRepository]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@siberiteRepository]\n",
+              "childs": [
+                {
+                  "content": ",[@siberiteRepository]",
+                  "plain": "[@siberiteRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@siberiteRepository]\n",
+              "childs": [
+                {
+                  "content": ",[@siberiteRepository]",
+                  "plain": "[@siberiteRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- memcached\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "memcached",
+              "plain": "memcached\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Template - http://www.loremipsum.de/index_e.html",
+    "descr": "Lorem ipsum",
+    "Description": {
+      "plain": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "childs": {
+        "0": [
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n- BSD-3-Clause\n- MIT\n- Commercial\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "BSD-3-Clause",
+              "plain": "BSD-3-Clause\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "MIT",
+              "plain": "MIT\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Commercial",
+              "plain": "Commercial\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Stale\n- Active\n- Experimental\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Stale",
+              "plain": "Stale\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Experimental",
+              "plain": "Experimental\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- AMQP\n- AUTO\n- MQTT\n- OpenWire\n- STOMP\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "AUTO",
+              "plain": "AUTO\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "MQTT",
+              "plain": "MQTT\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "OpenWire",
+              "plain": "OpenWire\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  }
+]

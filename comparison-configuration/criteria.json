@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Licenses",
+        "tag": "License",
+        "placeholder": "Select license ...",
+        "and_search": false,
+        "values": [
+            {"name": "MIT"},
+            {"name": "Apache 2.0"},
+            {"name": "BSD-3-Clause"},
+            {"name": "MPL 1.1"}
+        ]
+    },
+    {
+        "name": "Protocol",
+        "tag": "Protocol",
+        "placeholder": "Select protocol ...",
+        "and_search": false,
+        "values": [
+            {"name": "AMQP"},
+            {"name": "AUTO"},
+            {"name": "Beanstalkd"},
+            {"name": "MQTT"},
+            {"name": "OpenWire"},
+            {"name": "STOMP"}
+        ]
+    },
+    {
+        "name": "Development status",
+        "tag": "Development status",
+        "description": "",
+        "placeholder": "Select development status ...",
+        "and_search": false,
+        "values": [
+            {"name": "Stale"},
+            {"name": "Active"},
+            {"name": "Experimental"},
+            {"name": "Stable"}
+        ]
+    },
+    {
+        "name": "Server Platforms",
+        "tag": "Server Platforms",
+        "description": "",
+        "placeholder": "Select server platform ...",
+        "and_search": false,
+        "values": [
+            {"name": "FreeBSD"},
+            {"name": "Linux"},
+            {"name": "OSX"},
+            {"name": "FreeBSD"},
+            {"name": "OpenBSD"},
+            {"name": "Solaris"},
+            {"name": "TRU64"},
+            {"name": "Windows"},
+            {"name": "VxWorks"}
+        ]
+    },
+    {
+        "name": "EAI-Pattern Support",
+        "tag": "EAI-Pattern Support",
+        "description": "",
+        "placeholder": "Select EAI-Pattern support ...",
+        "and_search": false,
+        "values": [
+            {"name": "Complete"},
+            {"name": "Partially"},
+            {"name": "No"}
+        ]
+    }
+]
