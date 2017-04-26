@@ -207,207 +207,11 @@
         ]
       }
     },
-    "Client languages": {
-      "plain": "- .NET\n    - [@activeMQClients]\n- C++\n    - [@activeMQClients]\n- Erlang\n    - [@activeMQClients]\n- Go\n    - [@activeMQClients]\n- Haskell\n    - [@activeMQClients]\n- Java\n    - [@activeMQClients]\n- Jekejeke Prolog\n    - [@activeMQClients]\n- NetLogo\n    - [@activeMQClients]\n- Node.js\n    - [@activeMQClients]\n- Perl\n    - [@activeMQClients]\n- Pike\n    - [@activeMQClients]\n- Python\n    - [@activeMQClients]\n- Racket\n    - [@activeMQClients]\n- Ruby on Rails\n    - [@activeMQClients]\n- Tcl/Tk\n    - [@activeMQClients]\n",
+    "Google hits": {
+      "plain": "429.000",
       "childs": {
         "0": [
-          [
-            {
-              "content": ".NET",
-              "plain": ".NET\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "C++",
-              "plain": "C++\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Erlang",
-              "plain": "Erlang\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Go",
-              "plain": "Go\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Haskell",
-              "plain": "Haskell\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Java",
-              "plain": "Java\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Jekejeke Prolog",
-              "plain": "Jekejeke Prolog\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "NetLogo",
-              "plain": "NetLogo\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Node.js",
-              "plain": "Node.js\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Perl",
-              "plain": "Perl\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Pike",
-              "plain": "Pike\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Python",
-              "plain": "Python\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Racket",
-              "plain": "Racket\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Ruby on Rails",
-              "plain": "Ruby on Rails\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Tcl/Tk",
-              "plain": "Tcl/Tk\n",
-              "plainChilds": "    - [@activeMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQClients]",
-                  "plain": "[@activeMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            }
-          ]
+          "429.000"
         ]
       }
     }
@@ -569,11 +373,11 @@
         ]
       }
     },
-    "Client languages": {
-      "plain": "",
+    "Google hits": {
+      "plain": "623.000 ",
       "childs": {
         "0": [
-          ""
+          "623.000 "
         ]
       }
     }
@@ -723,311 +527,11 @@
         ]
       }
     },
-    "Client languages": {
-      "plain": "- .NET\n    - [@beanstalkdClients]\n- C\n    - [@beanstalkdClients]\n- C#\n    - [@beanstalkdClients]\n- C++\n    - [@beanstalkdClients]\n- Clojure\n    - [@beanstalkdClients]\n- Django\n    - [@beanstalkdClients]\n- Common Lisp\n    - [@beanstalkdClients]\n- Erlang\n    - [@beanstalkdClients]\n- Go\n    - [@beanstalkdClients]\n- Haskell\n    - [@beanstalkdClients]\n- Io\n    - [@beanstalkdClients]\n- Java\n    - [@beanstalkdClients]\n- Lua\n    - [@beanstalkdClients]\n- Nim\n    - [@beanstalkdClients]\n- Node.js\n    - [@beanstalkdClients]\n- OCaml\n    - [@beanstalkdClients]\n- Perl\n    - [@beanstalkdClients]\n- PHP\n    - [@beanstalkdClients]\n- Python\n    - [@beanstalkdClients]\n- Rails\n    - [@beanstalkdClients]\n- Ruby\n    - [@beanstalkdClients]\n- Rust\n    - [@beanstalkdClients]\n- Scheme\n    - [@beanstalkdClients]\n",
+    "Google hits": {
+      "plain": "160.000",
       "childs": {
         "0": [
-          [
-            {
-              "content": ".NET",
-              "plain": ".NET\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "C",
-              "plain": "C\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "C#",
-              "plain": "C#\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "C++",
-              "plain": "C++\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Clojure",
-              "plain": "Clojure\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Django",
-              "plain": "Django\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Common Lisp",
-              "plain": "Common Lisp\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Erlang",
-              "plain": "Erlang\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Go",
-              "plain": "Go\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Haskell",
-              "plain": "Haskell\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Io",
-              "plain": "Io\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Java",
-              "plain": "Java\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Lua",
-              "plain": "Lua\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Nim",
-              "plain": "Nim\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Node.js",
-              "plain": "Node.js\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "OCaml",
-              "plain": "OCaml\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Perl",
-              "plain": "Perl\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "PHP",
-              "plain": "PHP\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Python",
-              "plain": "Python\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Rails",
-              "plain": "Rails\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Ruby",
-              "plain": "Ruby\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Rust",
-              "plain": "Rust\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Scheme",
-              "plain": "Scheme\n",
-              "plainChilds": "    - [@beanstalkdClients]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdClients]",
-                  "plain": "[@beanstalkdClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            }
-          ]
+          "160.000"
         ]
       }
     }
@@ -1091,6 +595,14 @@
               "childs": []
             }
           ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "160.000",
+      "childs": {
+        "0": [
+          "160.000"
         ]
       }
     }
@@ -1212,6 +724,14 @@
           ]
         ]
       }
+    },
+    "Google hits": {
+      "plain": "184.000",
+      "childs": {
+        "0": [
+          "184.000"
+        ]
+      }
     }
   },
   {
@@ -1273,6 +793,14 @@
               "childs": []
             }
           ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "61.100",
+      "childs": {
+        "0": [
+          "61.100"
         ]
       }
     }
@@ -1337,6 +865,14 @@
           ]
         ]
       }
+    },
+    "Google hits": {
+      "plain": "107.000",
+      "childs": {
+        "0": [
+          "107.000"
+        ]
+      }
     }
   },
   {
@@ -1399,6 +935,14 @@
           ]
         ]
       }
+    },
+    "Google hits": {
+      "plain": "600.000",
+      "childs": {
+        "0": [
+          "600.000"
+        ]
+      }
     }
   },
   {
@@ -1459,6 +1003,14 @@
               "childs": []
             }
           ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "161.000",
+      "childs": {
+        "0": [
+          "161.000"
         ]
       }
     }
@@ -1524,6 +1076,14 @@
           ]
         ]
       }
+    },
+    "Google hits": {
+      "plain": "14.300",
+      "childs": {
+        "0": [
+          "14.300"
+        ]
+      }
     }
   },
   {
@@ -1578,6 +1138,14 @@
               ]
             }
           ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "562.000",
+      "childs": {
+        "0": [
+          "562.000"
         ]
       }
     }
@@ -1640,6 +1208,14 @@
               "childs": []
             }
           ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "43.400",
+      "childs": {
+        "0": [
+          "43.400"
         ]
       }
     }
@@ -1853,272 +1429,11 @@
         ]
       }
     },
-    "Client languages": {
-      "plain": "- .NET\n    - [@rabbitMQClients]\n- C\n    - [@rabbitMQClients]\n- C++\n    - [@rabbitMQClients]\n- Clojure\n    - [@rabbitMQClients]\n- Erlang\n    - [@rabbitMQClients]\n- Go\n    - [@rabbitMQClients]\n- Groovy\n    - [@rabbitMQClients]\n- Grails\n    - [@rabbitMQClients]\n- Haskell\n    - [@rabbitMQClients]\n- Java\n    - [@rabbitMQClients]\n- JRuby\n    - [@rabbitMQClients]\n- Node.js\n    - [@rabbitMQClients]\n- Objective C\n    - [@rabbitMQClients]\n- OCaml\n    - [@rabbitMQClients]\n- Perl\n    - [@rabbitMQClients]\n- PHP\n    - [@rabbitMQClients]\n- Python\n    - [@rabbitMQClients]\n- Ruby\n    - [@rabbitMQClients]\n- Scala\n    - [@rabbitMQClients]\n- Swift\n    - [@rabbitMQClients]\n",
+    "Google hits": {
+      "plain": "2.050.000",
       "childs": {
         "0": [
-          [
-            {
-              "content": ".NET",
-              "plain": ".NET\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "C",
-              "plain": "C\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "C++",
-              "plain": "C++\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Clojure",
-              "plain": "Clojure\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Erlang",
-              "plain": "Erlang\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Go",
-              "plain": "Go\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Groovy",
-              "plain": "Groovy\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Grails",
-              "plain": "Grails\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Haskell",
-              "plain": "Haskell\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Java",
-              "plain": "Java\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "JRuby",
-              "plain": "JRuby\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Node.js",
-              "plain": "Node.js\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Objective C",
-              "plain": "Objective C\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "OCaml",
-              "plain": "OCaml\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Perl",
-              "plain": "Perl\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "PHP",
-              "plain": "PHP\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Python",
-              "plain": "Python\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Ruby",
-              "plain": "Ruby\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Scala",
-              "plain": "Scala\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Swift",
-              "plain": "Swift\n",
-              "plainChilds": "    - [@rabbitMQClients]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQClients]",
-                  "plain": "[@rabbitMQClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            }
-          ]
+          "2.050.000"
         ]
       }
     }
@@ -2315,649 +1630,11 @@
         ]
       }
     },
-    "Client languages": {
-      "plain": "- ActionScript\n    - [@redisClients]\n- Bash\n    - [@redisClients]\n- C\n    - [@redisClients]\n- C#\n    - [@redisClients]\n- C++\n    - [@redisClients]\n- Clojure\n    - [@redisClients]\n- Common Lisp\n    - [@redisClients]\n- Crystal\n    - [@redisClients]\n- D\n    - [@redisClients]\n- Dart\n    - [@redisClients]\n- Delphi\n    - [@redisClients]\n- Elixir\n    - [@redisClients]\n- emacs lisp\n    - [@redisClients]\n- Erlang\n    - [@redisClients]\n- Fancy\n    - [@redisClients]\n- gawk\n    - [@redisClients]\n- GNU Prolog\n    - [@redisClients]\n- Go\n    - [@redisClients]\n- Haskell\n    - [@redisClients]\n- Haxe\n    - [@redisClients]\n- Io\n    - [@redisClients]\n- Java\n    - [@redisClients]\n- Julia\n    - [@redisClients]\n- Lasso\n    - [@redisClients]\n- Lua\n    - [@redisClients]\n- Matlab\n    - [@redisClients]\n- mruby\n    - [@redisClients]\n- Nim\n    - [@redisClients]\n- Node.js\n    - [@redisClients]\n- Objective-C\n    - [@redisClients]\n- OCaml\n    - [@redisClients]\n- Pascal\n    - [@redisClients]\n- Perl\n    - [@redisClients]\n- PHP\n    - [@redisClients]\n- PL/SQL\n    - [@redisClients]\n- Pure Data\n    - [@redisClients]\n- Python\n    - [@redisClients]\n- ref\n    - [@redisClients]\n- Racket\n    - [@redisClients]\n- Rebol\n    - [@redisClients]\n- Ruby\n    - [@redisClients]\n- Rust\n    - [@redisClients]\n- Scala\n    - [@redisClients]\n- Scheme\n    - [@redisClients]\n- Smalltalk\n    - [@redisClients]\n- Swift\n    - [@redisClients]\n- Tcl\n    - [@redisClients]\n- VB\n    - [@redisClients]\n- VCL\n    - [@redisClients]\n",
+    "Google hits": {
+      "plain": "18.500.000",
       "childs": {
         "0": [
-          [
-            {
-              "content": "ActionScript",
-              "plain": "ActionScript\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Bash",
-              "plain": "Bash\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "C",
-              "plain": "C\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "C#",
-              "plain": "C#\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "C++",
-              "plain": "C++\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Clojure",
-              "plain": "Clojure\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Common Lisp",
-              "plain": "Common Lisp\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Crystal",
-              "plain": "Crystal\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "D",
-              "plain": "D\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Dart",
-              "plain": "Dart\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Delphi",
-              "plain": "Delphi\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Elixir",
-              "plain": "Elixir\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "emacs lisp",
-              "plain": "emacs lisp\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Erlang",
-              "plain": "Erlang\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Fancy",
-              "plain": "Fancy\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "gawk",
-              "plain": "gawk\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "GNU Prolog",
-              "plain": "GNU Prolog\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Go",
-              "plain": "Go\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Haskell",
-              "plain": "Haskell\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Haxe",
-              "plain": "Haxe\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Io",
-              "plain": "Io\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Java",
-              "plain": "Java\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Julia",
-              "plain": "Julia\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Lasso",
-              "plain": "Lasso\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Lua",
-              "plain": "Lua\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Matlab",
-              "plain": "Matlab\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "mruby",
-              "plain": "mruby\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Nim",
-              "plain": "Nim\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Node.js",
-              "plain": "Node.js\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Objective-C",
-              "plain": "Objective-C\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "OCaml",
-              "plain": "OCaml\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Pascal",
-              "plain": "Pascal\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Perl",
-              "plain": "Perl\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "PHP",
-              "plain": "PHP\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "PL/SQL",
-              "plain": "PL/SQL\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Pure Data",
-              "plain": "Pure Data\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Python",
-              "plain": "Python\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "ref",
-              "plain": "ref\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Racket",
-              "plain": "Racket\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Rebol",
-              "plain": "Rebol\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Ruby",
-              "plain": "Ruby\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Rust",
-              "plain": "Rust\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Scala",
-              "plain": "Scala\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Scheme",
-              "plain": "Scheme\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Smalltalk",
-              "plain": "Smalltalk\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Swift",
-              "plain": "Swift\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Tcl",
-              "plain": "Tcl\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "VB",
-              "plain": "VB\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "VCL",
-              "plain": "VCL\n",
-              "plainChilds": "    - [@redisClients]\n",
-              "childs": [
-                {
-                  "content": ",[@redisClients]",
-                  "plain": "[@redisClients]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            }
-          ]
+          "18.500.000"
         ]
       }
     }
@@ -3078,6 +1755,14 @@
               "childs": []
             }
           ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "7.330",
+      "childs": {
+        "0": [
+          "7.330"
         ]
       }
     }
