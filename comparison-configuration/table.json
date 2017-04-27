@@ -163,7 +163,8 @@
         "tag": "Google hits",
         "display": true,
         "type": {
-            "tag": "text"
+            "tag": "text",
+            "class": "label label-info"
         }
     }
 ]
