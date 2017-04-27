@@ -4,10 +4,6 @@
     width: 100% !important;
 }
 
-:host /deep/ div {
-    z-index: 3001;
-}
-
 :host /deep/ input {
     width: 100%;
 }

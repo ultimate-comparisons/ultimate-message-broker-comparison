@@ -29,14 +29,6 @@ comparison {
     padding: 10px;
 }
 
-pdialog {
-    z-index: 5000;
-}
-
-.floatThead-container {
-    z-index: 3000;
-}
-
 .ltable {
     display: none;
 }

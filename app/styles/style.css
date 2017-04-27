@@ -2,3 +2,11 @@ html {
     overflow: auto;
     overflow: initial;
 }
+
+.cite-link {
+    color: lightgrey;
+}
+
+li a.cite-link {
+    color: #337ab7;
+}

@@ -13,16 +13,12 @@
     border-radius: 6px;
 
     position: absolute;
-    z-index: 4999;
+    z-index: 1;
 
     white-space: nowrap;
 
     transition-property: visibility;
     transition-duration: 0.1s;
-}
-
-:host .ptooltiptext /deep/ a {
-    color: lightgray;
 }
 
 :host .ptooltiptext /deep/ ul, :host .ptooltiptext /deep/ ol {
