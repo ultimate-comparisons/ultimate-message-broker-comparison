@@ -162,7 +162,7 @@
         "tag": "Google hits",
         "display": true,
         "type": {
-            "tag": "text"
+            "tag": "label"
         }
     }
 ]
