@@ -77,22 +77,15 @@
       }
     },
     "Featuers": {
-      "plain": "- Clustering\n    - [@rabbitMQCluster]\n",
+      "plain": "- Clustering\n",
       "childs": {
         "0": [
           [
             {
               "content": "Clustering",
               "plain": "Clustering\n",
-              "plainChilds": "    - [@rabbitMQCluster]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQCluster]",
-                  "plain": "[@rabbitMQCluster]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
@@ -208,10 +201,17 @@
       }
     },
     "Google hits": {
-      "plain": "1.390.000",
+      "plain": "- 1.390.000\n",
       "childs": {
         "0": [
-          "1.390.000"
+          [
+            {
+              "content": "1.390.000",
+              "plain": "1.390.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -1904,18 +1904,18 @@
       }
     },
     "License": {
-      "plain": "- LGPLv3\n    - [@zeroMQLicencse]\n",
+      "plain": "- LGPLv3\n    - [@zeroMQLicense]\n",
       "childs": {
         "0": [
           [
             {
               "content": "LGPLv3",
               "plain": "LGPLv3\n",
-              "plainChilds": "    - [@zeroMQLicencse]\n",
+              "plainChilds": "    - [@zeroMQLicense]\n",
               "childs": [
                 {
-                  "content": ",[@zeroMQLicencse]",
-                  "plain": "[@zeroMQLicencse]\n",
+                  "content": ",[@zeroMQLicense]",
+                  "plain": "[@zeroMQLicense]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -1954,10 +1954,17 @@
       }
     },
     "Google hits": {
-      "plain": "674.000 ",
+      "plain": "- 674.000\n",
       "childs": {
         "0": [
-          "674.000 "
+          [
+            {
+              "content": "674.000",
+              "plain": "674.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
