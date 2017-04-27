@@ -1134,10 +1134,17 @@
       }
     },
     "Google hits": {
-      "plain": " -14.200 ",
+      "plain": "- 14.200 \n",
       "childs": {
         "0": [
-          "-14.200 "
+          [
+            {
+              "content": "14.200",
+              "plain": "14.200 \n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
