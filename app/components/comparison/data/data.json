@@ -77,22 +77,15 @@
       }
     },
     "Featuers": {
-      "plain": "- Clustering\n    - [@rabbitMQCluster]\n",
+      "plain": "- Clustering\n",
       "childs": {
         "0": [
           [
             {
               "content": "Clustering",
               "plain": "Clustering\n",
-              "plainChilds": "    - [@rabbitMQCluster]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQCluster]",
-                  "plain": "[@rabbitMQCluster]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
@@ -853,13 +846,13 @@
       }
     },
     "Development status": {
-      "plain": "- Stale\n    - Last version: 1.1.15 on 2017-02-18 [@gearmanVersions]\n- Stable\n",
+      "plain": "- Active\n    - Last version: 1.1.15 on 2017-02-18 [@gearmanVersions]\n- Stable\n",
       "childs": {
         "0": [
           [
             {
-              "content": "Stale",
-              "plain": "Stale\n",
+              "content": "Active",
+              "plain": "Active\n",
               "plainChilds": "    - Last version: 1.1.15 on 2017-02-18 [@gearmanVersions]\n",
               "childs": [
                 {
@@ -1040,18 +1033,18 @@
       }
     },
     "Development status": {
-      "plain": "- Active\n    - Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]\n",
+      "plain": "- Active\n    - Last version: 0.10.2.0 on 2017-02-21 [@kafkaVersions]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Active",
               "plain": "Active\n",
-              "plainChilds": "    - Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]\n",
+              "plainChilds": "    - Last version: 0.10.2.0 on 2017-02-21 [@kafkaVersions]\n",
               "childs": [
                 {
-                  "content": "Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]",
-                  "plain": "Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]\n",
+                  "content": "Last version: 0.10.2.0 on 2017-02-21 [@kafkaVersions]",
+                  "plain": "Last version: 0.10.2.0 on 2017-02-21 [@kafkaVersions]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -1784,18 +1777,18 @@
       }
     },
     "License": {
-      "plain": "- LGPLv3\n    - [@zeroMQLicencse]\n",
+      "plain": "- LGPLv3\n    - [@zeroMQLicense]\n",
       "childs": {
         "0": [
           [
             {
               "content": "LGPLv3",
               "plain": "LGPLv3\n",
-              "plainChilds": "    - [@zeroMQLicencse]\n",
+              "plainChilds": "    - [@zeroMQLicense]\n",
               "childs": [
                 {
-                  "content": ",[@zeroMQLicencse]",
-                  "plain": "[@zeroMQLicencse]\n",
+                  "content": ",[@zeroMQLicense]",
+                  "plain": "[@zeroMQLicense]\n",
                   "plainChilds": "",
                   "childs": []
                 }
