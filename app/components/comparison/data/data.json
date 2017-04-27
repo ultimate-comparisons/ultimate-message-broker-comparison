@@ -535,10 +535,17 @@
       }
     },
     "Google hits": {
-      "plain": "151.000 ",
+      "plain": "- 151.000 \n",
       "childs": {
         "0": [
-          "151.000 "
+          [
+            {
+              "content": "151.000",
+              "plain": "151.000 \n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -606,10 +613,17 @@
       }
     },
     "Google hits": {
-      "plain": "160.000",
+      "plain": "- 160.000\n",
       "childs": {
         "0": [
-          "160.000"
+          [
+            {
+              "content": "160.000",
+              "plain": "160.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -733,10 +747,17 @@
       }
     },
     "Google hits": {
-      "plain": "184.000",
+      "plain": "- 184.000\n",
       "childs": {
         "0": [
-          "184.000"
+          [
+            {
+              "content": "184.000",
+              "plain": "184.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -804,10 +825,17 @@
       }
     },
     "Google hits": {
-      "plain": "61.100",
+      "plain": "- 61.100\n",
       "childs": {
         "0": [
-          "61.100"
+          [
+            {
+              "content": "61.100",
+              "plain": "61.100\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -874,10 +902,17 @@
       }
     },
     "Google hits": {
-      "plain": "107.000",
+      "plain": "- 107.000\n",
       "childs": {
         "0": [
-          "107.000"
+          [
+            {
+              "content": "107.000",
+              "plain": "107.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -944,10 +979,17 @@
       }
     },
     "Google hits": {
-      "plain": "600.000",
+      "plain": "- 600.000\n",
       "childs": {
         "0": [
-          "600.000"
+          [
+            {
+              "content": "600.000",
+              "plain": "600.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -1014,10 +1056,17 @@
       }
     },
     "Google hits": {
-      "plain": "160.000 ",
+      "plain": "- 160.000 \n",
       "childs": {
         "0": [
-          "160.000 "
+          [
+            {
+              "content": "160.000",
+              "plain": "160.000 \n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -1085,10 +1134,10 @@
       }
     },
     "Google hits": {
-      "plain": "14.200 ",
+      "plain": " -14.200 ",
       "childs": {
         "0": [
-          "14.200 "
+          "-14.200 "
         ]
       }
     }
@@ -1149,10 +1198,17 @@
       }
     },
     "Google hits": {
-      "plain": "562.000",
+      "plain": "- 562.000\n",
       "childs": {
         "0": [
-          "562.000"
+          [
+            {
+              "content": "562.000",
+              "plain": "562.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -1219,10 +1275,17 @@
       }
     },
     "Google hits": {
-      "plain": "43.400",
+      "plain": "- 43.400\n",
       "childs": {
         "0": [
-          "43.400"
+          [
+            {
+              "content": "43.400",
+              "plain": "43.400\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -1437,10 +1500,17 @@
       }
     },
     "Google hits": {
-      "plain": "2.030.000 ",
+      "plain": "- 2.030.000 \n",
       "childs": {
         "0": [
-          "2.030.000 "
+          [
+            {
+              "content": "2.030.000",
+              "plain": "2.030.000 \n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -1638,10 +1708,17 @@
       }
     },
     "Google hits": {
-      "plain": "635.000 ",
+      "plain": "- 635.000 \n",
       "childs": {
         "0": [
-          "635.000 "
+          [
+            {
+              "content": "635.000",
+              "plain": "635.000 \n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -1766,10 +1843,17 @@
       }
     },
     "Google hits": {
-      "plain": "16.700 ",
+      "plain": "- 16.700 \n",
       "childs": {
         "0": [
-          "16.700 "
+          [
+            {
+              "content": "16.700",
+              "plain": "16.700 \n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
@@ -1961,10 +2045,17 @@
       }
     },
     "Google hits": {
-      "plain": "674.000",
+      "plain": "- 674.000\n",
       "childs": {
         "0": [
-          "674.000"
+          [
+            {
+              "content": "674.000",
+              "plain": "674.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
         ]
       }
     }
