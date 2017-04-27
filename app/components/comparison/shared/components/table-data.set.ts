@@ -1,5 +1,4 @@
 import { TableData, LabelCls, Value, Type } from "../index";
-import { ColorDictionary } from "./color-dictionary";
 
 export class TableDataSet {
     private tableDataSet: {[name: string]: TableData;} = {}
@@ -36,19 +35,10 @@ export class TableDataSet {
                     }
                 })
             }
-            let colors: ColorDictionary = new ColorDictionary();
-            if (obj.type && obj.type.values) {
-                for (const v of obj.type.values) {
-                    if (v.color) {
-                        colors.setColor(v.name, v.color);
-                    }
-                }
-            }
             let type: Type = new Type(
                 obj.type.tag,
                 obj.type.class,
-                lcls,
-                colors
+                lcls
             )
             let td: TableData = new TableData(
                 obj.name,
