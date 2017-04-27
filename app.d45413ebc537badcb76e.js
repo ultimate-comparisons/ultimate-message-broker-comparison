@@ -4111,8 +4111,8 @@ webpackJsonp([0],[
 	class VersionInformation {
 	    constructor() {
 	        this.date = "2017-04-27";
-	        this.commit = "d05d35b7c8358597ef8bcf94299e30163639b33e";
-	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/d05d35b7c8358597ef8bcf94299e30163639b33e";
+	        this.commit = "20a6675c7055c9c53edb1c483ff71a9846cd0fbe";
+	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/20a6675c7055c9c53edb1c483ff71a9846cd0fbe";
 	    }
 	}
 	exports.VersionInformation = VersionInformation;
@@ -13116,4 +13116,4 @@ webpackJsonp([0],[
 
 /***/ })
 ]);
-//# sourceMappingURL=app.f85fdbfcda71454ec1ca.js.map
+//# sourceMappingURL=app.d45413ebc537badcb76e.js.map

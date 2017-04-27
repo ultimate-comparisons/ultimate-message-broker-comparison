@@ -28,8 +28,12 @@
             "class": "label label-info",
             "values": [
                 {
-                    "name": "GNU ",
+                    "name": "GNU",
                     "description": "http://www.gnu.org/licenses/lgpl.html"
+                },
+                {
+                    "name": "LGPLv3",
+                    "description": "https://www.gnu.org/licenses/lgpl-3.0.de.html"
                 },
                 {
                     "name": "MIT",
@@ -67,12 +71,7 @@
                 },
                 {"name": "MQTT"},
                 {"name": "OpenWire"},
-                {"name": "REST"},
-                {"name": "RSS and Atom"},
-                {"name": "STOMP"},
-                {"name": "WSIF"},
-                {"name": "WS Notification"},
-                {"name": "XMPP"}
+                {"name": "STOMP"}
             ]
         }
     },
@@ -155,15 +154,6 @@
         "display": true,
         "type": {
             "tag": "label",
-            "class": "label label-info"
-        }
-    },
-    {
-        "name": "Google hits",
-        "tag": "Google hits",
-        "display": true,
-        "type": {
-            "tag": "text",
             "class": "label label-info"
         }
     }

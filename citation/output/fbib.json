@@ -43,5 +43,7 @@
 "siberiteLicense":"<p>42. Siberite - license, <a href=\"https://github.com/bogdanovich/siberite/blob/master/LICENSE\" class=\"uri\">https://github.com/bogdanovich/siberite/blob/master/LICENSE</a>.</p>",
 "siberiteRepository":"<p>43. Siberite - repository, <a href=\"https://github.com/bogdanovich/siberite/releases\" class=\"uri\">https://github.com/bogdanovich/siberite/releases</a>.</p>",
 "zeroMQLicense":"<p>44. ZeroMQ - license, <a href=\"http://zeromq.org/area:licensing\" class=\"uri\">http://zeromq.org/area:licensing</a>.</p>",
-"zeroMQVersions":"<p>45. ZeroMQ - versions, <a href=\"http://zeromq.org/area:download\" class=\"uri\">http://zeromq.org/area:download</a>.</p>"
+"zeroMQLicencse":"<p>45. ZeroMQ - license, <a href=\"https://github.com/zeromq/libzmq#license\" class=\"uri\">https://github.com/zeromq/libzmq#license</a>.</p>",
+"zeroMQVersions":"<p>46. ZeroMQ - versions, <a href=\"http://zeromq.org/area:download\" class=\"uri\">http://zeromq.org/area:download</a>.</p>",
+"zeroMqVersions":"<p>47. ZeroMQ - versions, <a href=\"https://github.com/zeromq/libzmq/tags\" class=\"uri\">https://github.com/zeromq/libzmq/tags</a>.</p>"
 }

@@ -27,7 +27,7 @@
  "redisCluster":"[38]",
  "rabbitMQCluster":"[33]",
  "zeroMQLicense":"[44]",
- "zeroMQVersions":"[45]",
+ "zeroMQVersions":"[46]",
  "celeryVersions":"[16]",
  "celeryLicense":"[13]",
  "delayedJobLicense":"[20]",
@@ -43,4 +43,6 @@
  "kafkaLicense":"[7]",
  "kafkaVersions":"[8]",
  "kestrelLicense":"[30]",
- "kestrelVersions":"[31]" }
+ "kestrelVersions":"[31]",
+ "zeroMqVersions":"[47]",
+ "zeroMQLicencse":"[45]" }
