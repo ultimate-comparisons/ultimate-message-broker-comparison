@@ -77,15 +77,22 @@
       }
     },
     "Featuers": {
-      "plain": "- Clustering\n",
+      "plain": "- Clustering\n    - [@rabbitMQCluster]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Clustering",
               "plain": "Clustering\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - [@rabbitMQCluster]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQCluster]",
+                  "plain": "[@rabbitMQCluster]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -195,21 +202,6 @@
                   "childs": []
                 }
               ]
-            }
-          ]
-        ]
-      }
-    },
-    "Google hits": {
-      "plain": "- 1.390.000\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "1.390.000",
-              "plain": "1.390.000\n",
-              "plainChilds": "",
-              "childs": []
             }
           ]
         ]
@@ -372,14 +364,6 @@
           ]
         ]
       }
-    },
-    "Google hits": {
-      "plain": "660.000",
-      "childs": {
-        "0": [
-          "660.000"
-        ]
-      }
     }
   },
   {
@@ -526,14 +510,6 @@
           ]
         ]
       }
-    },
-    "Google hits": {
-      "plain": "151.000 ",
-      "childs": {
-        "0": [
-          "151.000 "
-        ]
-      }
     }
   },
   {
@@ -595,14 +571,6 @@
               "childs": []
             }
           ]
-        ]
-      }
-    },
-    "Google hits": {
-      "plain": "160.000",
-      "childs": {
-        "0": [
-          "160.000"
         ]
       }
     }
@@ -724,14 +692,6 @@
           ]
         ]
       }
-    },
-    "Google hits": {
-      "plain": "184.000",
-      "childs": {
-        "0": [
-          "184.000"
-        ]
-      }
     }
   },
   {
@@ -793,14 +753,6 @@
               "childs": []
             }
           ]
-        ]
-      }
-    },
-    "Google hits": {
-      "plain": "61.100",
-      "childs": {
-        "0": [
-          "61.100"
         ]
       }
     }
@@ -865,14 +817,6 @@
           ]
         ]
       }
-    },
-    "Google hits": {
-      "plain": "107.000",
-      "childs": {
-        "0": [
-          "107.000"
-        ]
-      }
     }
   },
   {
@@ -909,13 +853,13 @@
       }
     },
     "Development status": {
-      "plain": "- Active\n    - Last version: 1.1.15 on 2017-02-18 [@gearmanVersions]\n- Stable\n",
+      "plain": "- Stale\n    - Last version: 1.1.15 on 2017-02-18 [@gearmanVersions]\n- Stable\n",
       "childs": {
         "0": [
           [
             {
-              "content": "Active",
-              "plain": "Active\n",
+              "content": "Stale",
+              "plain": "Stale\n",
               "plainChilds": "    - Last version: 1.1.15 on 2017-02-18 [@gearmanVersions]\n",
               "childs": [
                 {
@@ -933,14 +877,6 @@
               "childs": []
             }
           ]
-        ]
-      }
-    },
-    "Google hits": {
-      "plain": "600.000",
-      "childs": {
-        "0": [
-          "600.000"
         ]
       }
     }
@@ -1003,14 +939,6 @@
               "childs": []
             }
           ]
-        ]
-      }
-    },
-    "Google hits": {
-      "plain": "160.000 ",
-      "childs": {
-        "0": [
-          "160.000 "
         ]
       }
     }
@@ -1076,14 +1004,6 @@
           ]
         ]
       }
-    },
-    "Google hits": {
-      "plain": "14.200 ",
-      "childs": {
-        "0": [
-          "14.200 "
-        ]
-      }
     }
   },
   {
@@ -1120,32 +1040,24 @@
       }
     },
     "Development status": {
-      "plain": "- Active\n    - Last version: 0.10.2.0 on 2017-02-21 [@kafkaVersions]\n",
+      "plain": "- Active\n    - Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Active",
               "plain": "Active\n",
-              "plainChilds": "    - Last version: 0.10.2.0 on 2017-02-21 [@kafkaVersions]\n",
+              "plainChilds": "    - Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]\n",
               "childs": [
                 {
-                  "content": "Last version: 0.10.2.0 on 2017-02-21 [@kafkaVersions]",
-                  "plain": "Last version: 0.10.2.0 on 2017-02-21 [@kafkaVersions]\n",
+                  "content": "Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]",
+                  "plain": "Last version: 0.10.2.0 on 2017-02-21 [@disqueVersions]\n",
                   "plainChilds": "",
                   "childs": []
                 }
               ]
             }
           ]
-        ]
-      }
-    },
-    "Google hits": {
-      "plain": "562.000",
-      "childs": {
-        "0": [
-          "562.000"
         ]
       }
     }
@@ -1208,14 +1120,6 @@
               "childs": []
             }
           ]
-        ]
-      }
-    },
-    "Google hits": {
-      "plain": "43.400",
-      "childs": {
-        "0": [
-          "43.400"
         ]
       }
     }
@@ -1428,14 +1332,6 @@
           ]
         ]
       }
-    },
-    "Google hits": {
-      "plain": "2.030.000 ",
-      "childs": {
-        "0": [
-          "2.030.000 "
-        ]
-      }
     }
   },
   {
@@ -1629,14 +1525,6 @@
           ]
         ]
       }
-    },
-    "Google hits": {
-      "plain": "635.000 ",
-      "childs": {
-        "0": [
-          "635.000 "
-        ]
-      }
     }
   },
   {
@@ -1755,14 +1643,6 @@
               "childs": []
             }
           ]
-        ]
-      }
-    },
-    "Google hits": {
-      "plain": "16.700 ",
-      "childs": {
-        "0": [
-          "16.700 "
         ]
       }
     }
@@ -1904,18 +1784,18 @@
       }
     },
     "License": {
-      "plain": "- LGPLv3\n    - [@zeroMQLicense]\n",
+      "plain": "- LGPLv3\n    - [@zeroMQLicencse]\n",
       "childs": {
         "0": [
           [
             {
               "content": "LGPLv3",
               "plain": "LGPLv3\n",
-              "plainChilds": "    - [@zeroMQLicense]\n",
+              "plainChilds": "    - [@zeroMQLicencse]\n",
               "childs": [
                 {
-                  "content": ",[@zeroMQLicense]",
-                  "plain": "[@zeroMQLicense]\n",
+                  "content": ",[@zeroMQLicencse]",
+                  "plain": "[@zeroMQLicencse]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -1946,21 +1826,6 @@
             {
               "content": "Stable",
               "plain": "Stable\n",
-              "plainChilds": "",
-              "childs": []
-            }
-          ]
-        ]
-      }
-    },
-    "Google hits": {
-      "plain": "- 674.000\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "674.000",
-              "plain": "674.000\n",
               "plainChilds": "",
               "childs": []
             }

@@ -156,13 +156,5 @@
             "tag": "label",
             "class": "label label-info"
         }
-    },
-    {
-        "name": "Google hits",
-        "tag": "Google hits",
-        "display": true,
-        "type": {
-            "tag": "text"
-        }
     }
 ]
