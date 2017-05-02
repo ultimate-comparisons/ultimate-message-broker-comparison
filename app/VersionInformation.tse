@@ -1,5 +1,5 @@
 export class VersionInformation {
-    public date: string = "2017-04-27";
+    public date: string = "2017-05-02";
     public commit: string = "§§commit§§";
     public link: string = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/§§commit§§";
 }
