@@ -67,5 +67,17 @@
             {"name": "Partially"},
             {"name": "No"}
         ]
+    },
+    {
+        "name": "Broker Backend",
+        "tag": "Broker Backend",
+        "description": "",
+        "placeholder": "Select Broker Backend ...",
+        "and_search": true,
+        "values": [
+            {"name": "None"},
+            {"name": "Redis"},
+            {"name": "RabbitMQ"}
+        ]
     }
 ]

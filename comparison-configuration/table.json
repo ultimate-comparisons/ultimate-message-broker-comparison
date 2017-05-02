@@ -158,6 +158,14 @@
         }
     },
     {
+        "name": "Broker Backend",
+        "tag": "Broker Backend",
+        "display": true,
+        "type": {
+            "tag": "label"
+        }
+    },
+    {
         "name": "Google hits",
         "tag": "Google hits",
         "display": true,
