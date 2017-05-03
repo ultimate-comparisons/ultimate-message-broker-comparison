@@ -14,7 +14,7 @@
         "name": "Short Description",
         "tag": "descr",
         "style": "width: 25%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "text"
         }
