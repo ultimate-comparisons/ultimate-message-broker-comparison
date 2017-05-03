@@ -2219,6 +2219,36 @@
           ]
         ]
       }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 0\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "0",
+              "plain": "0\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
     }
   },
   {
