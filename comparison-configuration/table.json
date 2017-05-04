@@ -133,14 +133,7 @@
         "tag": "Google hits",
         "display": true,
         "type": {
-            "tag": "label",
-            "class": "label label-info",
-            "values": [
-                {
-                    "name": "test",
-                    "class": "label-danger"
-                }
-            ]
+            "tag": "text"
         }
     }
 ]
