@@ -129,11 +129,46 @@
         }
     },
     {
+        "name": "Features",
+        "tag": "Features",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "dummy",
+                    "color": "#EA3711"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Broker Backend",
+        "tag": "Broker Backend",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "dummy",
+                    "color": "#EA3711"
+                }
+            ]
+        }
+    },
+    {
         "name": "Google hits",
         "tag": "Google hits",
         "display": true,
         "type": {
-            "tag": "text"
+            "tag": "label",
+            "class": "label label-info",
+            "values": [
+                {
+                    "name": "dummy",
+                    "color": "#EA3711"
+                }
+            ]
         }
     }
 ]
