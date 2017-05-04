@@ -11,41 +11,12 @@
         "valign": "top"
     },
     {
-        "name": "",
-        "tag": "Rating",
-        "display": true,
-        "type": {
-            "tag": "rating"
-        }
-    },
-    {
         "name": "Short Description",
         "tag": "descr",
         "style": "width: 25%",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "text"
-        }
-    },
-    {
-        "name": "Performance",
-        "tag": "Performance",
-        "style": "width: 5%",
-        "display": true,
-        "type": {
-            "tag": "label",
-            "values": [
-                {
-                    "name": "slow",
-                    "description": "Overall performance above 200ms.",
-                    "class": "label-danger"
-                },
-                {
-                    "name": "fast",
-                    "description": "Overall performance below 200ms.",
-                    "class": "label-success"
-                }
-            ]
         }
     },
     {
@@ -57,19 +28,34 @@
             "class": "label label-info",
             "values": [
                 {
-                    "name": "MIT",
-                    "description": "<http://choosealicense.com/licenses/mit/>",
+                    "name": "GNU",
+                    "description": "http://www.gnu.org/licenses/lgpl.html",
                     "color": "#EA3711"
+                },
+                {
+                    "name": "LGPLv3",
+                    "description": "https://www.gnu.org/licenses/lgpl-3.0.de.html",
+                    "color": "#11EAD3"
+                },
+                {
+                    "name": "MIT",
+                    "description": "http://choosealicense.com/licenses/mit/",
+                    "color": "#4F11EA"
                 },
                 {
                     "name": "Apache 2.0",
                     "description": "http://choosealicense.com/licenses/apache-2.0/",
-                    "color": "#11EAD3"
+                    "color": "#EA6311"
                 },
                 {
-                    "name": "MPL 2.0",
-                    "description": "http://choosealicense.com/licenses/mpl-2.0/",
-                    "color": "#4F11EA"
+                    "name": "BSD-3-Clause",
+                    "description": "http://www.opensource.org/licenses/BSD-3-Clause",
+                    "color": "#C6EA11"
+                },
+                {
+                    "name": "MPL 1.1",
+                    "description": "https://www.mozilla.org/media/MPL/1.1/index.0c5913925d40.txt",
+                    "color": "#113FEA"
                 }
             ]
         }
