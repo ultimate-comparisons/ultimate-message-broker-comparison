@@ -112,7 +112,7 @@ webpackJsonp([0],[
 /* 26 */
 /***/ (function(module, exports) {
 
-	module.exports = "html {\n    overflow: auto;\n    overflow: initial;\n}\n\n.cite-link {\n    color: lightgrey;\n}\n\nli a.cite-link {\n    color: #337ab7;\n}"
+	module.exports = "html {\n    overflow: auto;\n    overflow: initial;\n}"
 
 /***/ }),
 /* 27 */
@@ -123,7 +123,7 @@ webpackJsonp([0],[
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
 	__export(__webpack_require__(28));
-	__export(__webpack_require__(55));
+	__export(__webpack_require__(56));
 
 
 /***/ }),
@@ -145,15 +145,15 @@ webpackJsonp([0],[
 	const platform_browser_1 = __webpack_require__(21);
 	const http_1 = __webpack_require__(29);
 	const comparison_details_component_1 = __webpack_require__(30);
-	const comparison_footnote_component_1 = __webpack_require__(53);
-	const comparison_component_1 = __webpack_require__(55);
-	const pipes_module_1 = __webpack_require__(62);
-	const input_module_1 = __webpack_require__(67);
-	const output_module_1 = __webpack_require__(86);
-	const comparison_service_1 = __webpack_require__(48);
-	const comparison_data_service_1 = __webpack_require__(47);
-	const comparison_config_service_1 = __webpack_require__(46);
-	const comparison_citation_service_1 = __webpack_require__(50);
+	const comparison_footnote_component_1 = __webpack_require__(54);
+	const comparison_component_1 = __webpack_require__(56);
+	const pipes_module_1 = __webpack_require__(63);
+	const input_module_1 = __webpack_require__(68);
+	const output_module_1 = __webpack_require__(87);
+	const comparison_service_1 = __webpack_require__(49);
+	const comparison_data_service_1 = __webpack_require__(48);
+	const comparison_config_service_1 = __webpack_require__(47);
+	const comparison_citation_service_1 = __webpack_require__(51);
 	let ComparisonModule = class ComparisonModule {
 	};
 	ComparisonModule = __decorate([
@@ -203,10 +203,10 @@ webpackJsonp([0],[
 	};
 	const core_1 = __webpack_require__(3);
 	const index_1 = __webpack_require__(31);
-	const comparison_config_service_1 = __webpack_require__(46);
-	const comparison_data_service_1 = __webpack_require__(47);
-	const comparison_service_1 = __webpack_require__(48);
-	const comparison_citation_service_1 = __webpack_require__(50);
+	const comparison_config_service_1 = __webpack_require__(47);
+	const comparison_data_service_1 = __webpack_require__(48);
+	const comparison_service_1 = __webpack_require__(49);
+	const comparison_citation_service_1 = __webpack_require__(51);
 	let ComparisonDetailsComponent = class ComparisonDetailsComponent {
 	    constructor(serv, dataServ, confServ, citationServ) {
 	        this.serv = serv;
@@ -269,8 +269,8 @@ webpackJsonp([0],[
 	ComparisonDetailsComponent = __decorate([
 	    core_1.Component({
 	        selector: 'comparison-details',
-	        template: __webpack_require__(51),
-	        styles: [__webpack_require__(52)]
+	        template: __webpack_require__(52),
+	        styles: [__webpack_require__(53)]
 	    }), 
 	    __metadata('design:paramtypes', [(typeof (_b = typeof comparison_service_1.ComparisonService !== 'undefined' && comparison_service_1.ComparisonService) === 'function' && _b) || Object, (typeof (_c = typeof comparison_data_service_1.ComparisonDataService !== 'undefined' && comparison_data_service_1.ComparisonDataService) === 'function' && _c) || Object, (typeof (_d = typeof comparison_config_service_1.ComparisonConfigService !== 'undefined' && comparison_config_service_1.ComparisonConfigService) === 'function' && _d) || Object, (typeof (_e = typeof comparison_citation_service_1.ComparisonCitationService !== 'undefined' && comparison_citation_service_1.ComparisonCitationService) === 'function' && _e) || Object])
 	], ComparisonDetailsComponent);
@@ -291,15 +291,15 @@ webpackJsonp([0],[
 	__export(__webpack_require__(34));
 	__export(__webpack_require__(35));
 	__export(__webpack_require__(36));
-	__export(__webpack_require__(38));
-	__export(__webpack_require__(37));
 	__export(__webpack_require__(39));
+	__export(__webpack_require__(37));
 	__export(__webpack_require__(40));
 	__export(__webpack_require__(41));
 	__export(__webpack_require__(42));
 	__export(__webpack_require__(43));
 	__export(__webpack_require__(44));
 	__export(__webpack_require__(45));
+	__export(__webpack_require__(46));
 
 
 /***/ }),
@@ -462,16 +462,21 @@ webpackJsonp([0],[
 
 	"use strict";
 	const labelcls_1 = __webpack_require__(33);
+	const color_dictionary_1 = __webpack_require__(38);
 	class Type {
-	    constructor(tag = "", cls = "", labelCls = new labelcls_1.LabelCls()) {
+	    constructor(tag = "", cls = "", labelCls = new labelcls_1.LabelCls(), colors = new color_dictionary_1.ColorDictionary()) {
 	        this.tag = tag;
 	        this.cls = cls;
 	        this.labelCls = labelCls;
+	        this.colors = colors;
 	    }
 	    getCls(item) {
 	        let labelClsString = this.labelCls.getCls(item);
-	        if (this.cls == "" && labelClsString == "") {
+	        if (this.cls == "" && labelClsString == "" && this.colors[item] === "") {
 	            return "label label-default";
+	        }
+	        else if (this.cls == "" && labelClsString == "") {
+	            return "label";
 	        }
 	        else if (labelClsString != "") {
 	            return "label " + labelClsString;
@@ -487,10 +492,35 @@ webpackJsonp([0],[
 
 /***/ }),
 /* 38 */
+/***/ (function(module, exports) {
+
+	"use strict";
+	class ColorDictionary {
+	    constructor() {
+	        this.colorDict = {};
+	    }
+	    setColor(label, color) {
+	        this.colorDict[label] = color;
+	    }
+	    getColor(label) {
+	        if (this.colorDict[label]) {
+	            return this.colorDict[label];
+	        }
+	        else {
+	            return "";
+	        }
+	    }
+	}
+	exports.ColorDictionary = ColorDictionary;
+
+
+/***/ }),
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const index_1 = __webpack_require__(31);
+	const color_dictionary_1 = __webpack_require__(38);
 	class TableDataSet {
 	    constructor(jsonObj) {
 	        this.tableDataSet = {};
@@ -525,7 +555,15 @@ webpackJsonp([0],[
 	                    }
 	                });
 	            }
-	            let type = new index_1.Type(obj.type.tag, obj.type.class, lcls);
+	            let colors = new color_dictionary_1.ColorDictionary();
+	            if (obj.type && obj.type.values) {
+	                for (const v of obj.type.values) {
+	                    if (v.color) {
+	                        colors.setColor(v.name, v.color);
+	                    }
+	                }
+	            }
+	            let type = new index_1.Type(obj.type.tag, obj.type.class, lcls, colors);
 	            let td = new index_1.TableData(obj.name, obj.tag, obj.urlTag, obj.style, obj.display, type, values, obj.sort);
 	            this.tableDataSet[obj.tag] = td;
 	        });
@@ -555,7 +593,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -571,7 +609,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -589,7 +627,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -632,11 +670,11 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const criteria_1 = __webpack_require__(40);
+	const criteria_1 = __webpack_require__(41);
 	class CriteriaSelection {
 	    constructor(values = new Array(), criteria = new criteria_1.Criteria()) {
 	        this.values = values;
@@ -647,7 +685,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -666,11 +704,11 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const details_1 = __webpack_require__(43);
+	const details_1 = __webpack_require__(44);
 	class Comparison {
 	    constructor(jsonObj) {
 	        this.title = jsonObj.title ? jsonObj.title : "Ultimate-Comparison";
@@ -687,7 +725,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -726,7 +764,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -743,8 +781,8 @@ webpackJsonp([0],[
 	const http_1 = __webpack_require__(29);
 	const platform_browser_1 = __webpack_require__(21);
 	const index_1 = __webpack_require__(31);
-	const comparison_data_service_1 = __webpack_require__(47);
-	const comparison_service_1 = __webpack_require__(48);
+	const comparison_data_service_1 = __webpack_require__(48);
+	const comparison_service_1 = __webpack_require__(49);
 	let ComparisonConfigService = class ComparisonConfigService {
 	    constructor(title, http, comparisonDataService, comparisonService) {
 	        this.title = title;
@@ -814,7 +852,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -830,7 +868,7 @@ webpackJsonp([0],[
 	const core_1 = __webpack_require__(3);
 	const http_1 = __webpack_require__(29);
 	const index_1 = __webpack_require__(31);
-	const comparison_service_1 = __webpack_require__(48);
+	const comparison_service_1 = __webpack_require__(49);
 	let ComparisonDataService = class ComparisonDataService {
 	    constructor(http, comparisonService) {
 	        this.http = http;
@@ -916,7 +954,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -931,7 +969,7 @@ webpackJsonp([0],[
 	};
 	const core_1 = __webpack_require__(3);
 	const platform_browser_1 = __webpack_require__(21);
-	const showdown = __webpack_require__(49);
+	const showdown = __webpack_require__(50);
 	let ComparisonService = class ComparisonService {
 	    constructor(_sanitizer) {
 	        this._sanitizer = _sanitizer;
@@ -962,7 +1000,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;;/*! showdown 06-02-2017 */
@@ -3740,7 +3778,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3771,11 +3809,11 @@ webpackJsonp([0],[
 	        for (let reference of this.references) {
 	            let key = reference;
 	            let entry = { "html": this.bibEntriesHtml[key] };
+	            entry["key"] = key;
 	            entry["index"] = this.bibEntriesInline[key];
 	            entry["index"] = entry["index"].substr(1, entry["index"].length - 2);
 	            values.push(entry);
 	        }
-	        console.log(values);
 	        return values.sort((a, b) => a.index - b.index);
 	    }
 	    loadCitationData(cd) {
@@ -3845,19 +3883,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"pheader\">\n    <h2>{{getHeaderText()}}\n        <template ngFor let-sitem [ngForOf]=\"data?.getPropertyListItems(confServ.comparison?.details.headerLabel)\"\n                  *ngIf=\"confServ.comparison\">\n            <ptooltip [tooltip]=\"getHeaderColumn()?.values[sitem.content]\"\n                      [tooltipHtml]=\"sitem.htmlChilds|citation:[citationServ]\" [position]=\"'s'\">\n                <div class=\"{{getHeaderLabel()?.getCls(sitem.content)}} mylabel\">\n                    {{sitem.content}}\n                </div>\n            </ptooltip>\n        </template>\n        <small><a href=\"{{getHeaderUrl()}}\" target=\"_blank\">{{getHeaderUrl()}}</a></small>\n    </h2>\n</div>\n<div class=\"content\" style=\"padding-left:15px; padding-right: 15px;\">\n    <pcard *ngIf=\"confServ.comparison\" heading=\"{{confServ.comparison?.details.bodyMainTitle}}\" style=\"display:block;\">\n        <div class=\"card-content\">\n            <htmlcitationtext [description]=\"getBody()\" [citationServ]=\"citationServ\"\n                              *ngIf=\"citationServ.check\"></htmlcitationtext>\n        </div>\n    </pcard>\n    <template ngFor let-atag [ngForOf]=\"confServ.getBodyAttachmentTags()\" *ngIf=\"confServ.comparison\">\n        <pcard heading=\"{{getTable(atag).name}}\">\n            <p class=\"card-content\">\n                <template ngFor let-sitem [ngForOf]=\"data?.getPropertyListItems(atag)\">\n                    <ptooltip *ngIf=\"!confServ.comparison?.details.tooltipAsText\" [tooltip]=\"getTable(atag)?.values[sitem.content]\"\n                              [tooltipHtml]=\"sitem.htmlChilds|citation:[citationServ]\" [position]=\"'n'\">\n                        <span class=\"{{getTable(atag)?.type?.getCls(sitem.content)}} mylabel\">{{sitem.content}}</span>\n                    </ptooltip>\n                    <div *ngIf=\"confServ.comparison?.details.tooltipAsText\">\n                        <span class=\"{{getTable(atag)?.type?.getCls(sitem.content)}} mylabel\">{{sitem.content}}</span>\n                        <span class=\"tooltip-text\">\n                        <htmlcitationtext [description]=\"getTable(atag)?.values[sitem.content]\"\n                                          [citationServ]=\"citationServ\"\n                                          *ngIf=\"citationServ.check\"></htmlcitationtext>\n                        <htmlcitationtext [description]=\"sitem.htmlChilds\" [citationServ]=\"citationServ\"\n                                          *ngIf=\"citationServ.check\"></htmlcitationtext>\n                        </span>\n                    </div>\n                </template>\n            </p>\n        </pcard>\n    </template>\n\n    <pcard heading=\"Ratings\" *ngIf=\"data?.getRatings().length > 0\" style=\"display:block\">\n        <div class=\"card-content\">\n            <template ngFor let-item [ngForOf]=\"data?.getRatings()\">\n                <dl>\n                    <dt>\n                        <iicon icon=\"star\">{{item.stars}}</iicon>\n                    </dt>\n                    <dd>\n                        {{item.text}}\n                    </dd>\n                </dl>\n            </template>\n        </div>\n    </pcard>\n</div>";
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: block;\n    padding: 0;\n}\n\n.mylabel {\n    margin: 2px;\n    display: inline-block !important;\n    cursor: pointer;\n    font-size: 14px !important;\n    white-space: inherit;\n}\n\n.card-content {\n    padding: 0 16 16 16;\n    position: relative;\n}\n\npcard /deep/ .paper-header {\n    font-size: 18px;\n}\n\n.tooltip-text {\n    display: inline-table;\n}\n\n.tooltip-text /deep/ ul {\n    padding-left: 15px;\n}"
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3871,9 +3909,9 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	const core_1 = __webpack_require__(3);
-	const comparison_service_1 = __webpack_require__(48);
-	const comparison_citation_service_1 = __webpack_require__(50);
-	const citation_pipe_1 = __webpack_require__(54);
+	const comparison_service_1 = __webpack_require__(49);
+	const comparison_citation_service_1 = __webpack_require__(51);
+	const citation_pipe_1 = __webpack_require__(55);
 	let ComparisonFootnoteComponent = class ComparisonFootnoteComponent {
 	    constructor(citationPipe, citationServ, compServ) {
 	        this.citationPipe = citationPipe;
@@ -3921,7 +3959,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3972,7 +4010,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3987,12 +4025,12 @@ webpackJsonp([0],[
 	};
 	const core_1 = __webpack_require__(3);
 	const index_1 = __webpack_require__(31);
-	const comparison_config_service_1 = __webpack_require__(46);
-	const comparison_data_service_1 = __webpack_require__(47);
-	const comparison_service_1 = __webpack_require__(48);
-	const comparison_citation_service_1 = __webpack_require__(50);
-	const VersionInformation_1 = __webpack_require__(56);
-	var FileSaver = __webpack_require__(57);
+	const comparison_config_service_1 = __webpack_require__(47);
+	const comparison_data_service_1 = __webpack_require__(48);
+	const comparison_service_1 = __webpack_require__(49);
+	const comparison_citation_service_1 = __webpack_require__(51);
+	const VersionInformation_1 = __webpack_require__(57);
+	var FileSaver = __webpack_require__(58);
 	let ComparisonComponent = class ComparisonComponent {
 	    constructor(serv, dataServ, confServ, citationServ, cd) {
 	        this.serv = serv;
@@ -4094,8 +4132,8 @@ webpackJsonp([0],[
 	ComparisonComponent = __decorate([
 	    core_1.Component({
 	        selector: 'comparison',
-	        template: __webpack_require__(60),
-	        styles: [__webpack_require__(61)]
+	        template: __webpack_require__(61),
+	        styles: [__webpack_require__(62)]
 	    }), 
 	    __metadata('design:paramtypes', [(typeof (_b = typeof comparison_service_1.ComparisonService !== 'undefined' && comparison_service_1.ComparisonService) === 'function' && _b) || Object, (typeof (_c = typeof comparison_data_service_1.ComparisonDataService !== 'undefined' && comparison_data_service_1.ComparisonDataService) === 'function' && _c) || Object, (typeof (_d = typeof comparison_config_service_1.ComparisonConfigService !== 'undefined' && comparison_config_service_1.ComparisonConfigService) === 'function' && _d) || Object, (typeof (_e = typeof comparison_citation_service_1.ComparisonCitationService !== 'undefined' && comparison_citation_service_1.ComparisonCitationService) === 'function' && _e) || Object, (typeof (_f = typeof core_1.ChangeDetectorRef !== 'undefined' && core_1.ChangeDetectorRef) === 'function' && _f) || Object])
 	], ComparisonComponent);
@@ -4104,22 +4142,22 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports) {
 
 	"use strict";
 	class VersionInformation {
 	    constructor() {
-	        this.date = "2017-05-03";
-	        this.commit = "b240a6095a70fa854bea5f54f3cbec635a3f7034";
-	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/b240a6095a70fa854bea5f54f3cbec635a3f7034";
+	        this.date = "2017-05-04";
+	        this.commit = "618b8b8b622a6de6f31dfbc17823036a40a00ab6";
+	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/618b8b8b622a6de6f31dfbc17823036a40a00ab6";
 	    }
 	}
 	exports.VersionInformation = VersionInformation;
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* FileSaver.js
@@ -4305,7 +4343,7 @@ webpackJsonp([0],[
 	
 	if (typeof module !== "undefined" && module.exports) {
 	  module.exports.saveAs = saveAs;
-	} else if (("function" !== "undefined" && __webpack_require__(58) !== null) && (__webpack_require__(59) !== null)) {
+	} else if (("function" !== "undefined" && __webpack_require__(59) !== null) && (__webpack_require__(60) !== null)) {
 	  !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
 	    return saveAs;
 	  }.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -4313,14 +4351,14 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports) {
 
 	module.exports = function() { throw new Error("define cannot be used indirect"); };
 
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -4328,19 +4366,19 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports) {
 
 	module.exports = "<a href=\"{{confServ.comparison?.repository}}\" class=\"github-corner\">\n    <svg width=\"80\" height=\"80\" viewBox=\"0 0 250 250\"\n         style=\"cursor:pointer; fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;\">\n        <path d=\"M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z\"></path>\n        <path d=\"M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2\"\n              fill=\"currentColor\" style=\"transform-origin: 130px 106px;\" class=\"octo-arm\"></path>\n        <path d=\"M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z\"\n              fill=\"currentColor\" class=\"octo-body\"></path>\n    </svg>\n</a>\n\n<div class=\"container\">\n    <div class=\"page-header\">\n        <h1>{{confServ.comparison?.title}}\n            <small>{{confServ.comparison?.subtitle}}</small>\n        </h1>\n    </div>\n\n    <pcard class=\"large-paper-card\">\n        <div class=\"card-content\">\n            <htmlcitationtext [description]=\"confServ.description\" [citationServ]=\"citationServ\"\n                              *ngIf=\"citationServ.check\"></htmlcitationtext>\n        </div>\n    </pcard>\n\n    <pcard [heading]=\"confServ.comparison?.selecttitle\" class=\"large-paper-card\">\n        <div class=\"card-content\">\n            <template ngFor let-crit [ngForOf]=\"confServ.criteriaSet?.getCriteriaArray()\">\n                <div class=\"col-md-6\">\n                    <div class=\"form-group\">\n                        <ptooltip [tooltip]=\"crit.description\">\n                            <label>\n                                {{crit.name}}\n                                <span class=\"search-indicator\">({{crit.and_search ? \"match all\" : \"match one\"}})</span>\n                            </label>\n                        </ptooltip>\n                        <select2 [options]=\"crit.values\" [placeholder]=\"crit.placeholder\"\n                                 (result)=\"criteriaChanged($event, crit)\"></select2>\n                    </div>\n                </div>\n            </template>\n        </div>\n    </pcard>\n\n    <pcard heading=\"{{confServ.comparison?.tabletitle}}\" class=\"super-large-paper-card\">\n        <div class=\"card-content\">\n            <generictable [display]=\"confServ.tableDataSet\" [settings]=\"'true'\"\n                          [columns]=\"confServ.tableDataSet.getTableDataArray()\" [data]=\"dataServ.data\" [query]=\"query\"\n                          [displayTemplate]=\"confServ.comparison.displaytemplate\" [citationServ]=\"citationServ\"\n                          (settingsCallback)=\"showTableProperties()\" (showDetails)=\"showDetails($event)\"\n                          [(order)]=\"order\" [(orderOption)]=\"orderOption\"\n                          *ngIf=\"citationServ.check&&confServ.tableDataSet.ready\"\n                          [changeNum]=\"dataServ.getLength()+changed\"></generictable>\n        </div>\n    </pcard>\n\n    <pcard heading=\"References\" class=\"large-paper-card\" [hidden]=\"this.citationServ.references.length == 0\">\n        <div class=\"card-content\">\n            <referencestable [changeNum]=\"dataServ.getLength()+changed\" [citationServ]=\"citationServ\"></referencestable>\n        </div>\n    </pcard>\n\n</div>\n\n<pdialog #details>\n    <comparison-details [data]=\"activeRow\" *ngIf=\"detailsModal?.opened\"></comparison-details>\n</pdialog>\n\n<pdialog #settings>\n    <div class=\"pheader\">\n        <h2>Table Settings</h2>\n    </div>\n    <div class=\"col-md-12\">\n        <div class=\"col-md-6\">\n            <h5>Select Columns...</h5>\n            <pitem>\n                <pcheckbox [checked]=\"confServ.displayAll\" (checkedChange)=\"confServ.displayAllChange($event, this)\"\n                           [label]=\"confServ.displayAllName\"></pcheckbox>\n            </pitem>\n            <template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray()\">\n                <pitem>\n                    <pcheckbox [checked]=column.display (checkedChange)=\"confServ.displayChange(column,this)\"\n                               [label]=\"column.name\"></pcheckbox>\n                </pitem>\n            </template>\n        </div>\n        <div class=\"col-md-6\">\n            <h5>Other Settings...</h5>\n            <div *ngIf=\"confServ.comparison\">\n                <pitem>\n                    <pcheckbox [checked]=\"confServ.comparison.displaytemplate\" (checkedChange)=\"changeDisplayTemplate()\"\n                               [label]=\"'Display Template'\"></pcheckbox>\n                </pitem>\n                <pitem>\n                    <pcheckbox [checked]=\"confServ.comparison.displayall\" (checkedChange)=\"changeDisplayAll()\"\n                               [label]=\"'Show Uncompared'\"></pcheckbox>\n                </pitem>\n                <h6>Latex</h6>\n                <pitem>\n                    <pbutton (click)=\"downloadLatexTable()\">Download Table</pbutton>\n                </pitem>\n                <pitem>\n                    <pcheckbox [(checked)]=\"showTable\" [label]=\"'Display Latex Table'\"></pcheckbox>\n                </pitem>\n                <pitem>\n                    <pcheckbox [(checked)]=\"showTableTooltips\" [label]=\"'Show Tooltips'\"></pcheckbox>\n                </pitem>\n                <pitem>\n                    <pcheckbox [(checked)]=\"tableTooltipsAsFootnotes\"\n                               [label]=\"'Display tooltip text in Footnotes'\"></pcheckbox>\n                </pitem>\n                <h6>Details page</h6>\n                <pitem>\n                    <pcheckbox [(checked)]=\"confServ.comparison?.details.tooltipAsText\"\n                               [label]=\"'Display tooltip text next to labels in the details page'\"></pcheckbox>\n                </pitem>\n            </div>\n        </div>\n    </div>\n</pdialog>\n\n\n<div *ngIf=\"showTable\" class=\"container\" #latextable>\n    <!-- @formatter:off -->\n<pcard heading=\"Latex Table\" class=\"large-paper-card\"><div class=\"card-content\" style=\"overflow: auto;\"><!--\n-->%\\usepackage&#123;calc&#125;<br/>\n%\\usepackage&#123;booktabs&#125;<br/>\n%\\usepackage&#123;url&#125;<br/>\n%\\usepackage&#123;hyperref&#125;<br/>\n%\\usepackage&#123;footnote&#125;<br/>\n%\\usepackage&#123;scrextend&#125;<br/>\n%\\makesavenoteenv&#123;tabular&#125;<br/>\n%\\makesavenoteenv&#123;tabule&#125;<br/>\n\\begin&#123;tabular&#125;&#123;&#64;&#123;&#125; <template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray() | tablefilter\">p&#123;\\linewidth/{{(confServ.tableDataSet?.getTableDataArray() | tablefilter).length}}&#125; </template>&#64;&#123;&#125;&#125;<br/>\n\\toprule<br/>\n<template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray() | tablefilter\" let-last=\"last\">{{column.name}} <!--\n    --><template [ngIf]=\"!last\">&#38; </template><!--\n    --><template [ngIf]=\"last\">\\\\<br/></template>\n</template>\\midrule<br/>\n<!-- iterate over data rows\n--><template ngFor let-dat [ngForOf]=\"dataServ.data | orderBy: [order,orderOption] | datafilter: [query,confServ.comparison?.displaytemplate]\"><!--\n    iterate over data columns \n    --><template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray() | tablefilter\" let-last=\"last\"><!--\n        print url \n        --><template [ngIf]=\"column.type?.tag==='url'\">{{dat.getProperty(column.tag).text}}</template><!--\n        print text \n        --><template [ngIf]=\"column.type?.tag==='text'\"><div [innerHtml]=\"dat.getProperty(column.tag).text|citation:[citationServ, true]|sanitizeHtml\"></div></template><!--\n        print labels \n        --><template [ngIf]=\"column.type?.tag==='label'\"><!--\n            iterate over labels \n            --><template ngFor let-sitem [ngForOf]=\"dat.getPropertyListItems(column.tag)\" let-lastItem=\"last\" *ngIf=\"column.type?.labelCls\"><!--\n                print label \n                -->{{sitem.content}}<!--\n                    tooltip\n                    --><template [ngIf]=\"sitem.latexChilds\"><!--\n                        print tooltips?\n                        --><template [ngIf]=\"showTableTooltips\"><!--\n                            print tooltips in footnotes\n                            --><comparison-footnote [footnote]=\"sitem.latexChilds\" *ngIf=\"tableTooltipsAsFootnotes\"></comparison-footnote><!--\n                            print tooltips after labels    \n                            --><div [innerHtml]=\"sitem.latexChilds|citation: [this.citationServ, true]|sanitizeHtml\"></div><!--\n                        --></template><!-- \n                    --></template><!-- \n                    label seperator --><template [ngIf]=\"!lastItem\">, </template><!--\n            --></template><!--\n        --></template><template [ngIf]=\"!last\"> &#38; </template><template [ngIf]=\"last\">\\\\<br/></template><!--\n    --></template>\n</template>\\bottomrule<br/>\n\\end&#123;tabular&#125;<br/>\n<template [ngIf]=\"tableTooltipsAsFootnotes\">\n\\newcommand\\snum&#123;0&#125;\n<template ngFor let-item [ngForOf]=\"serv.getFootnotes()\"><div [innerHtml]=\"item|sanitizeHtml\"></div>\n</template></template></div></pcard>\n    <!-- @formatter:on -->\n</div>\n\n<div class=\"footer\">\n    <div class=\"container\">\n        This is an <a href=\"http://ultimate-comparisons.github.io/\">Ultimate Comparison</a> | content licensed under <a\n            rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\"><img\n            alt=\"Creative Commons License CC-BY-SA 4.0\" style=\"border-width:0\"\n            src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\"/></a> | <a [href]=\"getVersionInformation()?.link\">{{getVersionInformation()?.commit?.substr(0, 8) + \" (\" + (getVersionInformation()?.date | date: (\"yyyy-MM-dd\")) + \")\"}}</a>\n    </div>\n</div>";
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports) {
 
-	module.exports = "comparison {\n    min-height: 100%;\n    position: relative;\n    display: block;\n}\n\n.description > :first-child {\n    margin-top: 0;\n}\n\n.description > :last-child {\n    margin-bottom: 0;\n}\n\n.card-content {\n    padding: 16px;\n    position: relative;\n}\n\n.footer {\n    position: relative;\n    bottom: 0;\n    width: 100%;\n    height: 50px;\n    background-color: #f5f5f5;\n}\n\n.footer > .container {\n    padding: 10px;\n}\n\n.ltable {\n    display: none;\n}\n\n.large-paper-card {\n    width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n.super-large-paper-card {\n    min-width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n/* github corner */\n.github-corner {\n    z-index: 1000;\n}\n\n.github-corner svg {\n    z-index: 999;\n}\n\n.github-corner:hover .octo-arm {\n    animation: octocat-wave 560ms ease-in-out;\n}\n\n@keyframes octocat-wave {\n    0%,\n    100% {\n        transform: rotate(0);\n    }\n    20%,\n    60% {\n        transform: rotate(-25deg);\n    }\n    40%,\n    80% {\n        transform: rotate(10deg);\n    }\n}\n\n@media (max-width: 500px) {\n    .github-corner:hover .octo-arm {\n        animation: none;\n    }\n\n    .github-corner .octo-arm {\n        animation: octocat-wave 560ms ease-in-out;\n    }\n}\n\n.search-indicator {\n    color: rgba(255, 0, 0, 0.52);\n    font-size: 8pt;\n    opacity: 80;\n}"
+	module.exports = "comparison {\n    min-height: 100%;\n    position: relative;\n    display: block;\n}\n\n.description > :first-child {\n    margin-top: 0;\n}\n\n.description > :last-child {\n    margin-bottom: 0;\n}\n\n.card-content {\n    padding: 16px;\n    position: relative;\n}\n\n.footer {\n    position: relative;\n    bottom: 0;\n    width: 100%;\n    height: 50px;\n    background-color: #f5f5f5;\n}\n\n.footer > .container {\n    padding: 10px;\n}\n\npdialog {\n    z-index: 5000;\n}\n\n.floatThead-container {\n    z-index: 3000;\n}\n\n.ltable {\n    display: none;\n}\n\n.large-paper-card {\n    width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n.super-large-paper-card {\n    min-width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n/* github corner */\n.github-corner {\n    z-index: 1000;\n}\n\n.github-corner svg {\n    z-index: 999;\n}\n\n.github-corner:hover .octo-arm {\n    animation: octocat-wave 560ms ease-in-out;\n}\n\n@keyframes octocat-wave {\n    0%,\n    100% {\n        transform: rotate(0);\n    }\n    20%,\n    60% {\n        transform: rotate(-25deg);\n    }\n    40%,\n    80% {\n        transform: rotate(10deg);\n    }\n}\n\n@media (max-width: 500px) {\n    .github-corner:hover .octo-arm {\n        animation: none;\n    }\n\n    .github-corner .octo-arm {\n        animation: octocat-wave 560ms ease-in-out;\n    }\n}\n\n.search-indicator {\n    color: rgba(255, 0, 0, 0.52);\n    font-size: 8pt;\n    opacity: 80;\n}"
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4355,11 +4393,11 @@ webpackJsonp([0],[
 	};
 	const core_1 = __webpack_require__(3);
 	const platform_browser_1 = __webpack_require__(21);
-	const data_pipe_1 = __webpack_require__(63);
-	const table_pipe_1 = __webpack_require__(64);
-	const orderby_pipe_1 = __webpack_require__(65);
-	const citation_pipe_1 = __webpack_require__(54);
-	const sanitizer_pipe_1 = __webpack_require__(66);
+	const data_pipe_1 = __webpack_require__(64);
+	const table_pipe_1 = __webpack_require__(65);
+	const orderby_pipe_1 = __webpack_require__(66);
+	const citation_pipe_1 = __webpack_require__(55);
+	const sanitizer_pipe_1 = __webpack_require__(67);
 	let PipesModule = class PipesModule {
 	};
 	PipesModule = __decorate([
@@ -4395,7 +4433,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4471,7 +4509,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4501,7 +4539,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4538,6 +4576,18 @@ webpackJsonp([0],[
 	                if (this.params.option[i] == 0)
 	                    continue;
 	                let desc = this.params.option[i] == -1 ? true : false;
+	                if (a.properties[this.params.value[i]] === undefined && b.properties[this.params.value[i]] === undefined) {
+	                    // both elements lack the attribute => equivalent
+	                    return 0;
+	                }
+	                else if (a.properties[this.params.value[i]] === undefined) {
+	                    // a lacks the attribute => it is always below the others
+	                    return 1;
+	                }
+	                else if (b.properties[this.params.value[i]] === undefined) {
+	                    // b lacks the attribute => it is always below the others
+	                    return -1;
+	                }
 	                let pA = a[this.params.value[i]] ? a[this.params.value[i]] : a.properties[this.params.value[i]].plain;
 	                let pB = b[this.params.value[i]] ? b[this.params.value[i]] : b.properties[this.params.value[i]].plain;
 	                let comparison = !desc ? OrderByPipe_1._comparator(pA, pB) : -OrderByPipe_1._comparator(pA, pB);
@@ -4560,7 +4610,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4581,7 +4631,7 @@ webpackJsonp([0],[
 	    }
 	    transform(v) {
 	        let html = this._sanitizer.bypassSecurityTrustHtml(v);
-	        if (html.hasOwnProperty("changingThisBreaksApplicationSecurity") && html["changingThisBreaksApplicationSecurity"].startsWith("<p>")) {
+	        if (html.hasOwnProperty("changingThisBreaksApplicationSecurity") && /^<p>\d+\./.test(html["changingThisBreaksApplicationSecurity"])) {
 	            html["changingThisBreaksApplicationSecurity"] = "<p>" + html["changingThisBreaksApplicationSecurity"].substr(html["changingThisBreaksApplicationSecurity"].indexOf('.') + 1);
 	        }
 	        return html;
@@ -4599,7 +4649,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4614,8 +4664,8 @@ webpackJsonp([0],[
 	};
 	const core_1 = __webpack_require__(3);
 	const platform_browser_1 = __webpack_require__(21);
-	const angular2_select_1 = __webpack_require__(68);
-	const select2_component_1 = __webpack_require__(83);
+	const angular2_select_1 = __webpack_require__(69);
+	const select2_component_1 = __webpack_require__(84);
 	let InputModule = class InputModule {
 	};
 	InputModule = __decorate([
@@ -4639,26 +4689,26 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(69));
+	__export(__webpack_require__(70));
 
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(3);
 	var common_1 = __webpack_require__(22);
-	var forms_1 = __webpack_require__(70);
-	var select_component_1 = __webpack_require__(74);
-	var select_dropdown_component_1 = __webpack_require__(80);
+	var forms_1 = __webpack_require__(71);
+	var select_component_1 = __webpack_require__(75);
+	var select_dropdown_component_1 = __webpack_require__(81);
 	var SelectModule = (function () {
 	    function SelectModule() {
 	    }
@@ -4685,7 +4735,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/**
@@ -4694,7 +4744,7 @@ webpackJsonp([0],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
-	     true ? factory(exports, __webpack_require__(3), __webpack_require__(71), __webpack_require__(4), __webpack_require__(5), __webpack_require__(72)) :
+	     true ? factory(exports, __webpack_require__(3), __webpack_require__(72), __webpack_require__(4), __webpack_require__(5), __webpack_require__(73)) :
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/core', 'rxjs/operator/toPromise', 'rxjs/Subject', 'rxjs/Observable', 'rxjs/observable/fromPromise'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.forms = global.ng.forms || {}),global.ng.core,global.Rx.Observable.prototype,global.Rx,global.Rx,global.Rx.Observable));
 	}(this, function (exports,_angular_core,rxjs_operator_toPromise,rxjs_Subject,rxjs_Observable,rxjs_observable_fromPromise) { 'use strict';
@@ -10455,18 +10505,18 @@ webpackJsonp([0],[
 	}));
 
 /***/ }),
-/* 71 */,
 /* 72 */,
 /* 73 */,
-/* 74 */
+/* 74 */,
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(3);
-	var forms_1 = __webpack_require__(70);
-	var select_component_css_1 = __webpack_require__(75);
-	var select_component_html_1 = __webpack_require__(76);
-	var option_list_1 = __webpack_require__(77);
+	var forms_1 = __webpack_require__(71);
+	var select_component_css_1 = __webpack_require__(76);
+	var select_component_html_1 = __webpack_require__(77);
+	var option_list_1 = __webpack_require__(78);
 	exports.SELECT_VALUE_ACCESSOR = {
 	    provide: forms_1.NG_VALUE_ACCESSOR,
 	    useExisting: core_1.forwardRef(function () { return SelectComponent; }),
@@ -10899,7 +10949,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -10907,7 +10957,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -10915,12 +10965,12 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var option_1 = __webpack_require__(78);
-	var diacritics_1 = __webpack_require__(79);
+	var option_1 = __webpack_require__(79);
+	var diacritics_1 = __webpack_require__(80);
 	var OptionList = (function () {
 	    function OptionList(options) {
 	        /* Consider using these for performance improvement. */
@@ -11134,7 +11184,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -11171,7 +11221,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -12032,13 +12082,13 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(3);
-	var select_dropdown_component_css_1 = __webpack_require__(81);
-	var select_dropdown_component_html_1 = __webpack_require__(82);
+	var select_dropdown_component_css_1 = __webpack_require__(82);
+	var select_dropdown_component_html_1 = __webpack_require__(83);
 	var SelectDropdownComponent = (function () {
 	    function SelectDropdownComponent() {
 	        this.close = new core_1.EventEmitter();
@@ -12175,7 +12225,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -12183,7 +12233,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -12191,7 +12241,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12244,9 +12294,9 @@ webpackJsonp([0],[
 	Select2Component = __decorate([
 	    core_1.Component({
 	        selector: 'select2',
-	        template: __webpack_require__(84),
+	        template: __webpack_require__(85),
 	        styles: [
-	            __webpack_require__(85)
+	            __webpack_require__(86)
 	        ],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
@@ -12257,19 +12307,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports) {
 
 	module.exports = "<ng-select\n        [options]=\"options\"\n        [multiple]=true\n        (selected)=\"select($event)\"\n        (deselected)=\"deSelect($event)\"\n        placeholder=\"{{placeholder}}\">\n</ng-select>\n\n";
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports) {
 
-	module.exports = ":host /deep/ ng-select {\n    display: table !important;\n    table-layout: fixed !important;\n    width: 100% !important;\n}\n\n:host /deep/ input {\n    width: 100%;\n}\n\n:host /deep/ .below {\n    border: 0px !important;\n    border-bottom: 1px solid #aaa !important;\n    border-radius: 0px !important;\n}\n\n:host /deep/ .option {\n    background-color: #777 !important;\n    color: #fff !important;\n    font-weight: bold;\n    border-radius: 4px !important;\n}\n\n:host /deep/ .deselect-option {\n    color: #fff !important;\n}"
+	module.exports = ":host /deep/ ng-select {\n    display: table !important;\n    table-layout: fixed !important;\n    width: 100% !important;\n}\n\n:host /deep/ div {\n    z-index: 3001;\n}\n\n:host /deep/ input {\n    width: 100%;\n}\n\n:host /deep/ .below {\n    border: 0px !important;\n    border-bottom: 1px solid #aaa !important;\n    border-radius: 0px !important;\n}\n\n:host /deep/ .option {\n    background-color: #777 !important;\n    color: #fff !important;\n    font-weight: bold;\n    border-radius: 4px !important;\n}\n\n:host /deep/ .deselect-option {\n    color: #fff !important;\n}"
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12284,11 +12334,11 @@ webpackJsonp([0],[
 	};
 	const core_1 = __webpack_require__(3);
 	const platform_browser_1 = __webpack_require__(21);
-	const pipes_module_1 = __webpack_require__(62);
-	const polymer_module_1 = __webpack_require__(87);
-	const html_citation_text_component_1 = __webpack_require__(112);
-	const generic_table_component_1 = __webpack_require__(115);
-	const references_table_component_1 = __webpack_require__(118);
+	const pipes_module_1 = __webpack_require__(63);
+	const polymer_module_1 = __webpack_require__(88);
+	const html_citation_text_component_1 = __webpack_require__(113);
+	const generic_table_component_1 = __webpack_require__(116);
+	const references_table_component_1 = __webpack_require__(119);
 	let OutputModule = class OutputModule {
 	};
 	OutputModule = __decorate([
@@ -12317,7 +12367,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12332,14 +12382,14 @@ webpackJsonp([0],[
 	};
 	const core_1 = __webpack_require__(3);
 	const platform_browser_1 = __webpack_require__(21);
-	const paper_card_component_1 = __webpack_require__(88);
-	const iron_icon_component_1 = __webpack_require__(91);
-	const tooltip_component_1 = __webpack_require__(94);
-	const paper_icon_button_component_1 = __webpack_require__(97);
-	const paper_button_component_1 = __webpack_require__(100);
-	const paper_dialog_component_1 = __webpack_require__(103);
-	const paper_item_component_1 = __webpack_require__(106);
-	const paper_checkbox_component_1 = __webpack_require__(109);
+	const paper_card_component_1 = __webpack_require__(89);
+	const iron_icon_component_1 = __webpack_require__(92);
+	const tooltip_component_1 = __webpack_require__(95);
+	const paper_icon_button_component_1 = __webpack_require__(98);
+	const paper_button_component_1 = __webpack_require__(101);
+	const paper_dialog_component_1 = __webpack_require__(104);
+	const paper_item_component_1 = __webpack_require__(107);
+	const paper_checkbox_component_1 = __webpack_require__(110);
 	let PolymerModule = class PolymerModule {
 	};
 	PolymerModule = __decorate([
@@ -12374,7 +12424,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12397,8 +12447,8 @@ webpackJsonp([0],[
 	PaperCardComponent = __decorate([
 	    core_1.Component({
 	        selector: 'pcard',
-	        template: __webpack_require__(89),
-	        styles: [__webpack_require__(90)],
+	        template: __webpack_require__(90),
+	        styles: [__webpack_require__(91)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -12407,19 +12457,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"paper-header\" *ngIf=\"heading\">{{heading}}</div>\n<ng-content></ng-content>";
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports) {
 
 	module.exports = "@import url(\"https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic\");\n@import url(\"https://fonts.googleapis.com/css?family=Roboto+Mono:400,700\");\n\n:host {\n    display: inline-block;\n    position: relative;\n    box-sizing: border-box;\n    font-family: 'Roboto', 'Noto', sans-serif;\n    border-radius: 2px;\n    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),\n    0 1px 5px 0 rgba(0, 0, 0, 0.12),\n    0 3px 1px -2px rgba(0, 0, 0, 0.2);\n    margin: 10px;\n}\n\n.paper-header {\n    position: relative;\n    border-top-left-radius: inherit;\n    border-top-right-radius: inherit;\n    overflow: hidden;\n    padding: 16px;\n    font-size: 24px;\n    font-weight: 400;\n    color: var(--paper-card-header-color, #000);\n}\n\n:host /deep/ dl {\n    width: 100%;\n    overflow: hidden;\n    padding: 0;\n    margin: 0\n}\n\n:host /deep/ dt {\n    float: left;\n    width: 40px;\n    padding: 0;\n    margin: 0\n}\n\n:host /deep/ dd {\n    float: left;\n    padding: 0;\n    margin: 0\n}"
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12442,8 +12492,8 @@ webpackJsonp([0],[
 	IronIconComponent = __decorate([
 	    core_1.Component({
 	        selector: 'iicon',
-	        template: __webpack_require__(92),
-	        styles: [__webpack_require__(93)],
+	        template: __webpack_require__(93),
+	        styles: [__webpack_require__(94)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -12452,19 +12502,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports) {
 
 	module.exports = "<ng-content></ng-content>\n<svg viewBox=\"0 0 24 24\">\n    <defs>\n        <g id=\"keyboard-arrow-down\">\n            <path d=\"M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z\"/>\n        </g>\n        <g id=\"keyboard-arrow-up\">\n            <path d=\"M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z\"/>\n        </g>\n        <g id=\"settings\">\n            <path d=\"M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z\"/>\n        </g>\n        <g id=\"info\">\n            <path d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z\"/>\n        </g>\n        <g id=\"star\">\n            <path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/>\n        </g>\n    </defs>\n    <use [attr.xlink:href]=\"'#'+icon\"/>\n</svg>";
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: -ms-inline-flexbox;\n    display: -webkit-inline-flex;\n    display: inline-flex;\n\n    -ms-flex-align: center;\n    -webkit-align-items: center;\n    align-items: center;\n    -ms-flex-pack: center;\n    -webkit-justify-content: center;\n    justify-content: center;\n\n    position: relative;\n\n    vertical-align: middle;\n\n    fill: currentcolor;\n    stroke: none;\n\n    width: 24px;\n    height: 24px;\n}\n\nsvg {\n    pointer-events: none;\n    display: block;\n    width: 100%;\n    height: 100%;\n}"
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12510,8 +12560,8 @@ webpackJsonp([0],[
 	TooltipComponent = __decorate([
 	    core_1.Component({
 	        selector: 'ptooltip',
-	        template: __webpack_require__(95),
-	        styles: [__webpack_require__(96)],
+	        template: __webpack_require__(96),
+	        styles: [__webpack_require__(97)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [(typeof (_a = typeof platform_browser_1.DomSanitizer !== 'undefined' && platform_browser_1.DomSanitizer) === 'function' && _a) || Object])
@@ -12521,19 +12571,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports) {
 
 	module.exports = "<ng-content></ng-content>\n<div class=\"ptooltiptext\" *ngIf=\"tooltip&&tooltip!=''||tooltipHtml&&tooltipHtml!=''\">\n    {{tooltip}}\n    <div [innerHtml]=\"_sanitizer.bypassSecurityTrustHtml(tooltipHtml)\"></div>\n</div>";
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports) {
 
-	module.exports = ":host {\n    position: relative;\n    display: inline-block;\n}\n\n:host .ptooltiptext {\n    visibility: hidden;\n    min-width: 60px;\n    background-color: black;\n    color: #fff;\n    text-align: center;\n    padding: 5px;\n    border-radius: 6px;\n\n    position: absolute;\n    z-index: 1;\n\n    white-space: nowrap;\n\n    transition-property: visibility;\n    transition-duration: 0.1s;\n}\n\n:host .ptooltiptext /deep/ ul, :host .ptooltiptext /deep/ ol {\n    text-align: left;\n    padding-left: 20px;\n}\n\n:host:hover .ptooltiptext {\n    visibility: visible;\n}\n\n:host .ptooltiptext::after {\n    content: \" \";\n    position: absolute;\n    border-width: 5px;\n    border-style: solid;\n}\n\n/* north */\n:host.n .ptooltiptext {\n    bottom: 115%;\n    left: -25%;\n    margin-left: 1em;\n    margin-top: 0;\n}\n\n:host.n .ptooltiptext::after {\n    top: 100%;\n    left: 1em;\n    margin-left: -5px;\n    border-color: black transparent transparent transparent;\n}\n\n/* south */\n:host.s .ptooltiptext {\n    top: 115%;\n    left: -25%;\n    margin-left: 1em;\n}\n\n:host.s .ptooltiptext::after {\n    bottom: 100%;\n    left: 1em;\n    margin-left: -5px;\n    border-color: transparent transparent black transparent;\n}\n\n/* east */\n:host.e .ptooltiptext {\n    top: 0;\n    left: 100%;\n    margin-left: 5px;\n}\n\n:host.e .ptooltiptext::after {\n    top: 1em;\n    right: 100%; /* To the left of the tooltip */\n    margin-top: -5px;\n    border-color: transparent black transparent transparent;\n}\n\n/* west */\n:host.w .ptooltiptext {\n    top: 0;\n    right: 100%;\n    margin-right: 5px;\n}\n\n:host.w .ptooltiptext::after {\n    top: 1em;\n    left: 100%;\n    margin-top: -5px;\n    border-color: transparent transparent transparent black;\n}   \n\n"
+	module.exports = ":host {\n    position: relative;\n    display: inline-block;\n}\n\n:host .ptooltiptext {\n    visibility: hidden;\n    min-width: 60px;\n    background-color: black;\n    color: #fff;\n    text-align: center;\n    padding: 5px;\n    border-radius: 6px;\n\n    position: absolute;\n    z-index: 4999;\n\n    white-space: nowrap;\n\n    transition-property: visibility;\n    transition-duration: 0.1s;\n}\n\n:host .ptooltiptext /deep/ a {\n    color: lightgray;\n}\n\n:host .ptooltiptext /deep/ ul, :host .ptooltiptext /deep/ ol {\n    text-align: left;\n    padding-left: 20px;\n}\n\n:host:hover .ptooltiptext {\n    visibility: visible;\n}\n\n:host .ptooltiptext::after {\n    content: \" \";\n    position: absolute;\n    border-width: 5px;\n    border-style: solid;\n}\n\n/* north */\n:host.n .ptooltiptext {\n    bottom: 115%;\n    left: -25%;\n    margin-left: 1em;\n    margin-top: 0;\n}\n\n:host.n .ptooltiptext::after {\n    top: 100%;\n    left: 1em;\n    margin-left: -5px;\n    border-color: black transparent transparent transparent;\n}\n\n/* south */\n:host.s .ptooltiptext {\n    top: 115%;\n    left: -25%;\n    margin-left: 1em;\n}\n\n:host.s .ptooltiptext::after {\n    bottom: 100%;\n    left: 1em;\n    margin-left: -5px;\n    border-color: transparent transparent black transparent;\n}\n\n/* east */\n:host.e .ptooltiptext {\n    top: 0;\n    left: 100%;\n    margin-left: 5px;\n}\n\n:host.e .ptooltiptext::after {\n    top: 1em;\n    right: 100%; /* To the left of the tooltip */\n    margin-top: -5px;\n    border-color: transparent black transparent transparent;\n}\n\n/* west */\n:host.w .ptooltiptext {\n    top: 0;\n    right: 100%;\n    margin-right: 5px;\n}\n\n:host.w .ptooltiptext::after {\n    top: 1em;\n    left: 100%;\n    margin-top: -5px;\n    border-color: transparent transparent transparent black;\n}   \n\n"
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12560,8 +12610,8 @@ webpackJsonp([0],[
 	PaperIconButtonComponent = __decorate([
 	    core_1.Component({
 	        selector: 'picon-button',
-	        template: __webpack_require__(98),
-	        styles: [__webpack_require__(99)],
+	        template: __webpack_require__(99),
+	        styles: [__webpack_require__(100)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -12570,19 +12620,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports) {
 
 	module.exports = "<ptooltip [tooltip]=\"title\" [position]=\"'w'\">\n    <iicon [icon]=\"icon\"></iicon>\n</ptooltip>\n";
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: inline-block;\n    position: relative;\n    padding: 3px;\n    outline: none;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    cursor: pointer;\n    z-index: 0;\n    line-height: 1;\n\n    width: 30px;\n    height: 30px;\n\n    box-sizing: border-box !important;\n}"
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12605,8 +12655,8 @@ webpackJsonp([0],[
 	PaperButtonComponent = __decorate([
 	    core_1.Component({
 	        selector: 'pbutton',
-	        template: __webpack_require__(101),
-	        styles: [__webpack_require__(102)],
+	        template: __webpack_require__(102),
+	        styles: [__webpack_require__(103)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -12615,19 +12665,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, exports) {
 
 	module.exports = "{{text}}\n<ng-content></ng-content>";
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    color: #3f51b5;\n    display: inline-block;\n    position: relative;\n    box-sizing: border-box;\n    min-width: 5.14em;\n    margin: 0 0.29em;\n    background: transparent;\n    text-align: center;\n    font: inherit;\n    text-transform: uppercase;\n    outline-width: 0;\n    border-radius: 3px;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    -webkit-user-select: none;\n    cursor: pointer;\n    z-index: 0;\n    padding: 0.7em 0.57em;\n\n    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),\n    0 1px 5px 0 rgba(0, 0, 0, 0.12),\n    0 3px 1px -2px rgba(0, 0, 0, 0.2);\n\n    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);\n}\n\n:host:active {\n    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),\n    0 3px 14px 2px rgba(0, 0, 0, 0.12),\n    0 5px 5px -3px rgba(0, 0, 0, 0.4);\n}"
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12676,8 +12726,8 @@ webpackJsonp([0],[
 	PaperDialogComponent = __decorate([
 	    core_1.Component({
 	        selector: 'pdialog',
-	        template: __webpack_require__(104),
-	        styles: [__webpack_require__(105)]
+	        template: __webpack_require__(105),
+	        styles: [__webpack_require__(106)]
 	    }), 
 	    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _b) || Object])
 	], PaperDialogComponent);
@@ -12686,19 +12736,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"dialog\" *ngIf=\"opened\">\n    <ng-content></ng-content>\n    <div class=\"buttons\">\n        <pbutton (click)=\"close()\">Close</pbutton>\n    </div>\n</div>\n";
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    position: fixed;\n    overflow-x: hidden;\n    overflow-y: auto;\n    top: 0;\n    right: 0;\n    left: 0;\n    bottom: 0;\n    display: none;\n    z-index: 2000;\n    background: rgba(0, 0, 0, 0.5);\n}\n\n@media (min-width: 992px) {\n    .dialog {\n        width: 900px !important;\n    }\n}\n\n@media (min-width: 768px) and (max-width: 992px) {\n    .dialog {\n        width: 600px !important;\n    }\n}\n\n@media (max-width: 660px) {\n    .dialog {\n        width: 90% !important;\n    }\n}\n\n.dialog {\n    max-height: inherit !important;\n    position: relative !important;\n    border-radius: 5px;\n    background: #ffffff;\n    color: #212121;\n    font-family: 'Roboto', 'Noto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    font-size: 14px;\n    font-weight: 400;\n    line-height: 20px;\n    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);\n    margin-top: 25px;\n    margin-bottom: 60px;\n    margin-right: auto;\n    margin-left: auto;\n    max-width: 90%;\n}\n\n.buttons {\n    color: #3f51b5;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n\n    -ms-flex-direction: row;\n    -webkit-flex-direction: row;\n    flex-direction: row;\n    -ms-flex-pack: end;\n    -webkit-justify-content: flex-end;\n    justify-content: flex-end;\n\n    position: relative;\n    padding: 8px;\n    margin: 0;\n}\n\n:host /deep/ .pheader {\n    border-bottom: 1px solid #eee;\n\n    padding: 15 15 8 15;\n    margin: 0 0 20 0;\n}\n\n:host /deep/ .pheader h2 {\n    font-family: 'Roboto', 'Noto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    white-space: nowrap;\n    overflow: visible;\n    text-overflow: ellipsis;\n    font-size: 20px;\n    font-weight: 500;\n    line-height: 28px;\n    margin: 0;\n}"
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12717,8 +12767,8 @@ webpackJsonp([0],[
 	PaperItemComponent = __decorate([
 	    core_1.Component({
 	        selector: 'pitem',
-	        template: __webpack_require__(107),
-	        styles: [__webpack_require__(108)],
+	        template: __webpack_require__(108),
+	        styles: [__webpack_require__(109)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -12727,19 +12777,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, exports) {
 
 	module.exports = "<ng-content></ng-content>";
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: block;\n    position: relative;\n    padding: 0px 16px;\n}\n\n:host(.item-selected) {\n    font-weight: bold;\n}"
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12807,8 +12857,8 @@ webpackJsonp([0],[
 	PaperCheckboxComponent = __decorate([
 	    core_1.Component({
 	        selector: 'pcheckbox',
-	        template: __webpack_require__(110),
-	        styles: [__webpack_require__(111)],
+	        template: __webpack_require__(111),
+	        styles: [__webpack_require__(112)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [(typeof (_b = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _b) || Object, (typeof (_c = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _c) || Object])
@@ -12818,19 +12868,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"pcheckbox\">\n    <div class=\"pcheckmark\" *ngIf=\"checked\"></div>\n</div>\n<div class=\"plabel\">{{label}}</div>";
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: inline-block;\n    white-space: nowrap;\n    cursor: pointer;\n\n    position: relative;\n}\n\n:host:focus {\n    outline: none;\n}\n\n.pcheckbox {\n    box-sizing: border-box;\n    height: 18px;\n    width: 18px;\n    border: solid 2px;\n    border-radius: 2px;\n    pointer-events: none;\n    -webkit-transition: background-color 140ms, border-color 140ms;\n    transition: background-color 140ms, border-color 140ms;\n    display: inline-block;\n    position: relative;\n    vertical-align: middle;\n}\n\n.pcheckmark {\n    position: absolute;\n    width: 36%;\n    height: 70%;\n    border-style: solid;\n    border-top: none;\n    border-left: none;\n    transform-origin: 97% 86%;\n    -webkit-transform-origin: 97% 86%;\n    transform: rotate(45deg);\n    border-right-width: calc(2 / 15 * 18px);\n    border-bottom-width: calc(2 / 15 * 18px);\n    border-color: white;\n}\n\n.plabel {\n    position: relative;\n    display: inline-block;\n    vertical-align: middle;\n    white-space: normal;\n    pointer-events: none;\n    padding-left: 8px;\n}"
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12844,8 +12894,8 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	const core_1 = __webpack_require__(3);
-	const comparison_citation_service_1 = __webpack_require__(50);
-	const comparison_service_1 = __webpack_require__(48);
+	const comparison_citation_service_1 = __webpack_require__(51);
+	const comparison_service_1 = __webpack_require__(49);
 	let HtmlCitationTextComponent = class HtmlCitationTextComponent {
 	    constructor(serv) {
 	        this.serv = serv;
@@ -12868,8 +12918,8 @@ webpackJsonp([0],[
 	HtmlCitationTextComponent = __decorate([
 	    core_1.Component({
 	        selector: 'htmlcitationtext',
-	        template: __webpack_require__(113),
-	        styles: [__webpack_require__(114)],
+	        template: __webpack_require__(114),
+	        styles: [__webpack_require__(115)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [(typeof (_b = typeof comparison_service_1.ComparisonService !== 'undefined' && comparison_service_1.ComparisonService) === 'function' && _b) || Object])
@@ -12879,19 +12929,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div [innerHtml]=\"makeMarkdown(description) | citation: [citationServ] | sanitizeHtml\" class=\"'description'\"\n     *ngIf=\"description\"></div>\n        ";
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: block;\n}\n\n.description > :first-child {\n    margin-top: 0;\n}\n\n.description > :last-child {\n    margin-bottom: 0;\n}"
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12905,12 +12955,14 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	const core_1 = __webpack_require__(3);
-	const comparison_citation_service_1 = __webpack_require__(50);
-	const comparison_config_service_1 = __webpack_require__(46);
+	const comparison_citation_service_1 = __webpack_require__(51);
+	const comparison_config_service_1 = __webpack_require__(47);
+	const platform_browser_1 = __webpack_require__(21);
 	let GenericTableComponent = class GenericTableComponent {
-	    constructor(ar, confServ) {
+	    constructor(ar, confServ, sanitization) {
 	        this.ar = ar;
 	        this.confServ = confServ;
+	        this.sanitization = sanitization;
 	        this.counter = 0;
 	        this.display = false;
 	        this.settings = false;
@@ -12978,6 +13030,9 @@ webpackJsonp([0],[
 	        }
 	        return val;
 	    }
+	    getColor(column, label) {
+	        return this.sanitization.bypassSecurityTrustStyle(column.type.colors.getColor(label));
+	    }
 	};
 	__decorate([
 	    core_1.Input(), 
@@ -13038,30 +13093,30 @@ webpackJsonp([0],[
 	GenericTableComponent = __decorate([
 	    core_1.Component({
 	        selector: 'generictable',
-	        template: __webpack_require__(116),
-	        styles: [__webpack_require__(117)],
+	        template: __webpack_require__(117),
+	        styles: [__webpack_require__(118)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
-	    __metadata('design:paramtypes', [(typeof (_f = typeof core_1.ApplicationRef !== 'undefined' && core_1.ApplicationRef) === 'function' && _f) || Object, (typeof (_g = typeof comparison_config_service_1.ComparisonConfigService !== 'undefined' && comparison_config_service_1.ComparisonConfigService) === 'function' && _g) || Object])
+	    __metadata('design:paramtypes', [(typeof (_f = typeof core_1.ApplicationRef !== 'undefined' && core_1.ApplicationRef) === 'function' && _f) || Object, (typeof (_g = typeof comparison_config_service_1.ComparisonConfigService !== 'undefined' && comparison_config_service_1.ComparisonConfigService) === 'function' && _g) || Object, (typeof (_h = typeof platform_browser_1.DomSanitizer !== 'undefined' && platform_browser_1.DomSanitizer) === 'function' && _h) || Object])
 	], GenericTableComponent);
 	exports.GenericTableComponent = GenericTableComponent;
-	var _a, _b, _c, _d, _e, _f, _g;
+	var _a, _b, _c, _d, _e, _f, _g, _h;
 
-
-/***/ }),
-/* 116 */
-/***/ (function(module, exports) {
-
-	module.exports = "<table class=\"table table-hover\" *ngIf=\"display\">\n    <thead style=\"background-color: white;\">\n    <tr>\n        <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n            <th valign=column.valign style=column.style name=column.tag>\n                <button (click)=\"orderClick($event, column.tag)\">{{column.name}}\n                    <iicon icon=\"keyboard-arrow-up\" *ngIf=\"displayOrder(column.tag, -1)\"></iicon>\n                    <iicon icon=\"keyboard-arrow-down\" *ngIf=\"displayOrder(column.tag, 1)\"></iicon>\n                </button>\n            </th>\n        </template>\n        <th style=\"width: 3%\" name=\"details\" *ngIf=\"settings\">\n            <picon-button icon=\"settings\" title=\"Settings\" (click)=\"settingsCallback.emit()\"></picon-button>\n        </th>\n    </tr>\n    </thead>\n    <tbody>\n    <template ngFor let-dat [ngForOf]=\"data | orderBy: [order,orderOption] | datafilter: [query, displayTemplate]\">\n        <tr *ngIf=\"shouldBeShown(dat)\">\n            <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n                <td *ngIf=\"column.type?.tag==='url'\"><a href=\"{{dat.getProperty(column.url).text}}\" target=\"_blank\">{{dat.getProperty(column.tag).text}}</a>\n                </td>\n                <td *ngIf=\"column.type?.tag==='text'\">\n                    <div [innerHtml]=\"dat.getProperty(column.tag).text|citation: [citationServ] | sanitizeHtml\"></div>\n                </td>\n                <td *ngIf=\"column.type?.tag==='label'\">\n                    <template ngFor let-sitem [ngForOf]=\"dat.getPropertyListItems(column.tag)\"\n                              *ngIf=\"column.type?.labelCls\">\n                        <ptooltip [tooltip]=\"column.values[sitem.content]\"\n                                  [tooltipHtml]=\"sitem.htmlChilds | citation: [citationServ]\" [position]=\"'n'\">\n                            <div class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}}  mylabel\">\n                                {{sitem.content}}\n                            </div>\n                        </ptooltip>\n                    </template>\n                </td>\n                <td *ngIf=\"column.type?.tag=='rating'\">\n                    <iicon icon=\"star\" *ngIf=\"dat.getRating()!=0\">{{dat.getRating()}}</iicon>\n                </td>\n            </template>\n            <td>\n                <picon-button icon=\"info\" title=\"Details\" (click)=\"showDetails.emit(dat)\"></picon-button>\n            </td>\n        </tr>\n    </template>\n    </tbody>\n</table>\n        ";
 
 /***/ }),
 /* 117 */
 /***/ (function(module, exports) {
 
-	module.exports = ":host {\n    display: block;\n}\n\ntable {\n    min-width: 600px;\n    margin-bottom: 0px;\n}\n\n.mylabel {\n    margin: 2px;\n    display: inline-block !important;\n    cursor: pointer;\n    font-size: 14px !important;\n    white-space: inherit;\n}\n\nth > button {\n    border: none;\n    padding: 0;\n    outline: none;\n    background-color: inherit;\n}\n\ntable tr {\n    white-space: normal;\n}\n\ntable {\n    width: auto;\n}\n\nptooltip {\n    z-index: 3000;\n}"
+	module.exports = "<table class=\"table table-hover\" *ngIf=\"display\">\n    <thead style=\"background-color: white;\">\n    <tr>\n        <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n            <th valign=column.valign style=column.style name=column.tag>\n                <button (click)=\"orderClick($event, column.tag)\">{{column.name}}\n                    <iicon icon=\"keyboard-arrow-up\" *ngIf=\"displayOrder(column.tag, -1)\"></iicon>\n                    <iicon icon=\"keyboard-arrow-down\" *ngIf=\"displayOrder(column.tag, 1)\"></iicon>\n                </button>\n            </th>\n        </template>\n        <th style=\"width: 3%\" name=\"details\" *ngIf=\"settings\">\n            <picon-button icon=\"settings\" title=\"Settings\" (click)=\"settingsCallback.emit()\"></picon-button>\n        </th>\n    </tr>\n    </thead>\n    <tbody>\n    <template ngFor let-dat [ngForOf]=\"data | orderBy: [order,orderOption] | datafilter: [query, displayTemplate]\">\n        <tr *ngIf=\"shouldBeShown(dat)\">\n            <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n                <td *ngIf=\"column.type?.tag==='url'\"><a href=\"{{dat.getProperty(column.url).text}}\" target=\"_blank\">{{dat.getProperty(column.tag).text}}</a>\n                </td>\n                <td *ngIf=\"column.type?.tag==='text'\">\n                    <div [innerHtml]=\"dat.getProperty(column.tag).text|citation: [citationServ] | sanitizeHtml\"></div>\n                </td>\n                <td *ngIf=\"column.type?.tag==='label'\">\n                    <template ngFor let-sitem [ngForOf]=\"dat.getPropertyListItems(column.tag)\"\n                              *ngIf=\"column.type?.labelCls\">\n                        <ptooltip [tooltip]=\"column.values[sitem.content]\"\n                                  [tooltipHtml]=\"sitem.htmlChilds | citation: [citationServ]\" [position]=\"'n'\">\n                            <div *ngIf=\"(column.type.colors | json) == '{}'\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content + 'test'}}\n                            </div>\n                            <div *ngIf=\"(column.type.colors | json) != '{}'\" [style.background-color]=\"getColor(column, sitem.content)\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                        </ptooltip>\n                    </template>\n                </td>\n                <td *ngIf=\"column.type?.tag=='rating'\">\n                    <iicon icon=\"star\" *ngIf=\"dat.getRating()!=0\">{{dat.getRating()}}</iicon>\n                </td>\n            </template>\n            <td>\n                <picon-button icon=\"info\" title=\"Details\" (click)=\"showDetails.emit(dat)\"></picon-button>\n            </td>\n        </tr>\n    </template>\n    </tbody>\n</table>\n        ";
 
 /***/ }),
 /* 118 */
+/***/ (function(module, exports) {
+
+	module.exports = ":host {\n    display: block;\n}\n\ntable {\n    min-width: 600px;\n    margin-bottom: 0px;\n}\n\n.mylabel {\n    margin: 2px;\n    display: inline-block !important;\n    cursor: pointer;\n    font-size: 14px !important;\n    white-space: inherit;\n}\n\nth > button {\n    border: none;\n    padding: 0;\n    outline: none;\n    background-color: inherit;\n}\n\ntable tr {\n    white-space: normal;\n}\n\ntable {\n    width: auto;\n}"
+
+/***/ }),
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13075,7 +13130,7 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	const core_1 = __webpack_require__(3);
-	const comparison_citation_service_1 = __webpack_require__(50);
+	const comparison_citation_service_1 = __webpack_require__(51);
 	let ReferencesTableComponent = class ReferencesTableComponent {
 	    constructor() {
 	        this.changeNum = 0;
@@ -13092,8 +13147,8 @@ webpackJsonp([0],[
 	ReferencesTableComponent = __decorate([
 	    core_1.Component({
 	        selector: 'referencestable',
-	        template: __webpack_require__(119),
-	        styles: [__webpack_require__(120)],
+	        template: __webpack_require__(120),
+	        styles: [__webpack_require__(121)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -13103,17 +13158,17 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, exports) {
 
-	module.exports = "<table>\n    <template ngFor let-entry [ngForOf]=\"this.citationServ.sortedReferences()\">\n        <tr style=\"padding-left:5px;\">\n            <td style=\"padding-right:10px;font-size:small;padding-top:3px;width:15%;\" valign=\"top\">\n                {{'[' + entry.index + ']'}}:\n            </td>\n            <td [id]=entry [innerHtml]=\"entry.html|sanitizeHtml\"></td>\n        </tr>\n    </template>\n</table>";
+	module.exports = "<table>\n    <template ngFor let-entry [ngForOf]=\"this.citationServ.sortedReferences()\">\n        <tr style=\"padding-left:5px;\">\n            <td style=\"padding-right:10px;font-size:small;padding-top:3px;width:15%;\" valign=\"top\">\n                {{'[' + entry.index + ']'}}:\n            </td>\n            <td [id]=\"entry.key\" [innerHtml]=\"entry.html|sanitizeHtml\"></td>\n        </tr>\n    </template>\n</table>";
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: block;\n}"
 
 /***/ })
 ]);
-//# sourceMappingURL=app.7a378afac098a174ef03.js.map
+//# sourceMappingURL=app.69ef33eefbbe721d0f55.js.map
