@@ -1724,7 +1724,7 @@
     }
   },
   {
-    "tag": "redis - https://redis.io/",
+    "tag": "Redis - https://redis.io/",
     "descr": "in-memory data structure store, used as a database, cache and message broker",
     "Description": {
       "plain": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.",
@@ -1792,7 +1792,7 @@
       }
     },
     "EAI-Pattern Support": {
-      "plain": "- Partially\n- Publish-Subscribe Channel\n    - https://redis.io/topics/pubsub\n",
+      "plain": "- Partially\n- PubSub\n    - https://redis.io/topics/pubsub\n",
       "childs": {
         "0": [
           [
@@ -1803,8 +1803,8 @@
               "childs": []
             },
             {
-              "content": "Publish-Subscribe Channel",
-              "plain": "Publish-Subscribe Channel\n",
+              "content": "PubSub",
+              "plain": "PubSub\n",
               "plainChilds": "    - https://redis.io/topics/pubsub\n",
               "childs": [
                 {

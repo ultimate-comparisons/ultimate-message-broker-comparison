@@ -190,8 +190,8 @@
                     "class": "label-warning"
                 },
                 {
-                    "name": "No",
-                    "class": "label-danger"
+                    "name": "PubSub",
+                    "color": "#EA3711"
                 }
             ]
         }
@@ -204,7 +204,7 @@
             "tag": "label",
             "values": [
                 {
-                    "name": "dummy",
+                    "name": "Clustering",
                     "color": "#EA3711"
                 }
             ]
@@ -218,8 +218,16 @@
             "tag": "label",
             "values": [
                 {
-                    "name": "dummy",
+                    "name": "None",
                     "color": "#EA3711"
+                },
+                {
+                    "name": "RabbitMQ",
+                    "color": "#11EAD3"
+                },
+                {
+                    "name": "Redis",
+                    "color": "#4F11EA"
                 }
             ]
         }
