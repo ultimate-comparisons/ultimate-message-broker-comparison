@@ -129,6 +129,74 @@
         }
     },
     {
+        "name": "Server Platforms",
+        "tag": "Server Platforms",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "FreeBSD",
+                    "color": "#EA3711"
+                },
+                {
+                    "name": "Linux",
+                    "color": "#11EAD3"
+                },
+                {
+                    "name": "OSX",
+                    "color": "#4F11EA"
+                },
+                {
+                    "name": "FreeBSD",
+                    "color": "#EA6311"
+                },
+                {
+                    "name": "OpenBSD",
+                    "color": "#C6EA11"
+                },
+                {
+                    "name": "Solaris",
+                    "color": "#113FEA"
+                },
+                {
+                    "name": "TRU64",
+                    "color": "#77EA11"
+                },
+                {
+                    "name": "Windows",
+                    "color": "#9811EA"
+                },
+                {
+                    "name": "VxWorks",
+                    "color": "#2BEA11"
+                }
+            ]
+        }
+    },
+    {
+        "name": "EAI-Pattern Support",
+        "tag": "EAI-Pattern Support",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "Complete",
+                    "class": "label-success"
+                },
+                {
+                    "name": "Partially",
+                    "class": "label-warning"
+                },
+                {
+                    "name": "No",
+                    "class": "label-danger"
+                }
+            ]
+        }
+    },
+    {
         "name": "Features",
         "tag": "Features",
         "display": true,
