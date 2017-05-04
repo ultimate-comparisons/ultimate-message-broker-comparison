@@ -1842,7 +1842,7 @@
       }
     },
     "Server Platforms": {
-      "plain": "- FreeBSD\n    - [@redisServer]\n- Linux\n    - [@redisServer]\n- Mac Osc X\n    - [@redisServer]\n- NetBSD\n    - [@redisServer]\n- OpenBSD\n    - [@redisServer]\n",
+      "plain": "- FreeBSD\n    - [@redisServer]\n- Linux\n    - [@redisServer]\n- OSX\n    - [@redisServer]\n- NetBSD\n    - [@redisServer]\n- OpenBSD\n    - [@redisServer]\n",
       "childs": {
         "0": [
           [
@@ -1873,8 +1873,8 @@
               ]
             },
             {
-              "content": "Mac Osc X",
-              "plain": "Mac Osc X\n",
+              "content": "OSX",
+              "plain": "OSX\n",
               "plainChilds": "    - [@redisServer]\n",
               "childs": [
                 {

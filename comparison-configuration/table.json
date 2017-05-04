@@ -152,24 +152,28 @@
                     "color": "#EA6311"
                 },
                 {
-                    "name": "OpenBSD",
+                    "name": "NetBSD",
                     "color": "#C6EA11"
                 },
                 {
-                    "name": "Solaris",
+                    "name": "OpenBSD",
                     "color": "#113FEA"
                 },
                 {
-                    "name": "TRU64",
+                    "name": "Solaris",
                     "color": "#77EA11"
                 },
                 {
-                    "name": "Windows",
+                    "name": "TRU64",
                     "color": "#9811EA"
                 },
                 {
-                    "name": "VxWorks",
+                    "name": "Windows",
                     "color": "#2BEA11"
+                },
+                {
+                    "name": "VxWorks",
+                    "color": "#EA9E11"
                 }
             ]
         }
