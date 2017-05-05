@@ -1843,7 +1843,7 @@
         ]
       }
     },
-    "JMS supports": {
+    "JMS support": {
       "plain": "- Yes\n    - https://www.rabbitmq.com/jms-client.html\n",
       "childs": {
         "0": [
