@@ -1508,28 +1508,8 @@
     }
   },
   {
-    "tag": "ä Development status",
-    "descr": [
-      {
-        "content": "Active",
-        "plain": "Active\n",
-        "plainChilds": "    - Last version: 1.4.11 on 2017-02-21 https://github.com/eclipse/mosquitto\n",
-        "childs": [
-          {
-            "content": "Last version: 1.4.11 on 2017-02-21 https://github.com/eclipse/mosquitto",
-            "plain": "Last version: 1.4.11 on 2017-02-21 https://github.com/eclipse/mosquitto\n",
-            "plainChilds": "",
-            "childs": []
-          }
-        ]
-      },
-      {
-        "content": "Stable",
-        "plain": "Stable\n",
-        "plainChilds": "",
-        "childs": []
-      }
-    ],
+    "tag": "Mosquitto - https://mosquitto.org/",
+    "descr": "",
     "Description": {
       "plain": "Eclipse Mosquitto™ is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 3.1 and 3.1.1. MQTT provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for 'Internet of Things' messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers like the Arduino.",
       "childs": {
@@ -1546,6 +1526,34 @@
             {
               "content": "EPL",
               "plain": "EPL\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 1.4.11 on 2017-02-21 https://github.com/eclipse/mosquitto\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 1.4.11 on 2017-02-21 https://github.com/eclipse/mosquitto\n",
+              "childs": [
+                {
+                  "content": "Last version: 1.4.11 on 2017-02-21 https://github.com/eclipse/mosquitto",
+                  "plain": "Last version: 1.4.11 on 2017-02-21 https://github.com/eclipse/mosquitto\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
               "plainChilds": "",
               "childs": []
             }
@@ -1595,6 +1603,21 @@
         ]
       }
     },
+    "Protocol": {
+      "plain": "- MQTT\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MQTT",
+              "plain": "MQTT\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Working example": {
       "plain": "- No\n",
       "childs": {
@@ -1603,21 +1626,6 @@
             {
               "content": "No",
               "plain": "No\n",
-              "plainChilds": "",
-              "childs": []
-            }
-          ]
-        ]
-      }
-    },
-    "JMS supports": {
-      "plain": "- Yes\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "Yes",
-              "plain": "Yes\n",
               "plainChilds": "",
               "childs": []
             }
