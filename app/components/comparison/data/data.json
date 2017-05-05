@@ -2027,7 +2027,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "- RESP\n    - https://redis.io/topics/protocol\n",
       "childs": {
         "0": [
