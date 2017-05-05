@@ -92,13 +92,13 @@
       }
     },
     "Server Platforms": {
-      "plain": "- Windows\n    - [@activeMQServer]\n- Linux\n    - [@activeMQServer]\n",
+      "plain": "- Linux\n    - [@activeMQServer]\n- Windows\n    - [@activeMQServer]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "Windows",
-              "plain": "Windows\n",
+              "content": "Linux",
+              "plain": "Linux\n",
               "plainChilds": "    - [@activeMQServer]\n",
               "childs": [
                 {
@@ -110,8 +110,8 @@
               ]
             },
             {
-              "content": "Linux",
-              "plain": "Linux\n",
+              "content": "Windows",
+              "plain": "Windows\n",
               "plainChilds": "    - [@activeMQServer]\n",
               "childs": [
                 {
@@ -293,26 +293,26 @@
       }
     },
     "Server Platforms": {
-      "plain": "- Windows\n    - [@apolloServer]\n- Linux\n    - [@apolloServer]\n",
+      "plain": "- Linux\n    - [@apolloServer]    \n- Windows\n    - [@apolloServer]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "Windows",
-              "plain": "Windows\n",
-              "plainChilds": "    - [@apolloServer]\n",
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@apolloServer]    \n",
               "childs": [
                 {
                   "content": ",[@apolloServer]",
-                  "plain": "[@apolloServer]\n",
+                  "plain": "[@apolloServer]    \n",
                   "plainChilds": "",
                   "childs": []
                 }
               ]
             },
             {
-              "content": "Linux",
-              "plain": "Linux\n",
+              "content": "Windows",
+              "plain": "Windows\n",
               "plainChilds": "    - [@apolloServer]\n",
               "childs": [
                 {
@@ -482,23 +482,10 @@
       }
     },
     "Server Platforms": {
-      "plain": "- Windows\n    - [@beanstalkdServer]\n- Linux\n    - [@beanstalkdServer]\n- OSX\n    - [@beanstalkdServer]\n",
+      "plain": "- Linux\n    - [@beanstalkdServer]\n- OSX\n    - [@beanstalkdServer]\n- Windows\n    - [@beanstalkdServer]\n",
       "childs": {
         "0": [
           [
-            {
-              "content": "Windows",
-              "plain": "Windows\n",
-              "plainChilds": "    - [@beanstalkdServer]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdServer]",
-                  "plain": "[@beanstalkdServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
             {
               "content": "Linux",
               "plain": "Linux\n",
@@ -515,6 +502,19 @@
             {
               "content": "OSX",
               "plain": "OSX\n",
+              "plainChilds": "    - [@beanstalkdServer]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdServer]",
+                  "plain": "[@beanstalkdServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
               "plainChilds": "    - [@beanstalkdServer]\n",
               "childs": [
                 {
@@ -750,23 +750,10 @@
       }
     },
     "Server Platforms": {
-      "plain": "- OSX\n    - [@darnerServer]\n- Linux\n    - Ubuntu[@darnerServer]\n",
+      "plain": "- Linux\n    - Ubuntu[@darnerServer]\n- OSX\n    - [@darnerServer]\n",
       "childs": {
         "0": [
           [
-            {
-              "content": "OSX",
-              "plain": "OSX\n",
-              "plainChilds": "    - [@darnerServer]\n",
-              "childs": [
-                {
-                  "content": ",[@darnerServer]",
-                  "plain": "[@darnerServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
             {
               "content": "Linux",
               "plain": "Linux\n",
@@ -775,6 +762,19 @@
                 {
                   "content": "Ubuntu[@darnerServer]",
                   "plain": "Ubuntu[@darnerServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@darnerServer]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerServer]",
+                  "plain": "[@darnerServer]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -1580,7 +1580,7 @@
       }
     },
     "Server Platforms": {
-      "plain": "- Linux\n    - [@rabbitMQServer]\n- Windows\n    - [@rabbitMQServer]\n- OSX\n    - [@rabbitMQServer]\n",
+      "plain": "- Linux\n    - [@rabbitMQServer]\n- OSX\n    - [@rabbitMQServer]    \n- Windows\n    - [@rabbitMQServer]\n",
       "childs": {
         "0": [
           [
@@ -1598,21 +1598,21 @@
               ]
             },
             {
-              "content": "Windows",
-              "plain": "Windows\n",
-              "plainChilds": "    - [@rabbitMQServer]\n",
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@rabbitMQServer]    \n",
               "childs": [
                 {
                   "content": ",[@rabbitMQServer]",
-                  "plain": "[@rabbitMQServer]\n",
+                  "plain": "[@rabbitMQServer]    \n",
                   "plainChilds": "",
                   "childs": []
                 }
               ]
             },
             {
-              "content": "OSX",
-              "plain": "OSX\n",
+              "content": "Windows",
+              "plain": "Windows\n",
               "plainChilds": "    - [@rabbitMQServer]\n",
               "childs": [
                 {
@@ -1749,7 +1749,7 @@
       }
     },
     "EAI-Pattern Support": {
-      "plain": "- Partially\n- Publish-Subscribe Channel\n    - https://redis.io/topics/pubsub\n",
+      "plain": "- Partially\n- PubSub\n    - https://redis.io/topics/pubsub\n",
       "childs": {
         "0": [
           [
@@ -1760,8 +1760,8 @@
               "childs": []
             },
             {
-              "content": "Publish-Subscribe Channel",
-              "plain": "Publish-Subscribe Channel\n",
+              "content": "PubSub",
+              "plain": "PubSub\n",
               "plainChilds": "    - https://redis.io/topics/pubsub\n",
               "childs": [
                 {
@@ -1828,6 +1828,21 @@
                   "childs": []
                 }
               ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
@@ -1919,13 +1934,13 @@
       }
     },
     "Server Platforms": {
-      "plain": "- OSX\n    - [@siberiteRepository]\n- Linux\n    - [@siberiteRepository]\n",
+      "plain": "- Linux\n    - [@siberiteRepository]\n- OSX\n    - [@siberiteRepository]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "OSX",
-              "plain": "OSX\n",
+              "content": "Linux",
+              "plain": "Linux\n",
               "plainChilds": "    - [@siberiteRepository]\n",
               "childs": [
                 {
@@ -1937,8 +1952,8 @@
               ]
             },
             {
-              "content": "Linux",
-              "plain": "Linux\n",
+              "content": "OSX",
+              "plain": "OSX\n",
               "plainChilds": "    - [@siberiteRepository]\n",
               "childs": [
                 {
