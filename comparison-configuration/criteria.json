@@ -5,6 +5,8 @@
         "placeholder": "Select license ...",
         "and_search": false,
         "values": [
+            {"name": "EPL"},
+            {"name": "LGPLv3"},
             {"name": "MIT"},
             {"name": "Apache 2.0"},
             {"name": "BSD-3-Clause"},
@@ -22,7 +24,7 @@
             {"name": "Beanstalkd"},
             {"name": "MQTT"},
             {"name": "OpenWire"},
-                    {"name": "RESP"},
+            {"name": "RESP"},
             {"name": "STOMP"}
         ]
     },

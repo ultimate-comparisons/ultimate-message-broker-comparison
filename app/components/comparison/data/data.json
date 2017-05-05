@@ -1508,6 +1508,155 @@
     }
   },
   {
+    "tag": "ä Development status",
+    "descr": [
+      {
+        "content": "Active",
+        "plain": "Active\n",
+        "plainChilds": "    - Last version: 1.4.11 on 2017-02-21 https://github.com/eclipse/mosquitto\n",
+        "childs": [
+          {
+            "content": "Last version: 1.4.11 on 2017-02-21 https://github.com/eclipse/mosquitto",
+            "plain": "Last version: 1.4.11 on 2017-02-21 https://github.com/eclipse/mosquitto\n",
+            "plainChilds": "",
+            "childs": []
+          }
+        ]
+      },
+      {
+        "content": "Stable",
+        "plain": "Stable\n",
+        "plainChilds": "",
+        "childs": []
+      }
+    ],
+    "Description": {
+      "plain": "Eclipse Mosquitto™ is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 3.1 and 3.1.1. MQTT provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for 'Internet of Things' messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers like the Arduino.",
+      "childs": {
+        "0": [
+          "Eclipse Mosquitto™ is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 3.1 and 3.1.1. MQTT provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for 'Internet of Things' messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers like the Arduino."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- EPL\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "EPL",
+              "plain": "EPL\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "EAI-Pattern Support": {
+      "plain": "- PubSub\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "PubSub",
+              "plain": "PubSub\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n- OSX\n- Windows\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS supports": {
+      "plain": "- Yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 297.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "297.000",
+              "plain": "297.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "RabbitMQ - https://www.rabbitmq.com/",
     "descr": "ActiveMQ's next generation of messaging.",
     "Description": {
