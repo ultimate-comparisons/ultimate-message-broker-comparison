@@ -201,15 +201,19 @@
         }
     },
     {
-        "name": "Features",
-        "tag": "Features",
+        "name": "JMS support",
+        "tag": "JMS support",
         "display": true,
         "type": {
             "tag": "label",
             "values": [
                 {
-                    "name": "Clustering",
-                    "color": "#EA3711"
+                    "name": "Yes",
+                    "class": "label-success"
+                },
+                {
+                    "name": "No",
+                    "class": "label-warning"
                 }
             ]
         }

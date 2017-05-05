@@ -63,6 +63,17 @@
         ]
     },
     {
+        "name": "JMS support",
+        "tag": "JMS support",
+        "description": "",
+        "placeholder": "Select JMS support ...",
+        "and_search": true,
+        "values": [
+            {"name": "Yes"},
+            {"name": "No"}
+        ]
+    },
+    {
         "name": "Working example availability",
         "tag": "Working example",
         "description": "",

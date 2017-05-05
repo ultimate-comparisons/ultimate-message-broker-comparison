@@ -200,6 +200,43 @@
         ]
       }
     },
+    "Working example": {
+      "plain": "- Yes\n    - https://www.rabbitmq.com/getstarted.html\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - https://www.rabbitmq.com/getstarted.html\n",
+              "childs": [
+                {
+                  "content": "https://www.rabbitmq.com/getstarted.html",
+                  "plain": "https://www.rabbitmq.com/getstarted.html\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "yes",
+              "plain": "yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Broker Backend": {
       "plain": "- None\n",
       "childs": {
@@ -1681,7 +1718,7 @@
     }
   },
   {
-    "tag": "redis - https://redis.io/",
+    "tag": "Redis - https://redis.io/",
     "descr": "in-memory data structure store, used as a database, cache and message broker",
     "Description": {
       "plain": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.",
@@ -1767,28 +1804,6 @@
                 {
                   "content": "https://redis.io/topics/pubsub",
                   "plain": "https://redis.io/topics/pubsub\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            }
-          ]
-        ]
-      }
-    },
-    "Features": {
-      "plain": "- Clustering\n    - [@redisCluster]\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "Clustering",
-              "plain": "Clustering\n",
-              "plainChilds": "    - [@redisCluster]\n",
-              "childs": [
-                {
-                  "content": ",[@redisCluster]",
-                  "plain": "[@redisCluster]\n",
                   "plainChilds": "",
                   "childs": []
                 }
