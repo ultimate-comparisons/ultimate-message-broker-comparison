@@ -213,7 +213,7 @@
                 },
                 {
                     "name": "No",
-                    "class": "label-warning"
+                    "class": "label-danger"
                 }
             ]
         }

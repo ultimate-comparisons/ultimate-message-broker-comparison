@@ -1686,6 +1686,28 @@
         ]
       }
     },
+    "JMS supports": {
+      "plain": "- Yes\n    - https://www.rabbitmq.com/jms-client.html\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - https://www.rabbitmq.com/jms-client.html\n",
+              "childs": [
+                {
+                  "content": "https://www.rabbitmq.com/jms-client.html",
+                  "plain": "https://www.rabbitmq.com/jms-client.html\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
     "Broker Backend": {
       "plain": "- None\n",
       "childs": {
