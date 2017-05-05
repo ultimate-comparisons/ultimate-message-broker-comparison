@@ -223,13 +223,13 @@
       }
     },
     "JMS support": {
-      "plain": "- yes\n",
+      "plain": "- Yes\n",
       "childs": {
         "0": [
           [
             {
-              "content": "yes",
-              "plain": "yes\n",
+              "content": "Yes",
+              "plain": "Yes\n",
               "plainChilds": "",
               "childs": []
             }
@@ -365,23 +365,10 @@
       }
     },
     "Protocol": {
-      "plain": "- STOMP\n    - [@apollo]\n- AMQP\n    - [@apollo]\n- MQTT\n    - [@apollo]\n- OpenWire\n    - [@apollo]\n",
+      "plain": "- AMQP\n    - [@apollo]\n- MQTT\n    - [@apollo]\n- OpenWire\n    - [@apollo]\n- STOMP\n    - [@apollo]\n",
       "childs": {
         "0": [
           [
-            {
-              "content": "STOMP",
-              "plain": "STOMP\n",
-              "plainChilds": "    - [@apollo]\n",
-              "childs": [
-                {
-                  "content": ",[@apollo]",
-                  "plain": "[@apollo]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
             {
               "content": "AMQP",
               "plain": "AMQP\n",
@@ -411,6 +398,19 @@
             {
               "content": "OpenWire",
               "plain": "OpenWire\n",
+              "plainChilds": "    - [@apollo]\n",
+              "childs": [
+                {
+                  "content": ",[@apollo]",
+                  "plain": "[@apollo]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
               "plainChilds": "    - [@apollo]\n",
               "childs": [
                 {
@@ -1569,7 +1569,7 @@
       }
     },
     "Protocol": {
-      "plain": "- AMQP\n    - AMQP 0-9-1 [@rabbitMQProtocols]\n- STOMP\n    - [@rabbitMQProtocols]\n- MQTT\n    - [@rabbitMQProtocols]\n",
+      "plain": "- AMQP\n    - AMQP 0-9-1 [@rabbitMQProtocols]\n- MQTT\n    - [@rabbitMQProtocols]\n- STOMP\n    - [@rabbitMQProtocols]\n",
       "childs": {
         "0": [
           [
@@ -1587,8 +1587,8 @@
               ]
             },
             {
-              "content": "STOMP",
-              "plain": "STOMP\n",
+              "content": "MQTT",
+              "plain": "MQTT\n",
               "plainChilds": "    - [@rabbitMQProtocols]\n",
               "childs": [
                 {
@@ -1600,8 +1600,8 @@
               ]
             },
             {
-              "content": "MQTT",
-              "plain": "MQTT\n",
+              "content": "STOMP",
+              "plain": "STOMP\n",
               "plainChilds": "    - [@rabbitMQProtocols]\n",
               "childs": [
                 {
@@ -1843,6 +1843,36 @@
                   "childs": []
                 }
               ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    -https://redis.io/topics/pubsub\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes -https://redis.io/topics/pubsub",
+              "plain": "Yes\n    -https://redis.io/topics/pubsub\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
