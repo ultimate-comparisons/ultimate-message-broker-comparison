@@ -482,7 +482,7 @@
       }
     },
     "Server Platforms": {
-      "plain": "- Windows\n    - [@beanstalkdServer]\n- Linux\n    - 2.6.17 or later [@beanstalkdServer]\n- OSX\n    - [@beanstalkdServer]\n- FreeBSD\n    - [@beanstalkdServer]\n",
+      "plain": "- Windows\n    - [@beanstalkdServer]\n- Linux\n    - [@beanstalkdServer]\n- OSX\n    - [@beanstalkdServer]\n",
       "childs": {
         "0": [
           [
@@ -502,19 +502,6 @@
             {
               "content": "Linux",
               "plain": "Linux\n",
-              "plainChilds": "    - 2.6.17 or later [@beanstalkdServer]\n",
-              "childs": [
-                {
-                  "content": "2.6.17 or later [@beanstalkdServer]",
-                  "plain": "2.6.17 or later [@beanstalkdServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "OSX",
-              "plain": "OSX\n",
               "plainChilds": "    - [@beanstalkdServer]\n",
               "childs": [
                 {
@@ -526,8 +513,8 @@
               ]
             },
             {
-              "content": "FreeBSD",
-              "plain": "FreeBSD\n",
+              "content": "OSX",
+              "plain": "OSX\n",
               "plainChilds": "    - [@beanstalkdServer]\n",
               "childs": [
                 {
@@ -1593,7 +1580,7 @@
       }
     },
     "Server Platforms": {
-      "plain": "- Linux\n    - [@rabbitMQServer]\n- Windows\n    - [@rabbitMQServer]\n- OSX\n    - [@rabbitMQServer]\n- Solaris\n    - [@rabbitMQServer]\n- FreeBSD\n    - [@rabbitMQServer]\n- TRU64\n    - [@rabbitMQServer]\n- VxWorks\n    - [@rabbitMQServer]\n",
+      "plain": "- Linux\n    - [@rabbitMQServer]\n- Windows\n    - [@rabbitMQServer]\n- OSX\n    - [@rabbitMQServer]\n",
       "childs": {
         "0": [
           [
@@ -1626,58 +1613,6 @@
             {
               "content": "OSX",
               "plain": "OSX\n",
-              "plainChilds": "    - [@rabbitMQServer]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQServer]",
-                  "plain": "[@rabbitMQServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Solaris",
-              "plain": "Solaris\n",
-              "plainChilds": "    - [@rabbitMQServer]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQServer]",
-                  "plain": "[@rabbitMQServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "FreeBSD",
-              "plain": "FreeBSD\n",
-              "plainChilds": "    - [@rabbitMQServer]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQServer]",
-                  "plain": "[@rabbitMQServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "TRU64",
-              "plain": "TRU64\n",
-              "plainChilds": "    - [@rabbitMQServer]\n",
-              "childs": [
-                {
-                  "content": ",[@rabbitMQServer]",
-                  "plain": "[@rabbitMQServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "VxWorks",
-              "plain": "VxWorks\n",
               "plainChilds": "    - [@rabbitMQServer]\n",
               "childs": [
                 {
@@ -1746,7 +1681,7 @@
     }
   },
   {
-    "tag": "Redis - https://redis.io/",
+    "tag": "redis - https://redis.io/",
     "descr": "in-memory data structure store, used as a database, cache and message broker",
     "Description": {
       "plain": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.",
@@ -1814,7 +1749,7 @@
       }
     },
     "EAI-Pattern Support": {
-      "plain": "- Partially\n- PubSub\n    - https://redis.io/topics/pubsub\n",
+      "plain": "- Partially\n- Publish-Subscribe Channel\n    - https://redis.io/topics/pubsub\n",
       "childs": {
         "0": [
           [
@@ -1825,8 +1760,8 @@
               "childs": []
             },
             {
-              "content": "PubSub",
-              "plain": "PubSub\n",
+              "content": "Publish-Subscribe Channel",
+              "plain": "Publish-Subscribe Channel\n",
               "plainChilds": "    - https://redis.io/topics/pubsub\n",
               "childs": [
                 {
@@ -1864,23 +1799,10 @@
       }
     },
     "Server Platforms": {
-      "plain": "- FreeBSD\n    - [@redisServer]\n- Linux\n    - [@redisServer]\n- OSX\n    - [@redisServer]\n- NetBSD\n    - [@redisServer]\n- OpenBSD\n    - [@redisServer]\n",
+      "plain": "- Linux\n    - [@redisServer]\n- OSX\n    - [@redisServer]\n",
       "childs": {
         "0": [
           [
-            {
-              "content": "FreeBSD",
-              "plain": "FreeBSD\n",
-              "plainChilds": "    - [@redisServer]\n",
-              "childs": [
-                {
-                  "content": ",[@redisServer]",
-                  "plain": "[@redisServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
             {
               "content": "Linux",
               "plain": "Linux\n",
@@ -1906,47 +1828,6 @@
                   "childs": []
                 }
               ]
-            },
-            {
-              "content": "NetBSD",
-              "plain": "NetBSD\n",
-              "plainChilds": "    - [@redisServer]\n",
-              "childs": [
-                {
-                  "content": ",[@redisServer]",
-                  "plain": "[@redisServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "OpenBSD",
-              "plain": "OpenBSD\n",
-              "plainChilds": "    - [@redisServer]\n",
-              "childs": [
-                {
-                  "content": ",[@redisServer]",
-                  "plain": "[@redisServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            }
-          ]
-        ]
-      }
-    },
-    "Broker Backend": {
-      "plain": "- None\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "None",
-              "plain": "None\n",
-              "plainChilds": "",
-              "childs": []
             }
           ]
         ]
