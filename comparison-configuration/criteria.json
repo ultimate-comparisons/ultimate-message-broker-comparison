@@ -45,15 +45,9 @@
         "placeholder": "Select server platform ...",
         "and_search": false,
         "values": [
-            {"name": "FreeBSD"},
             {"name": "Linux"},
             {"name": "OSX"},
-            {"name": "FreeBSD"},
-            {"name": "OpenBSD"},
-            {"name": "Solaris"},
-            {"name": "TRU64"},
-            {"name": "Windows"},
-            {"name": "VxWorks"}
+            {"name": "Windows"}
         ]
     },
     {
