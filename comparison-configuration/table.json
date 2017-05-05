@@ -215,6 +215,24 @@
         }
     },
     {
+        "name": "Working example",
+        "tag": "Working example",
+        "display": true,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "Yes",
+                    "class": "label-success"
+                },
+                {
+                    "name": "No",
+                    "class": "label-warning"
+                }
+            ]
+        }
+    },
+    {
         "name": "Broker Backend",
         "tag": "Broker Backend",
         "display": true,

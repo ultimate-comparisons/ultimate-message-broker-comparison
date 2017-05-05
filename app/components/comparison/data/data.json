@@ -1692,6 +1692,28 @@
         ]
       }
     },
+    "Working example": {
+      "plain": "- Yes\n    - https://www.rabbitmq.com/getstarted.html\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - https://www.rabbitmq.com/getstarted.html\n",
+              "childs": [
+                {
+                  "content": "https://www.rabbitmq.com/getstarted.html",
+                  "plain": "https://www.rabbitmq.com/getstarted.html\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
     "Broker Backend": {
       "plain": "- None\n",
       "childs": {

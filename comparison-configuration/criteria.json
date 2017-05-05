@@ -65,6 +65,17 @@
         "values": [
             {"name": "Complete"},
             {"name": "Partially"},
+            {"name": "PubUsb"}
+        ]
+    },
+    {
+        "name": "Working example availability",
+        "tag": "Working example",
+        "description": "",
+        "placeholder": "Select Working example availability ...",
+        "and_search": true,
+        "values": [
+            {"name": "Yes"},
             {"name": "No"}
         ]
     },
