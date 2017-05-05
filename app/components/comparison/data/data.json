@@ -1849,15 +1849,22 @@
       }
     },
     "Working example": {
-      "plain": "- Yes\n    -https://redis.io/topics/pubsub\n",
+      "plain": "- Yes\n    - https://redis.io/topics/pubsub\n",
       "childs": {
         "0": [
           [
             {
-              "content": "Yes -https://redis.io/topics/pubsub",
-              "plain": "Yes\n    -https://redis.io/topics/pubsub\n",
-              "plainChilds": "",
-              "childs": []
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - https://redis.io/topics/pubsub\n",
+              "childs": [
+                {
+                  "content": "https://redis.io/topics/pubsub",
+                  "plain": "https://redis.io/topics/pubsub\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
