@@ -92,8 +92,12 @@
                     "color": "#113FEA"
                 },
                 {
-                    "name": "STOMP",
+                    "name": "RESP",
                     "color": "#77EA11"
+                },
+                {
+                    "name": "STOMP",
+                    "color": "#9811EA"
                 }
             ]
         }
