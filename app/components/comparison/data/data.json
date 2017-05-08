@@ -1508,6 +1508,98 @@
     }
   },
   {
+    "tag": "Message Bus - https://github.com/groupon/Message-Bus",
+    "descr": "",
+    "Description": {
+      "plain": "MessageBus is a distributed messaging platform built on top of hornetq, and supports java and ruby client. This project includes a patch to HornetQ, and the java and ruby client that works with it.",
+      "childs": {
+        "0": [
+          "MessageBus is a distributed messaging platform built on top of hornetq, and supports java and ruby client. This project includes a patch to HornetQ, and the java and ruby client that works with it."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- BSD-3-Clause\n    - [@messageBusLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BSD-3-Clause",
+              "plain": "BSD-3-Clause\n",
+              "plainChilds": "    - [@messageBusLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@messageBusLicense]",
+                  "plain": "[@messageBusLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Stale\n    - Last version: 4.0.2 on 2013-12-02\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Stale",
+              "plain": "Stale\n",
+              "plainChilds": "    - Last version: 4.0.2 on 2013-12-02\n",
+              "childs": [
+                {
+                  "content": "Last version: 4.0.2 on 2013-12-02",
+                  "plain": "Last version: 4.0.2 on 2013-12-02\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- STOMP\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- HornetQ\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "HornetQ",
+              "plain": "HornetQ\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "Mosquitto - https://mosquitto.org/",
     "descr": "",
     "Description": {

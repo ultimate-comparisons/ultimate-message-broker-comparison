@@ -252,12 +252,16 @@
                     "color": "#EA3711"
                 },
                 {
-                    "name": "RabbitMQ",
+                    "name": "HornetQ",
                     "color": "#11EAD3"
                 },
                 {
-                    "name": "Redis",
+                    "name": "RabbitMQ",
                     "color": "#4F11EA"
+                },
+                {
+                    "name": "Redis",
+                    "color": "#EA6311"
                 }
             ]
         }

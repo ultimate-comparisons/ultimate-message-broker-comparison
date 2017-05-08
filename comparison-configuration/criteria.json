@@ -95,8 +95,9 @@
         "and_search": true,
         "values": [
             {"name": "None"},
-            {"name": "Redis"},
-            {"name": "RabbitMQ"}
+            {"name": "HornetQ"},
+            {"name": "RabbitMQ"},
+            {"name": "Redis"}
         ]
     }
 ]
