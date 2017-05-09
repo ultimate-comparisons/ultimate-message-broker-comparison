@@ -1732,6 +1732,128 @@
     }
   },
   {
+    "MappedBus - https://github.com/caplogic/Mappedbus": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Description": {
+      "plain": "Mappedbus is a Java based high throughput, low latency message bus, using either a memory mapped file or shared memory as transport",
+      "childs": {
+        "0": [
+          "Mappedbus is a Java based high throughput, low latency message bus, using either a memory mapped file or shared memory as transport"
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@mappedbusLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@mappedbusLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@mappedbusLicense]",
+                  "plain": "[@mappedbusLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Stale\n    - Last version: 0.5 on 2015-05-30\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Stale",
+              "plain": "Stale\n",
+              "plainChilds": "    - Last version: 0.5 on 2015-05-30\n",
+              "childs": [
+                {
+                  "content": "Last version: 0.5 on 2015-05-30",
+                  "plain": "Last version: 0.5 on 2015-05-30\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Client language": {
+      "plain": "- java\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "java",
+              "plain": "java\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "Message Bus - https://github.com/groupon/Message-Bus",
     "descr": "",
     "Description": {
