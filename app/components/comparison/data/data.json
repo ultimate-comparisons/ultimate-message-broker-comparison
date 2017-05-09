@@ -716,6 +716,21 @@
           ]
         ]
       }
+    },
+    "Client language": {
+      "plain": "- Python\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Python",
+              "plain": "Python\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
     }
   },
   {
@@ -1050,6 +1065,21 @@
           ]
         ]
       }
+    },
+    "Client language": {
+      "plain": "- Rails\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Rails",
+              "plain": "Rails\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
     }
   },
   {
@@ -1220,6 +1250,63 @@
         ]
       }
     },
+    "JMS support": {
+      "plain": "- Yes\n    - [@hornetQProtocol]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@hornetQProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQProtocol]",
+                  "plain": "[@hornetQProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- AMQP\n    - [@hornetQProtocol]\n- STOMP\n    - [@hornetQProtocol]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "    - [@hornetQProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQProtocol]",
+                  "plain": "[@hornetQProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "    - [@hornetQProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQProtocol]",
+                  "plain": "[@hornetQProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
     "Google hits": {
       "plain": "- 160.000\n",
       "childs": {
@@ -1321,6 +1408,21 @@
             {
               "content": "14.200",
               "plain": "14.200\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Client language": {
+      "plain": "- Python\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Python",
+              "plain": "Python\n",
               "plainChilds": "",
               "childs": []
             }
