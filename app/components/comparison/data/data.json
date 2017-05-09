@@ -1610,14 +1610,8 @@
     }
   },
   {
-    "Kue - https://github.com/Automattic/kue": {
-      "plain": "Kue is a priority job queue backed by redis, built for node.js.",
-      "childs": {
-        "0": [
-          "Kue is a priority job queue backed by redis, built for node.js."
-        ]
-      }
-    },
+    "tag": "Kue - https://github.com/Automattic/kue",
+    "descr": "Kue is a priority job queue backed by redis, built for node.js.",
     "Description": {
       "plain": "Kue is a priority job queue backed by redis, built for node.js.",
       "childs": {
@@ -1732,14 +1726,8 @@
     }
   },
   {
-    "MappedBus - https://github.com/caplogic/Mappedbus": {
-      "plain": "",
-      "childs": {
-        "0": [
-          ""
-        ]
-      }
-    },
+    "tag": "MappedBus - https://github.com/caplogic/Mappedbus",
+    "descr": "",
     "Description": {
       "plain": "Mappedbus is a Java based high throughput, low latency message bus, using either a memory mapped file or shared memory as transport",
       "childs": {
