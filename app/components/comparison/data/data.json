@@ -823,6 +823,21 @@
           ]
         ]
       }
+    },
+    "Google hits": {
+      "plain": "- 547.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "547.000",
+              "plain": "547.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
     }
   },
   {

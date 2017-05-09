@@ -15,6 +15,7 @@
  "beanstalkdServer":"[13]",
  "celeryLicense":"[14]",
  "celeryVersions":"[15]",
+ "chronicleQueueicense":"[16]",
  "darnerRepository":"[18]",
  "darnerLicense":"[17]",
  "darnerServer":"[19]",
@@ -42,6 +43,5 @@
  "kestrelVersions":"[32]",
  "mappedbusLicense":"[34]",
  "messageBusLicense":"[35]",
- "chronicleQueueicense":"[16]",
  "zeroMqVersions":"[47]",
  "zeroMQLicense":"[46]" }
