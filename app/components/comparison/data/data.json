@@ -734,6 +734,98 @@
     }
   },
   {
+    "tag": "Chronicle Queue - http://chronicle.software/products/chronicle-queue/",
+    "descr": "Micro second messaging, which stores to disk a complete history of all your messages.",
+    "Description": {
+      "plain": "Chronicle Queue is able to persist every single event/message, It records each event to a memory mapped file.",
+      "childs": {
+        "0": [
+          "Chronicle Queue is able to persist every single event/message, It records each event to a memory mapped file."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@chronicleQueueicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@chronicleQueueicense]\n",
+              "childs": [
+                {
+                  "content": ",[@chronicleQueueicense]",
+                  "plain": "[@chronicleQueueicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Stale\n    - Last version: 4.6.1 on 2017-04-03\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Stale",
+              "plain": "Stale\n",
+              "plainChilds": "    - Last version: 4.6.1 on 2017-04-03\n",
+              "childs": [
+                {
+                  "content": "Last version: 4.6.1 on 2017-04-03",
+                  "plain": "Last version: 4.6.1 on 2017-04-03\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "Darner - https://github.com/wavii/darner",
     "descr": "simple, lightweight message queue",
     "Description": {
@@ -802,18 +894,18 @@
       }
     },
     "Server Platforms": {
-      "plain": "- Linux\n    - Ubuntu[@darnerServer]\n- OSX\n    - [@darnerServer]\n",
+      "plain": "- Linux\n    - [@darnerServer]\n- OSX\n    - [@darnerServer]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Linux",
               "plain": "Linux\n",
-              "plainChilds": "    - Ubuntu[@darnerServer]\n",
+              "plainChilds": "    - [@darnerServer]\n",
               "childs": [
                 {
-                  "content": "Ubuntu[@darnerServer]",
-                  "plain": "Ubuntu[@darnerServer]\n",
+                  "content": ",[@darnerServer]",
+                  "plain": "[@darnerServer]\n",
                   "plainChilds": "",
                   "childs": []
                 }
