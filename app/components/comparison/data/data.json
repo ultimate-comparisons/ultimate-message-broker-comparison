@@ -1610,6 +1610,128 @@
     }
   },
   {
+    "Kue - https://github.com/Automattic/kue": {
+      "plain": "Kue is a priority job queue backed by redis, built for node.js.",
+      "childs": {
+        "0": [
+          "Kue is a priority job queue backed by redis, built for node.js."
+        ]
+      }
+    },
+    "Description": {
+      "plain": "Kue is a priority job queue backed by redis, built for node.js.",
+      "childs": {
+        "0": [
+          "Kue is a priority job queue backed by redis, built for node.js."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MIT\n    - [@kueLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MIT",
+              "plain": "MIT\n",
+              "plainChilds": "    - [@kueLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@kueLicense]",
+                  "plain": "[@kueLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 0.11.5 on 2016-11-05\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 0.11.5 on 2016-11-05\n",
+              "childs": [
+                {
+                  "content": "Last version: 0.11.5 on 2016-11-05",
+                  "plain": "Last version: 0.11.5 on 2016-11-05\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- Redis\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Redis",
+              "plain": "Redis\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Client language": {
+      "plain": "- NodeJS\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "NodeJS",
+              "plain": "NodeJS\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "Message Bus - https://github.com/groupon/Message-Bus",
     "descr": "",
     "Description": {
