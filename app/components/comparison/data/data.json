@@ -702,6 +702,43 @@
         ]
       }
     },
+    "Working example": {
+      "plain": "- Yes\n    - http://docs.celeryproject.org/en/latest/index.html\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - http://docs.celeryproject.org/en/latest/index.html\n",
+              "childs": [
+                {
+                  "content": "http://docs.celeryproject.org/en/latest/index.html",
+                  "plain": "http://docs.celeryproject.org/en/latest/index.html\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Google hits": {
       "plain": "- 160.000\n",
       "childs": {
@@ -973,6 +1010,36 @@
         ]
       }
     },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Google hits": {
       "plain": "- 184.000\n",
       "childs": {
@@ -1066,6 +1133,36 @@
         ]
       }
     },
+    "Working example": {
+      "plain": "- Yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Google hits": {
       "plain": "- 61.100\n",
       "childs": {
@@ -1074,6 +1171,21 @@
             {
               "content": "61.100",
               "plain": "61.100\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Client language": {
+      "plain": "- Rails\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Rails",
+              "plain": "Rails\n",
               "plainChilds": "",
               "childs": []
             }
@@ -1151,6 +1263,58 @@
             {
               "content": "None",
               "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - most of the client libraries have some https://github.com/antirez/disque#client-libraries\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - most of the client libraries have some https://github.com/antirez/disque#client-libraries\n",
+              "childs": [
+                {
+                  "content": "most of the client libraries have some https://github.com/antirez/disque#client-libraries",
+                  "plain": "most of the client libraries have some https://github.com/antirez/disque#client-libraries\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- memcached\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "memcached",
+              "plain": "memcached\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
               "plainChilds": "",
               "childs": []
             }
@@ -1250,6 +1414,27 @@
         ]
       }
     },
+    "Server Platforms": {
+      "plain": "- Linux\n- Windows\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Broker Backend": {
       "plain": "- None\n",
       "childs": {
@@ -1258,6 +1443,51 @@
             {
               "content": "None",
               "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- Gearman\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Gearman",
+              "plain": "Gearman\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
               "plainChilds": "",
               "childs": []
             }
@@ -1374,6 +1604,21 @@
                   "childs": []
                 }
               ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
@@ -1507,6 +1752,36 @@
         ]
       }
     },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Google hits": {
       "plain": "- 14.200\n",
       "childs": {
@@ -1572,7 +1847,7 @@
       }
     },
     "Development status": {
-      "plain": "- Active\n    - Last version: 0.10.2.0 on 2017-02-21 [@kafkaVersions]\n",
+      "plain": "- Active\n    - Last version: 0.10.2.0 on 2017-02-21 [@kafkaVersions]\n- Stable\n",
       "childs": {
         "0": [
           [
@@ -1588,6 +1863,12 @@
                   "childs": []
                 }
               ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
@@ -1601,6 +1882,36 @@
             {
               "content": "None",
               "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
               "plainChilds": "",
               "childs": []
             }
@@ -1700,6 +2011,82 @@
         ]
       }
     },
+    "Protocol": {
+      "plain": "- memcached\n    - https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#memcache\n- thrift\n    - https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#thrift\n- text\n    - https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#text-protocol\n    - https://github.com/twitter-archive/kestrel/blob/master/docs/text_protocol.md\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "memcached",
+              "plain": "memcached\n",
+              "plainChilds": "    - https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#memcache\n",
+              "childs": [
+                {
+                  "content": "https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#memcache",
+                  "plain": "https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#memcache\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "thrift",
+              "plain": "thrift\n",
+              "plainChilds": "    - https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#thrift\n",
+              "childs": [
+                {
+                  "content": "https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#thrift",
+                  "plain": "https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#thrift\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "text",
+              "plain": "text\n",
+              "plainChilds": "    - https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#text-protocol\n    - https://github.com/twitter-archive/kestrel/blob/master/docs/text_protocol.md\n",
+              "childs": [
+                {
+                  "content": "https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#text-protocol",
+                  "plain": "https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#text-protocol\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": "https://github.com/twitter-archive/kestrel/blob/master/docs/text_protocol.md",
+                  "plain": "https://github.com/twitter-archive/kestrel/blob/master/docs/text_protocol.md\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#kestrel-as-a-library\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#kestrel-as-a-library\n",
+              "childs": [
+                {
+                  "content": "https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#kestrel-as-a-library",
+                  "plain": "https://github.com/twitter-archive/kestrel/blob/master/docs/guide.md#kestrel-as-a-library\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
     "Google hits": {
       "plain": "- 43.400\n",
       "childs": {
@@ -1772,15 +2159,22 @@
       }
     },
     "Working example": {
-      "plain": "- Yes\n",
+      "plain": "- Yes\n    - https://github.com/Automattic/kue#overview\n",
       "childs": {
         "0": [
           [
             {
               "content": "Yes",
               "plain": "Yes\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - https://github.com/Automattic/kue#overview\n",
+              "childs": [
+                {
+                  "content": "https://github.com/Automattic/kue#overview",
+                  "plain": "https://github.com/Automattic/kue#overview\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -1982,7 +2376,7 @@
       }
     },
     "Development status": {
-      "plain": "- Stale\n    - Last version: 4.0.2 on 2013-12-02\n- Stable\n",
+      "plain": "- Stale\n    - Last version: 4.0.2 on 2013-12-02\n",
       "childs": {
         "0": [
           [
@@ -1998,27 +2392,50 @@
                   "childs": []
                 }
               ]
-            },
-            {
-              "content": "Stable",
-              "plain": "Stable\n",
-              "plainChilds": "",
-              "childs": []
             }
           ]
         ]
       }
     },
     "Protocol": {
-      "plain": "- STOMP\n",
+      "plain": "- STOMP\n    - https://github.com/groupon/Message-Bus#configurate-the-server\n",
       "childs": {
         "0": [
           [
             {
               "content": "STOMP",
               "plain": "STOMP\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - https://github.com/groupon/Message-Bus#configurate-the-server\n",
+              "childs": [
+                {
+                  "content": "https://github.com/groupon/Message-Bus#configurate-the-server",
+                  "plain": "https://github.com/groupon/Message-Bus#configurate-the-server\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - in the subfolders\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - in the subfolders\n",
+              "childs": [
+                {
+                  "content": "in the subfolders",
+                  "plain": "in the subfolders\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -2755,15 +3172,22 @@
       }
     },
     "Protocol": {
-      "plain": "- memcached\n",
+      "plain": "- memcached\n    - http://siberite.org/#protocol\n",
       "childs": {
         "0": [
           [
             {
               "content": "memcached",
               "plain": "memcached\n",
-              "plainChilds": "",
-              "childs": []
+              "plainChilds": "    - http://siberite.org/#protocol\n",
+              "childs": [
+                {
+                  "content": "http://siberite.org/#protocol",
+                  "plain": "http://siberite.org/#protocol\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -2779,6 +3203,43 @@
               "plain": "None\n",
               "plainChilds": "",
               "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - the clients do\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - the clients do\n",
+              "childs": [
+                {
+                  "content": "the clients do",
+                  "plain": "the clients do\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
@@ -2869,6 +3330,43 @@
             {
               "content": "None",
               "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n    - but there is an unofficial wrapper https://github.com/zeromq/jeromq-jms\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "    - but there is an unofficial wrapper https://github.com/zeromq/jeromq-jms\n",
+              "childs": [
+                {
+                  "content": "but there is an unofficial wrapper https://github.com/zeromq/jeromq-jms",
+                  "plain": "but there is an unofficial wrapper https://github.com/zeromq/jeromq-jms\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
               "plainChilds": "",
               "childs": []
             }

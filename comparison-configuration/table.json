@@ -84,20 +84,25 @@
                     "color": "#EA6311"
                 },
                 {
-                    "name": "MQTT",
+                    "name": "Gearman",
+                    "description": "http://gearman.org/protocol/",
                     "color": "#C6EA11"
                 },
                 {
-                    "name": "OpenWire",
+                    "name": "MQTT",
                     "color": "#113FEA"
                 },
                 {
-                    "name": "RESP",
+                    "name": "OpenWire",
                     "color": "#77EA11"
                 },
                 {
-                    "name": "STOMP",
+                    "name": "RESP",
                     "color": "#9811EA"
+                },
+                {
+                    "name": "STOMP",
+                    "color": "#2BEA11"
                 }
             ]
         }
@@ -140,44 +145,16 @@
             "tag": "label",
             "values": [
                 {
-                    "name": "FreeBSD",
+                    "name": "Linux",
                     "color": "#EA3711"
                 },
                 {
-                    "name": "Linux",
+                    "name": "OSX",
                     "color": "#11EAD3"
                 },
                 {
-                    "name": "OSX",
-                    "color": "#4F11EA"
-                },
-                {
-                    "name": "FreeBSD",
-                    "color": "#EA6311"
-                },
-                {
-                    "name": "NetBSD",
-                    "color": "#C6EA11"
-                },
-                {
-                    "name": "OpenBSD",
-                    "color": "#113FEA"
-                },
-                {
-                    "name": "Solaris",
-                    "color": "#77EA11"
-                },
-                {
-                    "name": "TRU64",
-                    "color": "#9811EA"
-                },
-                {
                     "name": "Windows",
-                    "color": "#2BEA11"
-                },
-                {
-                    "name": "VxWorks",
-                    "color": "#EA9E11"
+                    "color": "#4F11EA"
                 }
             ]
         }
