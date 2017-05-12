@@ -2842,6 +2842,143 @@
     }
   },
   {
+    "tag": "Apache Qpid - http://qpid.apache.org/",
+    "descr": "Apache Qpid™ makes messaging tools that speak AMQP and support many languages and platforms.",
+    "Description": {
+      "plain": "Apache Qpid™ makes messaging tools that speak AMQP and support many languages and platforms.",
+      "childs": {
+        "0": [
+          "Apache Qpid™ makes messaging tools that speak AMQP and support many languages and platforms."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 6.1.2 on 2017-03-15\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 6.1.2 on 2017-03-15\n",
+              "childs": [
+                {
+                  "content": "Last version: 6.1.2 on 2017-03-15",
+                  "plain": "Last version: 6.1.2 on 2017-03-15\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- AMQP\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- Yes\n    - http://qpid.apache.org/components/jms/index.html\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - http://qpid.apache.org/components/jms/index.html\n",
+              "childs": [
+                {
+                  "content": "http://qpid.apache.org/components/jms/index.html",
+                  "plain": "http://qpid.apache.org/components/jms/index.html\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 690.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "690.000",
+              "plain": "690.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "RabbitMQ - https://www.rabbitmq.com/",
     "descr": "ActiveMQ's next generation of messaging.",
     "Description": {
