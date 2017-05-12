@@ -519,48 +519,21 @@
       }
     },
     "Server Platforms": {
-      "plain": "- Linux\n    - [@beanstalkdServer]\n- OSX\n    - [@beanstalkdServer]\n- Windows\n    - [@beanstalkdServer]\n",
+      "plain": "- Linux\n- OSX\n",
       "childs": {
         "0": [
           [
             {
               "content": "Linux",
               "plain": "Linux\n",
-              "plainChilds": "    - [@beanstalkdServer]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdServer]",
-                  "plain": "[@beanstalkdServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
+              "plainChilds": "",
+              "childs": []
             },
             {
               "content": "OSX",
               "plain": "OSX\n",
-              "plainChilds": "    - [@beanstalkdServer]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdServer]",
-                  "plain": "[@beanstalkdServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Windows",
-              "plain": "Windows\n",
-              "plainChilds": "    - [@beanstalkdServer]\n",
-              "childs": [
-                {
-                  "content": ",[@beanstalkdServer]",
-                  "plain": "[@beanstalkdServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
@@ -583,6 +556,43 @@
                   "childs": []
                 }
               ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - In the client libraries\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - In the client libraries\n",
+              "childs": [
+                {
+                  "content": "In the client libraries",
+                  "plain": "In the client libraries\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
