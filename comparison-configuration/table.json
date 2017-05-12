@@ -103,6 +103,14 @@
                 {
                     "name": "STOMP",
                     "color": "#2BEA11"
+                },
+                {
+                    "name": "text",
+                    "color": "#EA9E11"
+                },
+                {
+                    "name": "thrift",
+                    "color": "#11BCEA"
                 }
             ]
         }
