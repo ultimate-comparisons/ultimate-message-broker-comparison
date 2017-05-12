@@ -440,6 +440,43 @@
         ]
       }
     },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - in the Apollo distribution\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - in the Apollo distribution\n",
+              "childs": [
+                {
+                  "content": "in the Apollo distribution",
+                  "plain": "in the Apollo distribution\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
     "Google hits": {
       "plain": "- 660.000\n",
       "childs": {
@@ -2097,6 +2134,21 @@
         ]
       }
     },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Google hits": {
       "plain": "- 43.400\n",
       "childs": {
@@ -2579,6 +2631,21 @@
       }
     },
     "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
       "plain": "- No\n",
       "childs": {
         "0": [
