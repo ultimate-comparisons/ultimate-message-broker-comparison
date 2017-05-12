@@ -2895,6 +2895,41 @@
         ]
       }
     },
+    "Server Platforms": {
+      "plain": "- Linux\n    - http://qpid.apache.org/components/index.html#compatibility\n- Windows\n    - http://qpid.apache.org/components/index.html#compatibility\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - http://qpid.apache.org/components/index.html#compatibility\n",
+              "childs": [
+                {
+                  "content": "http://qpid.apache.org/components/index.html#compatibility",
+                  "plain": "http://qpid.apache.org/components/index.html#compatibility\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - http://qpid.apache.org/components/index.html#compatibility\n",
+              "childs": [
+                {
+                  "content": "http://qpid.apache.org/components/index.html#compatibility",
+                  "plain": "http://qpid.apache.org/components/index.html#compatibility\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
     "Protocol": {
       "plain": "- AMQP\n",
       "childs": {
