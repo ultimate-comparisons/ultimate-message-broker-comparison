@@ -2030,13 +2030,13 @@
       }
     },
     "EAI-Pattern Support": {
-      "plain": "- PubSUb\n",
+      "plain": "- PubSub\n",
       "childs": {
         "0": [
           [
             {
-              "content": "PubSUb",
-              "plain": "PubSUb\n",
+              "content": "PubSub",
+              "plain": "PubSub\n",
               "plainChilds": "",
               "childs": []
             }
