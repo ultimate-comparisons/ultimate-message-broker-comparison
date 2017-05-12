@@ -878,6 +878,33 @@
         ]
       }
     },
+    "Server Platforms": {
+      "plain": "- Linux\n- OSX\n- Windows\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Working example": {
       "plain": "- Yes\n",
       "childs": {
@@ -1158,6 +1185,33 @@
             {
               "content": "Stable",
               "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n- OSX\n- Windows\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
               "plainChilds": "",
               "childs": []
             }
@@ -1634,6 +1688,33 @@
         ]
       }
     },
+    "Server Platforms": {
+      "plain": "- Linux\n- OSX\n- Windows\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "JMS support": {
       "plain": "- Yes\n    - [@hornetQProtocol]\n",
       "childs": {
@@ -1914,6 +1995,48 @@
             {
               "content": "Stable",
               "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n- OSX\n- Windows\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "EAI-Pattern Support": {
+      "plain": "- PubSUb\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "PubSUb",
+              "plain": "PubSUb\n",
               "plainChilds": "",
               "childs": []
             }
@@ -2215,6 +2338,33 @@
                   "childs": []
                 }
               ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n- OSX\n- Windows\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
