@@ -43,6 +43,8 @@
 "redisServer":"<p>42. Redis - server, <a href=\"https://github.com/antirez/redis#building-redis\" class=\"uri\">https://github.com/antirez/redis#building-redis</a>.</p>",
 "siberiteLicense":"<p>43. Siberite - license, <a href=\"https://github.com/bogdanovich/siberite/blob/master/LICENSE\" class=\"uri\">https://github.com/bogdanovich/siberite/blob/master/LICENSE</a>.</p>",
 "siberiteRepository":"<p>44. Siberite - repository, <a href=\"https://github.com/bogdanovich/siberite/releases\" class=\"uri\">https://github.com/bogdanovich/siberite/releases</a>.</p>",
-"zeroMQLicense":"<p>45. ZeroMQ - license, <a href=\"http://zeromq.org/area:licensing\" class=\"uri\">http://zeromq.org/area:licensing</a>.</p>",
-"zeroMqVersions":"<p>46. ZeroMQ - versions, <a href=\"https://github.com/zeromq/libzmq/tags\" class=\"uri\">https://github.com/zeromq/libzmq/tags</a>.</p>"
+"sidekiqLicense":"<p>45. Sidekiq - license, <a href=\"https://github.com/mperham/sidekiq/blob/master/LICENSE\" class=\"uri\">https://github.com/mperham/sidekiq/blob/master/LICENSE</a>.</p>",
+"sidekiqVersions":"<p>46. Sidekiq - versions, <a href=\"https://github.com/mperham/sidekiq/releases\" class=\"uri\">https://github.com/mperham/sidekiq/releases</a>.</p>",
+"zeroMQLicense":"<p>47. ZeroMQ - license, <a href=\"http://zeromq.org/area:licensing\" class=\"uri\">http://zeromq.org/area:licensing</a>.</p>",
+"zeroMqVersions":"<p>48. ZeroMQ - versions, <a href=\"https://github.com/zeromq/libzmq/tags\" class=\"uri\">https://github.com/zeromq/libzmq/tags</a>.</p>"
 }

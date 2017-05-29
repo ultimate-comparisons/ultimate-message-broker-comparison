@@ -3661,6 +3661,152 @@
     }
   },
   {
+    "tag": "Sidekiq - https://github.com/mperham/sidekiq",
+    "descr": "Simple, efficient background processing for Ruby.",
+    "Description": {
+      "plain": "Simple, efficient background processing for Ruby.\n\nSidekiq uses threads to handle many jobs at the same time in the same process. It does not require Rails but will integrate tightly with Rails to make background processing dead simple.\n\nSidekiq is compatible with Resque. It uses the exact same message format as Resque so it can integrate into an existing Resque processing farm. You can have Sidekiq and Resque run side-by-side at the same time and use the Resque client to enqueue jobs in Redis to be processed by Sidekiq.",
+      "childs": {
+        "0": [
+          "Simple, efficient background processing for Ruby.",
+          "Sidekiq uses threads to handle many jobs at the same time in the same process. It does not require Rails but will integrate tightly with Rails to make background processing dead simple.",
+          "Sidekiq is compatible with Resque. It uses the exact same message format as Resque so it can integrate into an existing Resque processing farm. You can have Sidekiq and Resque run side-by-side at the same time and use the Resque client to enqueue jobs in Redis to be processed by Sidekiq."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- LGPLv3\n    - [@sidekiqLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "LGPLv3",
+              "plain": "LGPLv3\n",
+              "plainChilds": "    - [@sidekiqLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@sidekiqLicense]",
+                  "plain": "[@sidekiqLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 5.0.0 on 2017-04-25 [@sidekiqVersions]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 5.0.0 on 2017-04-25 [@sidekiqVersions]\n",
+              "childs": [
+                {
+                  "content": "Last version: 5.0.0 on 2017-04-25 [@sidekiqVersions]",
+                  "plain": "Last version: 5.0.0 on 2017-04-25 [@sidekiqVersions]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- Redis\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Redis",
+              "plain": "Redis\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - https://github.com/mperham/sidekiq/wiki\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - https://github.com/mperham/sidekiq/wiki\n",
+              "childs": [
+                {
+                  "content": "https://github.com/mperham/sidekiq/wiki",
+                  "plain": "https://github.com/mperham/sidekiq/wiki\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 203.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "203.000",
+              "plain": "203.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Client language": {
+      "plain": "- Ruby\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Ruby",
+              "plain": "Ruby\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "ZeroMQ - http://zeromq.org/",
     "descr": "Distributed Messaging",
     "Description": {

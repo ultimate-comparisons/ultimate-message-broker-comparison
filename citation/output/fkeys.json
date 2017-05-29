@@ -42,5 +42,7 @@
  "kestrelVersions":"[31]",
  "mappedbusLicense":"[33]",
  "messageBusLicense":"[34]",
- "zeroMqVersions":"[46]",
- "zeroMQLicense":"[45]" }
+ "zeroMqVersions":"[48]",
+ "zeroMQLicense":"[47]",
+ "sidekiqVersions":"[46]",
+ "sidekiqLicense":"[45]" }
