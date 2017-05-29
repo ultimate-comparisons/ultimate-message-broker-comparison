@@ -47,14 +47,19 @@
                     "color": "#EA6311"
                 },
                 {
-                    "name": "BSD-3-Clause",
+                    "name": "BSD-2-Clause",
                     "description": "http://www.opensource.org/licenses/BSD-3-Clause",
                     "color": "#C6EA11"
                 },
                 {
+                    "name": "BSD-3-Clause",
+                    "description": "http://www.opensource.org/licenses/BSD-3-Clause",
+                    "color": "#113FEA"
+                },
+                {
                     "name": "MPL 1.1",
                     "description": "https://www.mozilla.org/media/MPL/1.1/index.0c5913925d40.txt",
-                    "color": "#113FEA"
+                    "color": "#77EA11"
                 }
             ]
         }

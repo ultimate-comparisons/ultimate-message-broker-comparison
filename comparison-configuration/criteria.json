@@ -9,6 +9,7 @@
             {"name": "LGPLv3"},
             {"name": "MIT"},
             {"name": "Apache 2.0"},
+            {"name": "BSD-2-Clause"},
             {"name": "BSD-3-Clause"},
             {"name": "MPL 1.1"}
         ]
