@@ -41,12 +41,14 @@
 "redisLicense":"<p>40. Redis - license, <a href=\"https://redis.io/topics/license\" class=\"uri\">https://redis.io/topics/license</a>.</p>",
 "redisRepository":"<p>41. Redis - repository, <a href=\"https://github.com/antirez/redis/releases\" class=\"uri\">https://github.com/antirez/redis/releases</a>.</p>",
 "redisServer":"<p>42. Redis - server, <a href=\"https://github.com/antirez/redis#building-redis\" class=\"uri\">https://github.com/antirez/redis#building-redis</a>.</p>",
-"rqLicense":"<p>43. RQ - license, <a href=\"https://github.com/nvie/rq/blob/master/LICENSE\" class=\"uri\">https://github.com/nvie/rq/blob/master/LICENSE</a>.</p>",
-"rqVersions":"<p>44. RQ - versions, <a href=\"https://github.com/nvie/rq/releases\" class=\"uri\">https://github.com/nvie/rq/releases</a>.</p>",
-"siberiteLicense":"<p>45. Siberite - license, <a href=\"https://github.com/bogdanovich/siberite/blob/master/LICENSE\" class=\"uri\">https://github.com/bogdanovich/siberite/blob/master/LICENSE</a>.</p>",
-"siberiteRepository":"<p>46. Siberite - repository, <a href=\"https://github.com/bogdanovich/siberite/releases\" class=\"uri\">https://github.com/bogdanovich/siberite/releases</a>.</p>",
-"sidekiqLicense":"<p>47. Sidekiq - license, <a href=\"https://github.com/mperham/sidekiq/blob/master/LICENSE\" class=\"uri\">https://github.com/mperham/sidekiq/blob/master/LICENSE</a>.</p>",
-"sidekiqVersions":"<p>48. Sidekiq - versions, <a href=\"https://github.com/mperham/sidekiq/releases\" class=\"uri\">https://github.com/mperham/sidekiq/releases</a>.</p>",
-"zeroMQLicense":"<p>49. ZeroMQ - license, <a href=\"http://zeromq.org/area:licensing\" class=\"uri\">http://zeromq.org/area:licensing</a>.</p>",
-"zeroMqVersions":"<p>50. ZeroMQ - versions, <a href=\"https://github.com/zeromq/libzmq/tags\" class=\"uri\">https://github.com/zeromq/libzmq/tags</a>.</p>"
+"resqueLicense":"<p>43. Resque - license, <a href=\"https://github.com/resque/resque/blob/master/LICENSE\" class=\"uri\">https://github.com/resque/resque/blob/master/LICENSE</a>.</p>",
+"resqueVersions":"<p>44. Resque - versions, <a href=\"https://github.com/resque/resque/tags\" class=\"uri\">https://github.com/resque/resque/tags</a>.</p>",
+"rqLicense":"<p>45. RQ - license, <a href=\"https://github.com/nvie/rq/blob/master/LICENSE\" class=\"uri\">https://github.com/nvie/rq/blob/master/LICENSE</a>.</p>",
+"rqVersions":"<p>46. RQ - versions, <a href=\"https://github.com/nvie/rq/releases\" class=\"uri\">https://github.com/nvie/rq/releases</a>.</p>",
+"siberiteLicense":"<p>47. Siberite - license, <a href=\"https://github.com/bogdanovich/siberite/blob/master/LICENSE\" class=\"uri\">https://github.com/bogdanovich/siberite/blob/master/LICENSE</a>.</p>",
+"siberiteRepository":"<p>48. Siberite - repository, <a href=\"https://github.com/bogdanovich/siberite/releases\" class=\"uri\">https://github.com/bogdanovich/siberite/releases</a>.</p>",
+"sidekiqLicense":"<p>49. Sidekiq - license, <a href=\"https://github.com/mperham/sidekiq/blob/master/LICENSE\" class=\"uri\">https://github.com/mperham/sidekiq/blob/master/LICENSE</a>.</p>",
+"sidekiqVersions":"<p>50. Sidekiq - versions, <a href=\"https://github.com/mperham/sidekiq/releases\" class=\"uri\">https://github.com/mperham/sidekiq/releases</a>.</p>",
+"zeroMQLicense":"<p>51. ZeroMQ - license, <a href=\"http://zeromq.org/area:licensing\" class=\"uri\">http://zeromq.org/area:licensing</a>.</p>",
+"zeroMqVersions":"<p>52. ZeroMQ - versions, <a href=\"https://github.com/zeromq/libzmq/tags\" class=\"uri\">https://github.com/zeromq/libzmq/tags</a>.</p>"
 }
