@@ -3467,7 +3467,7 @@
     }
   },
   {
-    "tag": "RQ - https://github.com/resque/resque",
+    "tag": "Resque - https://github.com/resque/resque",
     "descr": "",
     "Description": {
       "plain": "Resque (pronounced like rescue) is a Redis-backed library for creating background jobs, placing those jobs on multiple queues, and processing them later.",
