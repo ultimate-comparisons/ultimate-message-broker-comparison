@@ -1,6 +1,5 @@
 import { TableData, LabelCls, Value, Type } from "../index";
 import { ColorDictionary } from "./color-dictionary";
-import { isNullOrUndefined } from "util";
 
 export class TableDataSet {
     private tableDataSet: {[name: string]: TableData;} = {}
@@ -10,21 +9,11 @@ export class TableDataSet {
     constructor(jsonObj: any) {
         jsonObj.forEach(obj => {
             let lcls: LabelCls = new LabelCls();
-            var values: any = {};
+            var values: {[name: string]: string;} = {};
             if (obj.type.values) {
                 obj.type.values.forEach(val => {
                     let value: Value = new Value(val.name, val.description);
-                    if (isNullOrUndefined(val["min-age"])) {
-                        values[val.name] = val.description;
-                    } else {
-                        const v = {};
-                        v["min-age"] = val["min-age"];
-                        v["min-age-unit"] = val["min-age-unit"];
-                        v["max-age"] = val["max-age"];
-                        v["max-age-unit"] = val["max-age-unit"];
-                        v["descirption"] = val.description;
-                        values[val.name] = v;
-                    }
+                    values[val.name] = val.description;
                     switch (val.class) {
                         case "label-success":
                             lcls.label_success.push(value);
@@ -69,8 +58,7 @@ export class TableDataSet {
                 obj.display,
                 type,
                 values,
-                obj.sort,
-                obj.repo
+                obj.sort
             )
             this.tableDataSet[obj.tag] = td;
         })
