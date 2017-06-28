@@ -6,15 +6,12 @@ import {
     ApplicationRef,
     ChangeDetectionStrategy,
     AfterViewChecked,
-    ChangeDetectorRef,
     OnChanges
 } from "@angular/core";
 import { TableData, Data, CriteriaSelection } from "./../../comparison/shared/index";
 import { ComparisonCitationService } from "./../../comparison/components/comparison-citation.service";
 import { ComparisonConfigService } from "../../comparison/components/comparison-config.service";
 import { DomSanitizer, SafeHtml } from "@angular/platform-browser";
-import { isNullOrUndefined } from "util";
-import { Http } from "@angular/http";
 declare let anchors;
 
 @Component({
@@ -51,9 +48,7 @@ export class GenericTableComponent implements AfterViewChecked, OnChanges {
 
     constructor(private ar: ApplicationRef,
                 private confServ: ComparisonConfigService,
-                private sanitization: DomSanitizer,
-                private http: Http,
-                private cd: ChangeDetectorRef) {
+                private sanitization: DomSanitizer) {
     }
 
     private orderClick(e: MouseEvent, value: string) {
@@ -124,7 +119,7 @@ export class GenericTableComponent implements AfterViewChecked, OnChanges {
         return val;
     }
 
-    public getColor(column: TableData,label: string): SafeHtml {
+    public getColor(column: TableData, label: string): SafeHtml {
         return this.sanitization.bypassSecurityTrustStyle(column.type.colors.getColor(label));
     }
 }

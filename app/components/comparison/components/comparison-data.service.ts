@@ -16,7 +16,7 @@ export class ComparisonDataService {
         this.http.request('app/components/comparison/data/data.json')
             .subscribe(res => {
                 res.json().forEach(obj => {
-                    let data: Data = new Data(this.http);
+                    let data: Data = new Data();
                     data.tag = obj.tag;
                     let regArray = /^((?:(?:\w+\s*)(?:-?\s*\w+.)*)+)\s*-?\s*((?:(?:http|ftp|https)(?::\/\/)(?:[\w_-]+(?:(?:\.[\w_-]+)+))|(?:www.))(?:[\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-])?)$/gi.exec(data.tag);
                     data.url = regArray ? regArray[2] : "";
@@ -59,6 +59,7 @@ export class ComparisonDataService {
                                 break;
                         }
                     }
+                    ;
                     this.data.push(data);
                 });
                 cd.markForCheck();
