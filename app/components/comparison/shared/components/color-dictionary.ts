@@ -12,8 +12,4 @@ export class ColorDictionary {
             return "";
         }
     }
-
-    public isEmpty(): boolean {
-        return Object.keys(this.colorDict).length === 0;
-    }
 }

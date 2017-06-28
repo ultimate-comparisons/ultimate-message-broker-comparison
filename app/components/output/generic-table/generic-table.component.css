@@ -15,11 +15,6 @@ table {
     white-space: inherit;
 }
 
-.label-unknown {
-    color: black;
-    border: solid black 1px;
-}
-
 th > button {
     border: none;
     padding: 0;
