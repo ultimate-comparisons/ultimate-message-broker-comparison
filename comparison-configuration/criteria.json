@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Licenses",
+        "tag": "License",
+        "placeholder": "Select license ...",
+        "and_search": false,
+        "values": [
+            {"name": "EPL"},
+            {"name": "LGPLv3"},
+            {"name": "MIT"},
+            {"name": "Apache 2.0"},
+            {"name": "BSD-2-Clause"},
+            {"name": "BSD-3-Clause"},
+            {"name": "MPL 1.1"}
+        ]
+    },
+    {
+        "name": "Protocol",
+        "tag": "Protocol",
+        "placeholder": "Select protocol ...",
+        "and_search": false,
+        "values": [
+            {"name": "AMQP"},
+            {"name": "AUTO"},
+            {"name": "Beanstalkd"},
+            {"name": "Gearman"},
+            {"name": "MQTT"},
+            {"name": "OpenWire"},
+            {"name": "RESP"},
+            {"name": "STOMP"},
+            {"name": "text"},
+            {"name": "thrift"}
+        ]
+    },
+    {
+        "name": "Development status",
+        "tag": "Development status",
+        "description": "",
+        "placeholder": "Select development status ...",
+        "and_search": false,
+        "values": [
+            {"name": "Stale"},
+            {"name": "Active"},
+            {"name": "Experimental"},
+            {"name": "Stable"}
+        ]
+    },
+    {
+        "name": "Server Platforms",
+        "tag": "Server Platforms",
+        "description": "",
+        "placeholder": "Select server platform ...",
+        "and_search": false,
+        "values": [
+            {"name": "Linux"},
+            {"name": "OSX"},
+            {"name": "Windows"}
+        ]
+    },
+    {
+        "name": "EAI-Pattern Support",
+        "tag": "EAI-Pattern Support",
+        "description": "",
+        "placeholder": "Select EAI-Pattern support ...",
+        "and_search": false,
+        "values": [
+            {"name": "Complete"},
+            {"name": "Partially"},
+            {"name": "PubSub"}
+        ]
+    },
+    {
+        "name": "JMS support",
+        "tag": "JMS support",
+        "description": "",
+        "placeholder": "Select JMS support ...",
+        "and_search": true,
+        "values": [
+            {"name": "Yes"},
+            {"name": "No"}
+        ]
+    },
+    {
+        "name": "Working example availability",
+        "tag": "Working example",
+        "description": "",
+        "placeholder": "Select Working example availability ...",
+        "and_search": true,
+        "values": [
+            {"name": "Yes"},
+            {"name": "No"}
+        ]
+    },
+    {
+        "name": "Broker Backend",
+        "tag": "Broker Backend",
+        "description": "",
+        "placeholder": "Select Broker Backend ...",
+        "and_search": true,
+        "values": [
+            {"name": "None"},
+            {"name": "HornetQ"},
+            {"name": "RabbitMQ"},
+            {"name": "Redis"}
+        ]
+    }
+]
