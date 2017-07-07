@@ -2842,6 +2842,156 @@
     }
   },
   {
+    "tag": "OM2M - http://www.eclipse.org/om2m/",
+    "descr": "The Eclipse OM2M project, initiated by LAAS-CNRS, is an open source implementation of oneM2M and SmartM2M standard.",
+    "Description": {
+      "plain": "The Eclipse OM2M project, initiated by LAAS-CNRS, is an open source implementation of oneM2M and SmartM2M standard. It provides a horizontal M2M service platform for developing services independently of the underlying network, with the aim to facilitate the deployment of vertical applications and heterogeneous devices.",
+      "childs": {
+        "0": [
+          "The Eclipse OM2M project, initiated by LAAS-CNRS, is an open source implementation of oneM2M and SmartM2M standard. It provides a horizontal M2M service platform for developing services independently of the underlying network, with the aim to facilitate the deployment of vertical applications and heterogeneous devices."
+        ]
+      }
+    },
+    "License": {
+      "plain": "- EPL\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "EPL",
+              "plain": "EPL\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Development status": {
+      "plain": "- Active\n    - Last version: 1.0.0 on June 2016 [@om2mRepository]\n- Stable\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Active",
+              "plain": "Active\n",
+              "plainChilds": "    - Last version: 1.0.0 on June 2016 [@om2mRepository]\n",
+              "childs": [
+                {
+                  "content": "Last version: 1.0.0 on June 2016 [@om2mRepository]",
+                  "plain": "Last version: 1.0.0 on June 2016 [@om2mRepository]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Stable",
+              "plain": "Stable\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n- OSX\n- Windows\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- -1\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "-1",
+              "plain": "-1\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "Apache Qpid - http://qpid.apache.org/",
     "descr": "Apache Qpid™ makes messaging tools that speak AMQP and support many languages and platforms.",
     "Description": {

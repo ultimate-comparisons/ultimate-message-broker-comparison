@@ -73,15 +73,15 @@
             "values": [
                 {
                     "name": "AMQP",
-                    "color": "hsl(165, 100%, 88%)"
+                    "color": "hsl(135, 100%, 88%)"
                 },
                 {
                     "name": "AUTO",
-                    "color": "hsl(240, 100%, 88%)"
+                    "color": "hsl(245, 100%, 88%)"
                 },
                 {
                     "name": "Beanstalkd",
-                    "color": "hsl(315, 100%, 88%)"
+                    "color": "hsl(365, 100%, 88%)"
                 },
                 {
                     "name": "memcached",
@@ -95,11 +95,11 @@
                 },
                 {
                     "name": "MQTT",
-                    "color": "hsl(180, 100%, 88%)"
+                    "color": "hsl(195, 100%, 88%)"
                 },
                 {
                     "name": "OpenWire",
-                    "color": "hsl(255, 100%, 88%)"
+                    "color": "hsl(325, 100%, 88%)"
                 },
                 {
                     "name": "RESP",
