@@ -28,31 +28,38 @@
             "values": [
                 {
                     "name": "EPL",
-                    "description": "https://opensource.org/licenses/EPL-1.0"
+                    "description": "https://opensource.org/licenses/EPL-1.0",
+                    "color": "hsl(000, 100%, 88%)"
                 },
                 {
                     "name": "LGPLv3",
-                    "description": "https://www.gnu.org/licenses/lgpl-3.0.de.html"
+                    "description": "https://www.gnu.org/licenses/lgpl-3.0.de.html",
+                    "color": "hsl(75, 100%, 88%)"
                 },
                 {
                     "name": "MIT",
-                    "description": "http://choosealicense.com/licenses/mit/"
+                    "description": "http://choosealicense.com/licenses/mit/",
+                    "color": "hsl(150, 100%, 88%)"
                 },
                 {
                     "name": "Apache 2.0",
-                    "description": "http://choosealicense.com/licenses/apache-2.0/"
+                    "description": "http://choosealicense.com/licenses/apache-2.0/",
+                    "color": "hsl(225, 100%, 88%)"
                 },
                 {
                     "name": "BSD-2-Clause",
-                    "description": "http://www.opensource.org/licenses/BSD-3-Clause"
+                    "description": "http://www.opensource.org/licenses/BSD-3-Clause",
+                    "color": "hsl(300, 100%, 88%)"
                 },
                 {
                     "name": "BSD-3-Clause",
-                    "description": "http://www.opensource.org/licenses/BSD-3-Clause"
+                    "description": "http://www.opensource.org/licenses/BSD-3-Clause",
+                    "color": "hsl(15, 100%, 88%)"
                 },
                 {
                     "name": "MPL 1.1",
-                    "description": "https://www.mozilla.org/media/MPL/1.1/index.0c5913925d40.txt"
+                    "description": "https://www.mozilla.org/media/MPL/1.1/index.0c5913925d40.txt",
+                    "color": "hsl(90, 100%, 88%)"
                 }
             ]
         }
@@ -64,23 +71,52 @@
         "type": {
             "tag": "label",
             "values": [
-                {"name": "AMQP"},
-                {"name": "AUTO"},
-                {"name": "Beanstalkd"},
+                {
+                    "name": "AMQP",
+                    "color": "hsl(135, 100%, 88%)"
+                },
+                {
+                    "name": "AUTO",
+                    "color": "hsl(245, 100%, 88%)"
+                },
+                {
+                    "name": "Beanstalkd",
+                    "color": "hsl(365, 100%, 88%)"
+                },
                 {
                     "name": "memcached",
-                    "description": "https://github.com/memcached/memcached/blob/master/doc/protocol.txt"
+                    "description": "https://github.com/memcached/memcached/blob/master/doc/protocol.txt",
+                    "color": "hsl(30, 100%, 88%)"
                 },
                 {
                     "name": "Gearman",
-                    "description": "http://gearman.org/protocol/"
+                    "description": "http://gearman.org/protocol/",
+                    "color": "hsl(105, 100%, 88%)"
                 },
-                {"name": "MQTT"},
-                {"name": "OpenWire"},
-                {"name": "RESP"},
-                {"name": "STOMP"},
-                {"name": "text"},
-                {"name": "thrift"}
+                {
+                    "name": "MQTT",
+                    "color": "hsl(195, 100%, 88%)"
+                },
+                {
+                    "name": "OpenWire",
+                    "color": "hsl(325, 100%, 88%)"
+                },
+                {
+                    "name": "RESP",
+                    "color": "hsl(330, 100%, 88%)"
+                },
+                {
+                    "name": "STOMP",
+                    "color": "hsl(45, 100%, 88%)"
+                },
+                {
+                    "name": "text",
+                    "color": "hsl(120, 100%, 88%)"
+                },
+                {
+                    "name": "thrift",
+                    "color": "hsl(195, 100%, 88%)"
+                }
             ]
         }
     },
@@ -121,9 +157,18 @@
         "type": {
             "tag": "label",
             "values": [
-                {"name": "Linux"},
-                {"name": "OSX"},
-                {"name": "Windows"}
+                {
+                    "name": "Linux",
+                    "color": "hsl(270, 100%, 88%)"
+                },
+                {
+                    "name": "OSX",
+                    "color": "hsl(345, 100%, 88%)"
+                },
+                {
+                    "name": "Windows",
+                    "color": "hsl(60, 100%, 88%)"
+                }
             ]
         }
     },
@@ -142,7 +187,10 @@
                     "name": "Partially",
                     "class": "label-warning"
                 },
-                {"name": "PubSub"}
+                {
+                    "name": "PubSub",
+                    "color": "hsl(135, 100%, 88%)"
+                }
             ]
         }
     },
@@ -189,10 +237,22 @@
         "type": {
             "tag": "label",
             "values": [
-                {"name": "None"},
-                {"name": "HornetQ"},
-                {"name": "RabbitMQ"},
-                {"name": "Redis"}
+                {
+                    "name": "None",
+                    "color": "hsl(210, 100%, 88%)"
+                },
+                {
+                    "name": "HornetQ",
+                    "color": "hsl(285, 100%, 88%)"
+                },
+                {
+                    "name": "RabbitMQ",
+                    "color": "hsl(000, 100%, 88%)"
+                },
+                {
+                    "name": "Redis",
+                    "color": "hsl(75, 100%, 88%)"
+                }
             ]
         }
     }
