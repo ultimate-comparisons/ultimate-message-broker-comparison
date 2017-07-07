@@ -195,17 +195,5 @@
                 {"name": "Redis"}
             ]
         }
-    },
-    {
-        "name": "Google hits",
-        "tag": "Google hits",
-        "display": true,
-        "type": {
-            "tag": "label",
-            "class": "label label-info",
-            "values": [
-                {"name": "dummy"}
-            ]
-        }
     }
 ]
