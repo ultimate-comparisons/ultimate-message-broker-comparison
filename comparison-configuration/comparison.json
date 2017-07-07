@@ -1,0 +1,23 @@
+{
+    "title": "Ultimate Message Broker Comparison",
+    "subtitle": "Ultimate comparison of open source message brokern",
+    "selecttitle": "Criteria",
+    "tabletitle": "Comparison of Message Broker",
+    "details": {
+        "header-label": "",
+        "body-main-title": "Description",
+        "body": "Description",
+        "body-attachment-tags": [
+            "License",
+            "Development status",
+            "Server Platforms",
+            "Protocol",
+            "EAI-Pattern Support",
+            "JMS support",
+            "Working example",
+            "Broker Backend",
+            "Google hits"
+        ]
+    },
+    "repository": "https://github.com/FachstudieBTZ/ultimate-comparison-BASE/"
+}
