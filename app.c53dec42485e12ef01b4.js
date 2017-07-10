@@ -4960,9 +4960,9 @@ webpackJsonp([0],[
 	"use strict";
 	class VersionInformation {
 	    constructor() {
-	        this.date = "2017-07-07";
-	        this.commit = "a94ad520ab330fb65a5d1227acfbc06490eafd1a";
-	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/a94ad520ab330fb65a5d1227acfbc06490eafd1a";
+	        this.date = "2017-07-10";
+	        this.commit = "f5335fa8e80014e85b05a998ecc709241bb40403";
+	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/f5335fa8e80014e85b05a998ecc709241bb40403";
 	    }
 	}
 	exports.VersionInformation = VersionInformation;
@@ -14012,31 +14012,46 @@ webpackJsonp([0],[
 	        return this.sanitization.bypassSecurityTrustStyle((yiq >= 128) ? 'black' : 'white');
 	    }
 	    hslToRgb(h, s, l) {
+	        // fix values: 0<=h<360, 0<=s<=1, 0<=l<=1
+	        h = h % 360;
+	        s = s > 1 ? s / 100 : s;
+	        l = l > 1 ? l / 100 : l;
+	        // algorithm according to http://www.rapidtables.com/convert/color/hsl-to-rgb.htm
+	        const c = (1 - Math.abs(2 * l - 1)) * s;
+	        const x = c * (1 - Math.abs((h / 60) % 2 - 1));
+	        const m = l - c / 2;
 	        let r, g, b;
-	        if (s == 0) {
-	            r = g = b = l; // achromatic
+	        if (0 <= h && h < 60) {
+	            r = c;
+	            g = x;
+	            b = 0;
+	        }
+	        else if (60 <= h && h < 120) {
+	            r = x;
+	            g = c;
+	            b = 0;
+	        }
+	        else if (120 <= h && h < 180) {
+	            r = 0;
+	            g = c;
+	            b = x;
+	        }
+	        else if (180 <= h && h < 240) {
+	            r = 0;
+	            g = x;
+	            b = c;
+	        }
+	        else if (240 <= h && h < 300) {
+	            r = x;
+	            g = 0;
+	            b = c;
 	        }
 	        else {
-	            let hue2rgb = function hue2rgb(p, q, t) {
-	                if (t < 0)
-	                    t += 1;
-	                if (t > 1)
-	                    t -= 1;
-	                if (t < 1 / 6)
-	                    return p + (q - p) * 6 * t;
-	                if (t < 1 / 2)
-	                    return q;
-	                if (t < 2 / 3)
-	                    return p + (q - p) * (2 / 3 - t) * 6;
-	                return p;
-	            };
-	            let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-	            let p = 2 * l - q;
-	            r = hue2rgb(p, q, h + 1 / 3);
-	            g = hue2rgb(p, q, h);
-	            b = hue2rgb(p, q, h - 1 / 3);
+	            r = c;
+	            g = 0;
+	            b = x;
 	        }
-	        return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+	        return [Math.round((r + m) * 255), Math.round((g + m) * 255), Math.round((b + m) * 255)];
 	    }
 	};
 	__decorate([
@@ -14176,4 +14191,4 @@ webpackJsonp([0],[
 
 /***/ })
 ]);
-//# sourceMappingURL=app.032046790b75bfc142ca.js.map
+//# sourceMappingURL=app.c53dec42485e12ef01b4.js.map
