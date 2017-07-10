@@ -103,12 +103,5 @@
             {"name": "RabbitMQ"},
             {"name": "Redis"}
         ]
-    },
-    {
-        "name": "Google hits",
-        "tag": "Google hits",
-        "placeholder": "Select Google hits ranges ...",
-        "and_search": false,
-        "range_search": true
     }
 ]

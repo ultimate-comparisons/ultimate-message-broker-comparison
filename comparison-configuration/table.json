@@ -255,14 +255,5 @@
                 }
             ]
         }
-    },
-    {
-        "name": "Google hits",
-        "tag": "Google hits",
-        "display": true,
-        "order": "asc",
-        "type": {
-            "tag": "label"
-        }
     }
 ]
