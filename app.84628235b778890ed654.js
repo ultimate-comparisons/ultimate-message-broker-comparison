@@ -148,8 +148,8 @@ webpackJsonp([0],[
 	const comparison_footnote_component_1 = __webpack_require__(58);
 	const comparison_component_1 = __webpack_require__(60);
 	const pipes_module_1 = __webpack_require__(67);
-	const input_module_1 = __webpack_require__(73);
-	const output_module_1 = __webpack_require__(92);
+	const input_module_1 = __webpack_require__(72);
+	const output_module_1 = __webpack_require__(91);
 	const comparison_service_1 = __webpack_require__(53);
 	const comparison_data_service_1 = __webpack_require__(52);
 	const comparison_config_service_1 = __webpack_require__(51);
@@ -442,7 +442,7 @@ webpackJsonp([0],[
 	"use strict";
 	const type_1 = __webpack_require__(37);
 	class TableData {
-	    constructor(name = "", tag = "", url = "", style = "", display = false, type = new type_1.Type(), values = {}, sort = 0, order = 'asc') {
+	    constructor(name = "", tag = "", url = "", style = "", display = false, type = new type_1.Type(), values = {}, sort = 0, repo = false) {
 	        this.name = name;
 	        this.tag = tag;
 	        this.url = url;
@@ -451,7 +451,7 @@ webpackJsonp([0],[
 	        this.type = type;
 	        this.values = values;
 	        this.sort = sort;
-	        this.order = order;
+	        this.repo = repo;
 	    }
 	}
 	exports.TableData = TableData;
@@ -511,9 +511,6 @@ webpackJsonp([0],[
 	            return "";
 	        }
 	    }
-	    isEmpty() {
-	        return Object.keys(this.colorDict).length === 0;
-	    }
 	}
 	exports.ColorDictionary = ColorDictionary;
 
@@ -529,15 +526,26 @@ webpackJsonp([0],[
 	class TableDataSet {
 	    constructor(jsonObj) {
 	        this.tableDataSet = {};
-	        this.set = [];
+	        this.set = new Array();
 	        this.ready = false;
 	        jsonObj.forEach(obj => {
 	            let lcls = new index_1.LabelCls();
-	            let values = {};
+	            var values = {};
 	            if (obj.type.values) {
 	                obj.type.values.forEach(val => {
 	                    let value = new index_1.Value(val.name, val.description);
-	                    values[val.name] = { tag: val.description, weight: val.weight };
+	                    if (util_1.isNullOrUndefined(val["min-age"])) {
+	                        values[val.name] = val.description;
+	                    }
+	                    else {
+	                        const v = {};
+	                        v["min-age"] = val["min-age"];
+	                        v["min-age-unit"] = val["min-age-unit"];
+	                        v["max-age"] = val["max-age"];
+	                        v["max-age-unit"] = val["max-age-unit"];
+	                        v["descirption"] = val.description;
+	                        values[val.name] = v;
+	                    }
 	                    switch (val.class) {
 	                        case "label-success":
 	                            lcls.label_success.push(value);
@@ -569,11 +577,7 @@ webpackJsonp([0],[
 	                }
 	            }
 	            let type = new index_1.Type(obj.type.tag, obj.type.class, lcls, colors);
-	            let order = obj.order;
-	            if (!util_1.isNullOrUndefined(order)) {
-	                order = order.toLowerCase();
-	            }
-	            let td = new index_1.TableData(obj.name, obj.tag, obj.urlTag, obj.style, obj.display, type, values, obj.sort, order);
+	            let td = new index_1.TableData(obj.name, obj.tag, obj.urlTag, obj.style, obj.display, type, values, obj.sort, obj.repo);
 	            this.tableDataSet[obj.tag] = td;
 	        });
 	        this.ready = true;
@@ -1257,23 +1261,13 @@ webpackJsonp([0],[
 
 	"use strict";
 	class Criteria {
-	    constructor(name = "", tag = "", description = "", placeholder = "", and_search = true, values = new Array(), range_search = false) {
+	    constructor(name = "", tag = "", description = "", placeholder = "", and_search = true, values = new Array()) {
 	        this.name = name;
 	        this.tag = tag;
 	        this.description = description;
 	        this.placeholder = placeholder;
 	        this.and_search = and_search;
 	        this.values = values;
-	        this.range_search = range_search;
-	    }
-	    getSearchIndicator() {
-	        if (this.and_search) {
-	            return "match all";
-	        }
-	        if (this.range_search) {
-	            return "match range";
-	        }
-	        return "match one";
 	    }
 	}
 	exports.Criteria = Criteria;
@@ -1294,17 +1288,14 @@ webpackJsonp([0],[
 	            criteria.tag = crit.tag;
 	            criteria.description = crit.description ? crit.description : "";
 	            criteria.and_search = typeof crit.and_search !== typeof undefined ? crit.and_search : true;
-	            criteria.range_search = typeof crit.range_search !== typeof undefined ? crit.range_search : false;
-	            if (!criteria.range_search) {
-	                crit.values.forEach(val => {
-	                    let value = new index_1.Value();
-	                    value.name = val.name ? val.name : "undefined value";
-	                    value.value = val.name ? val.name : "undefined value";
-	                    value.label = val.name ? val.name : "undefined value";
-	                    value.description = val.description ? val.description : "";
-	                    criteria.values.push(value);
-	                });
-	            }
+	            crit.values.forEach(val => {
+	                let value = new index_1.Value();
+	                value.name = val.name ? val.name : "undefined value";
+	                value.value = val.name ? val.name : "undefined value";
+	                value.label = val.name ? val.name : "undefined value";
+	                value.description = val.description ? val.description : "";
+	                criteria.values.push(value);
+	            });
 	            criteria.placeholder = crit.placeholder ? crit.placeholder : "";
 	            this.criteriaSet[crit.tag] = criteria;
 	        });
@@ -4961,8 +4952,8 @@ webpackJsonp([0],[
 	class VersionInformation {
 	    constructor() {
 	        this.date = "2017-07-14";
-	        this.commit = "451a39b1735d3d7bccda81b257320bdc20c85697";
-	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/451a39b1735d3d7bccda81b257320bdc20c85697";
+	        this.commit = "db4b92373f100ff906bd79184d2d832f4d71efad";
+	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/db4b92373f100ff906bd79184d2d832f4d71efad";
 	    }
 	}
 	exports.VersionInformation = VersionInformation;
@@ -5181,13 +5172,13 @@ webpackJsonp([0],[
 /* 65 */
 /***/ (function(module, exports) {
 
-	module.exports = "<a href=\"{{confServ.comparison?.repository}}\" class=\"github-corner\">\n    <svg width=\"80\" height=\"80\" viewBox=\"0 0 250 250\"\n         style=\"cursor:pointer; fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;\">\n        <path d=\"M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z\"></path>\n        <path d=\"M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2\"\n              fill=\"currentColor\" style=\"transform-origin: 130px 106px;\" class=\"octo-arm\"></path>\n        <path d=\"M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z\"\n              fill=\"currentColor\" class=\"octo-body\"></path>\n    </svg>\n</a>\n\n<div class=\"container\">\n    <div class=\"page-header\">\n        <h1>{{confServ.comparison?.title}}\n            <small>{{confServ.comparison?.subtitle}}</small>\n        </h1>\n    </div>\n\n    <pcard class=\"large-paper-card\">\n        <div class=\"card-content\">\n            <htmlcitationtext [description]=\"confServ.description\" [citationServ]=\"citationServ\"\n                              *ngIf=\"citationServ.check\"></htmlcitationtext>\n        </div>\n    </pcard>\n\n    <pcard [heading]=\"confServ.comparison?.selecttitle\" class=\"large-paper-card\">\n        <div class=\"card-content\">\n            <template ngFor let-crit [ngForOf]=\"confServ.criteriaSet?.getCriteriaArray()\">\n                <div class=\"col-md-6\">\n                    <div class=\"form-group\">\n                        <ptooltip [tooltip]=\"crit.description\">\n                            <label>\n                                {{crit.name}}\n                                <span class=\"search-indicator\">({{crit.getSearchIndicator()}})</span>\n                            </label>\n                        </ptooltip><br>\n                        <select2 [options]=\"crit.values\" [placeholder]=\"crit.placeholder\"\n                                 (result)=\"criteriaChanged($event, crit)\" *ngIf=\"!crit.range_search\"></select2>\n                        <input type=\"text\" [placeholder]=\"crit.placeholder\" [style.width]=\"'100%'\" class=\"range-search\"\n                               (keyup)=\"criteriaChanged($event, crit)\" *ngIf=\"crit.range_search\">\n                    </div>\n                </div>\n            </template>\n        </div>\n    </pcard>\n\n    <pcard heading=\"{{confServ.comparison?.tabletitle}}\" class=\"super-large-paper-card\">\n        <div class=\"card-content\">\n            <generictable [display]=\"confServ.tableDataSet\" [settings]=\"'true'\"\n                          [columns]=\"confServ.tableDataSet.getTableDataArray()\" [data]=\"dataServ.data\" [query]=\"query\"\n                          [displayTemplate]=\"confServ.comparison.displaytemplate\" [citationServ]=\"citationServ\"\n                          (settingsCallback)=\"showTableProperties()\" (showDetails)=\"showDetails($event)\"\n                          [(order)]=\"order\" [(orderOption)]=\"orderOption\"\n                          *ngIf=\"citationServ.check&&confServ.tableDataSet.ready\"\n                          [changeNum]=\"dataServ.getLength()+changed\"></generictable>\n        </div>\n    </pcard>\n\n    <pcard heading=\"References\" class=\"large-paper-card\" [hidden]=\"this.citationServ.references.length == 0\">\n        <div class=\"card-content\">\n            <referencestable [changeNum]=\"dataServ.getLength()+changed\" [citationServ]=\"citationServ\"></referencestable>\n        </div>\n    </pcard>\n\n</div>\n\n<pdialog id=\"settings\" #details>\n    <comparison-details [data]=\"activeRow\" *ngIf=\"detailsModal?.opened\"></comparison-details>\n</pdialog>\n\n<pdialog id=\"settings\" #settings>\n    <div class=\"pheader\">\n        <h2>Table Settings</h2>\n    </div>\n    <div class=\"col-md-12\">\n        <div class=\"col-md-6\">\n            <h5>Select Columns...</h5>\n            <pitem>\n                <pcheckbox [checked]=\"confServ.displayAll\" (checkedChange)=\"confServ.displayAllChange($event, this)\"\n                           [label]=\"confServ.displayAllName\"></pcheckbox>\n            </pitem>\n            <template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray()\">\n                <pitem>\n                    <pcheckbox [checked]=column.display (checkedChange)=\"confServ.displayChange(column,this)\"\n                               [label]=\"column.name\"></pcheckbox>\n                </pitem>\n            </template>\n        </div>\n        <div class=\"col-md-6\">\n            <h5>Other Settings...</h5>\n            <div *ngIf=\"confServ.comparison\">\n                <pitem>\n                    <pcheckbox [checked]=\"confServ.comparison.displaytemplate\" (checkedChange)=\"changeDisplayTemplate()\"\n                               [label]=\"'Display Template'\"></pcheckbox>\n                </pitem>\n                <pitem>\n                    <pcheckbox [checked]=\"confServ.comparison.displayall\" (checkedChange)=\"changeDisplayAll()\"\n                               [label]=\"'Show Uncompared'\"></pcheckbox>\n                </pitem>\n                <h6>Latex</h6>\n                <pitem>\n                    <pbutton (click)=\"downloadLatexTable()\">Download Table</pbutton>\n                </pitem>\n                <pitem>\n                    <pcheckbox [(checked)]=\"showTable\" [label]=\"'Display Latex Table'\"></pcheckbox>\n                </pitem>\n                <pitem>\n                    <pcheckbox [(checked)]=\"showTableTooltips\" [label]=\"'Show Tooltips'\"></pcheckbox>\n                </pitem>\n                <pitem>\n                    <pcheckbox [(checked)]=\"tableTooltipsAsFootnotes\"\n                               [label]=\"'Display tooltip text in Footnotes'\"></pcheckbox>\n                </pitem>\n                <h6>Details page</h6>\n                <pitem>\n                    <pcheckbox [(checked)]=\"confServ.comparison?.details.tooltipAsText\"\n                               [label]=\"'Display tooltip text next to labels in the details page'\"></pcheckbox>\n                </pitem>\n            </div>\n        </div>\n    </div>\n</pdialog>\n\n\n<div *ngIf=\"showTable\" class=\"container\" #latextable>\n    <!-- @formatter:off -->\n<pcard heading=\"Latex Table\" class=\"large-paper-card\"><div class=\"card-content\" style=\"overflow: auto;\"><!--\n-->%\\usepackage&#123;calc&#125;<br/>\n%\\usepackage&#123;booktabs&#125;<br/>\n%\\usepackage&#123;url&#125;<br/>\n%\\usepackage&#123;hyperref&#125;<br/>\n%\\usepackage&#123;footnote&#125;<br/>\n%\\usepackage&#123;scrextend&#125;<br/>\n%\\makesavenoteenv&#123;tabular&#125;<br/>\n%\\makesavenoteenv&#123;tabule&#125;<br/>\n\\begin&#123;tabular&#125;&#123;&#64;&#123;&#125; <template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray() | tablefilter\">p&#123;\\linewidth/{{(confServ.tableDataSet?.getTableDataArray() | tablefilter).length}}&#125; </template>&#64;&#123;&#125;&#125;<br/>\n\\toprule<br/>\n<template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray() | tablefilter\" let-last=\"last\">{{column.name}} <!--\n    --><template [ngIf]=\"!last\">&#38; </template><!--\n    --><template [ngIf]=\"last\">\\\\<br/></template>\n</template>\\midrule<br/>\n<!-- iterate over data rows\n--><template ngFor let-dat [ngForOf]=\"dataServ.data | orderBy: [order,orderOption] | datafilter: [query,confServ.comparison?.displaytemplate]\"><!--\n    iterate over data columns \n    --><template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray() | tablefilter\" let-last=\"last\"><!--\n        print url \n        --><template [ngIf]=\"column.type?.tag==='url'\">{{dat.getProperty(column.tag).text}}</template><!--\n        print text \n        --><template [ngIf]=\"column.type?.tag==='text'\"><div [innerHtml]=\"dat.getProperty(column.tag).text|citation:[citationServ, true]|sanitizeHtml\"></div></template><!--\n        print labels \n        --><template [ngIf]=\"column.type?.tag==='label'\"><!--\n            iterate over labels \n            --><template ngFor let-sitem [ngForOf]=\"dat.getPropertyListItems(column.tag)\" let-lastItem=\"last\" *ngIf=\"column.type?.labelCls\"><!--\n                print label \n                -->{{sitem.content}}<!--\n                    tooltip\n                    --><template [ngIf]=\"sitem.latexChilds\"><!--\n                        print tooltips?\n                        --><template [ngIf]=\"showTableTooltips\"><!--\n                            print tooltips in footnotes\n                            --><comparison-footnote [footnote]=\"sitem.latexChilds\" *ngIf=\"tableTooltipsAsFootnotes\"></comparison-footnote><!--\n                            print tooltips after labels    \n                            --><div [innerHtml]=\"sitem.latexChilds|citation: [this.citationServ, true]|sanitizeHtml\"></div><!--\n                        --></template><!-- \n                    --></template><!-- \n                    label seperator --><template [ngIf]=\"!lastItem\">, </template><!--\n            --></template><!--\n        --></template><template [ngIf]=\"!last\"> &#38; </template><template [ngIf]=\"last\">\\\\<br/></template><!--\n    --></template>\n</template>\\bottomrule<br/>\n\\end&#123;tabular&#125;<br/>\n<template [ngIf]=\"tableTooltipsAsFootnotes\">\n\\newcommand\\snum&#123;0&#125;\n<template ngFor let-item [ngForOf]=\"serv.getFootnotes()\"><div [innerHtml]=\"item|sanitizeHtml\"></div>\n</template></template></div></pcard>\n    <!-- @formatter:on -->\n</div>\n\n<div class=\"footer\">\n    <div class=\"container\">\n        This is an <a href=\"http://ultimate-comparisons.github.io/\">Ultimate Comparison</a> | content licensed under <a\n            rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\"><img\n            alt=\"Creative Commons License CC-BY-SA 4.0\" style=\"border-width:0\"\n            src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\"/></a> | <a [href]=\"getVersionInformation()?.link\">{{getVersionInformation()?.commit?.substr(0, 8) + \" (\" + (getVersionInformation()?.date | date: (\"yyyy-MM-dd\")) + \")\"}}</a>\n    </div>\n</div>";
+	module.exports = "<a href=\"{{confServ.comparison?.repository}}\" class=\"github-corner\">\n    <svg width=\"80\" height=\"80\" viewBox=\"0 0 250 250\"\n         style=\"cursor:pointer; fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;\">\n        <path d=\"M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z\"></path>\n        <path d=\"M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2\"\n              fill=\"currentColor\" style=\"transform-origin: 130px 106px;\" class=\"octo-arm\"></path>\n        <path d=\"M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z\"\n              fill=\"currentColor\" class=\"octo-body\"></path>\n    </svg>\n</a>\n\n<div class=\"container\">\n    <div class=\"page-header\">\n        <h1>{{confServ.comparison?.title}}\n            <small>{{confServ.comparison?.subtitle}}</small>\n        </h1>\n    </div>\n\n    <pcard class=\"large-paper-card\">\n        <div class=\"card-content\">\n            <htmlcitationtext [description]=\"confServ.description\" [citationServ]=\"citationServ\"\n                              *ngIf=\"citationServ.check\"></htmlcitationtext>\n        </div>\n    </pcard>\n\n    <pcard [heading]=\"confServ.comparison?.selecttitle\" class=\"large-paper-card\">\n        <div class=\"card-content\">\n            <template ngFor let-crit [ngForOf]=\"confServ.criteriaSet?.getCriteriaArray()\">\n                <div class=\"col-md-6\">\n                    <div class=\"form-group\">\n                        <ptooltip [tooltip]=\"crit.description\">\n                            <label>\n                                {{crit.name}}\n                                <span class=\"search-indicator\">({{crit.and_search ? \"match all\" : \"match one\"}})</span>\n                            </label>\n                        </ptooltip>\n                        <select2 [options]=\"crit.values\" [placeholder]=\"crit.placeholder\"\n                                 (result)=\"criteriaChanged($event, crit)\"></select2>\n                    </div>\n                </div>\n            </template>\n        </div>\n    </pcard>\n\n    <pcard heading=\"{{confServ.comparison?.tabletitle}}\" class=\"super-large-paper-card\">\n        <div class=\"card-content\">\n            <generictable [display]=\"confServ.tableDataSet\" [settings]=\"'true'\"\n                          [columns]=\"confServ.tableDataSet.getTableDataArray()\" [data]=\"dataServ.data\" [query]=\"query\"\n                          [displayTemplate]=\"confServ.comparison.displaytemplate\" [citationServ]=\"citationServ\"\n                          (settingsCallback)=\"showTableProperties()\" (showDetails)=\"showDetails($event)\"\n                          [(order)]=\"order\" [(orderOption)]=\"orderOption\"\n                          *ngIf=\"citationServ.check&&confServ.tableDataSet.ready\"\n                          [changeNum]=\"dataServ.getLength()+changed\"></generictable>\n        </div>\n    </pcard>\n\n    <pcard heading=\"References\" class=\"large-paper-card\" [hidden]=\"this.citationServ.references.length == 0\">\n        <div class=\"card-content\">\n            <referencestable [changeNum]=\"dataServ.getLength()+changed\" [citationServ]=\"citationServ\"></referencestable>\n        </div>\n    </pcard>\n\n</div>\n\n<pdialog #details>\n    <comparison-details [data]=\"activeRow\" *ngIf=\"detailsModal?.opened\"></comparison-details>\n</pdialog>\n\n<pdialog #settings>\n    <div class=\"pheader\">\n        <h2>Table Settings</h2>\n    </div>\n    <div class=\"col-md-12\">\n        <div class=\"col-md-6\">\n            <h5>Select Columns...</h5>\n            <pitem>\n                <pcheckbox [checked]=\"confServ.displayAll\" (checkedChange)=\"confServ.displayAllChange($event, this)\"\n                           [label]=\"confServ.displayAllName\"></pcheckbox>\n            </pitem>\n            <template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray()\">\n                <pitem>\n                    <pcheckbox [checked]=column.display (checkedChange)=\"confServ.displayChange(column,this)\"\n                               [label]=\"column.name\"></pcheckbox>\n                </pitem>\n            </template>\n        </div>\n        <div class=\"col-md-6\">\n            <h5>Other Settings...</h5>\n            <div *ngIf=\"confServ.comparison\">\n                <pitem>\n                    <pcheckbox [checked]=\"confServ.comparison.displaytemplate\" (checkedChange)=\"changeDisplayTemplate()\"\n                               [label]=\"'Display Template'\"></pcheckbox>\n                </pitem>\n                <pitem>\n                    <pcheckbox [checked]=\"confServ.comparison.displayall\" (checkedChange)=\"changeDisplayAll()\"\n                               [label]=\"'Show Uncompared'\"></pcheckbox>\n                </pitem>\n                <h6>Latex</h6>\n                <pitem>\n                    <pbutton (click)=\"downloadLatexTable()\">Download Table</pbutton>\n                </pitem>\n                <pitem>\n                    <pcheckbox [(checked)]=\"showTable\" [label]=\"'Display Latex Table'\"></pcheckbox>\n                </pitem>\n                <pitem>\n                    <pcheckbox [(checked)]=\"showTableTooltips\" [label]=\"'Show Tooltips'\"></pcheckbox>\n                </pitem>\n                <pitem>\n                    <pcheckbox [(checked)]=\"tableTooltipsAsFootnotes\"\n                               [label]=\"'Display tooltip text in Footnotes'\"></pcheckbox>\n                </pitem>\n                <h6>Details page</h6>\n                <pitem>\n                    <pcheckbox [(checked)]=\"confServ.comparison?.details.tooltipAsText\"\n                               [label]=\"'Display tooltip text next to labels in the details page'\"></pcheckbox>\n                </pitem>\n            </div>\n        </div>\n    </div>\n</pdialog>\n\n\n<div *ngIf=\"showTable\" class=\"container\" #latextable>\n    <!-- @formatter:off -->\n<pcard heading=\"Latex Table\" class=\"large-paper-card\"><div class=\"card-content\" style=\"overflow: auto;\"><!--\n-->%\\usepackage&#123;calc&#125;<br/>\n%\\usepackage&#123;booktabs&#125;<br/>\n%\\usepackage&#123;url&#125;<br/>\n%\\usepackage&#123;hyperref&#125;<br/>\n%\\usepackage&#123;footnote&#125;<br/>\n%\\usepackage&#123;scrextend&#125;<br/>\n%\\makesavenoteenv&#123;tabular&#125;<br/>\n%\\makesavenoteenv&#123;tabule&#125;<br/>\n\\begin&#123;tabular&#125;&#123;&#64;&#123;&#125; <template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray() | tablefilter\">p&#123;\\linewidth/{{(confServ.tableDataSet?.getTableDataArray() | tablefilter).length}}&#125; </template>&#64;&#123;&#125;&#125;<br/>\n\\toprule<br/>\n<template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray() | tablefilter\" let-last=\"last\">{{column.name}} <!--\n    --><template [ngIf]=\"!last\">&#38; </template><!--\n    --><template [ngIf]=\"last\">\\\\<br/></template>\n</template>\\midrule<br/>\n<!-- iterate over data rows\n--><template ngFor let-dat [ngForOf]=\"dataServ.data | orderBy: [order,orderOption] | datafilter: [query,confServ.comparison?.displaytemplate]\"><!--\n    iterate over data columns \n    --><template ngFor let-column [ngForOf]=\"confServ.tableDataSet?.getTableDataArray() | tablefilter\" let-last=\"last\"><!--\n        print url \n        --><template [ngIf]=\"column.type?.tag==='url'\">{{dat.getProperty(column.tag).text}}</template><!--\n        print text \n        --><template [ngIf]=\"column.type?.tag==='text'\"><div [innerHtml]=\"dat.getProperty(column.tag).text|citation:[citationServ, true]|sanitizeHtml\"></div></template><!--\n        print labels \n        --><template [ngIf]=\"column.type?.tag==='label'\"><!--\n            iterate over labels \n            --><template ngFor let-sitem [ngForOf]=\"dat.getPropertyListItems(column.tag)\" let-lastItem=\"last\" *ngIf=\"column.type?.labelCls\"><!--\n                print label \n                -->{{sitem.content}}<!--\n                    tooltip\n                    --><template [ngIf]=\"sitem.latexChilds\"><!--\n                        print tooltips?\n                        --><template [ngIf]=\"showTableTooltips\"><!--\n                            print tooltips in footnotes\n                            --><comparison-footnote [footnote]=\"sitem.latexChilds\" *ngIf=\"tableTooltipsAsFootnotes\"></comparison-footnote><!--\n                            print tooltips after labels    \n                            --><div [innerHtml]=\"sitem.latexChilds|citation: [this.citationServ, true]|sanitizeHtml\"></div><!--\n                        --></template><!-- \n                    --></template><!-- \n                    label seperator --><template [ngIf]=\"!lastItem\">, </template><!--\n            --></template><!--\n        --></template><template [ngIf]=\"!last\"> &#38; </template><template [ngIf]=\"last\">\\\\<br/></template><!--\n    --></template>\n</template>\\bottomrule<br/>\n\\end&#123;tabular&#125;<br/>\n<template [ngIf]=\"tableTooltipsAsFootnotes\">\n\\newcommand\\snum&#123;0&#125;\n<template ngFor let-item [ngForOf]=\"serv.getFootnotes()\"><div [innerHtml]=\"item|sanitizeHtml\"></div>\n</template></template></div></pcard>\n    <!-- @formatter:on -->\n</div>\n\n<div class=\"footer\">\n    <div class=\"container\">\n        This is an <a href=\"http://ultimate-comparisons.github.io/\">Ultimate Comparison</a> | content licensed under <a\n            rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\"><img\n            alt=\"Creative Commons License CC-BY-SA 4.0\" style=\"border-width:0\"\n            src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\"/></a> | <a [href]=\"getVersionInformation()?.link\">{{getVersionInformation()?.commit?.substr(0, 8) + \" (\" + (getVersionInformation()?.date | date: (\"yyyy-MM-dd\")) + \")\"}}</a>\n    </div>\n</div>";
 
 /***/ }),
 /* 66 */
 /***/ (function(module, exports) {
 
-	module.exports = "comparison {\n    min-height: 100%;\n    position: relative;\n    display: block;\n}\n\n.description > :first-child {\n    margin-top: 0;\n}\n\n.description > :last-child {\n    margin-bottom: 0;\n}\n\n.card-content {\n    padding: 16px;\n    position: relative;\n}\n\n.footer {\n    position: relative;\n    bottom: 0;\n    width: 100%;\n    height: 50px;\n    background-color: #f5f5f5;\n}\n\n.footer > .container {\n    padding: 10px;\n}\n\npdialog {\n    z-index: 5000;\n}\n\n.floatThead-container {\n    z-index: 3000;\n}\n\n.ltable {\n    display: none;\n}\n\n.large-paper-card {\n    width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n.super-large-paper-card {\n    min-width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n/* github corner */\n.github-corner {\n    z-index: 1000;\n}\n\n.github-corner svg {\n    z-index: 999;\n}\n\n.github-corner:hover .octo-arm {\n    animation: octocat-wave 560ms ease-in-out;\n}\n\n@keyframes octocat-wave {\n    0%,\n    100% {\n        transform: rotate(0);\n    }\n    20%,\n    60% {\n        transform: rotate(-25deg);\n    }\n    40%,\n    80% {\n        transform: rotate(10deg);\n    }\n}\n\n@media (max-width: 500px) {\n    .github-corner:hover .octo-arm {\n        animation: none;\n    }\n\n    .github-corner .octo-arm {\n        animation: octocat-wave 560ms ease-in-out;\n    }\n}\n\n.search-indicator {\n    color: rgba(255, 0, 0, 0.52);\n    font-size: 8pt;\n    opacity: 80;\n}\n\n.range-search {\n    border: 0px !important;\n    border-bottom: 1px solid #aaa !important;\n    border-radius: 0px !important;\n}\n\n.range-search:focus {\n    outline-width: 0;\n}"
+	module.exports = "comparison {\n    min-height: 100%;\n    position: relative;\n    display: block;\n}\n\n.description > :first-child {\n    margin-top: 0;\n}\n\n.description > :last-child {\n    margin-bottom: 0;\n}\n\n.card-content {\n    padding: 16px;\n    position: relative;\n}\n\n.footer {\n    position: relative;\n    bottom: 0;\n    width: 100%;\n    height: 50px;\n    background-color: #f5f5f5;\n}\n\n.footer > .container {\n    padding: 10px;\n}\n\npdialog {\n    z-index: 5000;\n}\n\n.floatThead-container {\n    z-index: 3000;\n}\n\n.ltable {\n    display: none;\n}\n\n.large-paper-card {\n    width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n.super-large-paper-card {\n    min-width: 100%;\n    margin: 0 0 20 0;\n    padding-bottom: 0px;\n}\n\n/* github corner */\n.github-corner {\n    z-index: 1000;\n}\n\n.github-corner svg {\n    z-index: 999;\n}\n\n.github-corner:hover .octo-arm {\n    animation: octocat-wave 560ms ease-in-out;\n}\n\n@keyframes octocat-wave {\n    0%,\n    100% {\n        transform: rotate(0);\n    }\n    20%,\n    60% {\n        transform: rotate(-25deg);\n    }\n    40%,\n    80% {\n        transform: rotate(10deg);\n    }\n}\n\n@media (max-width: 500px) {\n    .github-corner:hover .octo-arm {\n        animation: none;\n    }\n\n    .github-corner .octo-arm {\n        animation: octocat-wave 560ms ease-in-out;\n    }\n}\n\n.search-indicator {\n    color: rgba(255, 0, 0, 0.52);\n    font-size: 8pt;\n    opacity: 80;\n}"
 
 /***/ }),
 /* 67 */
@@ -5210,7 +5201,6 @@ webpackJsonp([0],[
 	const orderby_pipe_1 = __webpack_require__(70);
 	const citation_pipe_1 = __webpack_require__(59);
 	const sanitizer_pipe_1 = __webpack_require__(71);
-	const attribute_pipe_1 = __webpack_require__(72);
 	let PipesModule = class PipesModule {
 	};
 	PipesModule = __decorate([
@@ -5223,24 +5213,21 @@ webpackJsonp([0],[
 	            table_pipe_1.TablePipe,
 	            orderby_pipe_1.OrderByPipe,
 	            citation_pipe_1.CitationPipe,
-	            sanitizer_pipe_1.SanitizerPipe,
-	            attribute_pipe_1.AttributePipe
+	            sanitizer_pipe_1.SanitizerPipe
 	        ],
 	        declarations: [
 	            data_pipe_1.DataPipe,
 	            table_pipe_1.TablePipe,
 	            orderby_pipe_1.OrderByPipe,
 	            citation_pipe_1.CitationPipe,
-	            sanitizer_pipe_1.SanitizerPipe,
-	            attribute_pipe_1.AttributePipe
+	            sanitizer_pipe_1.SanitizerPipe
 	        ],
 	        providers: [
 	            data_pipe_1.DataPipe,
 	            table_pipe_1.TablePipe,
 	            orderby_pipe_1.OrderByPipe,
 	            citation_pipe_1.CitationPipe,
-	            sanitizer_pipe_1.SanitizerPipe,
-	            attribute_pipe_1.AttributePipe
+	            sanitizer_pipe_1.SanitizerPipe
 	        ]
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -5277,31 +5264,8 @@ webpackJsonp([0],[
 	                    continue;
 	                let cont = this.query[key];
 	                let values = item.getPropertyTags(cont.criteria.tag);
-	                if (cont.criteria.range_search) {
-	                    let value = cont.values.target.value;
-	                    value = value.replace(/ /g, "");
-	                    if (value.length === 0) {
-	                        return true;
-	                    }
-	                    const tokens = value.split(",");
-	                    for (const token of tokens) {
-	                        if (token.lastIndexOf("-") >= 1) {
-	                            if (this.rangeSearch(token, item.properties[cont.criteria.tag].list)) {
-	                                return true;
-	                            }
-	                        }
-	                        else {
-	                            if (this.numberSearch(Number.parseFloat(token), item.properties[cont.criteria.tag].list)) {
-	                                return true;
-	                            }
-	                        }
-	                    }
+	                if (!((cont.values.length < 1) || (this.intersect(cont.values, values, cont.criteria.and_search)))) {
 	                    return false;
-	                }
-	                else {
-	                    if (!((cont.values.length < 1) || (this.intersect(cont.values, values, cont.criteria.and_search)))) {
-	                        return false;
-	                    }
 	                }
 	            }
 	            return true;
@@ -5335,53 +5299,6 @@ webpackJsonp([0],[
 	            return true;
 	        }
 	        return inter;
-	    }
-	    rangeSearch(range, list) {
-	        let negativeMin = false;
-	        if (range.startsWith("-")) {
-	            negativeMin = true;
-	            range = range.substr(1);
-	        }
-	        let negativeMax = false;
-	        if (range.indexOf("--") + 1 == range.lastIndexOf("-")) {
-	            negativeMax = true;
-	        }
-	        const rValues = range.split(/-/).filter(el => el.length !== 0);
-	        if (rValues.length < 2) {
-	            return this.numberSearch(Number.parseFloat(rValues[0]), list);
-	        }
-	        rValues[1] = rValues[rValues.length - 1];
-	        let min = Number.parseFloat(rValues[0]);
-	        if (negativeMin) {
-	            min *= -1;
-	        }
-	        let max = Number.parseFloat(rValues[1]);
-	        if (negativeMax) {
-	            max *= -1;
-	        }
-	        if (max < min) {
-	            const t = max;
-	            max = min;
-	            min = t;
-	        }
-	        for (const item of list) {
-	            const n = Number.parseFloat(item.content);
-	            if (min <= n && n <= max) {
-	                return true;
-	            }
-	        }
-	        return false;
-	    }
-	    numberSearch(number, list) {
-	        if (isNaN(number)) {
-	            return false;
-	        }
-	        for (let item of list) {
-	            if (Number.parseFloat(item.content) === number) {
-	                return true;
-	            }
-	        }
-	        return false;
 	    }
 	};
 	DataPipe = __decorate([
@@ -5550,65 +5467,9 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	const core_1 = __webpack_require__(3);
-	const util_1 = __webpack_require__(40);
-	let AttributePipe = class AttributePipe {
-	    transform(values, ...args) {
-	        const tdata = args[0][0];
-	        const mult = tdata.order === 'asc' ? 1 : -1;
-	        let weightFound = true;
-	        for (let key in tdata.values) {
-	            weightFound = weightFound && !util_1.isNullOrUndefined(tdata.values[key].weight);
-	        }
-	        if (!weightFound) {
-	            return this.sortAlphabetically(values, mult);
-	        }
-	        return values.sort((o1, o2) => {
-	            let w1, w2;
-	            for (let key in tdata.values) {
-	                if (o1["content"] === key) {
-	                    w1 = tdata.values[key].weight;
-	                }
-	                if (o2["content"] === key) {
-	                    w2 = tdata.values[key].weight;
-	                }
-	            }
-	            return mult * (w1 - w2);
-	        });
-	    }
-	    sortAlphabetically(values, mult) {
-	        return values.sort((o1, o2) => {
-	            return mult * o1.content.localeCompare(o2.content);
-	        });
-	    }
-	};
-	AttributePipe = __decorate([
-	    core_1.Pipe({
-	        name: 'orderAttributes',
-	        pure: false
-	    }), 
-	    __metadata('design:paramtypes', [])
-	], AttributePipe);
-	exports.AttributePipe = AttributePipe;
-
-
-/***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	const core_1 = __webpack_require__(3);
 	const platform_browser_1 = __webpack_require__(21);
-	const angular2_select_1 = __webpack_require__(74);
-	const select2_component_1 = __webpack_require__(89);
+	const angular2_select_1 = __webpack_require__(73);
+	const select2_component_1 = __webpack_require__(88);
 	let InputModule = class InputModule {
 	};
 	InputModule = __decorate([
@@ -5632,26 +5493,26 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	__export(__webpack_require__(75));
+	__export(__webpack_require__(74));
 
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(3);
 	var common_1 = __webpack_require__(22);
-	var forms_1 = __webpack_require__(76);
-	var select_component_1 = __webpack_require__(80);
-	var select_dropdown_component_1 = __webpack_require__(86);
+	var forms_1 = __webpack_require__(75);
+	var select_component_1 = __webpack_require__(79);
+	var select_dropdown_component_1 = __webpack_require__(85);
 	var SelectModule = (function () {
 	    function SelectModule() {
 	    }
@@ -5678,7 +5539,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/**
@@ -5687,7 +5548,7 @@ webpackJsonp([0],[
 	 * License: MIT
 	 */
 	(function (global, factory) {
-	     true ? factory(exports, __webpack_require__(3), __webpack_require__(77), __webpack_require__(4), __webpack_require__(5), __webpack_require__(78)) :
+	     true ? factory(exports, __webpack_require__(3), __webpack_require__(76), __webpack_require__(4), __webpack_require__(5), __webpack_require__(77)) :
 	    typeof define === 'function' && define.amd ? define(['exports', '@angular/core', 'rxjs/operator/toPromise', 'rxjs/Subject', 'rxjs/Observable', 'rxjs/observable/fromPromise'], factory) :
 	    (factory((global.ng = global.ng || {}, global.ng.forms = global.ng.forms || {}),global.ng.core,global.Rx.Observable.prototype,global.Rx,global.Rx,global.Rx.Observable));
 	}(this, function (exports,_angular_core,rxjs_operator_toPromise,rxjs_Subject,rxjs_Observable,rxjs_observable_fromPromise) { 'use strict';
@@ -11448,18 +11309,18 @@ webpackJsonp([0],[
 	}));
 
 /***/ }),
+/* 76 */,
 /* 77 */,
 /* 78 */,
-/* 79 */,
-/* 80 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(3);
-	var forms_1 = __webpack_require__(76);
-	var select_component_css_1 = __webpack_require__(81);
-	var select_component_html_1 = __webpack_require__(82);
-	var option_list_1 = __webpack_require__(83);
+	var forms_1 = __webpack_require__(75);
+	var select_component_css_1 = __webpack_require__(80);
+	var select_component_html_1 = __webpack_require__(81);
+	var option_list_1 = __webpack_require__(82);
 	exports.SELECT_VALUE_ACCESSOR = {
 	    provide: forms_1.NG_VALUE_ACCESSOR,
 	    useExisting: core_1.forwardRef(function () { return SelectComponent; }),
@@ -11892,7 +11753,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -11900,7 +11761,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 82 */
+/* 81 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -11908,12 +11769,12 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var option_1 = __webpack_require__(84);
-	var diacritics_1 = __webpack_require__(85);
+	var option_1 = __webpack_require__(83);
+	var diacritics_1 = __webpack_require__(84);
 	var OptionList = (function () {
 	    function OptionList(options) {
 	        /* Consider using these for performance improvement. */
@@ -12127,7 +11988,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -12164,7 +12025,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -13025,13 +12886,13 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var core_1 = __webpack_require__(3);
-	var select_dropdown_component_css_1 = __webpack_require__(87);
-	var select_dropdown_component_html_1 = __webpack_require__(88);
+	var select_dropdown_component_css_1 = __webpack_require__(86);
+	var select_dropdown_component_html_1 = __webpack_require__(87);
 	var SelectDropdownComponent = (function () {
 	    function SelectDropdownComponent() {
 	        this.close = new core_1.EventEmitter();
@@ -13168,7 +13029,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -13176,7 +13037,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -13184,7 +13045,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13237,9 +13098,9 @@ webpackJsonp([0],[
 	Select2Component = __decorate([
 	    core_1.Component({
 	        selector: 'select2',
-	        template: __webpack_require__(90),
+	        template: __webpack_require__(89),
 	        styles: [
-	            __webpack_require__(91)
+	            __webpack_require__(90)
 	        ],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
@@ -13250,19 +13111,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, exports) {
 
 	module.exports = "<ng-select\n        [options]=\"options\"\n        [multiple]=true\n        (selected)=\"select($event)\"\n        (deselected)=\"deSelect($event)\"\n        placeholder=\"{{placeholder}}\">\n</ng-select>\n\n";
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host /deep/ ng-select {\n    display: table !important;\n    table-layout: fixed !important;\n    width: 100% !important;\n}\n\n:host /deep/ div {\n    z-index: 3001;\n}\n\n:host /deep/ input {\n    width: 100%;\n}\n\n:host /deep/ .below {\n    border: 0px !important;\n    border-bottom: 1px solid #aaa !important;\n    border-radius: 0px !important;\n}\n\n:host /deep/ .option {\n    background-color: #777 !important;\n    color: #fff !important;\n    font-weight: bold;\n    border-radius: 4px !important;\n}\n\n:host /deep/ .deselect-option {\n    color: #fff !important;\n}"
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13278,10 +13139,10 @@ webpackJsonp([0],[
 	const core_1 = __webpack_require__(3);
 	const platform_browser_1 = __webpack_require__(21);
 	const pipes_module_1 = __webpack_require__(67);
-	const polymer_module_1 = __webpack_require__(93);
-	const html_citation_text_component_1 = __webpack_require__(118);
-	const generic_table_component_1 = __webpack_require__(121);
-	const references_table_component_1 = __webpack_require__(124);
+	const polymer_module_1 = __webpack_require__(92);
+	const html_citation_text_component_1 = __webpack_require__(117);
+	const generic_table_component_1 = __webpack_require__(120);
+	const references_table_component_1 = __webpack_require__(123);
 	let OutputModule = class OutputModule {
 	};
 	OutputModule = __decorate([
@@ -13310,7 +13171,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13325,14 +13186,14 @@ webpackJsonp([0],[
 	};
 	const core_1 = __webpack_require__(3);
 	const platform_browser_1 = __webpack_require__(21);
-	const paper_card_component_1 = __webpack_require__(94);
-	const iron_icon_component_1 = __webpack_require__(97);
-	const tooltip_component_1 = __webpack_require__(100);
-	const paper_icon_button_component_1 = __webpack_require__(103);
-	const paper_button_component_1 = __webpack_require__(106);
-	const paper_dialog_component_1 = __webpack_require__(109);
-	const paper_item_component_1 = __webpack_require__(112);
-	const paper_checkbox_component_1 = __webpack_require__(115);
+	const paper_card_component_1 = __webpack_require__(93);
+	const iron_icon_component_1 = __webpack_require__(96);
+	const tooltip_component_1 = __webpack_require__(99);
+	const paper_icon_button_component_1 = __webpack_require__(102);
+	const paper_button_component_1 = __webpack_require__(105);
+	const paper_dialog_component_1 = __webpack_require__(108);
+	const paper_item_component_1 = __webpack_require__(111);
+	const paper_checkbox_component_1 = __webpack_require__(114);
 	let PolymerModule = class PolymerModule {
 	};
 	PolymerModule = __decorate([
@@ -13367,7 +13228,7 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13390,8 +13251,8 @@ webpackJsonp([0],[
 	PaperCardComponent = __decorate([
 	    core_1.Component({
 	        selector: 'pcard',
-	        template: __webpack_require__(95),
-	        styles: [__webpack_require__(96)],
+	        template: __webpack_require__(94),
+	        styles: [__webpack_require__(95)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -13400,19 +13261,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"paper-header\" *ngIf=\"heading\">{{heading}}</div>\n<ng-content></ng-content>";
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ (function(module, exports) {
 
 	module.exports = "@import url(\"https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic\");\n@import url(\"https://fonts.googleapis.com/css?family=Roboto+Mono:400,700\");\n\n:host {\n    display: inline-block;\n    position: relative;\n    box-sizing: border-box;\n    font-family: 'Roboto', 'Noto', sans-serif;\n    border-radius: 2px;\n    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),\n    0 1px 5px 0 rgba(0, 0, 0, 0.12),\n    0 3px 1px -2px rgba(0, 0, 0, 0.2);\n    margin: 10px;\n}\n\n.paper-header {\n    position: relative;\n    border-top-left-radius: inherit;\n    border-top-right-radius: inherit;\n    overflow: hidden;\n    padding: 16px;\n    font-size: 24px;\n    font-weight: 400;\n    color: var(--paper-card-header-color, #000);\n}\n\n:host /deep/ dl {\n    width: 100%;\n    overflow: hidden;\n    padding: 0;\n    margin: 0\n}\n\n:host /deep/ dt {\n    float: left;\n    width: 40px;\n    padding: 0;\n    margin: 0\n}\n\n:host /deep/ dd {\n    float: left;\n    padding: 0;\n    margin: 0\n}"
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13435,8 +13296,8 @@ webpackJsonp([0],[
 	IronIconComponent = __decorate([
 	    core_1.Component({
 	        selector: 'iicon',
-	        template: __webpack_require__(98),
-	        styles: [__webpack_require__(99)],
+	        template: __webpack_require__(97),
+	        styles: [__webpack_require__(98)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -13445,19 +13306,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 98 */
+/* 97 */
 /***/ (function(module, exports) {
 
 	module.exports = "<ng-content></ng-content>\n<svg viewBox=\"0 0 24 24\">\n    <defs>\n        <g id=\"keyboard-arrow-down\">\n            <path d=\"M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z\"/>\n        </g>\n        <g id=\"keyboard-arrow-up\">\n            <path d=\"M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z\"/>\n        </g>\n        <g id=\"settings\">\n            <path d=\"M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z\"/>\n        </g>\n        <g id=\"info\">\n            <path d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z\"/>\n        </g>\n        <g id=\"star\">\n            <path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/>\n        </g>\n    </defs>\n    <use [attr.xlink:href]=\"'#'+icon\"/>\n</svg>";
 
 /***/ }),
-/* 99 */
+/* 98 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: -ms-inline-flexbox;\n    display: -webkit-inline-flex;\n    display: inline-flex;\n\n    -ms-flex-align: center;\n    -webkit-align-items: center;\n    align-items: center;\n    -ms-flex-pack: center;\n    -webkit-justify-content: center;\n    justify-content: center;\n\n    position: relative;\n\n    vertical-align: middle;\n\n    fill: currentcolor;\n    stroke: none;\n\n    width: 24px;\n    height: 24px;\n}\n\nsvg {\n    pointer-events: none;\n    display: block;\n    width: 100%;\n    height: 100%;\n}"
 
 /***/ }),
-/* 100 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13482,27 +13343,10 @@ webpackJsonp([0],[
 	    set position(p) {
 	        this.positionClass = p;
 	    }
-	    ngOnInit() {
-	        if (typeof this.tooltip === "number") {
-	            this.tooltip = this.tooltip.toString();
-	        }
-	        if (this.tooltip.indexOf("<") > -1 && this.tooltip.indexOf(">") > -1) {
-	            const tokens = this.tooltip.split(/[ ,\n\r]/);
-	            let tip = this.tooltip;
-	            for (let token of tokens) {
-	                token = token.substr(0, token.lastIndexOf(">") + 1);
-	                if (/<https?:\/\/[^>]+>/.test(token)) {
-	                    const href = token.substr(1, token.length - 2);
-	                    tip = tip.replace(token, "<a class='cite-link' href='" + href + "'>" + href + "</a>");
-	                }
-	            }
-	            this.tooltip = this._sanitizer.bypassSecurityTrustHtml(tip);
-	        }
-	    }
 	};
 	__decorate([
 	    core_1.Input(), 
-	    __metadata('design:type', Object)
+	    __metadata('design:type', String)
 	], TooltipComponent.prototype, "tooltip", void 0);
 	__decorate([
 	    core_1.Input(), 
@@ -13520,8 +13364,8 @@ webpackJsonp([0],[
 	TooltipComponent = __decorate([
 	    core_1.Component({
 	        selector: 'ptooltip',
-	        template: __webpack_require__(101),
-	        styles: [__webpack_require__(102)],
+	        template: __webpack_require__(100),
+	        styles: [__webpack_require__(101)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [(typeof (_a = typeof platform_browser_1.DomSanitizer !== 'undefined' && platform_browser_1.DomSanitizer) === 'function' && _a) || Object])
@@ -13531,19 +13375,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 101 */
+/* 100 */
 /***/ (function(module, exports) {
 
-	module.exports = "<ng-content></ng-content>\n<div class=\"ptooltiptext\" *ngIf=\"tooltip&&tooltip!=''||tooltipHtml&&tooltipHtml!=''\">\n    <div [innerHtml]=\"tooltip\"></div>\n    <div [innerHtml]=\"_sanitizer.bypassSecurityTrustHtml(tooltipHtml)\"></div>\n</div>";
+	module.exports = "<ng-content></ng-content>\n<div class=\"ptooltiptext\" *ngIf=\"tooltip&&tooltip!=''||tooltipHtml&&tooltipHtml!=''\">\n    {{tooltip}}\n    <div [innerHtml]=\"_sanitizer.bypassSecurityTrustHtml(tooltipHtml)\"></div>\n</div>";
 
 /***/ }),
-/* 102 */
+/* 101 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    position: relative;\n    display: inline-block;\n}\n\n:host .ptooltiptext {\n    visibility: hidden;\n    min-width: 60px;\n    background-color: black;\n    color: #fff;\n    text-align: center;\n    padding: 5px;\n    border-radius: 6px;\n\n    position: absolute;\n    z-index: 4999;\n\n    white-space: nowrap;\n\n    transition-property: visibility;\n    transition-duration: 0.1s;\n}\n\n:host .ptooltiptext /deep/ a {\n    color: lightgray;\n}\n\n:host .ptooltiptext /deep/ ul, :host .ptooltiptext /deep/ ol {\n    text-align: left;\n    padding-left: 20px;\n}\n\n:host:hover .ptooltiptext {\n    visibility: visible;\n}\n\n:host .ptooltiptext::after {\n    content: \" \";\n    position: absolute;\n    border-width: 5px;\n    border-style: solid;\n}\n\n/* north */\n:host.n .ptooltiptext {\n    bottom: 115%;\n    left: -25%;\n    margin-left: 1em;\n    margin-top: 0;\n}\n\n:host.n .ptooltiptext::after {\n    top: 100%;\n    left: 1em;\n    margin-left: -5px;\n    border-color: black transparent transparent transparent;\n}\n\n/* south */\n:host.s .ptooltiptext {\n    top: 115%;\n    left: -25%;\n    margin-left: 1em;\n}\n\n:host.s .ptooltiptext::after {\n    bottom: 100%;\n    left: 1em;\n    margin-left: -5px;\n    border-color: transparent transparent black transparent;\n}\n\n/* east */\n:host.e .ptooltiptext {\n    top: 0;\n    left: 100%;\n    margin-left: 5px;\n}\n\n:host.e .ptooltiptext::after {\n    top: 1em;\n    right: 100%; /* To the left of the tooltip */\n    margin-top: -5px;\n    border-color: transparent black transparent transparent;\n}\n\n/* west */\n:host.w .ptooltiptext {\n    top: 0;\n    right: 100%;\n    margin-right: 5px;\n}\n\n:host.w .ptooltiptext::after {\n    top: 1em;\n    left: 100%;\n    margin-top: -5px;\n    border-color: transparent transparent transparent black;\n}   \n\n"
 
 /***/ }),
-/* 103 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13570,8 +13414,8 @@ webpackJsonp([0],[
 	PaperIconButtonComponent = __decorate([
 	    core_1.Component({
 	        selector: 'picon-button',
-	        template: __webpack_require__(104),
-	        styles: [__webpack_require__(105)],
+	        template: __webpack_require__(103),
+	        styles: [__webpack_require__(104)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -13580,19 +13424,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 104 */
+/* 103 */
 /***/ (function(module, exports) {
 
 	module.exports = "<ptooltip [tooltip]=\"title\" [position]=\"'w'\">\n    <iicon [icon]=\"icon\"></iicon>\n</ptooltip>\n";
 
 /***/ }),
-/* 105 */
+/* 104 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: inline-block;\n    position: relative;\n    padding: 3px;\n    outline: none;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    cursor: pointer;\n    z-index: 0;\n    line-height: 1;\n\n    width: 30px;\n    height: 30px;\n\n    box-sizing: border-box !important;\n}"
 
 /***/ }),
-/* 106 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13615,8 +13459,8 @@ webpackJsonp([0],[
 	PaperButtonComponent = __decorate([
 	    core_1.Component({
 	        selector: 'pbutton',
-	        template: __webpack_require__(107),
-	        styles: [__webpack_require__(108)],
+	        template: __webpack_require__(106),
+	        styles: [__webpack_require__(107)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -13625,19 +13469,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 107 */
+/* 106 */
 /***/ (function(module, exports) {
 
 	module.exports = "{{text}}\n<ng-content></ng-content>";
 
 /***/ }),
-/* 108 */
+/* 107 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    color: #3f51b5;\n    display: inline-block;\n    position: relative;\n    box-sizing: border-box;\n    min-width: 5.14em;\n    margin: 0 0.29em;\n    background: transparent;\n    text-align: center;\n    font: inherit;\n    text-transform: uppercase;\n    outline-width: 0;\n    border-radius: 3px;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    -webkit-user-select: none;\n    cursor: pointer;\n    z-index: 0;\n    padding: 0.7em 0.57em;\n\n    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),\n    0 1px 5px 0 rgba(0, 0, 0, 0.12),\n    0 3px 1px -2px rgba(0, 0, 0, 0.2);\n\n    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);\n}\n\n:host:active {\n    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),\n    0 3px 14px 2px rgba(0, 0, 0, 0.12),\n    0 5px 5px -3px rgba(0, 0, 0, 0.4);\n}"
 
 /***/ }),
-/* 109 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13672,11 +13516,6 @@ webpackJsonp([0],[
 	        document.body.classList.remove("modal-open");
 	        this.opened = false;
 	    }
-	    onKeydown(event) {
-	        if (this.opened && event.key.toLowerCase() === 'escape') {
-	            this.close();
-	        }
-	    }
 	};
 	__decorate([
 	    core_1.Input(), 
@@ -13688,17 +13527,11 @@ webpackJsonp([0],[
 	    __metadata('design:paramtypes', [Object]), 
 	    __metadata('design:returntype', void 0)
 	], PaperDialogComponent.prototype, "onClick", null);
-	__decorate([
-	    core_1.HostListener('window:keydown', ['$event']), 
-	    __metadata('design:type', Function), 
-	    __metadata('design:paramtypes', [Object]), 
-	    __metadata('design:returntype', void 0)
-	], PaperDialogComponent.prototype, "onKeydown", null);
 	PaperDialogComponent = __decorate([
 	    core_1.Component({
 	        selector: 'pdialog',
-	        template: __webpack_require__(110),
-	        styles: [__webpack_require__(111)]
+	        template: __webpack_require__(109),
+	        styles: [__webpack_require__(110)]
 	    }), 
 	    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _b) || Object])
 	], PaperDialogComponent);
@@ -13707,19 +13540,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 110 */
+/* 109 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"dialog\" *ngIf=\"opened\">\n    <ng-content></ng-content>\n    <div class=\"buttons\">\n        <pbutton (click)=\"close()\">Close</pbutton>\n    </div>\n</div>\n";
 
 /***/ }),
-/* 111 */
+/* 110 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    position: fixed;\n    overflow-x: hidden;\n    overflow-y: auto;\n    top: 0;\n    right: 0;\n    left: 0;\n    bottom: 0;\n    display: none;\n    z-index: 2000;\n    background: rgba(0, 0, 0, 0.5);\n}\n\n@media (min-width: 992px) {\n    .dialog {\n        width: 900px !important;\n    }\n}\n\n@media (min-width: 768px) and (max-width: 992px) {\n    .dialog {\n        width: 600px !important;\n    }\n}\n\n@media (max-width: 660px) {\n    .dialog {\n        width: 90% !important;\n    }\n}\n\n.dialog {\n    max-height: inherit !important;\n    position: relative !important;\n    border-radius: 5px;\n    background: #ffffff;\n    color: #212121;\n    font-family: 'Roboto', 'Noto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    font-size: 14px;\n    font-weight: 400;\n    line-height: 20px;\n    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);\n    margin-top: 25px;\n    margin-bottom: 60px;\n    margin-right: auto;\n    margin-left: auto;\n    max-width: 90%;\n}\n\n.buttons {\n    color: #3f51b5;\n    display: -ms-flexbox;\n    display: -webkit-flex;\n    display: flex;\n\n    -ms-flex-direction: row;\n    -webkit-flex-direction: row;\n    flex-direction: row;\n    -ms-flex-pack: end;\n    -webkit-justify-content: flex-end;\n    justify-content: flex-end;\n\n    position: relative;\n    padding: 8px;\n    margin: 0;\n}\n\n:host /deep/ .pheader {\n    border-bottom: 1px solid #eee;\n\n    padding: 15 15 8 15;\n    margin: 0 0 20 0;\n}\n\n:host /deep/ .pheader h2 {\n    font-family: 'Roboto', 'Noto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    white-space: nowrap;\n    overflow: visible;\n    text-overflow: ellipsis;\n    font-size: 20px;\n    font-weight: 500;\n    line-height: 28px;\n    margin: 0;\n}"
 
 /***/ }),
-/* 112 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13738,8 +13571,8 @@ webpackJsonp([0],[
 	PaperItemComponent = __decorate([
 	    core_1.Component({
 	        selector: 'pitem',
-	        template: __webpack_require__(113),
-	        styles: [__webpack_require__(114)],
+	        template: __webpack_require__(112),
+	        styles: [__webpack_require__(113)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -13748,19 +13581,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 113 */
+/* 112 */
 /***/ (function(module, exports) {
 
 	module.exports = "<ng-content></ng-content>";
 
 /***/ }),
-/* 114 */
+/* 113 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: block;\n    position: relative;\n    padding: 0px 16px;\n}\n\n:host(.item-selected) {\n    font-weight: bold;\n}"
 
 /***/ }),
-/* 115 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13828,8 +13661,8 @@ webpackJsonp([0],[
 	PaperCheckboxComponent = __decorate([
 	    core_1.Component({
 	        selector: 'pcheckbox',
-	        template: __webpack_require__(116),
-	        styles: [__webpack_require__(117)],
+	        template: __webpack_require__(115),
+	        styles: [__webpack_require__(116)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [(typeof (_b = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _b) || Object, (typeof (_c = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _c) || Object])
@@ -13839,19 +13672,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 116 */
+/* 115 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"pcheckbox\">\n    <div class=\"pcheckmark\" *ngIf=\"checked\"></div>\n</div>\n<div class=\"plabel\">{{label}}</div>";
 
 /***/ }),
-/* 117 */
+/* 116 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: inline-block;\n    white-space: nowrap;\n    cursor: pointer;\n\n    position: relative;\n}\n\n:host:focus {\n    outline: none;\n}\n\n.pcheckbox {\n    box-sizing: border-box;\n    height: 18px;\n    width: 18px;\n    border: solid 2px;\n    border-radius: 2px;\n    pointer-events: none;\n    -webkit-transition: background-color 140ms, border-color 140ms;\n    transition: background-color 140ms, border-color 140ms;\n    display: inline-block;\n    position: relative;\n    vertical-align: middle;\n}\n\n.pcheckmark {\n    position: absolute;\n    width: 36%;\n    height: 70%;\n    border-style: solid;\n    border-top: none;\n    border-left: none;\n    transform-origin: 97% 86%;\n    -webkit-transform-origin: 97% 86%;\n    transform: rotate(45deg);\n    border-right-width: calc(2 / 15 * 18px);\n    border-bottom-width: calc(2 / 15 * 18px);\n    border-color: white;\n}\n\n.plabel {\n    position: relative;\n    display: inline-block;\n    vertical-align: middle;\n    white-space: normal;\n    pointer-events: none;\n    padding-left: 8px;\n}"
 
 /***/ }),
-/* 118 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13875,9 +13708,6 @@ webpackJsonp([0],[
 	    makeMarkdown(text) {
 	        if (text === null || text === undefined || text === "" || text === " ")
 	            return " ";
-	        if (typeof text === "object") {
-	            text = text["tag"];
-	        }
 	        return this.serv.converter.makeHtml(text);
 	    }
 	};
@@ -13892,8 +13722,8 @@ webpackJsonp([0],[
 	HtmlCitationTextComponent = __decorate([
 	    core_1.Component({
 	        selector: 'htmlcitationtext',
-	        template: __webpack_require__(119),
-	        styles: [__webpack_require__(120)],
+	        template: __webpack_require__(118),
+	        styles: [__webpack_require__(119)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [(typeof (_b = typeof comparison_service_1.ComparisonService !== 'undefined' && comparison_service_1.ComparisonService) === 'function' && _b) || Object])
@@ -13903,19 +13733,19 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 119 */
+/* 118 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div [innerHtml]=\"makeMarkdown(description) | citation: [citationServ] | sanitizeHtml\" class=\"'description'\"\n     *ngIf=\"description\"></div>\n        ";
 
 /***/ }),
-/* 120 */
+/* 119 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: block;\n}\n\n.description > :first-child {\n    margin-top: 0;\n}\n\n.description > :last-child {\n    margin-bottom: 0;\n}"
 
 /***/ }),
-/* 121 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13932,11 +13762,15 @@ webpackJsonp([0],[
 	const comparison_citation_service_1 = __webpack_require__(55);
 	const comparison_config_service_1 = __webpack_require__(51);
 	const platform_browser_1 = __webpack_require__(21);
+	const util_1 = __webpack_require__(40);
+	const http_1 = __webpack_require__(29);
 	let GenericTableComponent = class GenericTableComponent {
-	    constructor(ar, confServ, sanitization) {
+	    constructor(ar, confServ, sanitization, http, cd) {
 	        this.ar = ar;
 	        this.confServ = confServ;
 	        this.sanitization = sanitization;
+	        this.http = http;
+	        this.cd = cd;
 	        this.counter = 0;
 	        this.display = false;
 	        this.settings = false;
@@ -13951,7 +13785,74 @@ webpackJsonp([0],[
 	        this.orderChange = new core_1.EventEmitter();
 	        this.orderOption = new Array();
 	        this.orderOptionChange = new core_1.EventEmitter();
+	        this.repoLabels = {};
 	        this.ctrlCounter = 0;
+	    }
+	    getRepoLabels(td, data) {
+	        if (util_1.isNullOrUndefined(data.properties["Repo"]) || util_1.isNullOrUndefined(data.properties["Repo"].list[0])) {
+	            return [];
+	        }
+	        if (!util_1.isNullOrUndefined(this.repoLabels[data.tag])) {
+	            return this.repoLabels[data.tag];
+	        }
+	        const repoUrl = data.properties["Repo"].list[0].content;
+	        const url = this.repoQueryBuildUrl(repoUrl);
+	        if (url === "") {
+	            return [];
+	        }
+	        this.http.get(url).toPromise().then(res => {
+	            const d = {};
+	            const commitDate = new Date(res.json()[0].commit.author.date);
+	            let child = "The last commit is ";
+	            const cd = moment(commitDate);
+	            const now = moment();
+	            const dateStrings = ['years', 'months', 'days', 'hours', 'minutes', 'seconds'];
+	            for (const s of dateStrings) {
+	                const diff = Math.abs(now.diff(cd, s));
+	                if (diff !== 0) {
+	                    child += diff;
+	                    // append unit in singular or plural
+	                    child += " " + (diff === 1 ? s.substr(0, s.length - 1) : s);
+	                    break;
+	                }
+	            }
+	            child += " old";
+	            d.htmlChilds = child;
+	            for (const value in td.values) {
+	                if (util_1.isNullOrUndefined(td.values[value]["min-age"])) {
+	                    continue;
+	                }
+	                const min = td.values[value]["min-age"];
+	                const minUnit = td.values[value]["min-age-unit"];
+	                const minDiff = Math.abs(now.diff(cd, minUnit));
+	                const max = td.values[value]["max-age"];
+	                const maxUnit = td.values[value]["max-age-unit"];
+	                const maxDiff = Math.abs(now.diff(cd, maxUnit));
+	                // min === -1 => no limit
+	                // same for max
+	                if ((min === -1 || min <= minDiff) && (max === -1 || max > maxDiff)) {
+	                    d.content = value;
+	                    if (util_1.isNullOrUndefined(this.repoLabels[data.tag])) {
+	                        this.repoLabels[data.tag] = [];
+	                    }
+	                    for (const item of this.repoLabels[data.tag]) {
+	                        if (item.content === d.content) {
+	                            this.repoLabels[data.tag].splice(this.repoLabels[data.tag].indexOf(item), 1);
+	                        }
+	                    }
+	                    this.repoLabels[data.tag].push(d);
+	                }
+	            }
+	            this.cd.markForCheck();
+	        });
+	    }
+	    repoQueryBuildUrl(repoUrl) {
+	        let url;
+	        if (/https?:\/\/github\.com.*/.test(repoUrl)) {
+	            url = repoUrl.replace(/https?:\/\/github.com/, "https://api.github.com/repos");
+	            url += url.endsWith("/") ? "commits" : "/commits";
+	        }
+	        return url;
 	    }
 	    orderClick(e, value) {
 	        let pos = this.order.findIndex(name => name == value);
@@ -14020,41 +13921,6 @@ webpackJsonp([0],[
 	    getColor(column, label) {
 	        return this.sanitization.bypassSecurityTrustStyle(column.type.colors.getColor(label));
 	    }
-	    getForegroundColor(color) {
-	        const h = Number.parseInt(color["changingThisBreaksApplicationSecurity"].substr(4, 3).split(',')[0]);
-	        const s = 100;
-	        const l = 88;
-	        const rgb = this.hslToRgb(h, s, l);
-	        const yiq = ((rgb[0] * 299) + (rgb[1] * 587) + (rgb[2] * 114)) / 1000;
-	        return this.sanitization.bypassSecurityTrustStyle((yiq >= 128) ? 'black' : 'white');
-	    }
-	    hslToRgb(h, s, l) {
-	        let r, g, b;
-	        if (s == 0) {
-	            r = g = b = l; // achromatic
-	        }
-	        else {
-	            let hue2rgb = function hue2rgb(p, q, t) {
-	                if (t < 0)
-	                    t += 1;
-	                if (t > 1)
-	                    t -= 1;
-	                if (t < 1 / 6)
-	                    return p + (q - p) * 6 * t;
-	                if (t < 1 / 2)
-	                    return q;
-	                if (t < 2 / 3)
-	                    return p + (q - p) * (2 / 3 - t) * 6;
-	                return p;
-	            };
-	            let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-	            let p = 2 * l - q;
-	            r = hue2rgb(p, q, h + 1 / 3);
-	            g = hue2rgb(p, q, h);
-	            b = hue2rgb(p, q, h - 1 / 3);
-	        }
-	        return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
-	    }
 	};
 	__decorate([
 	    core_1.Input(), 
@@ -14112,33 +13978,37 @@ webpackJsonp([0],[
 	    core_1.Output(), 
 	    __metadata('design:type', (typeof (_e = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _e) || Object)
 	], GenericTableComponent.prototype, "orderOptionChange", void 0);
+	__decorate([
+	    core_1.Output(), 
+	    __metadata('design:type', Object)
+	], GenericTableComponent.prototype, "repoLabels", void 0);
 	GenericTableComponent = __decorate([
 	    core_1.Component({
 	        selector: 'generictable',
-	        template: __webpack_require__(122),
-	        styles: [__webpack_require__(123)],
+	        template: __webpack_require__(121),
+	        styles: [__webpack_require__(122)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
-	    __metadata('design:paramtypes', [(typeof (_f = typeof core_1.ApplicationRef !== 'undefined' && core_1.ApplicationRef) === 'function' && _f) || Object, (typeof (_g = typeof comparison_config_service_1.ComparisonConfigService !== 'undefined' && comparison_config_service_1.ComparisonConfigService) === 'function' && _g) || Object, (typeof (_h = typeof platform_browser_1.DomSanitizer !== 'undefined' && platform_browser_1.DomSanitizer) === 'function' && _h) || Object])
+	    __metadata('design:paramtypes', [(typeof (_f = typeof core_1.ApplicationRef !== 'undefined' && core_1.ApplicationRef) === 'function' && _f) || Object, (typeof (_g = typeof comparison_config_service_1.ComparisonConfigService !== 'undefined' && comparison_config_service_1.ComparisonConfigService) === 'function' && _g) || Object, (typeof (_h = typeof platform_browser_1.DomSanitizer !== 'undefined' && platform_browser_1.DomSanitizer) === 'function' && _h) || Object, (typeof (_j = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _j) || Object, (typeof (_k = typeof core_1.ChangeDetectorRef !== 'undefined' && core_1.ChangeDetectorRef) === 'function' && _k) || Object])
 	], GenericTableComponent);
 	exports.GenericTableComponent = GenericTableComponent;
-	var _a, _b, _c, _d, _e, _f, _g, _h;
+	var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 
+
+/***/ }),
+/* 121 */
+/***/ (function(module, exports) {
+
+	module.exports = "<table class=\"table table-hover\" *ngIf=\"display\">\n    <thead style=\"background-color: white;\">\n    <tr>\n        <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n            <th valign=column.valign style=column.style name=column.tag>\n                <button (click)=\"orderClick($event, column.tag)\">{{column.name}}\n                    <iicon icon=\"keyboard-arrow-up\" *ngIf=\"displayOrder(column.tag, -1)\"></iicon>\n                    <iicon icon=\"keyboard-arrow-down\" *ngIf=\"displayOrder(column.tag, 1)\"></iicon>\n                </button>\n            </th>\n        </template>\n        <th style=\"width: 3%\" name=\"details\" *ngIf=\"settings\">\n            <picon-button icon=\"settings\" title=\"Settings\" (click)=\"settingsCallback.emit()\"></picon-button>\n        </th>\n    </tr>\n    </thead>\n    <tbody>\n    <template ngFor let-dat [ngForOf]=\"data | orderBy: [order,orderOption] | datafilter: [query, displayTemplate]\">\n        <tr *ngIf=\"shouldBeShown(dat)\">\n            <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n                <td *ngIf=\"column.type?.tag==='url'\"><a class=\"anchored\" href=\"{{dat.getProperty(column.url).text}}\" target=\"_blank\">{{dat.getProperty(column.tag).text}}</a>\n                </td>\n                <td *ngIf=\"column.type?.tag==='text'\">\n                    <div [innerHtml]=\"dat.getProperty(column.tag).text|citation: [citationServ] | sanitizeHtml\"></div>\n                </td>\n                <td *ngIf=\"column.type?.tag==='label' && !column.repo\">\n                    <template ngFor let-sitem [ngForOf]=\"dat.getPropertyListItems(column.tag)\"\n                              *ngIf=\"column.type?.labelCls\">\n                        <ptooltip [tooltip]=\"column.values[sitem.content]\"\n                                  [tooltipHtml]=\"sitem.htmlChilds | citation: [citationServ]\" [position]=\"'n'\">\n                            <div *ngIf=\"(column.type.colors | json) == '{}'\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                            <div *ngIf=\"(column.type.colors | json) != '{}'\" [style.background-color]=\"getColor(column, sitem.content)\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                        </ptooltip>\n                    </template>\n                </td>\n                <td *ngIf=\"column.type?.tag==='label' && column.repo\">\n                    <template ngFor let-sitem [ngForOf]=\"getRepoLabels(column, dat)\"\n                              *ngIf=\"column.type?.labelCls\">\n                        <ptooltip [tooltipHtml]=\"sitem.htmlChilds\" [position]=\"'n'\">\n                            <div *ngIf=\"(column.type.colors | json) == '{}'\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                            <div *ngIf=\"(column.type.colors | json) != '{}'\" [style.background-color]=\"getColor(column, sitem.content)\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                        </ptooltip>\n                    </template>\n                </td>\n                <td *ngIf=\"column.type?.tag=='rating'\">\n                    <iicon icon=\"star\" *ngIf=\"dat.getRating()!=0\">{{dat.getRating()}}</iicon>\n                </td>\n            </template>\n            <td>\n                <picon-button icon=\"info\" title=\"Details\" (click)=\"showDetails.emit(dat)\"></picon-button>\n            </td>\n        </tr>\n    </template>\n    </tbody>\n</table>\n        ";
 
 /***/ }),
 /* 122 */
 /***/ (function(module, exports) {
 
-	module.exports = "<table class=\"table table-hover\" *ngIf=\"display\">\n    <thead style=\"background-color: white;\">\n    <tr>\n        <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n            <th valign=column.valign style=column.style name=column.tag>\n                <button (click)=\"orderClick($event, column.tag)\">{{column.name}}\n                    <iicon icon=\"keyboard-arrow-up\" *ngIf=\"displayOrder(column.tag, -1)\"></iicon>\n                    <iicon icon=\"keyboard-arrow-down\" *ngIf=\"displayOrder(column.tag, 1)\"></iicon>\n                </button>\n            </th>\n        </template>\n        <th style=\"width: 3%\" name=\"details\" *ngIf=\"settings\">\n            <picon-button icon=\"settings\" title=\"Settings\" (click)=\"settingsCallback.emit()\"></picon-button>\n        </th>\n    </tr>\n    </thead>\n    <tbody>\n    <template ngFor let-dat [ngForOf]=\"data | orderBy: [order,orderOption] | datafilter: [query, displayTemplate]\">\n        <tr *ngIf=\"shouldBeShown(dat)\">\n            <template ngFor let-column [ngForOf]=\"columns | tablefilter\">\n                <td *ngIf=\"column.type?.tag==='url'\"><a class=\"anchored\" href=\"{{dat.getProperty(column.url).text}}\" target=\"_blank\">{{dat.getProperty(column.tag).text}}</a>\n                </td>\n                <td *ngIf=\"column.type?.tag==='text'\">\n                    <div [innerHtml]=\"dat.getProperty(column.tag).text|citation: [citationServ] | sanitizeHtml\"></div>\n                </td>\n                <td *ngIf=\"column.type?.tag==='label'\">\n                    <template ngFor let-sitem [ngForOf]=\"dat.getPropertyListItems(column.tag) | orderAttributes: [column]\"\n                              *ngIf=\"column.type?.labelCls\">\n                        <ptooltip [tooltip]=\"column.values[sitem.content].tag\"\n                                  [tooltipHtml]=\"sitem.htmlChilds | citation: [citationServ]\" [position]=\"'n'\">\n                            <div *ngIf=\"column.type.colors.isEmpty()\" [ngClass]=\"{'label-unknown': column.type.labelCls.getCls(sitem.content).length + column.type.getCls(sitem.content).length === 5}\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                            <div *ngIf=\"!column.type.colors.isEmpty()\" [style.background-color]=\"getColor(column, sitem.content)\" [style.color]=\"getForegroundColor(getColor(column, sitem.content))\" class=\"{{column.type.getCls(sitem.content)}} {{column.type.labelCls.getCls(sitem.content)}} mylabel\">\n                                {{sitem.content}}\n                            </div>\n                        </ptooltip>\n                    </template>\n                </td>\n                <td *ngIf=\"column.type?.tag=='rating'\">\n                    <iicon icon=\"star\" *ngIf=\"dat.getRating()!=0\">{{dat.getRating()}}</iicon>\n                </td>\n            </template>\n            <td>\n                <picon-button icon=\"info\" title=\"Details\" (click)=\"showDetails.emit(dat)\"></picon-button>\n            </td>\n        </tr>\n    </template>\n    </tbody>\n</table>\n        ";
+	module.exports = ":host {\n    display: block;\n}\n\ntable {\n    min-width: 600px;\n    margin-bottom: 0px;\n}\n\n.mylabel {\n    margin: 2px;\n    display: inline-block !important;\n    cursor: pointer;\n    font-size: 14px !important;\n    white-space: inherit;\n}\n\nth > button {\n    border: none;\n    padding: 0;\n    outline: none;\n    background-color: inherit;\n}\n\ntable tr {\n    white-space: normal;\n}\n\ntable {\n    width: auto;\n}\n\n.anchored::before {\n    content: '';\n    display: block;\n    height:48px;\n    margin:-48px 0 0;\n}"
 
 /***/ }),
 /* 123 */
-/***/ (function(module, exports) {
-
-	module.exports = ":host {\n    display: block;\n}\n\ntable {\n    min-width: 600px;\n    margin-bottom: 0px;\n}\n\n.mylabel {\n    margin: 2px;\n    display: inline-block !important;\n    cursor: pointer;\n    font-size: 14px !important;\n    white-space: inherit;\n}\n\n.label-unknown {\n    color: black;\n    border: solid black 1px;\n}\n\nth > button {\n    border: none;\n    padding: 0;\n    outline: none;\n    background-color: inherit;\n}\n\ntable tr {\n    white-space: normal;\n}\n\ntable {\n    width: auto;\n}\n\n.anchored::before {\n    content: '';\n    display: block;\n    height:48px;\n    margin:-48px 0 0;\n}"
-
-/***/ }),
-/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -14169,8 +14039,8 @@ webpackJsonp([0],[
 	ReferencesTableComponent = __decorate([
 	    core_1.Component({
 	        selector: 'referencestable',
-	        template: __webpack_require__(125),
-	        styles: [__webpack_require__(126)],
+	        template: __webpack_require__(124),
+	        styles: [__webpack_require__(125)],
 	        changeDetection: core_1.ChangeDetectionStrategy.OnPush
 	    }), 
 	    __metadata('design:paramtypes', [])
@@ -14180,17 +14050,17 @@ webpackJsonp([0],[
 
 
 /***/ }),
-/* 125 */
+/* 124 */
 /***/ (function(module, exports) {
 
 	module.exports = "<table>\n    <template ngFor let-entry [ngForOf]=\"this.citationServ.sortedReferences()\">\n        <tr style=\"padding-left:5px;\">\n            <td style=\"padding-right:10px;font-size:small;padding-top:3px;width:15%;\" valign=\"top\">\n                {{'[' + entry.index + ']'}}:\n            </td>\n            <td [id]=\"entry.key\" [innerHtml]=\"entry.html|sanitizeHtml\"></td>\n        </tr>\n    </template>\n</table>";
 
 /***/ }),
-/* 126 */
+/* 125 */
 /***/ (function(module, exports) {
 
 	module.exports = ":host {\n    display: block;\n}"
 
 /***/ })
 ]);
-//# sourceMappingURL=app.276ebcba8eeb49870c25.js.map
+//# sourceMappingURL=app.84628235b778890ed654.js.map
