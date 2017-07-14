@@ -4960,9 +4960,9 @@ webpackJsonp([0],[
 	"use strict";
 	class VersionInformation {
 	    constructor() {
-	        this.date = "2017-07-13";
-	        this.commit = "217b05d809283d43e4ec9f982531125f5e4b60b7";
-	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/217b05d809283d43e4ec9f982531125f5e4b60b7";
+	        this.date = "2017-07-14";
+	        this.commit = "451a39b1735d3d7bccda81b257320bdc20c85697";
+	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/commit/451a39b1735d3d7bccda81b257320bdc20c85697";
 	    }
 	}
 	exports.VersionInformation = VersionInformation;
@@ -14022,48 +14022,38 @@ webpackJsonp([0],[
 	    }
 	    getForegroundColor(color) {
 	        const h = Number.parseInt(color["changingThisBreaksApplicationSecurity"].substr(4, 3).split(',')[0]);
-	        const s = 1;
-	        const l = 0.7;
+	        const s = 100;
+	        const l = 88;
 	        const rgb = this.hslToRgb(h, s, l);
 	        const yiq = ((rgb[0] * 299) + (rgb[1] * 587) + (rgb[2] * 114)) / 1000;
-	        return this.sanitization.bypassSecurityTrustStyle((yiq >= 128) ? '#f0f0f0' : '#0d0d0d');
+	        return this.sanitization.bypassSecurityTrustStyle((yiq >= 128) ? 'black' : 'white');
 	    }
 	    hslToRgb(h, s, l) {
-	        const c = (1 - Math.abs(2 * l - 1)) * s;
-	        const x = c * (1 - Math.abs((h / 60) % 2 - 1));
-	        const m = l - c / 2;
 	        let r, g, b;
-	        if (0 <= h && h < 60) {
-	            r = c;
-	            g = x;
-	            b = 0;
-	        }
-	        else if (60 <= h && h < 120) {
-	            r = x;
-	            g = c;
-	            b = 0;
-	        }
-	        else if (120 <= h && h < 180) {
-	            r = 0;
-	            g = c;
-	            b = x;
-	        }
-	        else if (180 <= h && h < 240) {
-	            r = 0;
-	            g = x;
-	            b = c;
-	        }
-	        else if (240 <= h && h < 300) {
-	            r = x;
-	            g = 0;
-	            b = c;
+	        if (s == 0) {
+	            r = g = b = l; // achromatic
 	        }
 	        else {
-	            r = c;
-	            g = 0;
-	            b = x;
+	            let hue2rgb = function hue2rgb(p, q, t) {
+	                if (t < 0)
+	                    t += 1;
+	                if (t > 1)
+	                    t -= 1;
+	                if (t < 1 / 6)
+	                    return p + (q - p) * 6 * t;
+	                if (t < 1 / 2)
+	                    return q;
+	                if (t < 2 / 3)
+	                    return p + (q - p) * (2 / 3 - t) * 6;
+	                return p;
+	            };
+	            let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+	            let p = 2 * l - q;
+	            r = hue2rgb(p, q, h + 1 / 3);
+	            g = hue2rgb(p, q, h);
+	            b = hue2rgb(p, q, h - 1 / 3);
 	        }
-	        return [Math.round((r + m) * 255), Math.round((g + m) * 255), Math.round((b + m) * 255)];
+	        return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
 	    }
 	};
 	__decorate([
@@ -14203,4 +14193,4 @@ webpackJsonp([0],[
 
 /***/ })
 ]);
-//# sourceMappingURL=app.be12e9961bc72eeb6bfc.js.map
+//# sourceMappingURL=app.276ebcba8eeb49870c25.js.map
