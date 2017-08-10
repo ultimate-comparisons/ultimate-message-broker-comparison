@@ -12,4 +12,3 @@ export * from './components/criteria-selection';
 export * from './components/details';
 export * from './components/comparison';
 export * from './components/rating';
-export * from './components/repository-data';
