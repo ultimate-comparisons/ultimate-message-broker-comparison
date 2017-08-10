@@ -13,7 +13,6 @@ import { TableData, Data, CriteriaSelection } from "./../../comparison/shared/in
 import { ComparisonCitationService } from "./../../comparison/components/comparison-citation.service";
 import { ComparisonConfigService } from "../../comparison/components/comparison-config.service";
 import { DomSanitizer, SafeHtml } from "@angular/platform-browser";
-import { isNullOrUndefined } from "util";
 import { Http } from "@angular/http";
 declare let anchors;
 
