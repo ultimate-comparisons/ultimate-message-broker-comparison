@@ -443,5 +443,169 @@
         ]
       }
     }
+  },
+  {
+    "tag": "Apache Kafka - http://kafka.apache.org/",
+    "descr": "distributed streaming platform",
+    "Description": {
+      "plain": "Kafka™ is used for building real-time data pipelines and streaming apps. It is horizontally scalable, fault-tolerant, wicked fast, and runs in production in thousands of companies.",
+      "childs": {
+        "0": [
+          "Kafka™ is used for building real-time data pipelines and streaming apps. It is horizontally scalable, fault-tolerant, wicked fast, and runs in production in thousands of companies."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/apache/kafka\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/apache/kafka",
+              "plain": "https://github.com/apache/kafka\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@apacheKafkaLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@apacheKafkaLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheKafkaLicense]",
+                  "plain": "[@apacheKafkaLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n    - [@apacheKafkaServer]\n- OSX\n    - [@apacheKafkaServer]\n- Windows\n    - [@apacheKafkaServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@apacheKafkaServer]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheKafkaServer]",
+                  "plain": "[@apacheKafkaServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@apacheKafkaServer]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheKafkaServer]",
+                  "plain": "[@apacheKafkaServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@apacheKafkaServer]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheKafkaServer]",
+                  "plain": "[@apacheKafkaServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@apacheKafkaExample]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@apacheKafkaExample]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheKafkaExample]",
+                  "plain": "[@apacheKafkaExample]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 562.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "562.000",
+              "plain": "562.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]
