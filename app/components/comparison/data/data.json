@@ -48,6 +48,159 @@
         ]
       }
     },
+    "Protocol": {
+      "plain": "- AMQP\n    - [@activeMQProtocols]\n- AUTO\n    - [@activeMQProtocols]\n- MQTT\n    - [@activeMQProtocols]\n- OpenWire\n    - [@activeMQProtocols]\n- STOMP\n    - [@activeMQProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "AUTO",
+              "plain": "AUTO\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "MQTT",
+              "plain": "MQTT\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OpenWire",
+              "plain": "OpenWire\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n    - [@activeMQServer]\n- Windows\n    - [@activeMQServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@activeMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQServer]",
+                  "plain": "[@activeMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@activeMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQServer]",
+                  "plain": "[@activeMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@activeMQExample]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@activeMQExample]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQExample]",
+                  "plain": "[@activeMQExample]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- Yes\n    - [@activeMQJMS]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@activeMQJMS]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQJMS]",
+                  "plain": "[@activeMQJMS]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
     "Broker Backend": {
       "plain": "- None\n",
       "childs": {
