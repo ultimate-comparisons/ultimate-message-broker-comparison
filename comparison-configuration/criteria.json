@@ -82,7 +82,7 @@
     {
         "name": "Broker Backend",
         "tag": "Broker Backend",
-        "description": "",
+        "description": "If the software needs a another Message Broker as the backend ...",
         "placeholder": "Select Broker Backend ...",
         "and_search": true,
         "values": [
@@ -99,15 +99,9 @@
         "placeholder": "Select activity state...",
         "and_search": false,
         "values": [
-            {
-                "name": "Active"
-            },
-            {
-                "name": "Not Sure"
-            },
-            {
-                "name": "Inactive"
-            }
+            {"name": "Active"},
+            {"name": "Not Sure"},
+            {"name": "Inactive"}
         ]
     }
 ]

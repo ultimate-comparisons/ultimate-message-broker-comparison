@@ -9,9 +9,9 @@
         "body": "Description",
         "body-attachment-tags": [
             "License",
+            "Protocol",
             "Development status",
             "Server Platforms",
-            "Protocol",
             "JMS support",
             "Working example",
             "Broker Backend",
