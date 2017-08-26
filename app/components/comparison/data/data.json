@@ -47,41 +47,6 @@
           ]
         ]
       }
-    },
-    "Server Platforms": {
-      "plain": "- Linux\n    - [@activeMQServer]\n- Windows\n    - [@activeMQServer]\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "Linux",
-              "plain": "Linux\n",
-              "plainChilds": "    - [@activeMQServer]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQServer]",
-                  "plain": "[@activeMQServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Windows",
-              "plain": "Windows\n",
-              "plainChilds": "    - [@activeMQServer]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQServer]",
-                  "plain": "[@activeMQServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            }
-          ]
-        ]
-      }
     }
   }
 ]
