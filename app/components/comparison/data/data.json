@@ -27,18 +27,18 @@
       }
     },
     "License": {
-      "plain": "- Apache 2.0\n    - [@activeMQ]\n",
+      "plain": "- Apache 2.0\n    - [@apacheActiveMQ]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Apache 2.0",
               "plain": "Apache 2.0\n",
-              "plainChilds": "    - [@activeMQ]\n",
+              "plainChilds": "    - [@apacheActiveMQ]\n",
               "childs": [
                 {
-                  "content": ",[@activeMQ]",
-                  "plain": "[@activeMQ]\n",
+                  "content": ",[@apacheActiveMQ]",
+                  "plain": "[@apacheActiveMQ]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -49,18 +49,18 @@
       }
     },
     "Protocol": {
-      "plain": "- AMQP\n    - [@activeMQProtocols]\n- AUTO\n    - [@activeMQProtocols]\n- MQTT\n    - [@activeMQProtocols]\n- OpenWire\n    - [@activeMQProtocols]\n- STOMP\n    - [@activeMQProtocols]\n",
+      "plain": "- AMQP\n    - [@apacheActiveMQProtocols]\n- AUTO\n    - [@apacheActiveMQProtocols]\n- MQTT\n    - [@apacheActiveMQProtocols]\n- OpenWire\n    - [@apacheActiveMQProtocols]\n- STOMP\n    - [@apacheActiveMQProtocols]\n",
       "childs": {
         "0": [
           [
             {
               "content": "AMQP",
               "plain": "AMQP\n",
-              "plainChilds": "    - [@activeMQProtocols]\n",
+              "plainChilds": "    - [@apacheActiveMQProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@activeMQProtocols]",
-                  "plain": "[@activeMQProtocols]\n",
+                  "content": ",[@apacheActiveMQProtocols]",
+                  "plain": "[@apacheActiveMQProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -69,11 +69,11 @@
             {
               "content": "AUTO",
               "plain": "AUTO\n",
-              "plainChilds": "    - [@activeMQProtocols]\n",
+              "plainChilds": "    - [@apacheActiveMQProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@activeMQProtocols]",
-                  "plain": "[@activeMQProtocols]\n",
+                  "content": ",[@apacheActiveMQProtocols]",
+                  "plain": "[@apacheActiveMQProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -82,11 +82,11 @@
             {
               "content": "MQTT",
               "plain": "MQTT\n",
-              "plainChilds": "    - [@activeMQProtocols]\n",
+              "plainChilds": "    - [@apacheActiveMQProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@activeMQProtocols]",
-                  "plain": "[@activeMQProtocols]\n",
+                  "content": ",[@apacheActiveMQProtocols]",
+                  "plain": "[@apacheActiveMQProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -95,11 +95,11 @@
             {
               "content": "OpenWire",
               "plain": "OpenWire\n",
-              "plainChilds": "    - [@activeMQProtocols]\n",
+              "plainChilds": "    - [@apacheActiveMQProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@activeMQProtocols]",
-                  "plain": "[@activeMQProtocols]\n",
+                  "content": ",[@apacheActiveMQProtocols]",
+                  "plain": "[@apacheActiveMQProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -108,11 +108,11 @@
             {
               "content": "STOMP",
               "plain": "STOMP\n",
-              "plainChilds": "    - [@activeMQProtocols]\n",
+              "plainChilds": "    - [@apacheActiveMQProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@activeMQProtocols]",
-                  "plain": "[@activeMQProtocols]\n",
+                  "content": ",[@apacheActiveMQProtocols]",
+                  "plain": "[@apacheActiveMQProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -123,18 +123,18 @@
       }
     },
     "Server Platforms": {
-      "plain": "- Linux\n    - [@activeMQServer]\n- Windows\n    - [@activeMQServer]\n",
+      "plain": "- Linux\n    - [@apacheActiveMQServer]\n- Windows\n    - [@apacheActiveMQServer]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Linux",
               "plain": "Linux\n",
-              "plainChilds": "    - [@activeMQServer]\n",
+              "plainChilds": "    - [@apacheActiveMQServer]\n",
               "childs": [
                 {
-                  "content": ",[@activeMQServer]",
-                  "plain": "[@activeMQServer]\n",
+                  "content": ",[@apacheActiveMQServer]",
+                  "plain": "[@apacheActiveMQServer]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -143,11 +143,11 @@
             {
               "content": "Windows",
               "plain": "Windows\n",
-              "plainChilds": "    - [@activeMQServer]\n",
+              "plainChilds": "    - [@apacheActiveMQServer]\n",
               "childs": [
                 {
-                  "content": ",[@activeMQServer]",
-                  "plain": "[@activeMQServer]\n",
+                  "content": ",[@apacheActiveMQServer]",
+                  "plain": "[@apacheActiveMQServer]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -158,18 +158,18 @@
       }
     },
     "Working example": {
-      "plain": "- Yes\n    - [@activeMQExample]\n",
+      "plain": "- Yes\n    - [@apacheActiveMQExample]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Yes",
               "plain": "Yes\n",
-              "plainChilds": "    - [@activeMQExample]\n",
+              "plainChilds": "    - [@apacheActiveMQExample]\n",
               "childs": [
                 {
-                  "content": ",[@activeMQExample]",
-                  "plain": "[@activeMQExample]\n",
+                  "content": ",[@apacheActiveMQExample]",
+                  "plain": "[@apacheActiveMQExample]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -180,18 +180,18 @@
       }
     },
     "JMS support": {
-      "plain": "- Yes\n    - [@activeMQJMS]\n",
+      "plain": "- Yes\n    - [@apacheActiveMQJMS]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Yes",
               "plain": "Yes\n",
-              "plainChilds": "    - [@activeMQJMS]\n",
+              "plainChilds": "    - [@apacheActiveMQJMS]\n",
               "childs": [
                 {
-                  "content": ",[@activeMQJMS]",
-                  "plain": "[@activeMQJMS]\n",
+                  "content": ",[@apacheActiveMQJMS]",
+                  "plain": "[@apacheActiveMQJMS]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -259,18 +259,18 @@
       }
     },
     "License": {
-      "plain": "- Apache 2.0\n    - [@apollo]\n",
+      "plain": "- Apache 2.0\n    - [@apacheApollo]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Apache 2.0",
               "plain": "Apache 2.0\n",
-              "plainChilds": "    - [@apollo]\n",
+              "plainChilds": "    - [@apacheApollo]\n",
               "childs": [
                 {
-                  "content": ",[@apollo]",
-                  "plain": "[@apollo]\n",
+                  "content": ",[@apacheApollo]",
+                  "plain": "[@apacheApollo]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -281,18 +281,18 @@
       }
     },
     "Server Platforms": {
-      "plain": "- Linux\n    - [@apolloServer]    \n- Windows\n    - [@apolloServer]\n",
+      "plain": "- Linux\n    - [@apacheApolloServer]    \n- Windows\n    - [@apacheApolloServer]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Linux",
               "plain": "Linux\n",
-              "plainChilds": "    - [@apolloServer]    \n",
+              "plainChilds": "    - [@apacheApolloServer]    \n",
               "childs": [
                 {
-                  "content": ",[@apolloServer]",
-                  "plain": "[@apolloServer]    \n",
+                  "content": ",[@apacheApolloServer]",
+                  "plain": "[@apacheApolloServer]    \n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -301,11 +301,11 @@
             {
               "content": "Windows",
               "plain": "Windows\n",
-              "plainChilds": "    - [@apolloServer]\n",
+              "plainChilds": "    - [@apacheApolloServer]\n",
               "childs": [
                 {
-                  "content": ",[@apolloServer]",
-                  "plain": "[@apolloServer]\n",
+                  "content": ",[@apacheApolloServer]",
+                  "plain": "[@apacheApolloServer]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -316,18 +316,18 @@
       }
     },
     "Protocol": {
-      "plain": "- AMQP\n    - [@apollo]\n- MQTT\n    - [@apollo]\n- OpenWire\n    - [@apollo]\n- STOMP\n    - [@apollo]\n",
+      "plain": "- AMQP\n    - [@apacheApollo]\n- MQTT\n    - [@apacheApollo]\n- OpenWire\n    - [@apacheApollo]\n- STOMP\n    - [@apacheApollo]\n",
       "childs": {
         "0": [
           [
             {
               "content": "AMQP",
               "plain": "AMQP\n",
-              "plainChilds": "    - [@apollo]\n",
+              "plainChilds": "    - [@apacheApollo]\n",
               "childs": [
                 {
-                  "content": ",[@apollo]",
-                  "plain": "[@apollo]\n",
+                  "content": ",[@apacheApollo]",
+                  "plain": "[@apacheApollo]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -336,11 +336,11 @@
             {
               "content": "MQTT",
               "plain": "MQTT\n",
-              "plainChilds": "    - [@apollo]\n",
+              "plainChilds": "    - [@apacheApollo]\n",
               "childs": [
                 {
-                  "content": ",[@apollo]",
-                  "plain": "[@apollo]\n",
+                  "content": ",[@apacheApollo]",
+                  "plain": "[@apacheApollo]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -349,11 +349,11 @@
             {
               "content": "OpenWire",
               "plain": "OpenWire\n",
-              "plainChilds": "    - [@apollo]\n",
+              "plainChilds": "    - [@apacheApollo]\n",
               "childs": [
                 {
-                  "content": ",[@apollo]",
-                  "plain": "[@apollo]\n",
+                  "content": ",[@apacheApollo]",
+                  "plain": "[@apacheApollo]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -362,11 +362,11 @@
             {
               "content": "STOMP",
               "plain": "STOMP\n",
-              "plainChilds": "    - [@apollo]\n",
+              "plainChilds": "    - [@apacheApollo]\n",
               "childs": [
                 {
-                  "content": ",[@apollo]",
-                  "plain": "[@apollo]\n",
+                  "content": ",[@apacheApollo]",
+                  "plain": "[@apacheApollo]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -407,18 +407,18 @@
       }
     },
     "Working example": {
-      "plain": "- Yes\n    - [@apolloExamples]\n",
+      "plain": "- Yes\n    - [@apacheApolloExamples]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Yes",
               "plain": "Yes\n",
-              "plainChilds": "    - [@apolloExamples]\n",
+              "plainChilds": "    - [@apacheApolloExamples]\n",
               "childs": [
                 {
-                  "content": ",[@apolloExamples]",
-                  "plain": "[@apolloExamples]\n",
+                  "content": ",[@apacheApolloExamples]",
+                  "plain": "[@apacheApolloExamples]\n",
                   "plainChilds": "",
                   "childs": []
                 }
