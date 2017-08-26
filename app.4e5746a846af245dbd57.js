@@ -14027,7 +14027,7 @@ webpackJsonp([0],[
 	        if (typeof this.tooltip === 'number') {
 	            this.tooltip = this.tooltip.toString();
 	        }
-	        if (this.tooltip.indexOf('<') > -1 && this.tooltip.indexOf('>') > -1) {
+	        if (typeof this.tooltip === 'string' && this.tooltip.indexOf('<') > -1 && this.tooltip.indexOf('>') > -1) {
 	            const tokens = this.tooltip.split(/[ ,\n\r]/);
 	            let tip = this.tooltip;
 	            for (let token of tokens) {
@@ -14748,4 +14748,4 @@ webpackJsonp([0],[
 
 /***/ })
 ]);
-//# sourceMappingURL=app.4c06ddb646de4fac4eec.js.map
+//# sourceMappingURL=app.4e5746a846af245dbd57.js.map
