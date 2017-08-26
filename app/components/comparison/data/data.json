@@ -25,6 +25,63 @@
           ]
         ]
       }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@activeMQ]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@activeMQ]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQ]",
+                  "plain": "[@activeMQ]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n    - [@activeMQServer]\n- Windows\n    - [@activeMQServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@activeMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQServer]",
+                  "plain": "[@activeMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@activeMQServer]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQServer]",
+                  "plain": "[@activeMQServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
     }
   }
 ]
