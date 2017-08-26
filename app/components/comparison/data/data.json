@@ -47,6 +47,154 @@
           ]
         ]
       }
+    },
+    "Protocol": {
+      "plain": "- AMQP\n    - [@activeMQProtocols]\n- AUTO\n    - [@activeMQProtocols]\n- MQTT\n    - [@activeMQProtocols]\n- OpenWire\n    - [@activeMQProtocols]\n- STOMP\n    - [@activeMQProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "AUTO",
+              "plain": "AUTO\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "MQTT",
+              "plain": "MQTT\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OpenWire",
+              "plain": "OpenWire\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "    - [@activeMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQProtocols]",
+                  "plain": "[@activeMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@activeMQExample]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@activeMQExample]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQExample]",
+                  "plain": "[@activeMQExample]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- Yes\n    - [@activeMQJMS]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@activeMQJMS]\n",
+              "childs": [
+                {
+                  "content": ",[@activeMQJMS]",
+                  "plain": "[@activeMQJMS]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 1390000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "1390000",
+              "plain": "1390000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
     }
   }
 ]
