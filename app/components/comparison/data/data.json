@@ -1,12 +1,12 @@
 [
   {
     "tag": "Apache ActiveMQ - http://activemq.apache.org/",
-    "descr": "Apache ActiveMQ™ is the most popular and powerful open source messaging and Integration Patterns server.",
+    "descr": "Apache ActiveMQ is the most popular and powerful open source messaging and Integration Patterns server.",
     "Description": {
-      "plain": "Apache ActiveMQ™ is the most popular and powerful open source messaging and Integration Patterns server.\n\nApache ActiveMQ is fast, supports many Cross Language Clients and Protocols, comes with easy to use Enterprise Integration Patterns and many advanced features while fully supporting JMS 1.1 and J2EE 1.4. Apache ActiveMQ is released under the Apache 2.0 License",
+      "plain": "Apache ActiveMQ is the most popular and powerful open source messaging and Integration Patterns server.\n\nApache ActiveMQ is fast, supports many Cross Language Clients and Protocols, comes with easy to use Enterprise Integration Patterns and many advanced features while fully supporting JMS 1.1 and J2EE 1.4. Apache ActiveMQ is released under the Apache 2.0 License",
       "childs": {
         "0": [
-          "Apache ActiveMQ™ is the most popular and powerful open source messaging and Integration Patterns server.",
+          "Apache ActiveMQ is the most popular and powerful open source messaging and Integration Patterns server.",
           "Apache ActiveMQ is fast, supports many Cross Language Clients and Protocols, comes with easy to use Enterprise Integration Patterns and many advanced features while fully supporting JMS 1.1 and J2EE 1.4. Apache ActiveMQ is released under the Apache 2.0 License"
         ]
       }
