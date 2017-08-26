@@ -58,18 +58,6 @@
         ]
     },
     {
-        "name": "EAI-Pattern Support",
-        "tag": "EAI-Pattern Support",
-        "description": "",
-        "placeholder": "Select EAI-Pattern support ...",
-        "and_search": false,
-        "values": [
-            {"name": "Complete"},
-            {"name": "Partially"},
-            {"name": "PubSub"}
-        ]
-    },
-    {
         "name": "JMS support",
         "tag": "JMS support",
         "description": "",

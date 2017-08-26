@@ -61,36 +61,6 @@
         ]
       }
     },
-    "EAI-Pattern Support": {
-      "plain": "- Complete\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "Complete",
-              "plain": "Complete\n",
-              "plainChilds": "",
-              "childs": []
-            }
-          ]
-        ]
-      }
-    },
-    "Featuers": {
-      "plain": "- Clustering\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "Clustering",
-              "plain": "Clustering\n",
-              "plainChilds": "",
-              "childs": []
-            }
-          ]
-        ]
-      }
-    },
     "Server Platforms": {
       "plain": "- Linux\n    - [@activeMQServer]\n- Windows\n    - [@activeMQServer]\n",
       "childs": {
