@@ -14,37 +14,37 @@ Apache ActiveMQ is fast, supports many Cross Language Clients and Protocols, com
 
 ## License
 - Apache 2.0
-    - [@activeMQ]
+    - [@apacheActiveMQ]
 
 
 ## Protocol
 - AMQP
-    - [@activeMQProtocols]
+    - [@apacheActiveMQProtocols]
 - AUTO
-    - [@activeMQProtocols]
+    - [@apacheActiveMQProtocols]
 - MQTT
-    - [@activeMQProtocols]
+    - [@apacheActiveMQProtocols]
 - OpenWire
-    - [@activeMQProtocols]
+    - [@apacheActiveMQProtocols]
 - STOMP
-    - [@activeMQProtocols]
+    - [@apacheActiveMQProtocols]
 
 
 ## Server Platforms
 - Linux
-    - [@activeMQServer]
+    - [@apacheActiveMQServer]
 - Windows
-    - [@activeMQServer]
+    - [@apacheActiveMQServer]
 
 
 ## Working example
 - Yes
-    - [@activeMQExample]
+    - [@apacheActiveMQExample]
 
 
 ## JMS support
 - Yes
-    - [@activeMQJMS]
+    - [@apacheActiveMQJMS]
 
 
 ## Broker Backend

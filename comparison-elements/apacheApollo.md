@@ -11,25 +11,25 @@ ActiveMQ apollo is a faster, more reliable, easier to maintain messaging broker 
 
 ## License
 - Apache 2.0
-    - [@apollo]
+    - [@apacheApollo]
 
 
 ## Server Platforms
 - Linux
-    - [@apolloServer]    
+    - [@apacheApolloServer]    
 - Windows
-    - [@apolloServer]
+    - [@apacheApolloServer]
 
 
 ## Protocol
 - AMQP
-    - [@apollo]
+    - [@apacheApollo]
 - MQTT
-    - [@apollo]
+    - [@apacheApollo]
 - OpenWire
-    - [@apollo]
+    - [@apacheApollo]
 - STOMP
-    - [@apollo]
+    - [@apacheApollo]
 
 
 ## Broker Backend
@@ -42,7 +42,7 @@ ActiveMQ apollo is a faster, more reliable, easier to maintain messaging broker 
 
 ## Working example
 - Yes
-    - [@apolloExamples]
+    - [@apacheApolloExamples]
 
 
 ## Google hits
