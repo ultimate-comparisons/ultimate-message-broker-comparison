@@ -25,28 +25,6 @@
           ]
         ]
       }
-    },
-    "License": {
-      "plain": "- Apache 2.0\n    - [@activeMQ]\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "Apache 2.0",
-              "plain": "Apache 2.0\n",
-              "plainChilds": "    - [@activeMQ]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQ]",
-                  "plain": "[@activeMQ]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            }
-          ]
-        ]
-      }
     }
   }
 ]
