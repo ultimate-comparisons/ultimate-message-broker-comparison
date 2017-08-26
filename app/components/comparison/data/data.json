@@ -78,5 +78,9 @@
         ]
       }
     }
+  },
+  {
+    "tag": "Template - http://www.example.com",
+    "descr": "Empty Template"
   }
 ]
