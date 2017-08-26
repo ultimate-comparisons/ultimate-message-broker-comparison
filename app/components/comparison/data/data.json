@@ -48,21 +48,6 @@
         ]
       }
     },
-    "Broker Backend": {
-      "plain": "- None\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "None",
-              "plain": "None\n",
-              "plainChilds": "",
-              "childs": []
-            }
-          ]
-        ]
-      }
-    },
     "Google hits": {
       "plain": "- 1390000\n",
       "childs": {
