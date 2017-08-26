@@ -3,7 +3,7 @@ in-memory, distributed job queue
 
 
 ## Description
-Kestrel is based on Blaine Cook's "starling" simple, distributed message queue, with added features and bulletproofing, as well as the scalability offered by actors and the JVM.
+Kestrel is based on Blaine Cook's starling simple, distributed message queue, with added features and bulletproofing, as well as the scalability offered by actors and the JVM.
 
 
 ## License
