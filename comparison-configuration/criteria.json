@@ -103,5 +103,23 @@
             {"name": "RabbitMQ"},
             {"name": "Redis"}
         ]
+    },
+    {
+        "name": "Active Development",
+        "tag": "Active Development",
+        "description": "Is the software in active development",
+        "placeholder": "Select activity state...",
+        "and_search": false,
+        "values": [
+            {
+                "name": "Active"
+            },
+            {
+                "name": "Not Sure"
+            },
+            {
+                "name": "Inactive"
+            }
+        ]
     }
 ]

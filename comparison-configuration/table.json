@@ -27,39 +27,39 @@
             "tag": "label",
             "values": [
                 {
-                    "name": "EPL",
-                    "description": "https://opensource.org/licenses/EPL-1.0",
-                    "color": "hsl(000, 100%, 88%)"
-                },
-                {
-                    "name": "LGPLv3",
-                    "description": "https://www.gnu.org/licenses/lgpl-3.0.de.html",
-                    "color": "hsl(75, 100%, 88%)"
-                },
-                {
-                    "name": "MIT",
-                    "description": "http://choosealicense.com/licenses/mit/",
-                    "color": "hsl(150, 100%, 88%)"
-                },
-                {
                     "name": "Apache 2.0",
                     "description": "http://choosealicense.com/licenses/apache-2.0/",
-                    "color": "hsl(225, 100%, 88%)"
+                    "color": "hsl(255, 100%, 70%)"
                 },
                 {
                     "name": "BSD-2-Clause",
                     "description": "http://www.opensource.org/licenses/BSD-3-Clause",
-                    "color": "hsl(300, 100%, 88%)"
+                    "color": "hsl(255, 100%, 70%)"
                 },
                 {
                     "name": "BSD-3-Clause",
                     "description": "http://www.opensource.org/licenses/BSD-3-Clause",
-                    "color": "hsl(15, 100%, 88%)"
+                    "color": "hsl(255, 100%, 70%)"
+                },
+                {
+                    "name": "EPL",
+                    "description": "https://opensource.org/licenses/EPL-1.0",
+                    "color": "hsl(255, 100%, 70%)"
+                },
+                {
+                    "name": "LGPLv3",
+                    "description": "https://www.gnu.org/licenses/lgpl-3.0.de.html",
+                    "color": "hsl(255, 100%, 70%)"
+                },
+                {
+                    "name": "MIT",
+                    "description": "http://choosealicense.com/licenses/mit/",
+                    "color": "hsl(255, 100%, 70%)"
                 },
                 {
                     "name": "MPL 1.1",
                     "description": "https://www.mozilla.org/media/MPL/1.1/index.0c5913925d40.txt",
-                    "color": "hsl(90, 100%, 88%)"
+                    "color": "hsl(255, 100%, 70%)"
                 }
             ]
         }
@@ -73,49 +73,49 @@
             "values": [
                 {
                     "name": "AMQP",
-                    "color": "hsl(135, 100%, 88%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "AUTO",
-                    "color": "hsl(245, 100%, 88%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "Beanstalkd",
-                    "color": "hsl(365, 100%, 88%)"
-                },
-                {
-                    "name": "memcached",
-                    "description": "https://github.com/memcached/memcached/blob/master/doc/protocol.txt",
-                    "color": "hsl(30, 100%, 88%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "Gearman",
                     "description": "http://gearman.org/protocol/",
-                    "color": "hsl(105, 100%, 88%)"
+                    "color": "hsl(285, 100%, 70%)"
+                },
+                {
+                    "name": "memcached",
+                    "description": "https://github.com/memcached/memcached/blob/master/doc/protocol.txt",
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "MQTT",
-                    "color": "hsl(195, 100%, 88%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "OpenWire",
-                    "color": "hsl(325, 100%, 88%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "RESP",
-                    "color": "hsl(330, 100%, 88%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "STOMP",
-                    "color": "hsl(45, 100%, 88%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "text",
-                    "color": "hsl(120, 100%, 88%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "thrift",
-                    "color": "hsl(195, 100%, 88%)"
+                    "color": "hsl(285, 100%, 70%)"
                 }
             ]
         }
@@ -127,11 +127,6 @@
         "type": {
             "tag": "label",
             "values": [
-                {
-                    "name": "Stale",
-                    "description": "No version update since 12 months.",
-                    "class": "label-danger"
-                },
                 {
                     "name": "Active",
                     "description": "The tool is being actively developed",
@@ -146,6 +141,11 @@
                     "name": "Stable",
                     "description": "Library can be used in production.",
                     "class": "label-success"
+                },
+                {
+                    "name": "Stale",
+                    "description": "No version update since 12 months.",
+                    "class": "label-danger"
                 }
             ]
         }
@@ -159,15 +159,15 @@
             "values": [
                 {
                     "name": "Linux",
-                    "color": "hsl(270, 100%, 88%)"
+                    "color": "hsl(345, 100%, 70%)"
                 },
                 {
                     "name": "OSX",
-                    "color": "hsl(345, 100%, 88%)"
+                    "color": "hsl(345, 100%, 70%)"
                 },
                 {
                     "name": "Windows",
-                    "color": "hsl(60, 100%, 88%)"
+                    "color": "hsl(345, 100%, 70%)"
                 }
             ]
         }
@@ -175,7 +175,7 @@
     {
         "name": "EAI-Pattern Support",
         "tag": "EAI-Pattern Support",
-        "display": true,
+        "display": false,
         "type": {
             "tag": "label",
             "values": [
@@ -189,7 +189,7 @@
                 },
                 {
                     "name": "PubSub",
-                    "color": "hsl(135, 100%, 88%)"
+                    "color": "hsl(15, 100%, 70%)"
                 }
             ]
         }
@@ -202,12 +202,12 @@
             "tag": "label",
             "values": [
                 {
-                    "name": "Yes",
-                    "class": "label-success"
-                },
-                {
                     "name": "No",
                     "class": "label-danger"
+                },
+                {
+                    "name": "Yes",
+                    "class": "label-success"
                 }
             ]
         }
@@ -220,12 +220,12 @@
             "tag": "label",
             "values": [
                 {
-                    "name": "Yes",
-                    "class": "label-success"
-                },
-                {
                     "name": "No",
                     "class": "label-danger"
+                },
+                {
+                    "name": "Yes",
+                    "class": "label-success"
                 }
             ]
         }
@@ -238,20 +238,56 @@
             "tag": "label",
             "values": [
                 {
-                    "name": "None",
-                    "color": "hsl(210, 100%, 88%)"
+                    "name": "HornetQ",
+                    "color": "hsl(105, 100%, 70%)"
                 },
                 {
-                    "name": "HornetQ",
-                    "color": "hsl(285, 100%, 88%)"
+                    "name": "None",
+                    "color": "hsl(105, 100%, 70%)"
                 },
                 {
                     "name": "RabbitMQ",
-                    "color": "hsl(000, 100%, 88%)"
+                    "color": "hsl(105, 100%, 70%)"
                 },
                 {
                     "name": "Redis",
-                    "color": "hsl(75, 100%, 88%)"
+                    "color": "hsl(105, 100%, 70%)"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Active Development",
+        "tag": "Active Development",
+        "display": true,
+        "repo": true,
+        "type": {
+            "tag": "label",
+            "values": [
+                {
+                    "name": "Active",
+                    "description": "Active",
+                    "min-age": -1,
+                    "max-age": 1,
+                    "max-age-unit": "months",
+                    "class": "label-success"
+                },
+                {
+                    "name": "Inactive",
+                    "description": "Inactive",
+                    "min-age": 6,
+                    "min-age-unit": "months",
+                    "max-age": -1,
+                    "class": "label-danger"
+                },
+                {
+                    "name": "Not Sure",
+                    "description": "Not Sure",
+                    "min-age": 1,
+                    "min-age-unit": "months",
+                    "max-age": 6,
+                    "max-age-unit": "months",
+                    "class": "label-warning"
                 }
             ]
         }
