@@ -32,69 +32,6 @@
           ]
         ]
       }
-    },
-    "Development status": {
-      "plain": "- Active\n    - Last version: 5.14.4 on 2017-02-27 [@activeMQRepository]\n- Stable\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "Active",
-              "plain": "Active\n",
-              "plainChilds": "    - Last version: 5.14.4 on 2017-02-27 [@activeMQRepository]\n",
-              "childs": [
-                {
-                  "content": "Last version: 5.14.4 on 2017-02-27 [@activeMQRepository]",
-                  "plain": "Last version: 5.14.4 on 2017-02-27 [@activeMQRepository]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Stable",
-              "plain": "Stable\n",
-              "plainChilds": "",
-              "childs": []
-            }
-          ]
-        ]
-      }
-    },
-    "Server Platforms": {
-      "plain": "- Linux\n    - [@activeMQServer]\n- Windows\n    - [@activeMQServer]\n",
-      "childs": {
-        "0": [
-          [
-            {
-              "content": "Linux",
-              "plain": "Linux\n",
-              "plainChilds": "    - [@activeMQServer]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQServer]",
-                  "plain": "[@activeMQServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            },
-            {
-              "content": "Windows",
-              "plain": "Windows\n",
-              "plainChilds": "    - [@activeMQServer]\n",
-              "childs": [
-                {
-                  "content": ",[@activeMQServer]",
-                  "plain": "[@activeMQServer]\n",
-                  "plainChilds": "",
-                  "childs": []
-                }
-              ]
-            }
-          ]
-        ]
-      }
     }
   }
 ]
