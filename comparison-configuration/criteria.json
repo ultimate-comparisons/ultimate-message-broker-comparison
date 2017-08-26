@@ -33,19 +33,6 @@
         ]
     },
     {
-        "name": "Development status",
-        "tag": "Development status",
-        "description": "",
-        "placeholder": "Select development status ...",
-        "and_search": false,
-        "values": [
-            {"name": "Stale"},
-            {"name": "Active"},
-            {"name": "Experimental"},
-            {"name": "Stable"}
-        ]
-    },
-    {
         "name": "Server Platforms",
         "tag": "Server Platforms",
         "description": "",

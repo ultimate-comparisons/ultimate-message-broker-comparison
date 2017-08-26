@@ -233,7 +233,215 @@
     }
   },
   {
-    "tag": "Template - http://www.example.com",
-    "descr": "Empty Template"
+    "tag": "Apache Apollo - http://activemq.apache.org/apollo/",
+    "descr": "ActiveMQ's next generation of messaging.",
+    "Description": {
+      "plain": "ActiveMQ apollo is a faster, more reliable, easier to maintain messaging broker built from the foundations of the original ActiveMQ. It accomplishes this using a radically different threading and message dispatching architecture. Like ActiveMQ, apollo is a multi-Protocol broker and supports STOMP, AMQP, MQTT, Openwire, SSL, and WebSockets.",
+      "childs": {
+        "0": [
+          "ActiveMQ apollo is a faster, more reliable, easier to maintain messaging broker built from the foundations of the original ActiveMQ. It accomplishes this using a radically different threading and message dispatching architecture. Like ActiveMQ, apollo is a multi-Protocol broker and supports STOMP, AMQP, MQTT, Openwire, SSL, and WebSockets."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/apache/activemq-apollo\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/apache/activemq-apollo",
+              "plain": "https://github.com/apache/activemq-apollo\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@apollo]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@apollo]\n",
+              "childs": [
+                {
+                  "content": ",[@apollo]",
+                  "plain": "[@apollo]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n    - [@apolloServer]    \n- Windows\n    - [@apolloServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@apolloServer]    \n",
+              "childs": [
+                {
+                  "content": ",[@apolloServer]",
+                  "plain": "[@apolloServer]    \n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@apolloServer]\n",
+              "childs": [
+                {
+                  "content": ",[@apolloServer]",
+                  "plain": "[@apolloServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- AMQP\n    - [@apollo]\n- MQTT\n    - [@apollo]\n- OpenWire\n    - [@apollo]\n- STOMP\n    - [@apollo]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "    - [@apollo]\n",
+              "childs": [
+                {
+                  "content": ",[@apollo]",
+                  "plain": "[@apollo]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "MQTT",
+              "plain": "MQTT\n",
+              "plainChilds": "    - [@apollo]\n",
+              "childs": [
+                {
+                  "content": ",[@apollo]",
+                  "plain": "[@apollo]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OpenWire",
+              "plain": "OpenWire\n",
+              "plainChilds": "    - [@apollo]\n",
+              "childs": [
+                {
+                  "content": ",[@apollo]",
+                  "plain": "[@apollo]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "    - [@apollo]\n",
+              "childs": [
+                {
+                  "content": ",[@apollo]",
+                  "plain": "[@apollo]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@apolloExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@apolloExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@apolloExamples]",
+                  "plain": "[@apolloExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 660.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "660.000",
+              "plain": "660.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]
