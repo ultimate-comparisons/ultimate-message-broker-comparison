@@ -33,19 +33,6 @@
         ]
     },
     {
-        "name": "Development status",
-        "tag": "Development status",
-        "description": "",
-        "placeholder": "Select development status ...",
-        "and_search": false,
-        "values": [
-            {"name": "Stale"},
-            {"name": "Active"},
-            {"name": "Experimental"},
-            {"name": "Stable"}
-        ]
-    },
-    {
         "name": "Server Platforms",
         "tag": "Server Platforms",
         "description": "",
@@ -55,18 +42,6 @@
             {"name": "Linux"},
             {"name": "OSX"},
             {"name": "Windows"}
-        ]
-    },
-    {
-        "name": "EAI-Pattern Support",
-        "tag": "EAI-Pattern Support",
-        "description": "",
-        "placeholder": "Select EAI-Pattern support ...",
-        "and_search": false,
-        "values": [
-            {"name": "Complete"},
-            {"name": "Partially"},
-            {"name": "PubSub"}
         ]
     },
     {
@@ -94,7 +69,7 @@
     {
         "name": "Broker Backend",
         "tag": "Broker Backend",
-        "description": "",
+        "description": "If the software needs a another Message Broker as the backend ...",
         "placeholder": "Select Broker Backend ...",
         "and_search": true,
         "values": [
@@ -102,6 +77,18 @@
             {"name": "HornetQ"},
             {"name": "RabbitMQ"},
             {"name": "Redis"}
+        ]
+    },
+    {
+        "name": "Active Development",
+        "tag": "Active Development",
+        "description": "Is the software in active development",
+        "placeholder": "Select activity state...",
+        "and_search": false,
+        "values": [
+            {"name": "Active"},
+            {"name": "Not Sure"},
+            {"name": "Inactive"}
         ]
     }
 ]

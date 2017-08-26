@@ -9,14 +9,13 @@
         "body": "Description",
         "body-attachment-tags": [
             "License",
-            "Development status",
-            "Server Platforms",
             "Protocol",
-            "EAI-Pattern Support",
+            "Server Platforms",
             "JMS support",
             "Working example",
-            "Broker Backend"
+            "Broker Backend",
+            "Active Development"
         ]
     },
-    "repository": "https://github.com/FachstudieBTZ/ultimate-comparison-BASE/"
+    "repository": "https://github.com/ultimate-comparisons/ultimate-message-broker-comparison"
 }
