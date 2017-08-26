@@ -24,7 +24,7 @@ export class TooltipComponent implements OnInit {
         if (typeof this.tooltip === 'number'){
             this.tooltip = this.tooltip.toString();
         }
-        if (this.tooltip.indexOf('<') > -1 && this.tooltip.indexOf('>') > -1) {
+        if (typeof this.tooltip === 'string' && this.tooltip.indexOf('<') > -1 && this.tooltip.indexOf('>') > -1) {
             const tokens = this.tooltip.split(/[ ,\n\r]/);
             let tip = this.tooltip;
             for (let token of tokens) {
@@ -38,4 +38,3 @@ export class TooltipComponent implements OnInit {
         }
     }
 }
-
