@@ -1501,7 +1501,7 @@
         ]
       }
     },
-    "Server Platforms": {
+    "Platforms": {
       "plain": "- Linux\n    - [@delayedJobPlatforms]\n- OSX\n    - [@delayedJobPlatforms]\n- Windows\n    - [@delayedJobPlatforms]\n",
       "childs": {
         "0": [
@@ -1602,6 +1602,145 @@
             {
               "content": "61.100",
               "plain": "61.100\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Disque - https://github.com/antirez/disque",
+    "descr": "in-memory, distributed job queue",
+    "Description": {
+      "plain": "Disque is an ongoing experiment to build a distributed, in-memory, message broker. Its goal is to capture the essence of the 'Redis as a jobs queue' use case, which is usually implemented using blocking list operations, and move it into an ad-hoc, self-contained, scalable, and fault tolerant design, with simple to understand properties and guarantees, but still resembling Redis in terms of simplicity, performance, and implementation as a C non-blocking networked server.",
+      "childs": {
+        "0": [
+          "Disque is an ongoing experiment to build a distributed, in-memory, message broker. Its goal is to capture the essence of the 'Redis as a jobs queue' use case, which is usually implemented using blocking list operations, and move it into an ad-hoc, self-contained, scalable, and fault tolerant design, with simple to understand properties and guarantees, but still resembling Redis in terms of simplicity, performance, and implementation as a C non-blocking networked server."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/antirez/disque\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/antirez/disque",
+              "plain": "https://github.com/antirez/disque\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- BSD-3-Clause\n    - [@disqueLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BSD-3-Clause",
+              "plain": "BSD-3-Clause\n",
+              "plainChilds": "    - [@disqueLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@disqueLicense]",
+                  "plain": "[@disqueLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- memcached\n    - [@disqueProtocol]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "memcached",
+              "plain": "memcached\n",
+              "plainChilds": "    - [@disqueProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@disqueProtocol]",
+                  "plain": "[@disqueProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 107.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "107.000",
+              "plain": "107.000\n",
               "plainChilds": "",
               "childs": []
             }
