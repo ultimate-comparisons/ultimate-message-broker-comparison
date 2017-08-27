@@ -4180,5 +4180,171 @@
         ]
       }
     }
+  },
+  {
+    "tag": "ZeroMQ - http://zeromq.org/",
+    "descr": "Distributed Messaging",
+    "Description": {
+      "plain": "ZeroMQ (also known as ØMQ, 0MQ, or zmq) looks like an embeddable networking library but acts like a concurrency framework. It gives you sockets that carry atomic messages across various transports like in-process, inter-process, TCP, and multicast. You can connect sockets N-to-N with patterns like fan-out, pub-sub, task distribution, and request-reply. It's fast enough to be the fabric for clustered products. Its asynchronous I/O model gives you scalable multicore applications, built as asynchronous message-processing tasks. It has a score of language APIs and runs on most operating systems. ZeroMQ is from iMatix and is LGPLv3 open source.",
+      "childs": {
+        "0": [
+          "ZeroMQ (also known as ØMQ, 0MQ, or zmq) looks like an embeddable networking library but acts like a concurrency framework. It gives you sockets that carry atomic messages across various transports like in-process, inter-process, TCP, and multicast. You can connect sockets N-to-N with patterns like fan-out, pub-sub, task distribution, and request-reply. It's fast enough to be the fabric for clustered products. Its asynchronous I/O model gives you scalable multicore applications, built as asynchronous message-processing tasks. It has a score of language APIs and runs on most operating systems. ZeroMQ is from iMatix and is LGPLv3 open source."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/zeromq/libzmq\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/zeromq/libzmq",
+              "plain": "https://github.com/zeromq/libzmq\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- LGPLv3\n    - [@zeroMQLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "LGPLv3",
+              "plain": "LGPLv3\n",
+              "plainChilds": "    - [@zeroMQLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@zeroMQLicense]",
+                  "plain": "[@zeroMQLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n    - [@zeroMQPlatforms]\n- OSX\n    - [@zeroMQPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@zeroMQPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@zeroMQPlatforms]",
+                  "plain": "[@zeroMQPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@zeroMQPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@zeroMQPlatforms]",
+                  "plain": "[@zeroMQPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@zeroMqExample]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@zeroMqExample]\n",
+              "childs": [
+                {
+                  "content": ",[@zeroMqExample]",
+                  "plain": "[@zeroMqExample]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- Yes\n    - [@zeroMQJMS]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@zeroMQJMS]\n",
+              "childs": [
+                {
+                  "content": ",[@zeroMQJMS]",
+                  "plain": "[@zeroMQJMS]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 674.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "674.000",
+              "plain": "674.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]

@@ -80,4 +80,6 @@
  "sidekiqBackend":"[80]",
  "sidekiqLicense":"[81]",
  "zeroMqExample":"[82]",
- "zeroMQLicense":"[83]" }
+ "zeroMQLicense":"[84]",
+ "zeroMQPlatforms":"[85]",
+ "zeroMQJMS":"[83]" }
