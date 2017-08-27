@@ -2588,6 +2588,310 @@
           ]
         ]
       }
+    },
+    "Google hits": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "tag": "MappedBus - http://mappedbus.io/",
+    "descr": "",
+    "Description": {
+      "plain": "Mappedbus is a Java based high throughput, low latency message bus, using either a memory mapped file or shared memory as transport",
+      "childs": {
+        "0": [
+          "Mappedbus is a Java based high throughput, low latency message bus, using either a memory mapped file or shared memory as transport"
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/caplogic/Mappedbus\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/caplogic/Mappedbus",
+              "plain": "https://github.com/caplogic/Mappedbus\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@mappedbusLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@mappedbusLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@mappedbusLicense]",
+                  "plain": "[@mappedbusLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n    - [@mappedBusPlatforms]\n- OSX\n    - [@mappedBusPlatforms]\n- Windows\n    - [@mappedBusPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@mappedBusPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@mappedBusPlatforms]",
+                  "plain": "[@mappedBusPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@mappedBusPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@mappedBusPlatforms]",
+                  "plain": "[@mappedBusPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@mappedBusPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@mappedBusPlatforms]",
+                  "plain": "[@mappedBusPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@mappedBusExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@mappedBusExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@mappedBusExamples]",
+                  "plain": "[@mappedBusExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Message Bus - https://github.com/groupon/Message-Bus",
+    "descr": "",
+    "Description": {
+      "plain": "MessageBus is a distributed messaging platform built on top of hornetq, and supports java and ruby client. This project includes a patch to HornetQ, and the java and ruby client that works with it.",
+      "childs": {
+        "0": [
+          "MessageBus is a distributed messaging platform built on top of hornetq, and supports java and ruby client. This project includes a patch to HornetQ, and the java and ruby client that works with it."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/groupon/Message-Bus\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/groupon/Message-Bus",
+              "plain": "https://github.com/groupon/Message-Bus\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- BSD-3-Clause\n    - [@messageBusLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BSD-3-Clause",
+              "plain": "BSD-3-Clause\n",
+              "plainChilds": "    - [@messageBusLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@messageBusLicense]",
+                  "plain": "[@messageBusLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- STOMP\n    - [@messageBusProtocol]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "    - [@messageBusProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@messageBusProtocol]",
+                  "plain": "[@messageBusProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@messageBusExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@messageBusExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@messageBusExamples]",
+                  "plain": "[@messageBusExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- HornetQ\n    - [@messageBusBackend]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "HornetQ",
+              "plain": "HornetQ\n",
+              "plainChilds": "    - [@messageBusBackend]\n",
+              "childs": [
+                {
+                  "content": ",[@messageBusBackend]",
+                  "plain": "[@messageBusBackend]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
     }
   }
 ]
