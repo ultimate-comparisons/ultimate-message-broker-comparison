@@ -2127,5 +2127,467 @@
         ]
       }
     }
+  },
+  {
+    "tag": "Huey - https://huey.readthedocs.io/en/latest/",
+    "descr": "a little task queue for pytho",
+    "Description": {
+      "plain": "a lightweight alternative.\n- written in python\n- only dependency is the Python Redis client\n\nsupports:\n- multi-process, multi-thread or greenlet task execution models\n- schedule tasks to execute at a given time, or after a given delay\n- schedule recurring tasks, like a crontab\n- retry tasks that fail automatically\n- task result storage",
+      "childs": {
+        "0": [
+          "a lightweight alternative. - written in python - only dependency is the Python Redis client",
+          "supports: - multi-process, multi-thread or greenlet task execution models - schedule tasks to execute at a given time, or after a given delay - schedule recurring tasks, like a crontab - retry tasks that fail automatically - task result storage"
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/coleifer/huey\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/coleifer/huey",
+              "plain": "https://github.com/coleifer/huey\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MIT\n    - [@hueyLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MIT",
+              "plain": "MIT\n",
+              "plainChilds": "    - [@hueyLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@hueyLicense]",
+                  "plain": "[@hueyLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@hueyExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@hueyExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@hueyExamples]",
+                  "plain": "[@hueyExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- Redis\n    - [@hueyBackend]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Redis",
+              "plain": "Redis\n",
+              "plainChilds": "    - [@hueyBackend]\n",
+              "childs": [
+                {
+                  "content": ",[@hueyBackend]",
+                  "plain": "[@hueyBackend]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 14.200\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "14.200",
+              "plain": "14.200\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Kestrel - https://github.com/twitter-archive/kestrel",
+    "descr": "in-memory, distributed job queue",
+    "Description": {
+      "plain": "Kestrel is based on Blaine Cook's starling simple, distributed message queue, with added features and bulletproofing, as well as the scalability offered by actors and the JVM.",
+      "childs": {
+        "0": [
+          "Kestrel is based on Blaine Cook's starling simple, distributed message queue, with added features and bulletproofing, as well as the scalability offered by actors and the JVM."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/twitter-archive/kestrel\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/twitter-archive/kestrel",
+              "plain": "https://github.com/twitter-archive/kestrel\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@kestrelLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@kestrelLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@kestrelLicense]",
+                  "plain": "[@kestrelLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- memcached\n    - [@kestrelProtocols]\n- thrift\n    - [@kestrelProtocols]\n- text\n    - [@kestrelProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "memcached",
+              "plain": "memcached\n",
+              "plainChilds": "    - [@kestrelProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@kestrelProtocols]",
+                  "plain": "[@kestrelProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "thrift",
+              "plain": "thrift\n",
+              "plainChilds": "    - [@kestrelProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@kestrelProtocols]",
+                  "plain": "[@kestrelProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "text",
+              "plain": "text\n",
+              "plainChilds": "    - [@kestrelProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@kestrelProtocols]",
+                  "plain": "[@kestrelProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n    - [@kestrelPlatforms]\n- OSX\n    - [@kestrelPlatforms]\n- Windows\n    - [@kestrelPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@kestrelPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@kestrelPlatforms]",
+                  "plain": "[@kestrelPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@kestrelPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@kestrelPlatforms]",
+                  "plain": "[@kestrelPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@kestrelPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@kestrelPlatforms]",
+                  "plain": "[@kestrelPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 43.400\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "43.400",
+              "plain": "43.400\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Kue - https://automattic.github.io/kue/",
+    "descr": "Kue is a priority job queue backed by redis, built for node.js.",
+    "Description": {
+      "plain": "Kue is a priority job queue backed by redis, built for node.js.",
+      "childs": {
+        "0": [
+          "Kue is a priority job queue backed by redis, built for node.js."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/Automattic/kue\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/Automattic/kue",
+              "plain": "https://github.com/Automattic/kue\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MIT\n    - [@kueLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MIT",
+              "plain": "MIT\n",
+              "plainChilds": "    - [@kueLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@kueLicense]",
+                  "plain": "[@kueLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@kueExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@kueExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@kueExamples]",
+                  "plain": "[@kueExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- Redis\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Redis",
+              "plain": "Redis\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]
