@@ -4018,5 +4018,146 @@
         ]
       }
     }
+  },
+  {
+    "tag": "Sidekiq - http://sidekiq.org/",
+    "descr": "Simple, efficient background processing for Ruby.",
+    "Description": {
+      "plain": "Simple, efficient background processing for Ruby.\n\nSidekiq uses threads to handle many jobs at the same time in the same process. It does not require Rails but will integrate tightly with Rails to make background processing dead simple.\n\nSidekiq is compatible with Resque. It uses the exact same message format as Resque so it can integrate into an existing Resque processing farm. You can have Sidekiq and Resque run side-by-side at the same time and use the Resque client to enqueue jobs in Redis to be processed by Sidekiq.",
+      "childs": {
+        "0": [
+          "Simple, efficient background processing for Ruby.",
+          "Sidekiq uses threads to handle many jobs at the same time in the same process. It does not require Rails but will integrate tightly with Rails to make background processing dead simple.",
+          "Sidekiq is compatible with Resque. It uses the exact same message format as Resque so it can integrate into an existing Resque processing farm. You can have Sidekiq and Resque run side-by-side at the same time and use the Resque client to enqueue jobs in Redis to be processed by Sidekiq."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/mperham/sidekiq\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/mperham/sidekiq",
+              "plain": "https://github.com/mperham/sidekiq\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- LGPLv3\n    - [@sidekiqLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "LGPLv3",
+              "plain": "LGPLv3\n",
+              "plainChilds": "    - [@sidekiqLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@sidekiqLicense]",
+                  "plain": "[@sidekiqLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@zeroMqExample]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@zeroMqExample]\n",
+              "childs": [
+                {
+                  "content": ",[@zeroMqExample]",
+                  "plain": "[@zeroMqExample]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- Redis\n    - [@sidekiqBackend]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Redis",
+              "plain": "Redis\n",
+              "plainChilds": "    - [@sidekiqBackend]\n",
+              "childs": [
+                {
+                  "content": ",[@sidekiqBackend]",
+                  "plain": "[@sidekiqBackend]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 203.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "203.000",
+              "plain": "203.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]

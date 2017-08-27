@@ -77,7 +77,7 @@
  "siberiteLicense":"[77]",
  "siberiteProtocol":"[79]",
  "siberitePlatforms":"[78]",
- "zeroMqVersions":"[83]",
- "zeroMQLicense":"[82]",
- "sidekiqVersions":"[81]",
- "sidekiqLicense":"[80]" }
+ "sidekiqBackend":"[80]",
+ "sidekiqLicense":"[81]",
+ "zeroMqExample":"[82]",
+ "zeroMQLicense":"[83]" }

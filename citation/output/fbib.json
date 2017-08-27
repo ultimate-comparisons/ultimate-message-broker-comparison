@@ -78,8 +78,8 @@
 "siberiteLicense":"<p>77. Siberite - license, <a href=\"https://github.com/bogdanovich/siberite/blob/master/LICENSE\" class=\"uri\">https://github.com/bogdanovich/siberite/blob/master/LICENSE</a>.</p>",
 "siberitePlatforms":"<p>78. Siberite - platforms, <a href=\"https://github.com/bogdanovich/siberite/releases\" class=\"uri\">https://github.com/bogdanovich/siberite/releases</a>.</p>",
 "siberiteProtocol":"<p>79. Siberite - protocol, <a href=\"http://siberite.org/#protocol\" class=\"uri\">http://siberite.org/#protocol</a>.</p>",
-"sidekiqLicense":"<p>80. Sidekiq - license, <a href=\"https://github.com/mperham/sidekiq/blob/master/LICENSE\" class=\"uri\">https://github.com/mperham/sidekiq/blob/master/LICENSE</a>.</p>",
-"sidekiqVersions":"<p>81. Sidekiq - versions, <a href=\"https://github.com/mperham/sidekiq/releases\" class=\"uri\">https://github.com/mperham/sidekiq/releases</a>.</p>",
-"zeroMQLicense":"<p>82. ZeroMQ - license, <a href=\"http://zeromq.org/area:licensing\" class=\"uri\">http://zeromq.org/area:licensing</a>.</p>",
-"zeroMqVersions":"<p>83. ZeroMQ - versions, <a href=\"https://github.com/zeromq/libzmq/tags\" class=\"uri\">https://github.com/zeromq/libzmq/tags</a>.</p>"
+"sidekiqBackend":"<p>80. Sidekiq - broker backend, <a href=\"https://github.com/mperham/sidekiq#requirements\" class=\"uri\">https://github.com/mperham/sidekiq#requirements</a>.</p>",
+"sidekiqLicense":"<p>81. Sidekiq - license, <a href=\"https://github.com/mperham/sidekiq/blob/master/LICENSE\" class=\"uri\">https://github.com/mperham/sidekiq/blob/master/LICENSE</a>.</p>",
+"zeroMqExample":"<p>82. ZeroMQ - examples, <a href=\"https://github.com/mperham/sidekiq/wiki\" class=\"uri\">https://github.com/mperham/sidekiq/wiki</a>.</p>",
+"zeroMQLicense":"<p>83. ZeroMQ - license, <a href=\"http://zeromq.org/area:licensing\" class=\"uri\">http://zeromq.org/area:licensing</a>.</p>"
 }
