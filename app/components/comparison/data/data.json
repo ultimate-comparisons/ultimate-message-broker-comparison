@@ -1285,5 +1285,329 @@
         ]
       }
     }
+  },
+  {
+    "tag": "Darner - https://github.com/wavii/darner",
+    "descr": "simple, lightweight message queue",
+    "Description": {
+      "plain": "Darner is a very simple message queue server. Unlike in-memory servers such as redis, Darner is designed to handle queues much larger than what can be held in RAM. And unlike enterprise queue servers such as RabbitMQ, Darner keeps all messages out of process, relying instead on the kernel's virtual memory manager via log-structured storage.",
+      "childs": {
+        "0": [
+          "Darner is a very simple message queue server. Unlike in-memory servers such as redis, Darner is designed to handle queues much larger than what can be held in RAM. And unlike enterprise queue servers such as RabbitMQ, Darner keeps all messages out of process, relying instead on the kernel's virtual memory manager via log-structured storage."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/wavii/darner\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/wavii/darner",
+              "plain": "https://github.com/wavii/darner\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@darnerLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@darnerLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerLicense]",
+                  "plain": "[@darnerLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- memcached  \n    - [@darnerProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "memcached",
+              "plain": "memcached  \n",
+              "plainChilds": "    - [@darnerProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerProtocols]",
+                  "plain": "[@darnerProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n    - [@darnerPlatforms]\n- OSX\n    - [@darnerPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@darnerPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerPlatforms]",
+                  "plain": "[@darnerPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@darnerPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerPlatforms]",
+                  "plain": "[@darnerPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 184.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "184.000",
+              "plain": "184.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "DelayedJob - https://github.com/collectiveidea/delayed_job",
+    "descr": "encapsulates the common pattern of asynchronously executing longer tasks in the background",
+    "Description": {
+      "plain": "Delayed::Job (or DJ) encapsulates the common pattern of asynchronously executing longer tasks in the background.\n\nIt is a direct extraction from Shopify where the job table is responsible for a multitude of core tasks. Amongst those tasks are:\n- sending massive newsletters\n- image resizing\n- http downloads\n- updating smart collections\n- updating solr, our search server, after product changes\n- batch imports\n- spam checks",
+      "childs": {
+        "0": [
+          "Delayed::Job (or DJ) encapsulates the common pattern of asynchronously executing longer tasks in the background.",
+          "It is a direct extraction from Shopify where the job table is responsible for a multitude of core tasks. Amongst those tasks are: - sending massive newsletters - image resizing - http downloads - updating smart collections - updating solr, our search server, after product changes - batch imports - spam checks"
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/collectiveidea/delayed_job\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/collectiveidea/delayed_job",
+              "plain": "https://github.com/collectiveidea/delayed_job\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MIT\n    - [@delayedJobLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MIT",
+              "plain": "MIT\n",
+              "plainChilds": "    - [@delayedJobLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@delayedJobLicense]",
+                  "plain": "[@delayedJobLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n    - [@delayedJobPlatforms]\n- OSX\n    - [@delayedJobPlatforms]\n- Windows\n    - [@delayedJobPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@delayedJobPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@delayedJobPlatforms]",
+                  "plain": "[@delayedJobPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@delayedJobPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@delayedJobPlatforms]",
+                  "plain": "[@delayedJobPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@delayedJobPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@delayedJobPlatforms]",
+                  "plain": "[@delayedJobPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 61.100\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "61.100",
+              "plain": "61.100\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]
