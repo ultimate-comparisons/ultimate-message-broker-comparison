@@ -5483,7 +5483,7 @@ webpackJsonp([0],[
 	    constructor() {
 	        this.date = "2017-08-10";
 	        this.commit = "1.0.0";
-	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/releases/tag/1.0.0";
+	        this.link = "https://github.com/ultimate-comparisons/ultimate-comparison-BASE/releases/tag/v1.0.0";
 	    }
 	}
 	exports.VersionInformation = VersionInformation;
@@ -14748,4 +14748,4 @@ webpackJsonp([0],[
 
 /***/ })
 ]);
-//# sourceMappingURL=app.4e5746a846af245dbd57.js.map
+//# sourceMappingURL=app.bf858293292c22296311.js.map

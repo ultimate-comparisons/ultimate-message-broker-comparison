@@ -3186,6 +3186,21 @@
         ]
       }
     },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
     "Broker Backend": {
       "plain": "- HornetQ\n    - [@messageBusBackend]\n",
       "childs": {
@@ -3313,7 +3328,7 @@
         ]
       }
     },
-    "Server Platforms": {
+    "Platforms": {
       "plain": "- Linux\n    - [@rabbitMQPlatforms]\n- OSX\n    - [@rabbitMQPlatforms]    \n- Windows\n    - [@rabbitMQPlatforms]\n",
       "childs": {
         "0": [
@@ -3484,7 +3499,7 @@
         ]
       }
     },
-    "Server Platforms": {
+    "Platforms": {
       "plain": "- Linux\n    - [@redisPlatforms]\n- OSX\n    - [@redisPlatforms]\n",
       "childs": {
         "0": [
