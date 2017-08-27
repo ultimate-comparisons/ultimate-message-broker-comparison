@@ -18,7 +18,7 @@
 "apacheQpidServer":"<p>17. Apache qpid - server platforms, <a href=\"http://qpid.apache.org/components/index.html#compatibility\" class=\"uri\">http://qpid.apache.org/components/index.html#compatibility</a>.</p>",
 "beanstalkdLicense":"<p>18. Beanstalkd - license, <a href=\"https://github.com/kr/beanstalkd/blob/master/LICENSE\" class=\"uri\">https://github.com/kr/beanstalkd/blob/master/LICENSE</a>.</p>",
 "beanstalkdProtocols":"<p>19. Beanstalkd - protocols, <a href=\"https://github.com/kr/beanstalkd/blob/v1.3/doc/protocol.txt\" class=\"uri\">https://github.com/kr/beanstalkd/blob/v1.3/doc/protocol.txt</a>.</p>",
-"beanstalkdRepository":"<p>20. Beanstalkd - repository, <a href=\"https://github.com/kr/beanstalkd/releases\" class=\"uri\">https://github.com/kr/beanstalkd/releases</a>.</p>",
+"beanstalkdServer":"<p>20. Beanstalkd - server platforms, <a href=\"https://kr.github.io/beanstalkd/download.html\" class=\"uri\">https://kr.github.io/beanstalkd/download.html</a>.</p>",
 "celeryLicense":"<p>21. Celery - license, <a href=\"https://github.com/celery/celery/blob/master/LICENSE\" class=\"uri\">https://github.com/celery/celery/blob/master/LICENSE</a>.</p>",
 "celeryVersions":"<p>22. Celery - versions, <a href=\"https://github.com/celery/celery/releases\" class=\"uri\">https://github.com/celery/celery/releases</a>.</p>",
 "chronicleQueueicense":"<p>23. Chronicle queue - license, <a href=\"https://github.com/OpenHFT/Chronicle-Queue/blob/master/LICENSE.adoc\" class=\"uri\">https://github.com/OpenHFT/Chronicle-Queue/blob/master/LICENSE.adoc</a>.</p>",

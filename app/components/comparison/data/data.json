@@ -793,5 +793,172 @@
         ]
       }
     }
+  },
+  {
+    "tag": "Beanstalkd - https://kr.github.io/beanstalkd/",
+    "descr": "Beanstalk is a simple, fast work queue.",
+    "Description": {
+      "plain": "Beanstalk is a simple, fast work queue.\n\nIts interface is generic, but was originally designed for reducing the latency of page views in high-volume web applications by running time-consuming tasks asynchronously.",
+      "childs": {
+        "0": [
+          "Beanstalk is a simple, fast work queue.",
+          "Its interface is generic, but was originally designed for reducing the latency of page views in high-volume web applications by running time-consuming tasks asynchronously."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/kr/beanstalkd\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/kr/beanstalkd",
+              "plain": "https://github.com/kr/beanstalkd\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MIT\n    - [@beanstalkdLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MIT",
+              "plain": "MIT\n",
+              "plainChilds": "    - [@beanstalkdLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdLicense]",
+                  "plain": "[@beanstalkdLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n    - [@beanstalkdServer]\n- OSX\n    - [@beanstalkdServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@beanstalkdServer]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdServer]",
+                  "plain": "[@beanstalkdServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@beanstalkdServer]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdServer]",
+                  "plain": "[@beanstalkdServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- Beanstalkd\n    - [@beanstalkdProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Beanstalkd",
+              "plain": "Beanstalkd\n",
+              "plainChilds": "    - [@beanstalkdProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@beanstalkdProtocols]",
+                  "plain": "[@beanstalkdProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 151.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "151.000",
+              "plain": "151.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]
