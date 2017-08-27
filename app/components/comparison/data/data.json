@@ -2073,6 +2073,132 @@
     }
   },
   {
+    "tag": "FFMQ- https://timewalker74.github.io/ffmq/",
+    "descr": "Light-weight & fast JMS message queuer",
+    "Description": {
+      "plain": "FFMQ is a full-java, light-weight, fast JMS 1.1 queuer implementation.\n\nEmphasis is put on raw performance and reliability.\nAs a consequence it does not provide a lot of features but it is small, fast, easy to configure and has reduced dependencies.",
+      "childs": {
+        "0": [
+          "FFMQ is a full-java, light-weight, fast JMS 1.1 queuer implementation.",
+          "Emphasis is put on raw performance and reliability. As a consequence it does not provide a lot of features but it is small, fast, easy to configure and has reduced dependencies."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/timewalker74/ffmq\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/timewalker74/ffmq",
+              "plain": "https://github.com/timewalker74/ffmq\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- LGPLv3\n    - [@ffmqLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "LGPLv3",
+              "plain": "LGPLv3\n",
+              "plainChilds": "    - [@ffmqLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@ffmqLicense]",
+                  "plain": "[@ffmqLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- Yes\n    - [@apacheActiveMQJMS]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@apacheActiveMQJMS]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheActiveMQJMS]",
+                  "plain": "[@apacheActiveMQJMS]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 1390000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "1390000",
+              "plain": "1390000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "Gearman - http://gearman.org/",
     "descr": "in-memory, distributed job queue",
     "Description": {
