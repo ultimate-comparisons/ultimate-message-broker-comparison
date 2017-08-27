@@ -1820,27 +1820,48 @@
       }
     },
     "Platforms": {
-      "plain": "- Linux\n    -[@eclipseMosquittoPlatforms]\n- OSX\n    -[@eclipseMosquittoPlatforms]\n- Windows\n    -[@eclipseMosquittoPlatforms]\n",
+      "plain": "- Linux\n    - [@eclipseMosquittoPlatforms]\n- OSX\n    - [@eclipseMosquittoPlatforms]\n- Windows\n    - [@eclipseMosquittoPlatforms]\n",
       "childs": {
         "0": [
           [
             {
-              "content": "Linux -[@eclipseMosquittoPlatforms]",
-              "plain": "Linux\n    -[@eclipseMosquittoPlatforms]\n",
-              "plainChilds": "",
-              "childs": []
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@eclipseMosquittoPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@eclipseMosquittoPlatforms]",
+                  "plain": "[@eclipseMosquittoPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             },
             {
-              "content": "OSX -[@eclipseMosquittoPlatforms]",
-              "plain": "OSX\n    -[@eclipseMosquittoPlatforms]\n",
-              "plainChilds": "",
-              "childs": []
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@eclipseMosquittoPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@eclipseMosquittoPlatforms]",
+                  "plain": "[@eclipseMosquittoPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             },
             {
-              "content": "Windows -[@eclipseMosquittoPlatforms]",
-              "plain": "Windows\n    -[@eclipseMosquittoPlatforms]\n",
-              "plainChilds": "",
-              "childs": []
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@eclipseMosquittoPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@eclipseMosquittoPlatforms]",
+                  "plain": "[@eclipseMosquittoPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
             }
           ]
         ]
