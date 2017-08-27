@@ -122,19 +122,19 @@
         ]
       }
     },
-    "Server Platforms": {
-      "plain": "- Linux\n    - [@apacheActiveMQServer]\n- Windows\n    - [@apacheActiveMQServer]\n",
+    "Platforms": {
+      "plain": "- Linux\n    - [@acpacheAtiveMQPlatforms]\n- Windows\n    - [@acpacheAtiveMQPlatforms]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Linux",
               "plain": "Linux\n",
-              "plainChilds": "    - [@apacheActiveMQServer]\n",
+              "plainChilds": "    - [@acpacheAtiveMQPlatforms]\n",
               "childs": [
                 {
-                  "content": ",[@apacheActiveMQServer]",
-                  "plain": "[@apacheActiveMQServer]\n",
+                  "content": ",[@acpacheAtiveMQPlatforms]",
+                  "plain": "[@acpacheAtiveMQPlatforms]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -143,11 +143,11 @@
             {
               "content": "Windows",
               "plain": "Windows\n",
-              "plainChilds": "    - [@apacheActiveMQServer]\n",
+              "plainChilds": "    - [@acpacheAtiveMQPlatforms]\n",
               "childs": [
                 {
-                  "content": ",[@apacheActiveMQServer]",
-                  "plain": "[@apacheActiveMQServer]\n",
+                  "content": ",[@acpacheAtiveMQPlatforms]",
+                  "plain": "[@acpacheAtiveMQPlatforms]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -280,19 +280,19 @@
         ]
       }
     },
-    "Server Platforms": {
-      "plain": "- Linux\n    - [@apacheApolloServer]    \n- Windows\n    - [@apacheApolloServer]\n",
+    "Platforms": {
+      "plain": "- Linux\n    - [@apacheApolloPlatforms]    \n- Windows\n    - [@apacheApolloPlatforms]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Linux",
               "plain": "Linux\n",
-              "plainChilds": "    - [@apacheApolloServer]    \n",
+              "plainChilds": "    - [@apacheApolloPlatforms]    \n",
               "childs": [
                 {
-                  "content": ",[@apacheApolloServer]",
-                  "plain": "[@apacheApolloServer]    \n",
+                  "content": ",[@apacheApolloPlatforms]",
+                  "plain": "[@apacheApolloPlatforms]    \n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -301,11 +301,11 @@
             {
               "content": "Windows",
               "plain": "Windows\n",
-              "plainChilds": "    - [@apacheApolloServer]\n",
+              "plainChilds": "    - [@apacheApolloPlatforms]\n",
               "childs": [
                 {
-                  "content": ",[@apacheApolloServer]",
-                  "plain": "[@apacheApolloServer]\n",
+                  "content": ",[@apacheApolloPlatforms]",
+                  "plain": "[@apacheApolloPlatforms]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -492,19 +492,19 @@
         ]
       }
     },
-    "Server Platforms": {
-      "plain": "- Linux\n    - [@apacheKafkaServer]\n- OSX\n    - [@apacheKafkaServer]\n- Windows\n    - [@apacheKafkaServer]\n",
+    "Platforms": {
+      "plain": "- Linux\n    - [@apacheKafkaPlatforms]\n- OSX\n    - [@apacheKafkaPlatforms]\n- Windows\n    - [@apacheKafkaPlatforms]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Linux",
               "plain": "Linux\n",
-              "plainChilds": "    - [@apacheKafkaServer]\n",
+              "plainChilds": "    - [@apacheKafkaPlatforms]\n",
               "childs": [
                 {
-                  "content": ",[@apacheKafkaServer]",
-                  "plain": "[@apacheKafkaServer]\n",
+                  "content": ",[@apacheKafkaPlatforms]",
+                  "plain": "[@apacheKafkaPlatforms]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -513,11 +513,11 @@
             {
               "content": "OSX",
               "plain": "OSX\n",
-              "plainChilds": "    - [@apacheKafkaServer]\n",
+              "plainChilds": "    - [@apacheKafkaPlatforms]\n",
               "childs": [
                 {
-                  "content": ",[@apacheKafkaServer]",
-                  "plain": "[@apacheKafkaServer]\n",
+                  "content": ",[@apacheKafkaPlatforms]",
+                  "plain": "[@apacheKafkaPlatforms]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -526,11 +526,11 @@
             {
               "content": "Windows",
               "plain": "Windows\n",
-              "plainChilds": "    - [@apacheKafkaServer]\n",
+              "plainChilds": "    - [@apacheKafkaPlatforms]\n",
               "childs": [
                 {
-                  "content": ",[@apacheKafkaServer]",
-                  "plain": "[@apacheKafkaServer]\n",
+                  "content": ",[@apacheKafkaPlatforms]",
+                  "plain": "[@apacheKafkaPlatforms]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -656,19 +656,19 @@
         ]
       }
     },
-    "Server Platforms": {
-      "plain": "- Linux\n    - [@apacheQpidServer]\n- Windows\n    - [@apacheQpidServer]\n",
+    "Platforms": {
+      "plain": "- Linux\n    - [@apacheQpidPlatforms]\n- Windows\n    - [@apacheQpidPlatforms]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Linux",
               "plain": "Linux\n",
-              "plainChilds": "    - [@apacheQpidServer]\n",
+              "plainChilds": "    - [@apacheQpidPlatforms]\n",
               "childs": [
                 {
-                  "content": ",[@apacheQpidServer]",
-                  "plain": "[@apacheQpidServer]\n",
+                  "content": ",[@apacheQpidPlatforms]",
+                  "plain": "[@apacheQpidPlatforms]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -677,11 +677,11 @@
             {
               "content": "Windows",
               "plain": "Windows\n",
-              "plainChilds": "    - [@apacheQpidServer]\n",
+              "plainChilds": "    - [@apacheQpidPlatforms]\n",
               "childs": [
                 {
-                  "content": ",[@apacheQpidServer]",
-                  "plain": "[@apacheQpidServer]\n",
+                  "content": ",[@apacheQpidPlatforms]",
+                  "plain": "[@apacheQpidPlatforms]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -843,19 +843,19 @@
         ]
       }
     },
-    "Server Platforms": {
-      "plain": "- Linux\n    - [@beanstalkdServer]\n- OSX\n    - [@beanstalkdServer]\n",
+    "Platforms": {
+      "plain": "- Linux\n    - [@beanstalkdPlatforms]\n- OSX\n    - [@beanstalkdPlatforms]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Linux",
               "plain": "Linux\n",
-              "plainChilds": "    - [@beanstalkdServer]\n",
+              "plainChilds": "    - [@beanstalkdPlatforms]\n",
               "childs": [
                 {
-                  "content": ",[@beanstalkdServer]",
-                  "plain": "[@beanstalkdServer]\n",
+                  "content": ",[@beanstalkdPlatforms]",
+                  "plain": "[@beanstalkdPlatforms]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -864,11 +864,11 @@
             {
               "content": "OSX",
               "plain": "OSX\n",
-              "plainChilds": "    - [@beanstalkdServer]\n",
+              "plainChilds": "    - [@beanstalkdPlatforms]\n",
               "childs": [
                 {
-                  "content": ",[@beanstalkdServer]",
-                  "plain": "[@beanstalkdServer]\n",
+                  "content": ",[@beanstalkdPlatforms]",
+                  "plain": "[@beanstalkdPlatforms]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -1018,7 +1018,7 @@
         ]
       }
     },
-    "Server Platforms": {
+    "Platforms": {
       "plain": "",
       "childs": {
         "0": [
@@ -1106,6 +1106,344 @@
             {
               "content": "160.000",
               "plain": "160.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Chronicle Queue - http://chronicle.software/products/chronicle-queue/",
+    "descr": "Micro second messaging, which stores to disk a complete history of all your messages.",
+    "Description": {
+      "plain": "Chronicle Queue is able to persist every single event/message, It records each event to a memory mapped file.",
+      "childs": {
+        "0": [
+          "Chronicle Queue is able to persist every single event/message, It records each event to a memory mapped file."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/OpenHFT/Chronicle-Queue\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/OpenHFT/Chronicle-Queue",
+              "plain": "https://github.com/OpenHFT/Chronicle-Queue\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@chronicleQueueLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@chronicleQueueLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@chronicleQueueLicense]",
+                  "plain": "[@chronicleQueueLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n    - [@chronicleQueuePlatforms]\n- OSX\n    - [@chronicleQueuePlatforms]\n- Windows\n    - [@chronicleQueuePlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@chronicleQueuePlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@chronicleQueuePlatforms]",
+                  "plain": "[@chronicleQueuePlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@chronicleQueuePlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@chronicleQueuePlatforms]",
+                  "plain": "[@chronicleQueuePlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@chronicleQueuePlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@chronicleQueuePlatforms]",
+                  "plain": "[@chronicleQueuePlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@chronicleQueueExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@chronicleQueueExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@chronicleQueueExamples]",
+                  "plain": "[@chronicleQueueExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 547.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "547.000",
+              "plain": "547.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Darner - https://github.com/wavii/darner",
+    "descr": "simple, lightweight message queue",
+    "Description": {
+      "plain": "Darner is a very simple message queue server. Unlike in-memory servers such as redis, Darner is designed to handle queues much larger than what can be held in RAM. And unlike enterprise queue servers such as RabbitMQ, Darner keeps all messages out of process, relying instead on the kernel's virtual memory manager via log-structured storage.",
+      "childs": {
+        "0": [
+          "Darner is a very simple message queue server. Unlike in-memory servers such as redis, Darner is designed to handle queues much larger than what can be held in RAM. And unlike enterprise queue servers such as RabbitMQ, Darner keeps all messages out of process, relying instead on the kernel's virtual memory manager via log-structured storage."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/wavii/darner\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/wavii/darner",
+              "plain": "https://github.com/wavii/darner\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@darnerLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@darnerLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerLicense]",
+                  "plain": "[@darnerLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- memcached  \n    - [@darnerProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "memcached",
+              "plain": "memcached  \n",
+              "plainChilds": "    - [@darnerProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerProtocols]",
+                  "plain": "[@darnerProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n    - [@darnerPlatforms]\n- OSX\n    - [@darnerPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@darnerPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerPlatforms]",
+                  "plain": "[@darnerPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@darnerPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@darnerPlatforms]",
+                  "plain": "[@darnerPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 184.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "184.000",
+              "plain": "184.000\n",
               "plainChilds": "",
               "childs": []
             }
