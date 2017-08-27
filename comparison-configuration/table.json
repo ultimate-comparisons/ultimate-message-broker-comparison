@@ -140,7 +140,10 @@
         "type": {
             "tag": "label",
             "values": [
-                {"name": "None"},
+                {
+                    "name": "None",
+                    "class": "label-success"
+                },
                 {"name": "HornetQ"},
                 {"name": "RabbitMQ"},
                 {"name": "Redis"}
