@@ -27,6 +27,10 @@ MessageBus is a distributed messaging platform built on top of hornetq, and supp
     - [@messageBusExamples]
 
 
+## JMS support
+- No
+
+
 ## Broker Backend
 - HornetQ
     - [@messageBusBackend]
