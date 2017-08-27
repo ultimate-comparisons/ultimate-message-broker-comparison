@@ -21,11 +21,11 @@ Eclipse Mosquitto™ is an open source (EPL/EDL licensed) message broker that im
 
 ## Platforms
 - Linux
-    -[@eclipseMosquittoPlatforms]
+    - [@eclipseMosquittoPlatforms]
 - OSX
-    -[@eclipseMosquittoPlatforms]
+    - [@eclipseMosquittoPlatforms]
 - Windows
-    -[@eclipseMosquittoPlatforms]
+    - [@eclipseMosquittoPlatforms]
 
 
 ## Working example
