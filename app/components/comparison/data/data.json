@@ -1750,6 +1750,171 @@
     }
   },
   {
+    "tag": "Eclipse Mosquitto - https://mosquitto.org/",
+    "descr": "",
+    "Description": {
+      "plain": "Eclipse Mosquitto™ is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 3.1 and 3.1.1. MQTT provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for 'Internet of Things' messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers like the Arduino.",
+      "childs": {
+        "0": [
+          "Eclipse Mosquitto™ is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 3.1 and 3.1.1. MQTT provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for 'Internet of Things' messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers like the Arduino."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/eclipse/mosquitto\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/eclipse/mosquitto",
+              "plain": "https://github.com/eclipse/mosquitto\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- EPL\n    - [@eclipseMosquittoLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "EPL",
+              "plain": "EPL\n",
+              "plainChilds": "    - [@eclipseMosquittoLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@eclipseMosquittoLicense]",
+                  "plain": "[@eclipseMosquittoLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- MQTT\n    - [@eclipseMosquittoProtocol]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MQTT",
+              "plain": "MQTT\n",
+              "plainChilds": "    - [@eclipseMosquittoProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@eclipseMosquittoProtocol]",
+                  "plain": "[@eclipseMosquittoProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n    -[@eclipseMosquittoPlatforms]\n- OSX\n    -[@eclipseMosquittoPlatforms]\n- Windows\n    -[@eclipseMosquittoPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux -[@eclipseMosquittoPlatforms]",
+              "plain": "Linux\n    -[@eclipseMosquittoPlatforms]\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "OSX -[@eclipseMosquittoPlatforms]",
+              "plain": "OSX\n    -[@eclipseMosquittoPlatforms]\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Windows -[@eclipseMosquittoPlatforms]",
+              "plain": "Windows\n    -[@eclipseMosquittoPlatforms]\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@eclipseMosquittoExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@eclipseMosquittoExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@eclipseMosquittoExamples]",
+                  "plain": "[@eclipseMosquittoExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 297.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "297.000",
+              "plain": "297.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
     "tag": "Gearman - http://gearman.org/",
     "descr": "in-memory, distributed job queue",
     "Description": {
