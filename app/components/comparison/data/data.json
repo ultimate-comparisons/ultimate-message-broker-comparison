@@ -3195,5 +3195,529 @@
         ]
       }
     }
+  },
+  {
+    "tag": "RabbitMQ - https://www.rabbitmq.com/",
+    "descr": "ActiveMQ's next generation of messaging.",
+    "Description": {
+      "plain": "ActiveMQ Apollo is a faster, more reliable, easier to maintain messaging broker built from the foundations of the original ActiveMQ. It accomplishes this using a radically different threading and message dispatching architecture. Like ActiveMQ, Apollo is a multi-Protocol broker and supports STOMP, AMQP, MQTT, Openwire, SSL, and WebSockets.",
+      "childs": {
+        "0": [
+          "ActiveMQ Apollo is a faster, more reliable, easier to maintain messaging broker built from the foundations of the original ActiveMQ. It accomplishes this using a radically different threading and message dispatching architecture. Like ActiveMQ, Apollo is a multi-Protocol broker and supports STOMP, AMQP, MQTT, Openwire, SSL, and WebSockets."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/rabbitmq/rabbitmq-server\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/rabbitmq/rabbitmq-server",
+              "plain": "https://github.com/rabbitmq/rabbitmq-server\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MPL 1.1\n    - [@rabbitMQLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MPL 1.1",
+              "plain": "MPL 1.1\n",
+              "plainChilds": "    - [@rabbitMQLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQLicense]",
+                  "plain": "[@rabbitMQLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- AMQP\n    - [@rabbitMQProtocols]\n- MQTT\n    - [@rabbitMQProtocols]\n- STOMP\n    - [@rabbitMQProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "    - [@rabbitMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQProtocols]",
+                  "plain": "[@rabbitMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "MQTT",
+              "plain": "MQTT\n",
+              "plainChilds": "    - [@rabbitMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQProtocols]",
+                  "plain": "[@rabbitMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "    - [@rabbitMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQProtocols]",
+                  "plain": "[@rabbitMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n    - [@rabbitMQPlatforms]\n- OSX\n    - [@rabbitMQPlatforms]    \n- Windows\n    - [@rabbitMQPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@rabbitMQPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQPlatforms]",
+                  "plain": "[@rabbitMQPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@rabbitMQPlatforms]    \n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQPlatforms]",
+                  "plain": "[@rabbitMQPlatforms]    \n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@rabbitMQPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQPlatforms]",
+                  "plain": "[@rabbitMQPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@rabbitMQExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@rabbitMQExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQExamples]",
+                  "plain": "[@rabbitMQExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- Yes\n    - [@rabbitMQJMS]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@rabbitMQJMS]\n",
+              "childs": [
+                {
+                  "content": ",[@rabbitMQJMS]",
+                  "plain": "[@rabbitMQJMS]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 2.030.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "2.030.000",
+              "plain": "2.030.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Redis - https://redis.io/",
+    "descr": "in-memory data structure store, used as a database, cache and message broker",
+    "Description": {
+      "plain": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.",
+      "childs": {
+        "0": [
+          "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/antirez/redis/\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/antirez/redis/",
+              "plain": "https://github.com/antirez/redis/\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- BSD-3-Clause\n    - [@redisLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BSD-3-Clause",
+              "plain": "BSD-3-Clause\n",
+              "plainChilds": "    - [@redisLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@redisLicense]",
+                  "plain": "[@redisLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n    - [@redisPlatforms]\n- OSX\n    - [@redisPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@redisPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@redisPlatforms]",
+                  "plain": "[@redisPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@redisPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@redisPlatforms]",
+                  "plain": "[@redisPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- RESP\n    - [@redisProtocol]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "RESP",
+              "plain": "RESP\n",
+              "plainChilds": "    - [@redisProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@redisProtocol]",
+                  "plain": "[@redisProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@redisExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@redisExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@redisExamples]",
+                  "plain": "[@redisExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 18.400.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "18.400.000",
+              "plain": "18.400.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Resque - https://resque.github.io/",
+    "descr": "",
+    "Description": {
+      "plain": "Resque (pronounced like rescue) is a Redis-backed library for creating background jobs, placing those jobs on multiple queues, and processing them later.",
+      "childs": {
+        "0": [
+          "Resque (pronounced like rescue) is a Redis-backed library for creating background jobs, placing those jobs on multiple queues, and processing them later."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/resque/resque\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/resque/resque",
+              "plain": "https://github.com/resque/resque\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MIT\n    - [@resqueLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MIT",
+              "plain": "MIT\n",
+              "plainChilds": "    - [@resqueLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@resqueLicense]",
+                  "plain": "[@resqueLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@resqueExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@resqueExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@resqueExamples]",
+                  "plain": "[@resqueExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- Redis\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Redis",
+              "plain": "Redis\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 290.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "290.000",
+              "plain": "290.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]
