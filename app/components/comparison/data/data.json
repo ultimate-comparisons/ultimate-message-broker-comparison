@@ -1748,5 +1748,178 @@
         ]
       }
     }
+  },
+  {
+    "tag": "Gearman - http://gearman.org/",
+    "descr": "in-memory, distributed job queue",
+    "Description": {
+      "plain": "Gearman provides a generic application framework to farm out work to other machines or processes that are better suited to do the work. It allows you to do work in parallel, to load balance processing, and to call functions between languages. It can be used in a variety of applications, from high-availability web sites to the transport of database replication events. In other words, it is the nervous system for how distributed processing communicates. A few strong points about Gearman:",
+      "childs": {
+        "0": [
+          "Gearman provides a generic application framework to farm out work to other machines or processes that are better suited to do the work. It allows you to do work in parallel, to load balance processing, and to call functions between languages. It can be used in a variety of applications, from high-availability web sites to the transport of database replication events. In other words, it is the nervous system for how distributed processing communicates. A few strong points about Gearman:"
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/gearman/gearmand\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/gearman/gearmand",
+              "plain": "https://github.com/gearman/gearmand\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- BSD-3-Clause\n    - [@gearmanLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BSD-3-Clause",
+              "plain": "BSD-3-Clause\n",
+              "plainChilds": "    - [@gearmanLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@gearmanLicense]",
+                  "plain": "[@gearmanLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n    - [@gearmanPlatforms]\n- Windows\n    - [@gearmanPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@gearmanPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@gearmanPlatforms]",
+                  "plain": "[@gearmanPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@gearmanPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@gearmanPlatforms]",
+                  "plain": "[@gearmanPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- Gearman\n    - [@gearmanProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Gearman",
+              "plain": "Gearman\n",
+              "plainChilds": "    - [@gearmanProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@gearmanProtocols]",
+                  "plain": "[@gearmanProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@gearmanExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@gearmanExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@gearmanExamples]",
+                  "plain": "[@gearmanExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 600.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "600.000",
+              "plain": "600.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]
