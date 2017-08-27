@@ -15,13 +15,13 @@ Kafka™ is used for building real-time data pipelines and streaming apps. It is
     - [@apacheKafkaLicense]
 
 
-## Server Platforms
+## Platforms
 - Linux
-    - [@apacheKafkaServer]
+    - [@apacheKafkaPlatforms]
 - OSX
-    - [@apacheKafkaServer]
+    - [@apacheKafkaPlatforms]
 - Windows
-    - [@apacheKafkaServer]
+    - [@apacheKafkaPlatforms]
 
 
 ## Broker Backend

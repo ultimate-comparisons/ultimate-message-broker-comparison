@@ -18,7 +18,7 @@ Chronicle Queue is able to persist every single event/message, It records each e
 ## Protocol
 
 
-## Server Platforms
+## Platforms
 - Linux
     - [@chronicleQueuePlatforms]
 - OSX

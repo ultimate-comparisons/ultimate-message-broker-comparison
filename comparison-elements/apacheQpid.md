@@ -15,11 +15,11 @@ Apache Qpid™ makes messaging tools that speak AMQP and support many languages 
     - [@apacheQpidLicense]
 
 
-## Server Platforms
+## Platforms
 - Linux
-    - [@apacheQpidServer]
+    - [@apacheQpidPlatforms]
 - Windows
-    - [@apacheQpidServer]
+    - [@apacheQpidPlatforms]
 
 
 ## Protocol
