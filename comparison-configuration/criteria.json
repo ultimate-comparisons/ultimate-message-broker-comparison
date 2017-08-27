@@ -15,8 +15,8 @@
         ]
     },
     {
-        "name": "Protocol",
-        "tag": "Protocol",
+        "name": "Protocols",
+        "tag": "Protocols",
         "placeholder": "Select protocol ...",
         "and_search": false,
         "values": [
