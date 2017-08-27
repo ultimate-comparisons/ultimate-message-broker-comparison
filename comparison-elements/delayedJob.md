@@ -24,7 +24,7 @@ It is a direct extraction from Shopify where the job table is responsible for a 
     - [@delayedJobLicense]
 
 
-## Server Platforms
+## Platforms
 - Linux
     - [@delayedJobPlatforms]
 - OSX
