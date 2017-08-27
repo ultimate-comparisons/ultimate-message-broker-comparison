@@ -1451,5 +1451,302 @@
         ]
       }
     }
+  },
+  {
+    "tag": "DelayedJob - https://github.com/collectiveidea/delayed_job",
+    "descr": "encapsulates the common pattern of asynchronously executing longer tasks in the background",
+    "Description": {
+      "plain": "Delayed::Job (or DJ) encapsulates the common pattern of asynchronously executing longer tasks in the background.\n\nIt is a direct extraction from Shopify where the job table is responsible for a multitude of core tasks. Amongst those tasks are:\n- sending massive newsletters\n- image resizing\n- http downloads\n- updating smart collections\n- updating solr, our search server, after product changes\n- batch imports\n- spam checks",
+      "childs": {
+        "0": [
+          "Delayed::Job (or DJ) encapsulates the common pattern of asynchronously executing longer tasks in the background.",
+          "It is a direct extraction from Shopify where the job table is responsible for a multitude of core tasks. Amongst those tasks are: - sending massive newsletters - image resizing - http downloads - updating smart collections - updating solr, our search server, after product changes - batch imports - spam checks"
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/collectiveidea/delayed_job\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/collectiveidea/delayed_job",
+              "plain": "https://github.com/collectiveidea/delayed_job\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- MIT\n    - [@delayedJobLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "MIT",
+              "plain": "MIT\n",
+              "plainChilds": "    - [@delayedJobLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@delayedJobLicense]",
+                  "plain": "[@delayedJobLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n    - [@delayedJobPlatforms]\n- OSX\n    - [@delayedJobPlatforms]\n- Windows\n    - [@delayedJobPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@delayedJobPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@delayedJobPlatforms]",
+                  "plain": "[@delayedJobPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@delayedJobPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@delayedJobPlatforms]",
+                  "plain": "[@delayedJobPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@delayedJobPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@delayedJobPlatforms]",
+                  "plain": "[@delayedJobPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 61.100\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "61.100",
+              "plain": "61.100\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Disque - https://github.com/antirez/disque",
+    "descr": "in-memory, distributed job queue",
+    "Description": {
+      "plain": "Disque is an ongoing experiment to build a distributed, in-memory, message broker. Its goal is to capture the essence of the 'Redis as a jobs queue' use case, which is usually implemented using blocking list operations, and move it into an ad-hoc, self-contained, scalable, and fault tolerant design, with simple to understand properties and guarantees, but still resembling Redis in terms of simplicity, performance, and implementation as a C non-blocking networked server.",
+      "childs": {
+        "0": [
+          "Disque is an ongoing experiment to build a distributed, in-memory, message broker. Its goal is to capture the essence of the 'Redis as a jobs queue' use case, which is usually implemented using blocking list operations, and move it into an ad-hoc, self-contained, scalable, and fault tolerant design, with simple to understand properties and guarantees, but still resembling Redis in terms of simplicity, performance, and implementation as a C non-blocking networked server."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/antirez/disque\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/antirez/disque",
+              "plain": "https://github.com/antirez/disque\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- BSD-3-Clause\n    - [@disqueLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BSD-3-Clause",
+              "plain": "BSD-3-Clause\n",
+              "plainChilds": "    - [@disqueLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@disqueLicense]",
+                  "plain": "[@disqueLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- memcached\n    - [@disqueProtocol]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "memcached",
+              "plain": "memcached\n",
+              "plainChilds": "    - [@disqueProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@disqueProtocol]",
+                  "plain": "[@disqueProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 107.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "107.000",
+              "plain": "107.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]
