@@ -607,5 +607,191 @@
         ]
       }
     }
+  },
+  {
+    "tag": "Apache Qpid - http://qpid.apache.org/",
+    "descr": "Apache Qpid™ makes messaging tools that speak AMQP and support many languages and platforms.",
+    "Description": {
+      "plain": "Apache Qpid™ makes messaging tools that speak AMQP and support many languages and platforms.",
+      "childs": {
+        "0": [
+          "Apache Qpid™ makes messaging tools that speak AMQP and support many languages and platforms."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/apache/qpid\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/apache/qpid",
+              "plain": "https://github.com/apache/qpid\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@apacheQpidLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@apacheQpidLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheQpidLicense]",
+                  "plain": "[@apacheQpidLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Server Platforms": {
+      "plain": "- Linux\n    - [@apacheQpidServer]\n- Windows\n    - [@apacheQpidServer]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@apacheQpidServer]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheQpidServer]",
+                  "plain": "[@apacheQpidServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@apacheQpidServer]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheQpidServer]",
+                  "plain": "[@apacheQpidServer]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- AMQP\n    - [@apacheQpiProtocols]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "    - [@apacheQpiProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheQpiProtocols]",
+                  "plain": "[@apacheQpiProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- Yes\n    - [@apacheQpidJMS]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@apacheQpidJMS]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheQpidJMS]",
+                  "plain": "[@apacheQpidJMS]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@apacheQpidJMSExamples]\n    - [@apacheQpidCPPExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@apacheQpidJMSExamples]\n    - [@apacheQpidCPPExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@apacheQpidJMSExamples]",
+                  "plain": "[@apacheQpidJMSExamples]\n    ",
+                  "plainChilds": "",
+                  "childs": []
+                },
+                {
+                  "content": ",[@apacheQpidCPPExamples]",
+                  "plain": "[@apacheQpidCPPExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 690.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "690.000",
+              "plain": "690.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]
