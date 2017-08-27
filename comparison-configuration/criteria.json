@@ -33,10 +33,10 @@
         ]
     },
     {
-        "name": "Server Platforms",
-        "tag": "Server Platforms",
+        "name": "Platforms",
+        "tag": "Platforms",
         "description": "",
-        "placeholder": "Select server platform ...",
+        "placeholder": "Select platform ...",
         "and_search": false,
         "values": [
             {"name": "Linux"},

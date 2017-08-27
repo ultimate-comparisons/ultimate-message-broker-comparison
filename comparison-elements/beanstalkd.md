@@ -17,11 +17,11 @@ Its interface is generic, but was originally designed for reducing the latency o
     - [@beanstalkdLicense]
 
 
-## Server Platforms
+## Platforms
 - Linux
-    - [@beanstalkdServer]
+    - [@beanstalkdPlatforms]
 - OSX
-    - [@beanstalkdServer]
+    - [@beanstalkdPlatforms]
 
 
 ## Protocol

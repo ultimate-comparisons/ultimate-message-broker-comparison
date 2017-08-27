@@ -30,11 +30,11 @@ Apache ActiveMQ is fast, supports many Cross Language Clients and Protocols, com
     - [@apacheActiveMQProtocols]
 
 
-## Server Platforms
+## Platforms
 - Linux
-    - [@apacheActiveMQServer]
+    - [@acpacheAtiveMQPlatforms]
 - Windows
-    - [@apacheActiveMQServer]
+    - [@acpacheAtiveMQPlatforms]
 
 
 ## Working example

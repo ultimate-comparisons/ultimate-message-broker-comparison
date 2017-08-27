@@ -14,11 +14,11 @@ ActiveMQ apollo is a faster, more reliable, easier to maintain messaging broker 
     - [@apacheApollo]
 
 
-## Server Platforms
+## Platforms
 - Linux
-    - [@apacheApolloServer]    
+    - [@apacheApolloPlatforms]    
 - Windows
-    - [@apacheApolloServer]
+    - [@apacheApolloPlatforms]
 
 
 ## Protocol

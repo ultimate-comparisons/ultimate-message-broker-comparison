@@ -85,8 +85,8 @@
         }
     },
     {
-        "name": "Server Platforms",
-        "tag": "Server Platforms",
+        "name": "Platforms",
+        "tag": "Platforms",
         "display": true,
         "type": {
             "tag": "label",
