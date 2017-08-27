@@ -1921,5 +1921,211 @@
         ]
       }
     }
+  },
+  {
+    "tag": "HornetQ - http://hornetq.jboss.org/",
+    "descr": "open source project to build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system",
+    "Description": {
+      "plain": "HornetQ is an open source project to build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system.",
+      "childs": {
+        "0": [
+          "HornetQ is an open source project to build a multi-protocol, embeddable, very high performance, clustered, asynchronous messaging system."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/hornetq/hornetq\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/hornetq/hornetq",
+              "plain": "https://github.com/hornetq/hornetq\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@hornetQLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@hornetQLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQLicense]",
+                  "plain": "[@hornetQLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- AMQP\n    - [@hornetQProtocol]\n- STOMP\n    - [@hornetQProtocol]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "AMQP",
+              "plain": "AMQP\n",
+              "plainChilds": "    - [@hornetQProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQProtocol]",
+                  "plain": "[@hornetQProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "STOMP",
+              "plain": "STOMP\n",
+              "plainChilds": "    - [@hornetQProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQProtocol]",
+                  "plain": "[@hornetQProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n    - [@hornetQPlatforms]\n- OSX\n    - [@hornetQPlatforms]\n- Windows\n    - [@hornetQPlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@hornetQPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQPlatforms]",
+                  "plain": "[@hornetQPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@hornetQPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQPlatforms]",
+                  "plain": "[@hornetQPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@hornetQPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQPlatforms]",
+                  "plain": "[@hornetQPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@hornetQExamples]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@hornetQExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQExamples]",
+                  "plain": "[@hornetQExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- Yes\n    - [@hornetQProtocol]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@hornetQProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@hornetQProtocol]",
+                  "plain": "[@hornetQProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 160.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "160.000",
+              "plain": "160.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]
