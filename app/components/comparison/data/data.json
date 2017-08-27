@@ -3719,5 +3719,304 @@
         ]
       }
     }
+  },
+  {
+    "tag": "RQ - http://python-rq.org/",
+    "descr": "",
+    "Description": {
+      "plain": "RQ (Redis Queue) is a simple Python library for queueing jobs and processing them in the background with workers. It is backed by Redis and it is designed to have a low barrier to entry. It can be integrated in your web stack easily.",
+      "childs": {
+        "0": [
+          "RQ (Redis Queue) is a simple Python library for queueing jobs and processing them in the background with workers. It is backed by Redis and it is designed to have a low barrier to entry. It can be integrated in your web stack easily."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/nvie/rq\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/nvie/rq",
+              "plain": "https://github.com/nvie/rq\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- BSD-2-Clause\n    - [@rqLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "BSD-2-Clause",
+              "plain": "BSD-2-Clause\n",
+              "plainChilds": "    - [@rqLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@rqLicense]",
+                  "plain": "[@rqLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- Yes\n    - [@rqExample]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@rqExample]\n",
+              "childs": [
+                {
+                  "content": ",[@rqExample]",
+                  "plain": "[@rqExample]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- Redis\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Redis",
+              "plain": "Redis\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 290.000\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "290.000",
+              "plain": "290.000\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "tag": "Siberite - http://siberite.org/",
+    "descr": "simple leveldb backed message queue server",
+    "Description": {
+      "plain": "Siberite is a simple leveldb backed message queue server\n(twitter/kestrel, wavii/darner rewritten in Go).\n\nSiberite is a very simple message queue server. Unlike in-memory servers such as redis, Siberite is designed to handle queues much larger than what can be held in RAM. And unlike enterprise queue servers such as RabbitMQ, Siberite keeps all messages out of process, using goleveldb as a persistent storage.",
+      "childs": {
+        "0": [
+          "Siberite is a simple leveldb backed message queue server (twitter/kestrel, wavii/darner rewritten in Go).",
+          "Siberite is a very simple message queue server. Unlike in-memory servers such as redis, Siberite is designed to handle queues much larger than what can be held in RAM. And unlike enterprise queue servers such as RabbitMQ, Siberite keeps all messages out of process, using goleveldb as a persistent storage."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://github.com/bogdanovich/siberite\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://github.com/bogdanovich/siberite",
+              "plain": "https://github.com/bogdanovich/siberite\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- Apache 2.0\n    - [@siberiteLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Apache 2.0",
+              "plain": "Apache 2.0\n",
+              "plainChilds": "    - [@siberiteLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@siberiteLicense]",
+                  "plain": "[@siberiteLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "- memcached\n    - [@siberiteProtocol]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "memcached",
+              "plain": "memcached\n",
+              "plainChilds": "    - [@siberiteProtocol]\n",
+              "childs": [
+                {
+                  "content": ",[@siberiteProtocol]",
+                  "plain": "[@siberiteProtocol]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n    - [@siberitePlatforms]\n- OSX\n    - [@siberitePlatforms]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@siberitePlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@siberitePlatforms]",
+                  "plain": "[@siberitePlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@siberitePlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@siberitePlatforms]",
+                  "plain": "[@siberitePlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "- 16.700\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "16.700",
+              "plain": "16.700\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    }
   }
 ]
