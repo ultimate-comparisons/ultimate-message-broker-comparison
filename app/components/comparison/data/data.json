@@ -1915,6 +1915,143 @@
     }
   },
   {
+    "tag": "OM2M - http://www.eclipse.org/om2m/",
+    "descr": "The Eclipse OM2M project, initiated by LAAS-CNRS, is an open source implementation of oneM2M and SmartM2M standard.",
+    "Description": {
+      "plain": "The Eclipse OM2M project, initiated by LAAS-CNRS, is an open source implementation of oneM2M and SmartM2M standard. It provides a horizontal M2M service platform for developing services independently of the underlying network, with the aim to facilitate the deployment of vertical applications and heterogeneous devices.",
+      "childs": {
+        "0": [
+          "The Eclipse OM2M project, initiated by LAAS-CNRS, is an open source implementation of oneM2M and SmartM2M standard. It provides a horizontal M2M service platform for developing services independently of the underlying network, with the aim to facilitate the deployment of vertical applications and heterogeneous devices."
+        ]
+      }
+    },
+    "Repo": {
+      "plain": "- https://git.eclipse.org/c/om2m/org.eclipse.om2m.git/\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "https://git.eclipse.org/c/om2m/org.eclipse.om2m.git/",
+              "plain": "https://git.eclipse.org/c/om2m/org.eclipse.om2m.git/\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "License": {
+      "plain": "- EPL\n    - [@eclipseOm2mLicense]\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "EPL",
+              "plain": "EPL\n",
+              "plainChilds": "    - [@eclipseOm2mLicense]\n",
+              "childs": [
+                {
+                  "content": ",[@eclipseOm2mLicense]",
+                  "plain": "[@eclipseOm2mLicense]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    },
+    "Protocol": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    },
+    "Platforms": {
+      "plain": "- Linux\n- OSX\n- Windows\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "",
+              "childs": []
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Working example": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Broker Backend": {
+      "plain": "- None\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "None",
+              "plain": "None\n",
+              "plainChilds": "",
+              "childs": []
+            }
+          ]
+        ]
+      }
+    },
+    "Google hits": {
+      "plain": "",
+      "childs": {
+        "0": [
+          ""
+        ]
+      }
+    }
+  },
+  {
     "tag": "Gearman - http://gearman.org/",
     "descr": "in-memory, distributed job queue",
     "Description": {
