@@ -2130,18 +2130,72 @@
       }
     },
     "Platforms": {
-      "plain": "",
+      "plain": "- Linux\n    - [@ffmqHomepage]\n- OSX\n    - [@ffmqHomepage]\n- Windows\n    - [@ffmqHomepage]\n",
       "childs": {
         "0": [
-          ""
+          [
+            {
+              "content": "Linux",
+              "plain": "Linux\n",
+              "plainChilds": "    - [@ffmqHomepage]\n",
+              "childs": [
+                {
+                  "content": ",[@ffmqHomepage]",
+                  "plain": "[@ffmqHomepage]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "OSX",
+              "plain": "OSX\n",
+              "plainChilds": "    - [@ffmqHomepage]\n",
+              "childs": [
+                {
+                  "content": ",[@ffmqHomepage]",
+                  "plain": "[@ffmqHomepage]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
+              "plainChilds": "    - [@ffmqHomepage]\n",
+              "childs": [
+                {
+                  "content": ",[@ffmqHomepage]",
+                  "plain": "[@ffmqHomepage]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
         ]
       }
     },
     "Working examples": {
-      "plain": "",
+      "plain": "- Yes\n    - [@ffmqWorkingExamples]\n",
       "childs": {
         "0": [
-          ""
+          [
+            {
+              "content": "Yes",
+              "plain": "Yes\n",
+              "plainChilds": "    - [@ffmqWorkingExamples]\n",
+              "childs": [
+                {
+                  "content": ",[@ffmqWorkingExamples]",
+                  "plain": "[@ffmqWorkingExamples]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
         ]
       }
     },
@@ -4371,15 +4425,29 @@
       }
     },
     "Protocols": {
-      "plain": "",
+      "plain": "- ZMTP\n    - [@zeroMQProtocols]\n",
       "childs": {
         "0": [
-          ""
+          [
+            {
+              "content": "ZMTP",
+              "plain": "ZMTP\n",
+              "plainChilds": "    - [@zeroMQProtocols]\n",
+              "childs": [
+                {
+                  "content": ",[@zeroMQProtocols]",
+                  "plain": "[@zeroMQProtocols]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            }
+          ]
         ]
       }
     },
     "Platforms": {
-      "plain": "- Linux\n    - [@zeroMQPlatforms]\n- OSX\n    - [@zeroMQPlatforms]\n",
+      "plain": "- Linux\n    - [@zeroMQPlatforms]\n- OSX\n    - [@zeroMQPlatforms]\n- Windows\n    - [@zeroMQPlatforms]\n",
       "childs": {
         "0": [
           [
@@ -4399,6 +4467,19 @@
             {
               "content": "OSX",
               "plain": "OSX\n",
+              "plainChilds": "    - [@zeroMQPlatforms]\n",
+              "childs": [
+                {
+                  "content": ",[@zeroMQPlatforms]",
+                  "plain": "[@zeroMQPlatforms]\n",
+                  "plainChilds": "",
+                  "childs": []
+                }
+              ]
+            },
+            {
+              "content": "Windows",
+              "plain": "Windows\n",
               "plainChilds": "    - [@zeroMQPlatforms]\n",
               "childs": [
                 {
