@@ -27,7 +27,7 @@ Darner is a very simple message queue server. Unlike in-memory servers such as r
     - [@darnerPlatforms]
 
 
-## Working example
+## Working examples
 - No
 
 

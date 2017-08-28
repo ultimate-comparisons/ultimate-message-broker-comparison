@@ -30,7 +30,7 @@ supports:
 ## Platforms
 
 
-## Working example
+## Working examples
 - Yes
     - [@hueyExamples]
 

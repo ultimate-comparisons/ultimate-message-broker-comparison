@@ -19,9 +19,9 @@ RQ (Redis Queue) is a simple Python library for queueing jobs and processing the
 ## Platforms
 
 
-## Working example
+## Working examples
 - Yes
-    - [@rqExample]
+    - [@rqExamples]
 
 
 ## JMS support

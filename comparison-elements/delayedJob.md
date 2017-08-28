@@ -37,7 +37,7 @@ It is a direct extraction from Shopify where the job table is responsible for a 
 - None
 
 
-## Working example
+## Working examples
 - No
 
 

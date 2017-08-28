@@ -25,9 +25,9 @@ Sidekiq is compatible with Resque. It uses the exact same message format as Resq
 ## Platforms
 
 
-## Working example
+## Working examples
 - Yes
-    - [@zeroMqExample]
+    - [@zeroMqExamples]
 
 
 ## JMS support

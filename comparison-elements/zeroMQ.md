@@ -25,9 +25,9 @@ ZeroMQ (also known as ØMQ, 0MQ, or zmq) looks like an embeddable networking lib
     - [@zeroMQPlatforms]
 
 
-## Working example
+## Working examples
 - Yes
-    - [@zeroMqExample]
+    - [@zeroMqExamples]
 
 
 ## JMS support

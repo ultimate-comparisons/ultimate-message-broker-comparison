@@ -24,7 +24,7 @@ Celery is used in production systems to process millions of tasks a day.
 ## Platforms
 
 
-## Working example
+## Working examples
 - Yes
     - [@celeryExamples]
 

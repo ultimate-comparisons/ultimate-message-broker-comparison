@@ -23,7 +23,7 @@ Disque is an ongoing experiment to build a distributed, in-memory, message broke
 ## Platforms
 
 
-## Working example
+## Working examples
 - No
 
 
