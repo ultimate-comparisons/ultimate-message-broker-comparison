@@ -29,7 +29,7 @@ As a consequence it does not provide a lot of features but it is small, fast, ea
 
 ## JMS support
 - Yes
-    - [@apacheActiveMQJMS]
+    - [@ffmqHomepage]
 
 
 ## Broker Backend
