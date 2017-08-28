@@ -36,7 +36,7 @@ Apache Qpid™ makes messaging tools that speak AMQP and support many languages 
     - [@apacheQpidJMS]
 
 
-## Working example
+## Working examples
 - Yes
     - [@apacheQpidJMSExamples]
     - [@apacheQpidCPPExamples]

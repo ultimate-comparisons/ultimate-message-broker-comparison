@@ -57,7 +57,7 @@
     },
     {
         "name": "Working example availability",
-        "tag": "Working example",
+        "tag": "Working examples",
         "description": "",
         "placeholder": "Select Working example availability ...",
         "and_search": true,

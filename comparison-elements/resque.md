@@ -20,7 +20,7 @@ Resque (pronounced like rescue) is a Redis-backed library for creating backgroun
 ## Platforms
 
 
-## Working example
+## Working examples
 - Yes
     - [@resqueExamples]
 

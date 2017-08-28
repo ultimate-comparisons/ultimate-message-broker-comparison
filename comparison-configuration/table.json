@@ -116,8 +116,8 @@
         }
     },
     {
-        "name": "Working example",
-        "tag": "Working example",
+        "name": "Working examples",
+        "tag": "Working examples",
         "display": true,
         "type": {
             "tag": "label",

@@ -27,7 +27,7 @@ Chronicle Queue is able to persist every single event/message, It records each e
     - [@chronicleQueuePlatforms]
 
 
-## Working example
+## Working examples
 - Yes
     - [@chronicleQueueExamples]
 

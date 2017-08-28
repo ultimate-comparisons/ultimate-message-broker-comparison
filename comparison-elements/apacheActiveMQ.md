@@ -37,9 +37,9 @@ Apache ActiveMQ is fast, supports many Cross Language Clients and Protocols, com
     - [@acpacheAtiveMQPlatforms]
 
 
-## Working example
+## Working examples
 - Yes
-    - [@apacheActiveMQExample]
+    - [@apacheActiveMQExamples]
 
 
 ## JMS support

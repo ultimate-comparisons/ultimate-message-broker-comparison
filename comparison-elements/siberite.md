@@ -30,7 +30,7 @@ Siberite is a very simple message queue server. Unlike in-memory servers such as
     - [@siberitePlatforms]
 
 
-## Working example
+## Working examples
 - No
 
 

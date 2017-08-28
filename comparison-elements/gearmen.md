@@ -27,7 +27,7 @@ Gearman provides a generic application framework to farm out work to other machi
     - [@gearmanProtocols]
 
 
-## Working example
+## Working examples
 - Yes
     - [@gearmanExamples]
 

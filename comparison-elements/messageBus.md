@@ -22,7 +22,7 @@ MessageBus is a distributed messaging platform built on top of hornetq, and supp
 ## Platforms
 
 
-## Working example
+## Working examples
 - Yes
     - [@messageBusExamples]
 

@@ -33,7 +33,7 @@ Kestrel is based on Blaine Cook's starling simple, distributed message queue, wi
     - [@kestrelPlatforms]
 
 
-## Working example
+## Working examples
 - No
 
 

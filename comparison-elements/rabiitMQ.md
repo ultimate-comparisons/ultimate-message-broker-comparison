@@ -33,7 +33,7 @@ ActiveMQ Apollo is a faster, more reliable, easier to maintain messaging broker 
     - [@rabbitMQPlatforms]
 
 
-## Working example
+## Working examples
 - Yes
     - [@rabbitMQExamples]
 

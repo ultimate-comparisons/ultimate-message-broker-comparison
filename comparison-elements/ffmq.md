@@ -24,7 +24,7 @@ As a consequence it does not provide a lot of features but it is small, fast, ea
 ## Platforms
 
 
-## Working example
+## Working examples
 
 
 ## JMS support

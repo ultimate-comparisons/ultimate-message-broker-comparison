@@ -31,7 +31,7 @@ HornetQ is an open source project to build a multi-protocol, embeddable, very hi
     - [@hornetQPlatforms]
 
 
-## Working example
+## Working examples
 - Yes
     - [@hornetQExamples]
 

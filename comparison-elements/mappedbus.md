@@ -26,7 +26,7 @@ Mappedbus is a Java based high throughput, low latency message bus, using either
     - [@mappedBusPlatforms]
 
 
-## Working example
+## Working examples
 - Yes
     - [@mappedBusExamples]
 

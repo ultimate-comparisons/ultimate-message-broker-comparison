@@ -40,7 +40,7 @@ ActiveMQ apollo is a faster, more reliable, easier to maintain messaging broker 
 - No
 
 
-## Working example
+## Working examples
 - Yes
     - [@apacheApolloExamples]
 
