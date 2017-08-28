@@ -48,7 +48,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "- AMQP\n    - [@apacheActiveMQProtocols]\n- AUTO\n    - [@apacheActiveMQProtocols]\n- MQTT\n    - [@apacheActiveMQProtocols]\n- OpenWire\n    - [@apacheActiveMQProtocols]\n- STOMP\n    - [@apacheActiveMQProtocols]\n",
       "childs": {
         "0": [
@@ -315,7 +315,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "- AMQP\n    - [@apacheApollo]\n- MQTT\n    - [@apacheApollo]\n- OpenWire\n    - [@apacheApollo]\n- STOMP\n    - [@apacheApollo]\n",
       "childs": {
         "0": [
@@ -489,14 +489,6 @@
               ]
             }
           ]
-        ]
-      }
-    },
-    "Protocols": {
-      "plain": "",
-      "childs": {
-        "0": [
-          ""
         ]
       }
     },
@@ -699,7 +691,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "- AMQP\n    - [@apacheQpiProtocols]\n",
       "childs": {
         "0": [
@@ -886,7 +878,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "- Beanstalkd\n    - [@beanstalkdProtocols]\n",
       "childs": {
         "0": [
@@ -1018,7 +1010,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "",
       "childs": {
         "0": [
@@ -1170,7 +1162,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "",
       "childs": {
         "0": [
@@ -1342,7 +1334,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "- memcached  \n    - [@darnerProtocols]\n",
       "childs": {
         "0": [
@@ -1509,14 +1501,6 @@
         ]
       }
     },
-    "Protocols": {
-      "plain": "",
-      "childs": {
-        "0": [
-          ""
-        ]
-      }
-    },
     "Platforms": {
       "plain": "- Linux\n    - [@delayedJobPlatforms]\n- OSX\n    - [@delayedJobPlatforms]\n- Windows\n    - [@delayedJobPlatforms]\n",
       "childs": {
@@ -1674,19 +1658,19 @@
         ]
       }
     },
-    "Protocols": {
-      "plain": "- memcached\n    - [@disqueProtocols]\n",
+    "Protocol": {
+      "plain": "- memcached\n    - [@disqueProtocol]\n",
       "childs": {
         "0": [
           [
             {
               "content": "memcached",
               "plain": "memcached\n",
-              "plainChilds": "    - [@disqueProtocols]\n",
+              "plainChilds": "    - [@disqueProtocol]\n",
               "childs": [
                 {
-                  "content": ",[@disqueProtocols]",
-                  "plain": "[@disqueProtocols]\n",
+                  "content": ",[@disqueProtocol]",
+                  "plain": "[@disqueProtocol]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -1813,19 +1797,19 @@
         ]
       }
     },
-    "Protocols": {
-      "plain": "- MQTT\n    - [@eclipseMosquittoProtocols]\n",
+    "Protocol": {
+      "plain": "- MQTT\n    - [@eclipseMosquittoProtocol]\n",
       "childs": {
         "0": [
           [
             {
               "content": "MQTT",
               "plain": "MQTT\n",
-              "plainChilds": "    - [@eclipseMosquittoProtocols]\n",
+              "plainChilds": "    - [@eclipseMosquittoProtocol]\n",
               "childs": [
                 {
-                  "content": ",[@eclipseMosquittoProtocols]",
-                  "plain": "[@eclipseMosquittoProtocols]\n",
+                  "content": ",[@eclipseMosquittoProtocol]",
+                  "plain": "[@eclipseMosquittoProtocol]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -1999,7 +1983,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "",
       "childs": {
         "0": [
@@ -2137,7 +2121,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "",
       "childs": {
         "0": [
@@ -2162,18 +2146,18 @@
       }
     },
     "JMS support": {
-      "plain": "- Yes\n    - [@ffmqHomepage]\n",
+      "plain": "- Yes\n    - [@apacheActiveMQJMS]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Yes",
               "plain": "Yes\n",
-              "plainChilds": "    - [@ffmqHomepage]\n",
+              "plainChilds": "    - [@apacheActiveMQJMS]\n",
               "childs": [
                 {
-                  "content": ",[@ffmqHomepage]",
-                  "plain": "[@ffmqHomepage]\n",
+                  "content": ",[@apacheActiveMQJMS]",
+                  "plain": "[@apacheActiveMQJMS]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -2297,7 +2281,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "- Gearman\n    - [@gearmanProtocols]\n",
       "childs": {
         "0": [
@@ -2435,19 +2419,19 @@
         ]
       }
     },
-    "Protocols": {
-      "plain": "- AMQP\n    - [@hornetQProtocols]\n- STOMP\n    - [@hornetQProtocols]\n",
+    "Protocol": {
+      "plain": "- AMQP\n    - [@hornetQProtocol]\n- STOMP\n    - [@hornetQProtocol]\n",
       "childs": {
         "0": [
           [
             {
               "content": "AMQP",
               "plain": "AMQP\n",
-              "plainChilds": "    - [@hornetQProtocols]\n",
+              "plainChilds": "    - [@hornetQProtocol]\n",
               "childs": [
                 {
-                  "content": ",[@hornetQProtocols]",
-                  "plain": "[@hornetQProtocols]\n",
+                  "content": ",[@hornetQProtocol]",
+                  "plain": "[@hornetQProtocol]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -2456,11 +2440,11 @@
             {
               "content": "STOMP",
               "plain": "STOMP\n",
-              "plainChilds": "    - [@hornetQProtocols]\n",
+              "plainChilds": "    - [@hornetQProtocol]\n",
               "childs": [
                 {
-                  "content": ",[@hornetQProtocols]",
-                  "plain": "[@hornetQProtocols]\n",
+                  "content": ",[@hornetQProtocol]",
+                  "plain": "[@hornetQProtocol]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -2541,18 +2525,18 @@
       }
     },
     "JMS support": {
-      "plain": "- Yes\n    - [@hornetQProtocols]\n",
+      "plain": "- Yes\n    - [@hornetQProtocol]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Yes",
               "plain": "Yes\n",
-              "plainChilds": "    - [@hornetQProtocols]\n",
+              "plainChilds": "    - [@hornetQProtocol]\n",
               "childs": [
                 {
-                  "content": ",[@hornetQProtocols]",
-                  "plain": "[@hornetQProtocols]\n",
+                  "content": ",[@hornetQProtocol]",
+                  "plain": "[@hornetQProtocol]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -2642,7 +2626,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "",
       "childs": {
         "0": [
@@ -2781,7 +2765,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "- memcached\n    - [@kestrelProtocols]\n- thrift\n    - [@kestrelProtocols]\n- text\n    - [@kestrelProtocols]\n",
       "childs": {
         "0": [
@@ -2986,7 +2970,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "",
       "childs": {
         "0": [
@@ -3111,7 +3095,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "",
       "childs": {
         "0": [
@@ -3276,19 +3260,19 @@
         ]
       }
     },
-    "Protocols": {
-      "plain": "- STOMP\n    - [@messageBusProtocols]\n",
+    "Protocol": {
+      "plain": "- STOMP\n    - [@messageBusProtocol]\n",
       "childs": {
         "0": [
           [
             {
               "content": "STOMP",
               "plain": "STOMP\n",
-              "plainChilds": "    - [@messageBusProtocols]\n",
+              "plainChilds": "    - [@messageBusProtocol]\n",
               "childs": [
                 {
-                  "content": ",[@messageBusProtocols]",
-                  "plain": "[@messageBusProtocols]\n",
+                  "content": ",[@messageBusProtocol]",
+                  "plain": "[@messageBusProtocol]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -3323,6 +3307,21 @@
                   "childs": []
                 }
               ]
+            }
+          ]
+        ]
+      }
+    },
+    "JMS support": {
+      "plain": "- No\n",
+      "childs": {
+        "0": [
+          [
+            {
+              "content": "No",
+              "plain": "No\n",
+              "plainChilds": "",
+              "childs": []
             }
           ]
         ]
@@ -3407,7 +3406,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "- AMQP\n    - [@rabbitMQProtocols]\n- MQTT\n    - [@rabbitMQProtocols]\n- STOMP\n    - [@rabbitMQProtocols]\n",
       "childs": {
         "0": [
@@ -3661,19 +3660,19 @@
         ]
       }
     },
-    "Protocols": {
-      "plain": "- RESP\n    - [@redisProtocols]\n",
+    "Protocol": {
+      "plain": "- RESP\n    - [@redisProtocol]\n",
       "childs": {
         "0": [
           [
             {
               "content": "RESP",
               "plain": "RESP\n",
-              "plainChilds": "    - [@redisProtocols]\n",
+              "plainChilds": "    - [@redisProtocol]\n",
               "childs": [
                 {
-                  "content": ",[@redisProtocols]",
-                  "plain": "[@redisProtocols]\n",
+                  "content": ",[@redisProtocol]",
+                  "plain": "[@redisProtocol]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -3799,7 +3798,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "",
       "childs": {
         "0": [
@@ -3931,7 +3930,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "",
       "childs": {
         "0": [
@@ -4064,19 +4063,19 @@
         ]
       }
     },
-    "Protocols": {
-      "plain": "- memcached\n    - [@siberiteProtocols]\n",
+    "Protocol": {
+      "plain": "- memcached\n    - [@siberiteProtocol]\n",
       "childs": {
         "0": [
           [
             {
               "content": "memcached",
               "plain": "memcached\n",
-              "plainChilds": "    - [@siberiteProtocols]\n",
+              "plainChilds": "    - [@siberiteProtocol]\n",
               "childs": [
                 {
-                  "content": ",[@siberiteProtocols]",
-                  "plain": "[@siberiteProtocols]\n",
+                  "content": ",[@siberiteProtocol]",
+                  "plain": "[@siberiteProtocol]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -4232,7 +4231,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "",
       "childs": {
         "0": [
@@ -4371,7 +4370,7 @@
         ]
       }
     },
-    "Protocols": {
+    "Protocol": {
       "plain": "",
       "childs": {
         "0": [
