@@ -15,9 +15,9 @@
         ]
     },
     {
-        "name": "Protocol",
-        "tag": "Protocol",
-        "placeholder": "Select protocol ...",
+        "name": "Protocols",
+        "tag": "Protocols",
+        "placeholder": "Select protocols ...",
         "and_search": false,
         "values": [
             {"name": "AMQP"},

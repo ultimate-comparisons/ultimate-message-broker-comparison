@@ -15,7 +15,7 @@ Darner is a very simple message queue server. Unlike in-memory servers such as r
     - [@darnerLicense]
 
 
-## Protocol
+## Protocols
 - memcached  
     - [@darnerProtocols]
 

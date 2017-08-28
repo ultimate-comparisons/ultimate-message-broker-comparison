@@ -15,7 +15,7 @@ ActiveMQ Apollo is a faster, more reliable, easier to maintain messaging broker 
     - [@rabbitMQLicense]
 
 
-## Protocol
+## Protocols
 - AMQP
     - [@rabbitMQProtocols]
 - MQTT

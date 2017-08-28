@@ -22,7 +22,7 @@ Gearman provides a generic application framework to farm out work to other machi
     - [@gearmanPlatforms]
 
 
-## Protocol
+## Protocols
 - Gearman
     - [@gearmanProtocols]
 

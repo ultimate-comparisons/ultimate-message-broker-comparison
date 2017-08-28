@@ -14,9 +14,9 @@ MessageBus is a distributed messaging platform built on top of hornetq, and supp
     - [@messageBusLicense]
 
 
-## Protocol
+## Protocols
 - STOMP
-    - [@messageBusProtocol]
+    - [@messageBusProtocols]
 
 
 ## Platforms

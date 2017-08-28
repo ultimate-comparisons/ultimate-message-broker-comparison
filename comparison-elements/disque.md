@@ -15,9 +15,9 @@ Disque is an ongoing experiment to build a distributed, in-memory, message broke
     - [@disqueLicense]
 
 
-## Protocol
+## Protocols
 - memcached
-    - [@disqueProtocol]
+    - [@disqueProtocols]
 
 
 ## Platforms

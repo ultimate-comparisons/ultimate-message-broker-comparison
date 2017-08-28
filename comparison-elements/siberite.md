@@ -18,9 +18,9 @@ Siberite is a very simple message queue server. Unlike in-memory servers such as
     - [@siberiteLicense]
 
 
-## Protocol
+## Protocols
 - memcached
-    - [@siberiteProtocol]
+    - [@siberiteProtocols]
 
 
 ## Platforms

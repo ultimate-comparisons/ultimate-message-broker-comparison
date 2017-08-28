@@ -24,7 +24,7 @@ supports:
     - [@hueyLicense]
 
 
-## Protocol
+## Protocols
 
 
 ## Platforms

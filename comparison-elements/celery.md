@@ -18,7 +18,7 @@ Celery is used in production systems to process millions of tasks a day.
     - [@celeryLicense]
 
 
-## Protocol
+## Protocols
 
 
 ## Platforms
