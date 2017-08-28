@@ -21,7 +21,7 @@ ActiveMQ apollo is a faster, more reliable, easier to maintain messaging broker 
     - [@apacheApolloPlatforms]
 
 
-## Protocol
+## Protocols
 - AMQP
     - [@apacheApollo]
 - MQTT

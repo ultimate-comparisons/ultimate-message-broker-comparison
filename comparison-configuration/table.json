@@ -58,8 +58,8 @@
         }
     },
     {
-        "name": "Protocol",
-        "tag": "Protocol",
+        "name": "Protocols",
+        "tag": "Protocols",
         "display": true,
         "type": {
             "tag": "label",

@@ -15,7 +15,7 @@ Kestrel is based on Blaine Cook's starling simple, distributed message queue, wi
     - [@kestrelLicense]
 
 
-## Protocol
+## Protocols
 - memcached
     - [@kestrelProtocols]
 - thrift

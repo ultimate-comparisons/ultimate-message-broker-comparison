@@ -15,7 +15,7 @@ Kue is a priority job queue backed by redis, built for node.js.
     - [@kueLicense]
 
 
-## Protocol
+## Protocols
 
 
 ## Platforms

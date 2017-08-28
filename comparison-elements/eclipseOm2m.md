@@ -15,7 +15,7 @@ The Eclipse OM2M project, initiated by LAAS-CNRS, is an open source implementati
     - [@eclipseOm2mLicense]
 
 
-## Protocol
+## Protocols
 
 
 ## Platforms

@@ -14,9 +14,9 @@ Eclipse Mosquitto™ is an open source (EPL/EDL licensed) message broker that im
     - [@eclipseMosquittoLicense]
 
 
-## Protocol
+## Protocols
 - MQTT
-    - [@eclipseMosquittoProtocol]
+    - [@eclipseMosquittoProtocols]
 
 
 ## Platforms

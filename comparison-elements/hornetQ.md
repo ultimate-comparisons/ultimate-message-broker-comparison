@@ -15,11 +15,11 @@ HornetQ is an open source project to build a multi-protocol, embeddable, very hi
     - [@hornetQLicense]
 
 
-## Protocol
+## Protocols
 - AMQP
-    - [@hornetQProtocol]
+    - [@hornetQProtocols]
 - STOMP
-    - [@hornetQProtocol]
+    - [@hornetQProtocols]
 
 
 ## Platforms
@@ -38,7 +38,7 @@ HornetQ is an open source project to build a multi-protocol, embeddable, very hi
 
 ## JMS support
 - Yes
-    - [@hornetQProtocol]
+    - [@hornetQProtocols]
 
 
 ## Broker Backend

@@ -24,7 +24,7 @@ Its interface is generic, but was originally designed for reducing the latency o
     - [@beanstalkdPlatforms]
 
 
-## Protocol
+## Protocols
 - Beanstalkd
     - [@beanstalkdProtocols]
 

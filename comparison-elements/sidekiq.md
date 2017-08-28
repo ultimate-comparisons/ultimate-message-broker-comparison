@@ -19,7 +19,7 @@ Sidekiq is compatible with Resque. It uses the exact same message format as Resq
     - [@sidekiqLicense]
 
 
-## Protocol
+## Protocols
 
 
 ## Platforms
