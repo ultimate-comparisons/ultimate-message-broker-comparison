@@ -1,4 +1,4 @@
-# OM2M - http://www.eclipse.org/om2m/
+# Eclipse OM2M - http://www.eclipse.org/om2m/
 The Eclipse OM2M project, initiated by LAAS-CNRS, is an open source implementation of oneM2M and SmartM2M standard.
 
 
