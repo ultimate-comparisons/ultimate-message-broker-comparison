@@ -29,37 +29,37 @@
                 {
                     "name": "Apache 2.0",
                     "description": "http://choosealicense.com/licenses/apache-2.0/",
-                    "color": "hsl(105, 100%, 70%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "BSD-2-Clause",
                     "description": "http://www.opensource.org/licenses/BSD-3-Clause",
-                    "color": "hsl(105, 100%, 70%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "BSD-3-Clause",
                     "description": "http://www.opensource.org/licenses/BSD-3-Clause",
-                    "color": "hsl(105, 100%, 70%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "EPL",
                     "description": "https://opensource.org/licenses/EPL-1.0",
-                    "color": "hsl(105, 100%, 70%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "LGPLv3",
                     "description": "https://www.gnu.org/licenses/lgpl-3.0.de.html",
-                    "color": "hsl(105, 100%, 70%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "MIT",
                     "description": "http://choosealicense.com/licenses/mit/",
-                    "color": "hsl(105, 100%, 70%)"
+                    "color": "hsl(285, 100%, 70%)"
                 },
                 {
                     "name": "MPL 1.1",
                     "description": "https://www.mozilla.org/media/MPL/1.1/index.0c5913925d40.txt",
-                    "color": "hsl(105, 100%, 70%)"
+                    "color": "hsl(285, 100%, 70%)"
                 }
             ]
         }
@@ -74,57 +74,57 @@
                 {
                     "name": "AMQP",
                     "description": "http://www.amqp.org/",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 },
                 {
                     "name": "AUTO",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 },
                 {
                     "name": "Beanstalkd",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 },
                 {
                     "name": "Gearman",
                     "description": "http://gearman.org/protocol/",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 },
                 {
                     "name": "memcached",
                     "description": "https://github.com/memcached/memcached/blob/master/doc/protocol.txt",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 },
                 {
                     "name": "MQTT",
                     "description": "http://mqtt.org/",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 },
                 {
                     "name": "OpenWire",
                     "description": "http://www.openwire.org/",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 },
                 {
                     "name": "RESP",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 },
                 {
                     "name": "STOMP",
                     "description": "https://stomp.github.io/",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 },
                 {
                     "name": "text",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 },
                 {
                     "name": "thrift",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 },
                 {
                     "name": "ZMTP",
                     "description": "http://zmtp.org/",
-                    "color": "hsl(150, 100%, 70%)"
+                    "color": "hsl(330, 100%, 70%)"
                 }
             ]
         }
@@ -138,15 +138,15 @@
             "values": [
                 {
                     "name": "Linux",
-                    "color": "hsl(195, 100%, 70%)"
+                    "color": "hsl(15, 100%, 70%)"
                 },
                 {
                     "name": "OSX",
-                    "color": "hsl(195, 100%, 70%)"
+                    "color": "hsl(15, 100%, 70%)"
                 },
                 {
                     "name": "Windows",
-                    "color": "hsl(195, 100%, 70%)"
+                    "color": "hsl(15, 100%, 70%)"
                 }
             ]
         }
@@ -196,7 +196,7 @@
             "values": [
                 {
                     "name": "HornetQ",
-                    "color": "hsl(330, 100%, 70%)"
+                    "color": "hsl(150, 100%, 70%)"
                 },
                 {
                     "name": "None",
@@ -204,11 +204,11 @@
                 },
                 {
                     "name": "RabbitMQ",
-                    "color": "hsl(330, 100%, 70%)"
+                    "color": "hsl(150, 100%, 70%)"
                 },
                 {
                     "name": "Redis",
-                    "color": "hsl(330, 100%, 70%)"
+                    "color": "hsl(150, 100%, 70%)"
                 }
             ]
         }

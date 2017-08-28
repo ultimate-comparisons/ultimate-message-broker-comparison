@@ -1936,7 +1936,7 @@
     }
   },
   {
-    "tag": "OM2M - http://www.eclipse.org/om2m/",
+    "tag": "Eclipse OM2M - http://www.eclipse.org/om2m/",
     "descr": "The Eclipse OM2M project, initiated by LAAS-CNRS, is an open source implementation of oneM2M and SmartM2M standard.",
     "Description": {
       "plain": "The Eclipse OM2M project, initiated by LAAS-CNRS, is an open source implementation of oneM2M and SmartM2M standard. It provides a horizontal M2M service platform for developing services independently of the underlying network, with the aim to facilitate the deployment of vertical applications and heterogeneous devices.",
