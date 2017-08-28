@@ -64,7 +64,10 @@
         "type": {
             "tag": "label",
             "values": [
-                {"name": "AMQP"},
+                {
+                    "name": "AMQP",
+                    "description": "http://www.amqp.org/"
+                },
                 {"name": "AUTO"},
                 {"name": "Beanstalkd"},
                 {
@@ -75,12 +78,25 @@
                     "name": "Gearman",
                     "description": "http://gearman.org/protocol/"
                 },
-                {"name": "MQTT"},
-                {"name": "OpenWire"},
+                {
+                    "name": "MQTT",
+                    "description": "http://mqtt.org/"
+                },
+                {
+                    "name": "OpenWire",
+                    "description": "http://www.openwire.org/"
+                },
                 {"name": "RESP"},
-                {"name": "STOMP"},
+                {
+                    "name": "STOMP",
+                    "description": "https://stomp.github.io/"
+                },
                 {"name": "text"},
-                {"name": "thrift"}
+                {"name": "thrift"},
+                {
+                    "name": "ZMTP",
+                    "description": "http://zmtp.org/"
+                }
             ]
         }
     },

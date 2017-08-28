@@ -22,9 +22,17 @@ As a consequence it does not provide a lot of features but it is small, fast, ea
 
 
 ## Platforms
+- Linux
+    - [@ffmqHomepage]
+- OSX
+    - [@ffmqHomepage]
+- Windows
+    - [@ffmqHomepage]
 
 
 ## Working examples
+- Yes
+    - [@ffmqWorkingExamples]
 
 
 ## JMS support
