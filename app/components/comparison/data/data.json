@@ -48,7 +48,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "- AMQP\n    - [@apacheActiveMQProtocols]\n- AUTO\n    - [@apacheActiveMQProtocols]\n- MQTT\n    - [@apacheActiveMQProtocols]\n- OpenWire\n    - [@apacheActiveMQProtocols]\n- STOMP\n    - [@apacheActiveMQProtocols]\n",
       "childs": {
         "0": [
@@ -315,7 +315,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "- AMQP\n    - [@apacheApollo]\n- MQTT\n    - [@apacheApollo]\n- OpenWire\n    - [@apacheApollo]\n- STOMP\n    - [@apacheApollo]\n",
       "childs": {
         "0": [
@@ -691,7 +691,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "- AMQP\n    - [@apacheQpiProtocols]\n",
       "childs": {
         "0": [
@@ -878,7 +878,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "- Beanstalkd\n    - [@beanstalkdProtocols]\n",
       "childs": {
         "0": [
@@ -1010,7 +1010,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "",
       "childs": {
         "0": [
@@ -1162,7 +1162,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "",
       "childs": {
         "0": [
@@ -1334,7 +1334,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "- memcached  \n    - [@darnerProtocols]\n",
       "childs": {
         "0": [
@@ -1658,19 +1658,19 @@
         ]
       }
     },
-    "Protocol": {
-      "plain": "- memcached\n    - [@disqueProtocol]\n",
+    "Protocols": {
+      "plain": "- memcached\n    - [@disqueProtocols]\n",
       "childs": {
         "0": [
           [
             {
               "content": "memcached",
               "plain": "memcached\n",
-              "plainChilds": "    - [@disqueProtocol]\n",
+              "plainChilds": "    - [@disqueProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@disqueProtocol]",
-                  "plain": "[@disqueProtocol]\n",
+                  "content": ",[@disqueProtocols]",
+                  "plain": "[@disqueProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -1797,19 +1797,19 @@
         ]
       }
     },
-    "Protocol": {
-      "plain": "- MQTT\n    - [@eclipseMosquittoProtocol]\n",
+    "Protocols": {
+      "plain": "- MQTT\n    - [@eclipseMosquittoProtocols]\n",
       "childs": {
         "0": [
           [
             {
               "content": "MQTT",
               "plain": "MQTT\n",
-              "plainChilds": "    - [@eclipseMosquittoProtocol]\n",
+              "plainChilds": "    - [@eclipseMosquittoProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@eclipseMosquittoProtocol]",
-                  "plain": "[@eclipseMosquittoProtocol]\n",
+                  "content": ",[@eclipseMosquittoProtocols]",
+                  "plain": "[@eclipseMosquittoProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -1983,7 +1983,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "",
       "childs": {
         "0": [
@@ -2121,7 +2121,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "",
       "childs": {
         "0": [
@@ -2281,7 +2281,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "- Gearman\n    - [@gearmanProtocols]\n",
       "childs": {
         "0": [
@@ -2419,19 +2419,19 @@
         ]
       }
     },
-    "Protocol": {
-      "plain": "- AMQP\n    - [@hornetQProtocol]\n- STOMP\n    - [@hornetQProtocol]\n",
+    "Protocols": {
+      "plain": "- AMQP\n    - [@hornetQProtocols]\n- STOMP\n    - [@hornetQProtocols]\n",
       "childs": {
         "0": [
           [
             {
               "content": "AMQP",
               "plain": "AMQP\n",
-              "plainChilds": "    - [@hornetQProtocol]\n",
+              "plainChilds": "    - [@hornetQProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@hornetQProtocol]",
-                  "plain": "[@hornetQProtocol]\n",
+                  "content": ",[@hornetQProtocols]",
+                  "plain": "[@hornetQProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -2440,11 +2440,11 @@
             {
               "content": "STOMP",
               "plain": "STOMP\n",
-              "plainChilds": "    - [@hornetQProtocol]\n",
+              "plainChilds": "    - [@hornetQProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@hornetQProtocol]",
-                  "plain": "[@hornetQProtocol]\n",
+                  "content": ",[@hornetQProtocols]",
+                  "plain": "[@hornetQProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -2525,18 +2525,18 @@
       }
     },
     "JMS support": {
-      "plain": "- Yes\n    - [@hornetQProtocol]\n",
+      "plain": "- Yes\n    - [@hornetQProtocols]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Yes",
               "plain": "Yes\n",
-              "plainChilds": "    - [@hornetQProtocol]\n",
+              "plainChilds": "    - [@hornetQProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@hornetQProtocol]",
-                  "plain": "[@hornetQProtocol]\n",
+                  "content": ",[@hornetQProtocols]",
+                  "plain": "[@hornetQProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -2626,7 +2626,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "",
       "childs": {
         "0": [
@@ -2765,7 +2765,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "- memcached\n    - [@kestrelProtocols]\n- thrift\n    - [@kestrelProtocols]\n- text\n    - [@kestrelProtocols]\n",
       "childs": {
         "0": [
@@ -2970,7 +2970,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "",
       "childs": {
         "0": [
@@ -3095,7 +3095,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "",
       "childs": {
         "0": [
@@ -3260,19 +3260,19 @@
         ]
       }
     },
-    "Protocol": {
-      "plain": "- STOMP\n    - [@messageBusProtocol]\n",
+    "Protocols": {
+      "plain": "- STOMP\n    - [@messageBusProtocols]\n",
       "childs": {
         "0": [
           [
             {
               "content": "STOMP",
               "plain": "STOMP\n",
-              "plainChilds": "    - [@messageBusProtocol]\n",
+              "plainChilds": "    - [@messageBusProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@messageBusProtocol]",
-                  "plain": "[@messageBusProtocol]\n",
+                  "content": ",[@messageBusProtocols]",
+                  "plain": "[@messageBusProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -3406,7 +3406,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "- AMQP\n    - [@rabbitMQProtocols]\n- MQTT\n    - [@rabbitMQProtocols]\n- STOMP\n    - [@rabbitMQProtocols]\n",
       "childs": {
         "0": [
@@ -3660,19 +3660,19 @@
         ]
       }
     },
-    "Protocol": {
-      "plain": "- RESP\n    - [@redisProtocol]\n",
+    "Protocols": {
+      "plain": "- RESP\n    - [@redisProtocols]\n",
       "childs": {
         "0": [
           [
             {
               "content": "RESP",
               "plain": "RESP\n",
-              "plainChilds": "    - [@redisProtocol]\n",
+              "plainChilds": "    - [@redisProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@redisProtocol]",
-                  "plain": "[@redisProtocol]\n",
+                  "content": ",[@redisProtocols]",
+                  "plain": "[@redisProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -3798,7 +3798,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "",
       "childs": {
         "0": [
@@ -3930,7 +3930,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "",
       "childs": {
         "0": [
@@ -4063,19 +4063,19 @@
         ]
       }
     },
-    "Protocol": {
-      "plain": "- memcached\n    - [@siberiteProtocol]\n",
+    "Protocols": {
+      "plain": "- memcached\n    - [@siberiteProtocols]\n",
       "childs": {
         "0": [
           [
             {
               "content": "memcached",
               "plain": "memcached\n",
-              "plainChilds": "    - [@siberiteProtocol]\n",
+              "plainChilds": "    - [@siberiteProtocols]\n",
               "childs": [
                 {
-                  "content": ",[@siberiteProtocol]",
-                  "plain": "[@siberiteProtocol]\n",
+                  "content": ",[@siberiteProtocols]",
+                  "plain": "[@siberiteProtocols]\n",
                   "plainChilds": "",
                   "childs": []
                 }
@@ -4231,7 +4231,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "",
       "childs": {
         "0": [
@@ -4370,7 +4370,7 @@
         ]
       }
     },
-    "Protocol": {
+    "Protocols": {
       "plain": "",
       "childs": {
         "0": [
