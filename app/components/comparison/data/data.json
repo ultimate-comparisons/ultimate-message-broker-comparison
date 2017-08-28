@@ -2162,18 +2162,18 @@
       }
     },
     "JMS support": {
-      "plain": "- Yes\n    - [@apacheActiveMQJMS]\n",
+      "plain": "- Yes\n    - [@ffmqHomepage]\n",
       "childs": {
         "0": [
           [
             {
               "content": "Yes",
               "plain": "Yes\n",
-              "plainChilds": "    - [@apacheActiveMQJMS]\n",
+              "plainChilds": "    - [@ffmqHomepage]\n",
               "childs": [
                 {
-                  "content": ",[@apacheActiveMQJMS]",
-                  "plain": "[@apacheActiveMQJMS]\n",
+                  "content": ",[@ffmqHomepage]",
+                  "plain": "[@ffmqHomepage]\n",
                   "plainChilds": "",
                   "childs": []
                 }
