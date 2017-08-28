@@ -16,12 +16,16 @@ ZeroMQ (also known as ØMQ, 0MQ, or zmq) looks like an embeddable networking lib
 
 
 ## Protocols
+- ZMTP
+    - [@zeroMQProtocols]
 
 
 ## Platforms
 - Linux
     - [@zeroMQPlatforms]
 - OSX
+    - [@zeroMQPlatforms]
+- Windows
     - [@zeroMQPlatforms]
 
 
