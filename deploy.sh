@@ -83,6 +83,7 @@ build_master () {
 
 # add index.md to gh-pages
   git add index.md
+  git add prs
   git commit -m "Travis commit for prs"
   git push SSH gh-pages
 }
