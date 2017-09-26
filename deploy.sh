@@ -13,17 +13,18 @@ prepare () {
 
 # commit given directory from given branch to gh-pages
 git_stuff () {
-  TR_BUILD_BRANCH="travis_build_branch_that_should_not_be_created_by_anybody_else"
+  TR_BUILD_BRANCH="update"
   git fetch --all
   git checkout package.json
   git checkout package-lock.json
-  git checkout -b ${TR_BUILD_BRANCH}
+  git checkout ${TR_BUILD_BRANCH}
   git add "$1"
   git commit -m "Travis commit for $2"
   git checkout gh-pages
   git checkout ${TR_BUILD_BRANCH} "$1"
   git commit -m "Travis commit"
   git push -f SSH gh-pages
+  git checkout ${TRAVIS_BUILD_BRANCH}
 }
 
 # build a branch different from master
@@ -72,6 +73,8 @@ build_master () {
 # insert linebreak in index.md
   echo "" >> index.md
 
+  ls
+  ls prs
 # add PRs to index.md
   git checkout gh-pages prs
   echo "# PRs" >> index.md
