@@ -42,7 +42,7 @@ build_master () {
   git add demo
   git commit -m "Travis commit for master"
   git checkout -f gh-pages
-  git branch -l
+  git branch -rl
   git pull SSH
   git checkout -f master demo
   git add demo
