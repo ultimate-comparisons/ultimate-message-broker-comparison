@@ -13,18 +13,19 @@ prepare () {
 
 # commit given directory from given branch to gh-pages
 git_stuff () {
-  TR_BUILD_BRANCH="update"
+  TR_BUILD_BRANCH="travis_build_branch_that_should_not_be_created_by_anybody_else"
   git fetch --all
   git checkout package.json
   git checkout package-lock.json
-  git checkout ${TR_BUILD_BRANCH}
+  git checkout -b ${TR_BUILD_BRANCH}
   git add "$1"
   git commit -m "Travis commit for $2"
   git checkout gh-pages
   git checkout ${TR_BUILD_BRANCH} "$1"
   git commit -m "Travis commit"
   git push -f SSH gh-pages
-  git checkout ${TRAVIS_BUILD_BRANCH}
+  git checkout ${CURRENT_BRANCH}
+  git branch -D ${TR_BUILD_BRANCH}
 }
 
 # build a branch different from master
@@ -61,6 +62,11 @@ build_master () {
 # add demo to gh-pages
   git_stuff demo master
 
+  git checkout gh-pages
+
+  ls
+  ls prs
+
   git checkout master README.md
 
 # add index.md
@@ -73,8 +79,6 @@ build_master () {
 # insert linebreak in index.md
   echo "" >> index.md
 
-  ls
-  ls prs
 # add PRs to index.md
   git checkout gh-pages prs
   echo "# PRs" >> index.md
@@ -86,11 +90,13 @@ build_master () {
 
 # decide which functions should be called
 if [[ ${TRAVIS_PULL_REQUEST} != false ]]; then
+  CURRENT_BRANCH=${TRAVIS_PULL_REQUEST_BRANCH}
   build_branch ${TRAVIS_PULL_REQUEST_BRANCH}
 else
   if [[ ${TRAVIS_BRANCH} != "master" ]]; then
     echo "or not..."
     exit 0;
   fi
+  CURRENT_BRANCH="master"
   build_master
 fi
