@@ -24,11 +24,13 @@ build_branch () {
 
 # copy build result to final directory
   cp -r www/* prs/${BRANCH}
+  git add prs
 
 # add prs/${BRANCH} to gh-pages
   git commit -m "Travis commit for ${BRANCH}"
   git checkout gh-pages
   git checkout ${BRANCH} prs/${BRANCH}
+  git add prs
   git commit -m "Travis commit for ${BRANCH}"
   git push SSH gh-pages
 }
@@ -83,7 +85,6 @@ build_master () {
 
 # add index.md to gh-pages
   git add index.md
-  git add prs
   git commit -m "Travis commit for prs"
   git push SSH gh-pages
 }
