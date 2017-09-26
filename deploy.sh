@@ -16,8 +16,8 @@ build_branch () {
 
 # add prs/${BRANCH} to gh-pages
   git commit -m "Travis commit for ${BRANCH}"
-  git checkout gh-pages
-  git checkout ${BRANCH} prs/${BRANCH}
+  git checkout -f gh-pages
+  git checkout -f ${BRANCH} prs/${BRANCH}
   git add prs
   git commit -m "Travis commit for ${BRANCH}"
   git push SSH gh-pages
@@ -26,11 +26,11 @@ build_branch () {
 # build master
 build_master () {  
 # add docs to gh-pages
-  git checkout gh-pages
-  git checkout master docs
+  git checkout -f gh-pages
+  git checkout -f master docs
   git add docs
   git commit -m "Travis commit for docs on master"
-  git checkout master
+  git checkout -f master
 
   if [[ ! -d demo ]]; then
     mkdir demo
@@ -41,9 +41,9 @@ build_master () {
 # add demo to gh-pages
   git add demo
   git commit -m "Travis commit for master"
-  git checkout gh-pages
+  git checkout -f gh-pages
   git pull
-  git checkout master demo
+  git checkout -f master demo
   git add demo
   git commit -m "Travis commit for demo on master"
   git push SSH gh-pages
@@ -52,7 +52,7 @@ build_master () {
   ls
   ls prs
 
-  git checkout master README.md
+  git checkout -f master README.md
 
 # add index.md
   cp README.md index.md
@@ -65,7 +65,7 @@ build_master () {
   echo "" >> index.md
 
 # add PRs to index.md
-  git checkout gh-pages prs
+  git checkout -f gh-pages prs
   echo "# PRs" >> index.md
   find prs -mindepth 1 -maxdepth 1 -type d -exec sh -c 'f=$(basename $1 .ts);d=$(dirname $1);echo "- [$f]($d/$f)"' sh {} >> index.md \;
 
