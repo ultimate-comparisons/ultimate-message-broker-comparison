@@ -87,6 +87,7 @@ build_master () {
   git push SSH gh-pages
 }
 
+git fetch --all
 # decide which functions should be called
 if [[ ${TRAVIS_PULL_REQUEST} != false ]]; then
   CURRENT_BRANCH=${TRAVIS_PULL_REQUEST_BRANCH}
