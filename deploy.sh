@@ -1,20 +1,8 @@
 #! /bin/bash
 
-# global preparements for committing into gh-pages
-prepare () {
-  git remote add SSH git@github.com:ultimate-comparisons/ultimate-comparison-BASE.git
-  touch ~/.ssh/github_deployment
-# decrypt ssh key
-  npm install @alrra/travis-scripts
-  $(npm bin)/set-up.ssh --key "$encrypted_f3009028f254_key" \
-                        --iv "$encrypted_f3009028f254_iv" \
-                        --path-encrypted-key "id_rsa.enc"
-}
-
 # build a branch different from master
 build_branch () {
   BRANCH=$1
-  prepare
 
   if [[ ! -d prs ]]; then
     mkdir prs
@@ -36,9 +24,7 @@ build_branch () {
 }
 
 # build master
-build_master () {
-  prepare
-  
+build_master () {  
 # add docs to gh-pages
   git checkout gh-pages
   git checkout master docs
