@@ -16,9 +16,28 @@ build_branch () {
 
 # add prs/${BRANCH} to gh-pages
   git commit -m "Travis commit for ${BRANCH}"
+  git checkout -b ${BRANCH}
   git checkout -f gh-pages
   git checkout -f ${BRANCH} prs/${BRANCH}
   git add prs
+
+# update index.md
+  cp README.md index.md
+  echo "# Docs" >> index.md
+  find docs -type f -exec sh -c 'f=$(basename $1 .ts);d=$(dirname $1);echo "- [$f]($d/$f)"' sh {} >> index.md \;
+
+# insert linebreak in index.md
+  echo "" >> index.md
+
+# add PRs to index.md
+  git checkout -f gh-pages prs
+  echo "# PRs" >> index.md
+  find prs -mindepth 1 -maxdepth 1 -type d -exec sh -c 'f=$(basename $1 .ts);d=$(dirname $1);echo "- [$f]($d/$f)"' sh {} >> index.md \;
+
+# add index.md to gh-pages
+  git add index.md
+  git commit -m "Travis commit for prs"
+  git push SSH gh-pages
   git commit -m "Travis commit for ${BRANCH}"
   git push SSH gh-pages
 }
@@ -42,16 +61,12 @@ build_master () {
   git add demo
   git commit -m "Travis commit for master"
   git checkout -f gh-pages
-  git branch -rl
   git pull SSH
   git checkout -f master demo
   git add demo
   git commit -m "Travis commit for demo on master"
   git push SSH gh-pages
   git pull
-
-  ls
-  ls prs
 
   git checkout -f master README.md
 
