@@ -139,9 +139,10 @@ function makeUpdate(gt, repoName, cb) {
         }
     });
 
-    gt.add(path).then(function () {
-        gt.commit('Travis commit for travis-update').then(function () {
-            gt.push('origin', 'travis-update').then(function () {
+    gt.add(path).exec(function () {
+        gt.commit('Travis commit for travis-update').exec(function () {
+            console.log('try to push');
+            gt.push('origin', 'travis-update').exec(function () {
                 console.log(`Pushed for ${gt._baseDir}`);
                 makePr(repoName, cb);
                 deleteRecursive(path);
