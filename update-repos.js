@@ -106,7 +106,7 @@ function makePr(repoName, cb) {
  * @param cb callback
  */
 function makeUpdate(gt, repoName, cb) {
-    gt.branch(function (err, branches) {
+    gt.getRemotes(true, function (err, branches) {
         console.log(branches);
 
         const path = gt._baseDir;
