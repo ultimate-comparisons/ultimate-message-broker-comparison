@@ -15,10 +15,13 @@ const fs = require('graceful-fs');
  */
 function deleteRecursive(path) {
     if (fs.existsSync(path)) {
-        if  (fs.lstatSync(path).isDirectory()) {
-            fs.readdirSync(path).forEach(function (file) {
+        const parentStat = fs.statSync(path);
+        if  (parentStat(path).isDirectory()) {
+            const files = fs.readdirSync(path);
+            files.forEach(function (file) {
                 const curPath = path + "/" + file;
-                if (fs.lstatSync(curPath).isDirectory()) { // recurse
+                const childStat = fs.statSync(curPath);
+                if (childStat.isDirectory()) { // recurse
                     deleteRecursive(curPath);
                 } else { // delete file
                     fs.unlinkSync(curPath);
@@ -41,13 +44,19 @@ function deleteRecursive(path) {
 function copyDir(sourceDir, targetRoot) {
     const sourceFiles = fs.readdirSync(sourceDir);
     for (const file of sourceFiles) {
-        if (fs.lstatSync(`${sourceDir}/${file}`).isDirectory()) {
-            if (!fs.existsSync(`${targetRoot}/${file}`) || !fs.lstatSync(`${targetRoot}/${file}`).isDirectory()) {
+        const sourceStat = fs.lstatSync(`${sourceDir}/${file}`);
+        if (sourceStat.isDirectory()) {
+            const targetStat = fs.lstatSync(`${targetRoot}/${file}`);
+            if (!fs.existsSync(`${targetRoot}/${file}`) || !targetStat.isDirectory()) {
                 fs.mkdirSync(`${targetRoot}/${file}`);
             }
             copyDir(`${sourceDir}/${file}`, `${targetRoot}/${file}`)
         } else {
-            fs.createReadStream(`${sourceDir}/${file}`).pipe(fs.createWriteStream(`${targetRoot}/${file}`))
+            const reader = fs.createReadStream(`${sourceDir}/${file}`);
+            const writer = fs.createWriteStream(`${targetRoot}/${file}`);
+            reader.pipe(writer);
+            reader.close();
+            writer.close();
         }
     }
 }
