@@ -131,6 +131,7 @@ disable_expanded_output() {
 
 # run script to update repos
 update_repos () {
+  echo "Start to update repos"
   which node
   which nodejs
   npm install github-api simple-git
