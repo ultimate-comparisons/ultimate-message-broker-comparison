@@ -107,6 +107,7 @@ function makePr(repoName, cb) {
  */
 function makeUpdate(gt, repoName, cb) {
     gt.getRemotes(true, function (err, branches) {
+        console.log(gt._baseDir);
         console.log(branches);
 
         const path = gt._baseDir;
@@ -146,11 +147,11 @@ function makeUpdate(gt, repoName, cb) {
         gt.add('.').exec(function () {
             gt.commit('Travis commit for travis-update').exec(function () {
                 console.log('try to push');
-                gt.push(['-f', 'origin', travisBranch]).exec(function () {
+                /*gt.push(['-f', 'origin', travisBranch]).exec(function () {
                     console.log(`Pushed for ${gt._baseDir}`);
                     makePr(repoName, cb);
                     deleteRecursive(path);
-                });
+                });*/
             });
         });
     });
