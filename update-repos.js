@@ -14,21 +14,23 @@ const fs = require('file-system');
  * @param path Path to the directory to be deleted.
  */
 function deleteRecursive(path) {
-    const parentStat = fs.statSync(path);
-    if  (parentStat.isDirectory()) {
-        const files = fs.readdirSync(path);
-        files.forEach(function (file) {
-            const curPath = path + "/" + file;
-            const childStat = fs.statSync(curPath);
-            if (childStat.isDirectory()) { // recurse
-                deleteRecursive(curPath);
-            } else { // delete file
-                fs.unlinkSync(curPath);
-            }
-        });
-        fs.rmdirSync(path);
-    } else {
-        fs.unlinkSync(path);
+    if (fs.existsSync(path)) {
+        const parentStat = fs.statSync(path);
+        if (parentStat.isDirectory()) {
+            const files = fs.readdirSync(path);
+            files.forEach(function (file) {
+                const curPath = path + "/" + file;
+                const childStat = fs.statSync(curPath);
+                if (childStat.isDirectory()) { // recurse
+                    deleteRecursive(curPath);
+                } else { // delete file
+                    fs.unlinkSync(curPath);
+                }
+            });
+            fs.rmdirSync(path);
+        } else {
+            fs.unlinkSync(path);
+        }
     }
 }
 
@@ -142,6 +144,7 @@ function makeUpdate(gt, repoName, cb) {
             gt.push('origin', 'travis-update').then(function () {
                 console.log(`Pushed for ${gt._baseDir}`);
                 makePr(repoName, cb);
+                deleteRecursive(path);
             });
         });
     });
@@ -173,7 +176,7 @@ uc.getRepos().then(rs => {
     async.eachOf(repos, function (repo, index, cb) {
         console.log(`iterate ${repo.fullname}`);
         git.clone(`git@github.com:${repo.fullname}.git`, function () {
-            const gt = Git('../' + repo.name);
+            const gt = Git(repo.name);
             gt.addConfig('user.email', 'hueneburg.armin@gmail.com').then(function() {
                 gt.addConfig('user.name', 'Armin Hüneburg').then(function() {
                     gt.branch(function (err, branches) {
@@ -206,7 +209,7 @@ uc.getRepos().then(rs => {
 
         async.eachOf(foreignRepos, function (repo, index, cb) {
             git.clone(`git@github.com:${repo.fullname}.git`, function () {
-                const gt = Git('../' + repo.name);
+                const gt = Git(repo.name);
                 gt.branch(function (err, branches) {
                     if (err) {
                         console.error(err);
