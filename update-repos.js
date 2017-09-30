@@ -2,7 +2,7 @@ const Github = require('github-api');
 const Git = require('simple-git');
 const git = Git('..');
 const async = require('async');
-const fs = require('graceful-fs');
+const fs = require('file-system');
 
 /****************************************************
  *                 DEFINITIONS                      *
@@ -14,23 +14,21 @@ const fs = require('graceful-fs');
  * @param path Path to the directory to be deleted.
  */
 function deleteRecursive(path) {
-    if (fs.existsSync(path)) {
-        const parentStat = fs.statSync(path);
-        if  (parentStat.isDirectory()) {
-            const files = fs.readdirSync(path);
-            files.forEach(function (file) {
-                const curPath = path + "/" + file;
-                const childStat = fs.statSync(curPath);
-                if (childStat.isDirectory()) { // recurse
-                    deleteRecursive(curPath);
-                } else { // delete file
-                    fs.unlinkSync(curPath);
-                }
-            });
-            fs.rmdirSync(path);
-        } else {
-            fs.unlinkSync(path);
-        }
+    const parentStat = fs.statSync(path);
+    if  (parentStat.isDirectory()) {
+        const files = fs.readdirSync(path);
+        files.forEach(function (file) {
+            const curPath = path + "/" + file;
+            const childStat = fs.statSync(curPath);
+            if (childStat.isDirectory()) { // recurse
+                deleteRecursive(curPath);
+            } else { // delete file
+                fs.unlinkSync(curPath);
+            }
+        });
+        fs.rmdirSync(path);
+    } else {
+        fs.unlinkSync(path);
     }
 }
 
@@ -44,18 +42,14 @@ function deleteRecursive(path) {
 function copyDir(sourceDir, targetRoot) {
     const sourceFiles = fs.readdirSync(sourceDir);
     for (const file of sourceFiles) {
-        const sourceStat = fs.lstatSync(`${sourceDir}/${file}`);
+        const sourceStat = fs.statSync(`${sourceDir}/${file}`);
         if (sourceStat.isDirectory()) {
-            if (!fs.existsSync(`${targetRoot}/${file}`) || !fs.lstatSync(`${targetRoot}/${file}`).isDirectory()) {
+            if (!fs.existsSync(`${targetRoot}/${file}`) || !fs.statSync(`${targetRoot}/${file}`).isDirectory()) {
                 fs.mkdirSync(`${targetRoot}/${file}`);
             }
             copyDir(`${sourceDir}/${file}`, `${targetRoot}/${file}`)
         } else {
-            const reader = fs.createReadStream(`${sourceDir}/${file}`);
-            const writer = fs.createWriteStream(`${targetRoot}/${file}`);
-            reader.pipe(writer);
-            reader.close();
-            writer.close();
+            fs.copyFileSync(`${sourceDir}/${file}`, `${targetRoot}/${file}`);
         }
     }
 }
@@ -66,7 +60,7 @@ function copyDir(sourceDir, targetRoot) {
  * @param target Should contain the content afterwards
  */
 function mergeDirs(source, target) {
-    if (!fs.lstatSync(source).isDirectory() || !fs.lstatSync(target).isDirectory()) {
+    if (!fs.statSync(source).isDirectory() || !fs.statSync(target).isDirectory()) {
         console.error(`mergeDirs: source "${source}" and target "${target}" have to be directories!`);
         return;
     }
@@ -88,7 +82,7 @@ function makePr(repoName, cb) {
                 head: 'travis-update',
                 base: 'master',
                 body: 'This is PR was automatically created because Ultimate-Comparisons-BASE was updated.\n' +
-                    'Pease incorporate this PR into this comparison.',
+                'Pease incorporate this PR into this comparison.',
                 maintainer_can_modify: true
             }).then(function () {
                 console.log(`Made PR for ${repoName}`);
