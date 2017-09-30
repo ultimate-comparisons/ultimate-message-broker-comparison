@@ -3,6 +3,7 @@ const Git = require('simple-git');
 const git = Git('..');
 const async = require('async');
 const fs = require('file-system');
+const travisBranch = 'travis-update';
 
 /****************************************************
  *                 DEFINITIONS                      *
@@ -75,13 +76,13 @@ function mergeDirs(source, target) {
  * @param cb callback
  */
 function makePr(repoName, cb) {
-    const repo = gh.getRepo(getRepo(repoName));
+    const repo = gh.getRepo(repoName);
     repo.listPullRequests({state:'open'}).then(function (prs) {
         if (prs.filter(pr => pr.title !== 'Update of Ultimate-Comparison-BASE' &&
                 pr.user.login !== 'ultimate-comparison-genie').length !== 0) {
             repo.createPullRequest({
                 title: 'Update of Ultimate-Comparison-BASE',
-                head: 'travis-update',
+                head: travisBranch,
                 base: 'master',
                 body: 'This is PR was automatically created because Ultimate-Comparisons-BASE was updated.\n' +
                 'Pease incorporate this PR into this comparison.',
@@ -142,7 +143,7 @@ function makeUpdate(gt, repoName, cb) {
     gt.add('.').exec(function () {
         gt.commit('Travis commit for travis-update').exec(function () {
             console.log('try to push');
-            gt.push('origin', 'travis-update').exec(function () {
+            gt.push('origin', travisBranch).exec(function () {
                 console.log(`Pushed for ${gt._baseDir}`);
                 makePr(repoName, cb);
                 deleteRecursive(path);
@@ -186,12 +187,12 @@ uc.getRepos().then(rs => {
                         if (err) {
                             console.error(err);
                         }
-                        if (Object.keys(branches.branches).indexOf('travis-update') === -1) {
-                            gt.checkoutLocalBranch('travis-update', function () {
+                        if (Object.keys(branches.branches).indexOf(travisBranch) === -1) {
+                            gt.checkoutLocalBranch(travisBranch, function () {
                                 makeUpdate(gt, repo.fullname, cb);
                             });
                         } else {
-                            gt.checkout('travis-update', function () {
+                            gt.checkout(travisBranch, function () {
                                 makeUpdate(gt, repo.fullname, cb);
                             });
                         }
@@ -217,12 +218,12 @@ uc.getRepos().then(rs => {
                     if (err) {
                         console.error(err);
                     }
-                    if (branches.branches.keys().indexOf('travis-update') === -1) {
-                        gt.checkoutLocalBranch('travis-update', function () {
+                    if (branches.branches.keys().indexOf(travisBranch) === -1) {
+                        gt.checkoutLocalBranch(travisBranch, function () {
                             makeUpdate(gt, repo.fullname, cb);
                         });
                     } else {
-                        gt.checkout('travis-update', function () {
+                        gt.checkout(travisBranch, function () {
                             makeUpdate(gt, repo.fullname, cb);
                         });
                     }
