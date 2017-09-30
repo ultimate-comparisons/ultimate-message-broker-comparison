@@ -15,15 +15,19 @@ const fs = require('fs');
  */
 function deleteRecursive(path) {
     if (fs.existsSync(path)) {
-        fs.readdirSync(path).forEach(function(file){
-            const curPath = path + "/" + file;
-            if (fs.lstatSync(curPath).isDirectory()) { // recurse
-                deleteRecursive(curPath);
-            } else { // delete file
-                fs.unlinkSync(curPath);
-            }
-        });
-        fs.rmdirSync(path);
+        if  (fs.fstatSync(path).isDirectory()) {
+            fs.readdirSync(path).forEach(function (file) {
+                const curPath = path + "/" + file;
+                if (fs.lstatSync(curPath).isDirectory()) { // recurse
+                    deleteRecursive(curPath);
+                } else { // delete file
+                    fs.unlinkSync(curPath);
+                }
+            });
+            fs.rmdirSync(path);
+        } else {
+            fs.unlinkSync(path);
+        }
     }
 }
 
