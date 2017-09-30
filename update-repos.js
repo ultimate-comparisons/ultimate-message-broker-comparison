@@ -16,7 +16,7 @@ const fs = require('graceful-fs');
 function deleteRecursive(path) {
     if (fs.existsSync(path)) {
         const parentStat = fs.statSync(path);
-        if  (parentStat(path).isDirectory()) {
+        if  (parentStat.isDirectory()) {
             const files = fs.readdirSync(path);
             files.forEach(function (file) {
                 const curPath = path + "/" + file;
@@ -46,8 +46,7 @@ function copyDir(sourceDir, targetRoot) {
     for (const file of sourceFiles) {
         const sourceStat = fs.lstatSync(`${sourceDir}/${file}`);
         if (sourceStat.isDirectory()) {
-            const targetStat = fs.lstatSync(`${targetRoot}/${file}`);
-            if (!fs.existsSync(`${targetRoot}/${file}`) || !targetStat.isDirectory()) {
+            if (!fs.existsSync(`${targetRoot}/${file}`) || !fs.lstatSync(`${targetRoot}/${file}`).isDirectory()) {
                 fs.mkdirSync(`${targetRoot}/${file}`);
             }
             copyDir(`${sourceDir}/${file}`, `${targetRoot}/${file}`)
