@@ -79,6 +79,7 @@ function makePr(repoName, cb) {
                     'Pease incorporate this PR into this comparison.',
                 maintainer_can_modify: true
             }).then(function () {
+                console.log(`Made PR for ${repoName}`);
                 cb();
             }).catch(function (error) {
                 console.error(error);
@@ -133,6 +134,7 @@ function makeUpdate(gt, repoName, cb) {
     gt.add(path).then(function () {
         gt.commit('Travis commit for travis-update').then(function () {
             gt.push('origin', 'travis-update').then(function () {
+                console.log(`Pushed for ${gt._baseDir}`);
                 makePr(repoName, cb);
             });
         });
@@ -157,6 +159,8 @@ uc.getRepos().then(rs => {
     const repos = rs.data
         .map(r => { return { fullname: r.full_name, name: r.full_name.split('/')[1]}; })
         .filter(r => r.name !== 'ultimate-comparison-BASE' && !r.name.endsWith('.io'));
+
+    console.log("Repos in the organization: " + JSON.stringify(repos));
 
     async.eachOf(repos, function (repo, index, cb) {
         git.clone(`git@github.com:${repo.fullname}.git`, function () {
