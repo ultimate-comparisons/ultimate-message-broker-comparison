@@ -154,8 +154,10 @@ const apiToken = process.argv[2];
 const gh = new Github({
     token: apiToken
 });
+console.log('gh created')
 const uc = gh.getOrganization('ultimate-comparisons-test');
 uc.getRepos().then(rs => {
+    console.log('got repos')
     const repos = rs.data
         .map(r => { return { fullname: r.full_name, name: r.full_name.split('/')[1]}; })
         .filter(r => r.name !== 'ultimate-comparison-BASE' && !r.name.endsWith('.io'));
@@ -163,6 +165,7 @@ uc.getRepos().then(rs => {
     console.log("Repos in the organization: " + JSON.stringify(repos));
 
     async.eachOf(repos, function (repo, index, cb) {
+        console.log(`iterate ${repo.fullname}`);
         git.clone(`git@github.com:${repo.fullname}.git`, function () {
             const gt = Git('../' + repo.name);
             gt.addConfig('user.email', 'hueneburg.armin@gmail.com').then(function() {
