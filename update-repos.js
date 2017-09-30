@@ -174,7 +174,7 @@ uc.getRepos().then(rs => {
                         if (err) {
                             console.error(err);
                         }
-                        if (branches.branches.keys().indexOf('travis-update') === -1) {
+                        if (Object.keys(branches.branches).indexOf('travis-update') === -1) {
                             gt.checkoutLocalBranch('travis-update', function () {
                                 makeUpdate(gt, repo.fullname, cb);
                             });
