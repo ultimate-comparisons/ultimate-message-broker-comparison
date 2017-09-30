@@ -139,7 +139,7 @@ function makeUpdate(gt, repoName, cb) {
         }
     });
 
-    gt.add(path).exec(function () {
+    gt.add('.').exec(function () {
         gt.commit('Travis commit for travis-update').exec(function () {
             console.log('try to push');
             gt.push('origin', 'travis-update').exec(function () {
