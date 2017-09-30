@@ -133,7 +133,7 @@ disable_expanded_output() {
 update_repos () {
   echo "Start to update repos"
   which node
-  npm install github-api simple-git
+  npm install --dev
   node update-repos.js ${GITHUB_TOKEN}
 }
 
