@@ -143,13 +143,15 @@ function makeUpdate(gt, repoName, cb) {
             }
         });
 
-        gt.add('.').exec(function () {
-            gt.commit('Travis commit for travis-update').exec(function () {
-                console.log('try to push');
-                gt.push(['origin', travisBranch]).exec(function () {
-                    console.log(`Pushed for ${gt._baseDir}`);
-                    makePr(repoName, cb);
-                    deleteRecursive(path);
+        gt.fetch(['--all']).exec(function () {
+            gt.add('.').exec(function () {
+                gt.commit('Travis commit for travis-update').exec(function () {
+                    console.log('try to push');
+                    gt.push(['origin', travisBranch]).exec(function () {
+                        console.log(`Pushed for ${gt._baseDir}`);
+                        makePr(repoName, cb);
+                        deleteRecursive(path);
+                    });
                 });
             });
         });
