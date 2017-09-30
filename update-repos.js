@@ -106,47 +106,51 @@ function makePr(repoName, cb) {
  * @param cb callback
  */
 function makeUpdate(gt, repoName, cb) {
-    const path = gt._baseDir;
-    const ignores = [
-        'comparison-configuration',
-        'comparison-elements',
-        'README.md',
-        'README-THING.template.md',
-        '.travis.yml',
-        'id_rsa.enc',
-        'LICENSE',
-        'citation/acm-siggraph.csl',
-        'citation/default.bib'
-    ];
-    for (const ignore of ignores) {
-        try {
-            deleteRecursive(`${path}/${ignore}`);
-        } catch (error) {
-            console.error(error);
-        }
-    }
+    gt.branchLocal(function (err, banches) {
+        console.log(branches);
 
-    ignores.push('.git');
-
-    fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1).forEach(file => {
-        try {
-            if (fs.statSync(file).isDirectory()) {
-                mergeDirs(file, path);
-            } else {
-                fs.createReadStream(file).pipe(fs.createWriteStream(`${path}/${file}`));
+        const path = gt._baseDir;
+        const ignores = [
+            'comparison-configuration',
+            'comparison-elements',
+            'README.md',
+            'README-THING.template.md',
+            '.travis.yml',
+            'id_rsa.enc',
+            'LICENSE',
+            'citation/acm-siggraph.csl',
+            'citation/default.bib'
+        ];
+        for (const ignore of ignores) {
+            try {
+                deleteRecursive(`${path}/${ignore}`);
+            } catch (error) {
+                console.error(error);
             }
-        } catch (error) {
-            console.error(error);
         }
-    });
 
-    gt.add('.').exec(function () {
-        gt.commit('Travis commit for travis-update').exec(function () {
-            console.log('try to push');
-            gt.push('origin', travisBranch).exec(function () {
-                console.log(`Pushed for ${gt._baseDir}`);
-                makePr(repoName, cb);
-                deleteRecursive(path);
+        ignores.push('.git');
+
+        fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1).forEach(file => {
+            try {
+                if (fs.statSync(file).isDirectory()) {
+                    mergeDirs(file, path);
+                } else {
+                    fs.createReadStream(file).pipe(fs.createWriteStream(`${path}/${file}`));
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        });
+
+        gt.add('.').exec(function () {
+            gt.commit('Travis commit for travis-update').exec(function () {
+                console.log('try to push');
+                gt.push('origin', travisBranch).exec(function () {
+                    console.log(`Pushed for ${gt._baseDir}`);
+                    makePr(repoName, cb);
+                    deleteRecursive(path);
+                });
             });
         });
     });
