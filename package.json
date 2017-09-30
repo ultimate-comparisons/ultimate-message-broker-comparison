@@ -26,6 +26,7 @@
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "graceful-fs": "^4.1.11",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-concat-json": "^1.0.0",
@@ -78,6 +79,7 @@
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.0-rc.4",
     "showdown": "^1.4.2",
+    "simple-git": "^1.77.0",
     "systemjs": "0.19.27",
     "tslint": "^4.5.1",
     "zone.js": "^0.7.2"

@@ -2,7 +2,7 @@ const Github = require('github-api');
 const Git = require('simple-git');
 const git = Git('..');
 const async = require('async');
-const fs = require('fs');
+const fs = require('graceful-fs');
 
 /****************************************************
  *                 DEFINITIONS                      *
