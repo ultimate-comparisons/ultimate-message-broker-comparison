@@ -1,6 +1,5 @@
 const Github = require('github-api');
 const Git = require('simple-git');
-const git = Git('..');
 const async = require('async');
 const fs = require('file-system');
 const travisBranch = 'travis-update';
@@ -183,10 +182,10 @@ uc.getRepos().then(rs => {
     async.eachOf(repos, function (repo, index, cb) {
         console.log(`iterate ${repo.fullname}`);
         fs.mkdirSync(`../${repo.name}`);
-        git.clone(`git@github.com:${repo.fullname}.git`, `../${repo.name}`, function () {
+        const gt = Git(`../${repo.name}`);
+        gt.clone(`git@github.com:${repo.fullname}.git`, function () {
             console.log('cloned');
             console.log(fs.readdirSync(`../${repo.name}`))
-            const gt = Git(`../${repo.name}`);
             gt.addConfig('user.email', 'hueneburg.armin@gmail.com').exec(function() {
                 console.log('user.email');
                 gt.addConfig('user.name', 'Armin Hüneburg').exec(function() {
