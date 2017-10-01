@@ -143,7 +143,7 @@ function makeUpdate(gt, repoName, cb) {
         gt.add('.').exec(function () {
             gt.commit('Travis commit for travis-update').exec(function () {
                 gt.push(['-f', 'origin', travisBranch]).exec(function () {
-                    console.log(`Pushed for ${gt._baseDir}`);
+                    console.log(`Pushed to ${gt._baseDir}`);
                     makePr(repoName, cb);
                     deleteRecursive(path);
                 });
@@ -171,7 +171,7 @@ uc.getRepos().then(rs => {
         .map(r => { return { fullname: r.full_name, name: r.full_name.split('/')[1]}; })
         .filter(r => r.name !== 'ultimate-comparison-BASE' && !r.name.endsWith('.io'));
 
-    console.log("Repos in the organization: " + JSON.stringify(repos));
+    console.log("Repos in the organization: " + JSON.stringify(repos, null, 2));
 
     async.eachOf(repos, function (repo, index, cb) {
         console.log(`iterate ${repo.fullname}`);
