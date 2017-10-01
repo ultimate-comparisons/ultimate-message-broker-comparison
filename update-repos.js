@@ -185,7 +185,7 @@ uc.getRepos().then(rs => {
         fs.mkdirSync(`../${repo.name}`);
         git.clone(`git@github.com:${repo.fullname}.git`, `../${repo.name}`, function () {
             console.log('cloned');
-            console.log(fs.readdirSync(`../${repo.name}`))
+            console.log(fs.readdirSync(`..`))
             const gt = Git(`../${repo.name}`);
             gt.addConfig('user.email', 'hueneburg.armin@gmail.com').exec(function() {
                 console.log('user.email');
