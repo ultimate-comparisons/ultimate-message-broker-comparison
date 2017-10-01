@@ -127,6 +127,7 @@ function makeUpdate(gt, repoName, cb) {
         }
 
         ignores.push('.git');
+        ignores.push('node_modules');
 
         fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1).forEach(file => {
             try {
