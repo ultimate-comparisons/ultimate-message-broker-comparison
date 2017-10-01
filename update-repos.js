@@ -43,18 +43,17 @@ function deleteRecursive(path) {
  */
 function copyDir(sourceDir, targetRoot) {
     const sourceFiles = fs.readdirSync(sourceDir);
-    console.log(sourceFiles)
     for (const file of sourceFiles) {
         const sourceStat = fs.statSync(`${sourceDir}/${file}`);
         if (sourceStat.isDirectory()) {
             if (!fs.existsSync(`${targetRoot}/${file}`) || !fs.statSync(`${targetRoot}/${file}`).isDirectory()) {
                 fs.mkdirSync(`${targetRoot}/${file}`);
             }
-            console.log(`copy dir ${sourceDir}/${file} to ${targetRoot}/${file}`);
-            copyDir(`${sourceDir}/${file}`, `${targetRoot}/${file}`)
+            console.log(`copy dir ${sourceDir}/${file} to ${targetRoot}/${sourceDir}/${file}`);
+            copyDir(`${sourceDir}/${file}`, `${targetRoot}`)
         } else {
-            console.log(`copy file ${sourceDir}/${file} to ${targetRoot}/${file}`);
-            fs.copyFileSync(`${sourceDir}/${file}`, `${targetRoot}/${file}`);
+            console.log(`copy file ${sourceDir}/${file} to ${targetRoot}/${sourceDir}/${file}`);
+            fs.copyFileSync(`${sourceDir}/${file}`, `${targetRoot}/${sourceDir}/${file}`);
         }
     }
 }
