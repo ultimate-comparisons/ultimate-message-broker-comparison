@@ -184,10 +184,14 @@ uc.getRepos().then(rs => {
         console.log(`iterate ${repo.fullname}`);
         fs.mkdirSync(`../${repo.name}`);
         git.clone(`git@github.com:${repo.fullname}.git`, `../${repo.name}`, function () {
+            console.log('cloned');
             const gt = Git(`../${repo.name}`);
             gt.addConfig('user.email', 'hueneburg.armin@gmail.com').exec(function() {
+                console.log('user.email');
                 gt.addConfig('user.name', 'Armin Hüneburg').exec(function() {
+                    console.log('user.name');
                     gt.branch(function (err, branches) {
+                        console.log(branches);
                         if (err) {
                             console.error(err);
                         }
