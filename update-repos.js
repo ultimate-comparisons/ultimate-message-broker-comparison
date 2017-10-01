@@ -14,7 +14,6 @@ const travisBranch = 'travis-update';
  * @param path Path to the directory to be deleted.
  */
 function deleteRecursive(path) {
-    console.log(`delete ${path}`);
     if (fs.existsSync(path)) {
         const parentStat = fs.statSync(path);
         if (parentStat.isDirectory()) {
@@ -52,6 +51,7 @@ function copyDir(sourceDir, targetRoot) {
             }
             copyDir(`${sourceDir}/${file}`, `${targetRoot}/${file}`)
         } else {
+            console.log(`copy file ${sourceDir}/${file} to ${targetRoot}/${file}`);
             fs.copyFileSync(`${sourceDir}/${file}`, `${targetRoot}/${file}`);
         }
     }
@@ -64,7 +64,6 @@ function copyDir(sourceDir, targetRoot) {
  */
 function mergeDirs(source, target) {
     if (!fs.statSync(source).isDirectory() || !fs.statSync(target).isDirectory()) {
-        console.error(`mergeDirs: source "${source}" and target "${target}" have to be directories!`);
         return;
     }
     copyDir(source, target);
@@ -79,7 +78,7 @@ function makePr(repoName, cb) {
     const repo = gh.getRepo(repoName);
     repo.listPullRequests({state:'open'}).then(function (prs) {
         console.log(prs.data);
-        const myPrs = prs.data.filter(pr => pr.title !== 'Update of Ultimate-Comparison-BASE');
+        const myPrs = prs.data.filter(pr => pr.title === 'Update of Ultimate-Comparison-BASE');
         console.log(myPrs);
         if (myPrs.length === 0) {
             repo.createPullRequest({
@@ -131,6 +130,7 @@ function makeUpdate(gt, repoName, cb) {
     ignores.push('.git');
     ignores.push('node_modules');
     ignores.push('trypings');
+    ignores.push('www');
 
     async.eachOf(fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1), (file, index, cb) => {
         console.log(`merge ${file}`);
