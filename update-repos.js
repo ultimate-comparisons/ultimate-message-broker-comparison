@@ -192,6 +192,8 @@ uc.getRepos().then(rs => {
                             console.error(err);
                         }
                         if (Object.keys(branches.branches).indexOf(travisBranch) === -1) {
+                            console.log(gt._baseDir);
+                            console.log(fs.readdirSync(gt._baseDir));
                             gt.checkoutLocalBranch(travisBranch, function () {
                                 makeUpdate(gt, repo.fullname, cb);
                             });

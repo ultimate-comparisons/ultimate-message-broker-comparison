@@ -133,7 +133,7 @@ disable_expanded_output() {
 update_repos () {
   echo "Start to update repos"
   which node
-  npm install --dev
+  npm install --only=dev
   node update-repos.js ${GITHUB_TOKEN}
 }
 
