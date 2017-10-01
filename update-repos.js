@@ -14,6 +14,7 @@ const travisBranch = 'travis-update';
  * @param path Path to the directory to be deleted.
  */
 function deleteRecursive(path) {
+    console.log(`delete ${path}`);
     if (fs.existsSync(path)) {
         const parentStat = fs.statSync(path);
         if (parentStat.isDirectory()) {
@@ -43,7 +44,6 @@ function deleteRecursive(path) {
  */
 function copyDir(sourceDir, targetRoot) {
     const sourceFiles = fs.readdirSync(sourceDir);
-    console.log(`Copy ${sourceDir} to ${targetRoot}`);
     for (const file of sourceFiles) {
         const sourceStat = fs.statSync(`${sourceDir}/${file}`);
         if (sourceStat.isDirectory()) {
@@ -79,8 +79,7 @@ function makePr(repoName, cb) {
     const repo = gh.getRepo(repoName);
     repo.listPullRequests({state:'open'}).then(function (prs) {
         console.log(prs.data);
-        const myPrs = prs.data.filter(pr => pr.title !== 'Update of Ultimate-Comparison-BASE' &&
-            pr.user.login !== 'ultimate-comparison-genie');
+        const myPrs = prs.data.filter(pr => pr.title !== 'Update of Ultimate-Comparison-BASE');
         console.log(myPrs);
         if (myPrs.length === 0) {
             repo.createPullRequest({
@@ -109,50 +108,48 @@ function makePr(repoName, cb) {
  * @param cb callback
  */
 function makeUpdate(gt, repoName, cb) {
-    gt.getRemotes(true, function (err, branches) {
-        const path = gt._baseDir;
-        const ignores = [
-            'comparison-configuration',
-            'comparison-elements',
-            'README.md',
-            'README-THING.template.md',
-            '.travis.yml',
-            'id_rsa.enc',
-            'LICENSE',
-            'citation/acm-siggraph.csl',
-            'citation/default.bib'
-        ];
-        for (const ignore of ignores) {
-            try {
-                deleteRecursive(`${path}/${ignore}`);
-            } catch (error) {
-                console.error(error);
-            }
+    const path = gt._baseDir;
+    const ignores = [
+        'comparison-configuration',
+        'comparison-elements',
+        'README.md',
+        'README-THING.template.md',
+        '.travis.yml',
+        'id_rsa.enc',
+        'LICENSE',
+        'citation/acm-siggraph.csl',
+        'citation/default.bib'
+    ];
+    for (const ignore of ignores) {
+        try {
+            deleteRecursive(`${path}/${ignore}`);
+        } catch (error) {
+            console.error(error);
         }
+    }
 
-        ignores.push('.git');
-        ignores.push('node_modules');
-        ignores.push('trypings');
+    ignores.push('.git');
+    ignores.push('node_modules');
+    ignores.push('trypings');
 
-        fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1).forEach(file => {
-            try {
-                if (fs.statSync(file).isDirectory()) {
-                    mergeDirs(file, path);
-                } else {
-                    fs.createReadStream(file).pipe(fs.createWriteStream(`${path}/${file}`));
-                }
-            } catch (error) {
-                console.error(error);
+    fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1).forEach(file => {
+        try {
+            if (fs.statSync(file).isDirectory()) {
+                mergeDirs(file, path);
+            } else {
+                fs.createReadStream(file).pipe(fs.createWriteStream(`${path}/${file}`));
             }
-        });
+        } catch (error) {
+            console.error(error);
+        }
+    });
 
-        gt.add('.').exec(function () {
-            gt.commit('Travis commit for travis-update').exec(function () {
-                gt.push(['-f', 'origin', travisBranch]).exec(function () {
-                    console.log(`Pushed to ${gt._baseDir}`);
-                    makePr(repoName, cb);
-                    deleteRecursive(path);
-                });
+    gt.add('.').exec(function () {
+        gt.commit('Travis commit for travis-update').exec(function () {
+            gt.push(['-f', 'origin', travisBranch]).exec(function () {
+                console.log(`Pushed to ${gt._baseDir}`);
+                makePr(repoName, cb);
+                deleteRecursive(path);
             });
         });
     });
