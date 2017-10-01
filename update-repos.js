@@ -132,7 +132,7 @@ function makeUpdate(gt, repoName, cb) {
     ignores.push('node_modules');
     ignores.push('trypings');
 
-    fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1).forEach(file => {
+    async.eachOf(fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1), (file, index, cb) => {
         try {
             if (fs.statSync(file).isDirectory()) {
                 mergeDirs(file, path);
@@ -141,15 +141,17 @@ function makeUpdate(gt, repoName, cb) {
             }
         } catch (error) {
             console.error(error);
+        } finally {
+            cb();
         }
-    });
-
-    gt.add('.').exec(function () {
-        gt.commit('Travis commit for travis-update').exec(function () {
-            gt.push(['-f', 'origin', travisBranch]).exec(function () {
-                console.log(`Pushed to ${gt._baseDir}`);
-                makePr(repoName, cb);
-                deleteRecursive(path);
+    }, () => {
+        gt.add('.').exec(function () {
+            gt.commit('Travis commit for travis-update').exec(function () {
+                gt.push(['-f', 'origin', travisBranch]).exec(function () {
+                    console.log(`Pushed to ${gt._baseDir}`);
+                    makePr(repoName, cb);
+                    deleteRecursive(path);
+                });
             });
         });
     });
