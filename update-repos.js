@@ -133,6 +133,7 @@ function makeUpdate(gt, repoName, cb) {
     ignores.push('trypings');
 
     async.eachOf(fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1), (file, index, cb) => {
+        console.log(`merge ${file}`);
         try {
             if (fs.statSync(file).isDirectory()) {
                 mergeDirs(file, path);
