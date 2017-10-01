@@ -118,20 +118,12 @@ function makeUpdate(gt, repoName, cb) {
         'id_rsa.enc',
         'LICENSE',
         'citation/acm-siggraph.csl',
-        'citation/default.bib'
+        'citation/default.bib',
+        '.git',
+        'node_modules',
+        'typings',
+        'www'
     ];
-    for (const ignore of ignores) {
-        try {
-            deleteRecursive(`${path}/${ignore}`);
-        } catch (error) {
-            console.error(error);
-        }
-    }
-
-    ignores.push('.git');
-    ignores.push('node_modules');
-    ignores.push('trypings');
-    ignores.push('www');
 
     async.eachOf(fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1), (file, index, cb) => {
         console.log(`merge ${file}`);
@@ -147,7 +139,7 @@ function makeUpdate(gt, repoName, cb) {
             cb();
         }
     }, () => {
-        gt.add('.').exec(function () {
+        gt.add(fs.readdirSync(gt._baseDir).filter(f => ignores.indexOf(f) === -1)).exec(function () {
             gt.commit('Travis commit for travis-update').exec(function () {
                 gt.push(['-f', 'origin', travisBranch]).exec(function () {
                     console.log(`Pushed to ${gt._baseDir}`);
