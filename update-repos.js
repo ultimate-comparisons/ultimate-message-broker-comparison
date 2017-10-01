@@ -43,6 +43,7 @@ function deleteRecursive(path) {
  */
 function copyDir(sourceDir, targetRoot) {
     const sourceFiles = fs.readdirSync(sourceDir);
+    console.log(`Copy ${sourceDir} to ${targetRoot}`);
     for (const file of sourceFiles) {
         const sourceStat = fs.statSync(`${sourceDir}/${file}`);
         if (sourceStat.isDirectory()) {
@@ -77,6 +78,7 @@ function mergeDirs(source, target) {
 function makePr(repoName, cb) {
     const repo = gh.getRepo(repoName);
     repo.listPullRequests({state:'open'}).then(function (prs) {
+        console.log(prs);
         if (prs.data.filter(pr => pr.title !== 'Update of Ultimate-Comparison-BASE' &&
                 pr.user.login !== 'ultimate-comparison-genie').length === 0) {
             repo.createPullRequest({
