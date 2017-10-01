@@ -77,6 +77,7 @@ function mergeDirs(source, target) {
 function makePr(repoName, cb) {
     const repo = gh.getRepo(repoName);
     repo.listPullRequests({state:'open'}).then(function (prs) {
+        console.log(prs.data);
         if (prs.data.filter(pr => pr.title !== 'Update of Ultimate-Comparison-BASE' &&
                 pr.user.login !== 'ultimate-comparison-genie').length !== 0) {
             repo.createPullRequest({
@@ -106,9 +107,6 @@ function makePr(repoName, cb) {
  */
 function makeUpdate(gt, repoName, cb) {
     gt.getRemotes(true, function (err, branches) {
-        console.log(gt._baseDir);
-        console.log(branches);
-
         const path = gt._baseDir;
         const ignores = [
             'comparison-configuration',
@@ -145,7 +143,6 @@ function makeUpdate(gt, repoName, cb) {
 
         gt.add('.').exec(function () {
             gt.commit('Travis commit for travis-update').exec(function () {
-                console.log('try to push');
                 gt.push(['origin', travisBranch]).exec(function () {
                     console.log(`Pushed for ${gt._baseDir}`);
                     makePr(repoName, cb);
@@ -169,10 +166,8 @@ const apiToken = process.argv[2];
 const gh = new Github({
     token: apiToken
 });
-console.log('gh created')
 const uc = gh.getOrganization('ultimate-comparisons-test');
 uc.getRepos().then(rs => {
-    console.log('got repos')
     const repos = rs.data
         .map(r => { return { fullname: r.full_name, name: r.full_name.split('/')[1]}; })
         .filter(r => r.name !== 'ultimate-comparison-BASE' && !r.name.endsWith('.io'));
@@ -184,20 +179,13 @@ uc.getRepos().then(rs => {
         fs.mkdirSync(`../${repo.name}`);
         const gt = Git(`../${repo.name}`);
         gt.clone(`git@github.com:${repo.fullname}.git`, `../${repo.name}`, function () {
-            console.log('cloned');
-            console.log(fs.readdirSync(`../${repo.name}`))
             gt.addConfig('user.email', 'hueneburg.armin@gmail.com').exec(function() {
-                console.log('user.email');
                 gt.addConfig('user.name', 'Armin Hüneburg').exec(function() {
-                    console.log('user.name');
                     gt.branch(function (err, branches) {
-                        console.log(branches);
                         if (err) {
                             console.error(err);
                         }
                         if (Object.keys(branches.branches).indexOf(travisBranch) === -1) {
-                            console.log(gt._baseDir);
-                            console.log(fs.readdirSync(gt._baseDir));
                             gt.checkoutLocalBranch(travisBranch, function () {
                                 makeUpdate(gt, repo.fullname, cb);
                             });
