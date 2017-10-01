@@ -182,7 +182,7 @@ uc.getRepos().then(rs => {
 
     async.eachOf(repos, function (repo, index, cb) {
         console.log(`iterate ${repo.fullname}`);
-        fs.mkdirSync(repo.name);
+        fs.mkdirSync(`../${repo.name}`);
         git.clone(`git@github.com:${repo.fullname}.git`, `../${repo.name}`, function () {
             const gt = Git(`../${repo.name}`);
             gt.addConfig('user.email', 'hueneburg.armin@gmail.com').exec(function() {
