@@ -77,9 +77,8 @@ function mergeDirs(source, target) {
 function makePr(repoName, cb) {
     const repo = gh.getRepo(repoName);
     repo.listPullRequests({state:'open'}).then(function (prs) {
-        console.log(prs.data);
         if (prs.data.filter(pr => pr.title !== 'Update of Ultimate-Comparison-BASE' &&
-                pr.user.login !== 'ultimate-comparison-genie').length !== 0) {
+                pr.user.login !== 'ultimate-comparison-genie').length === 0) {
             repo.createPullRequest({
                 title: 'Update of Ultimate-Comparison-BASE',
                 head: travisBranch,
