@@ -50,6 +50,7 @@ function copyDir(sourceDir, targetRoot) {
             if (!fs.existsSync(`${targetRoot}/${file}`) || !fs.statSync(`${targetRoot}/${file}`).isDirectory()) {
                 fs.mkdirSync(`${targetRoot}/${file}`);
             }
+            console.log(`copy dir ${sourceDir}/${file} to ${targetRoot}/${file}`);
             copyDir(`${sourceDir}/${file}`, `${targetRoot}/${file}`)
         } else {
             console.log(`copy file ${sourceDir}/${file} to ${targetRoot}/${file}`);
