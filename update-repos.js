@@ -43,6 +43,7 @@ function deleteRecursive(path) {
  */
 function copyDir(sourceDir, targetRoot) {
     const sourceFiles = fs.readdirSync(sourceDir);
+    console.log(sourceFiles)
     for (const file of sourceFiles) {
         const sourceStat = fs.statSync(`${sourceDir}/${file}`);
         if (sourceStat.isDirectory()) {
