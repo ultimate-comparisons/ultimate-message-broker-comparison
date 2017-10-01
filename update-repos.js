@@ -78,9 +78,11 @@ function mergeDirs(source, target) {
 function makePr(repoName, cb) {
     const repo = gh.getRepo(repoName);
     repo.listPullRequests({state:'open'}).then(function (prs) {
-        console.log(prs);
-        if (prs.data.filter(pr => pr.title !== 'Update of Ultimate-Comparison-BASE' &&
-                pr.user.login !== 'ultimate-comparison-genie').length === 0) {
+        console.log(prs.data);
+        const myPrs = prs.data.filter(pr => pr.title !== 'Update of Ultimate-Comparison-BASE' &&
+            pr.user.login !== 'ultimate-comparison-genie');
+        console.log(myPrs);
+        if (myPrs.length === 0) {
             repo.createPullRequest({
                 title: 'Update of Ultimate-Comparison-BASE',
                 head: travisBranch,
@@ -130,6 +132,7 @@ function makeUpdate(gt, repoName, cb) {
 
         ignores.push('.git');
         ignores.push('node_modules');
+        ignores.push('trypings');
 
         fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1).forEach(file => {
             try {
