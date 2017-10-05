@@ -47,12 +47,10 @@ function copyDir(sourceDir, targetRoot) {
         const sourceStat = fs.statSync(`${sourceDir}/${file}`);
         if (sourceStat.isDirectory()) {
             if (!fs.existsSync(`${targetRoot}/${file}`) || !fs.statSync(`${targetRoot}/${file}`).isDirectory()) {
-                fs.mkdirSync(`${targetRoot}/${file}`);
+                fs.mkdirSync(`${targetRoot}/${sourceDir}/${file}`);
             }
-            console.log(`copy dir ${sourceDir}/${file} to ${targetRoot}/${sourceDir}/${file}`);
             copyDir(`${sourceDir}/${file}`, `${targetRoot}`)
         } else {
-            console.log(`copy file ${sourceDir}/${file} to ${targetRoot}/${sourceDir}/${file}`);
             fs.copyFileSync(`${sourceDir}/${file}`, `${targetRoot}/${sourceDir}/${file}`);
         }
     }
@@ -78,10 +76,8 @@ function mergeDirs(source, target) {
 function makePr(repoName, cb) {
     const repo = gh.getRepo(repoName);
     repo.listPullRequests({state:'open'}).then(function (prs) {
-        console.log(prs.data);
-        const myPrs = prs.data.filter(pr => pr.title === 'Update of Ultimate-Comparison-BASE');
-        console.log(myPrs);
-        if (myPrs.length === 0) {
+        if (prs.data.filter(pr => pr.title === 'Update of Ultimate-Comparison-BASE' &&
+                pr.user.login === 'ultimate-comparison-genie').length === 0) {
             repo.createPullRequest({
                 title: 'Update of Ultimate-Comparison-BASE',
                 head: travisBranch,
@@ -208,7 +204,11 @@ uc.getRepos().then(rs => {
             .map(e => { return {fullname: e, name: e.split('/')[1]}; });
 
         async.eachOf(foreignRepos, function (repo, index, cb) {
-            git.clone(`git@github.com:${repo.fullname}.git`, function () {
+            let r = `git@github.com:${repo.fullname}`;
+            if (!r.endsWith('.git')) {
+                r += '.git';
+            }
+            git.clone(r, function () {
                 const gt = Git(repo.name);
                 gt.branch(function (err, branches) {
                     if (err) {
