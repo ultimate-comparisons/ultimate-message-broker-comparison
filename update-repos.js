@@ -112,13 +112,16 @@ function makeUpdate(gt, repoName, cb) {
         'README-THING.template.md',
         '.travis.yml',
         'id_rsa.enc',
+        'id_rsa',
         'LICENSE',
         'citation/acm-siggraph.csl',
         'citation/default.bib',
         '.git',
         'node_modules',
         'typings',
-        'www'
+        'www',
+        'github_deploy_key',
+        'github_deploy_key.enc'
     ];
 
     async.eachOf(fs.readdirSync('.').filter(f => ignores.indexOf(f) === -1), (file, index, cb) => {
@@ -160,7 +163,7 @@ const apiToken = process.argv[2];
 const gh = new Github({
     token: apiToken
 });
-const uc = gh.getOrganization('ultimate-comparisons-test');
+const uc = gh.getOrganization('ultimate-comparisons');
 uc.getRepos().then(rs => {
     const repos = rs.data
         .map(r => { return { fullname: r.full_name, name: r.full_name.split('/')[1]}; })
