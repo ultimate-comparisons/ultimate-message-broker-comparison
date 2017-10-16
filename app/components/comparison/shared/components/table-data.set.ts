@@ -7,7 +7,11 @@ export class TableDataSet {
     private set: Array<TableData> = [];
     public ready = false;
 
-    constructor(jsonObj: any) {
+    constructor() {
+
+    }
+
+    public load(jsonObj: any) {
         jsonObj.forEach(obj => {
             const lcls: LabelCls = new LabelCls();
             const values: any = {};
@@ -55,11 +59,20 @@ export class TableDataSet {
                     }
                 }
             }
+            const foregroundColors: ColorDictionary = new ColorDictionary();
+            if (obj.type && obj.type.values) {
+                for (const v of obj.type.values) {
+                    if (v.foreground) {
+                        foregroundColors.setColor(v.name, v.foreground);
+                    }
+                }
+            }
             const type: Type = new Type(
                 obj.type.tag,
                 obj.type.class,
                 lcls,
-                colors
+                colors,
+                foregroundColors
             );
             let order = obj.order;
             if (!isNullOrUndefined(order)) {
@@ -83,10 +96,16 @@ export class TableDataSet {
     }
 
     public getTableData(tag: string): TableData {
+        if (!this.ready) {
+            return new TableData();
+        }
         return this.tableDataSet[tag] ? this.tableDataSet[tag] : new TableData();
     }
 
     public getTableDataArray(): Array<TableData> {
+        if (!this.ready) {
+            return [];
+        }
         let size = 0;
         for (const key in this.tableDataSet) {
             if (!this.tableDataSet.hasOwnProperty(key)) {
