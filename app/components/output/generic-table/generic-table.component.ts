@@ -14,6 +14,11 @@ import { ComparisonCitationService } from './../../comparison/components/compari
 import { ComparisonConfigService } from '../../comparison/components/comparison-config.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Http } from '@angular/http';
+import { ComparisonComponent } from '../../comparison/components/comparison.component';
+import { Select2Component } from '../../input/select2/select2.component';
+import { InputInterface } from "../../input/input-interface";
+import { NumberInputComponent } from "../../input/number-input/number-input.component";
+import { Criteria } from "../../comparison/shared/components/criteria";
 
 declare const anchors;
 
@@ -46,6 +51,8 @@ export class GenericTableComponent implements AfterViewChecked, OnChanges {
     @Output() orderChange: EventEmitter<any> = new EventEmitter();
     @Input() orderOption: Array<number> = [];
     @Output() orderOptionChange: EventEmitter<any> = new EventEmitter();
+
+    @Input() comparisonComponent: ComparisonComponent;
 
     private ctrlCounter = 0;
 
@@ -128,46 +135,58 @@ export class GenericTableComponent implements AfterViewChecked, OnChanges {
         return this.sanitization.bypassSecurityTrustStyle(column.type.colors.getColor(label));
     }
 
-    public getForegroundColor(color: any): SafeHtml {
-        const h = Number.parseInt(color['changingThisBreaksApplicationSecurity'].substr(4, 3).split(',')[0]);
-        const s = 1;
-        const l = 0.7;
-        const rgb = this.hslToRgb(h, s, l);
-        const yiq = ((rgb[0] * 299) + (rgb[1] * 587) + (rgb[2] * 114)) / 1000;
-        return this.sanitization.bypassSecurityTrustStyle((yiq >= 128) ? '#f0f0f0' : '#0d0d0d');
+    public getForegroundColor(column: TableData, label: string): SafeHtml {
+        const color = column.type.foregroundColors.getColor(label);
+        if (color === '') {
+            return this.sanitization.bypassSecurityTrustStyle('#0d0d0d');
+        } else {
+            return this.sanitization.bypassSecurityTrustStyle(color);
+        }
     }
 
-    private hslToRgb(h, s, l) {
-        const c = (1 - Math.abs(2 * l - 1)) * s;
-        const x = c * (1 - Math.abs((h / 60) % 2 - 1));
-        const m = l - c / 2;
-
-        let r, g, b;
-        if (0 <= h && h < 60) {
-            r = c;
-            g = x;
-            b = 0;
-        } else if (60 <= h && h < 120) {
-            r = x;
-            g = c;
-            b = 0;
-        } else if (120 <= h && h < 180) {
-            r = 0;
-            g = c;
-            b = x;
-        } else if (180 <= h && h < 240) {
-            r = 0;
-            g = x;
-            b = c;
-        } else if (240 <= h && h < 300) {
-            r = x;
-            g = 0;
-            b = c;
-        } else {
-            r = c;
-            g = 0;
-            b = x;
+    public searchFor(column: string, value: string | number) {
+        let c: Criteria = null;
+        for (const crit of this.confServ.criteriaSet.getCriteriaArray()) {
+            if (crit.name === column || crit.tag === column) {
+                c = crit;
+                break;
+            }
         }
-        return [Math.round((r + m) * 255), Math.round((g + m) * 255), Math.round((b + m) * 255)];
+        if (c === null) {
+            return;
+        }
+
+        if (c.values.indexOf(value) !== -1) {
+            return;
+        }
+
+        let input: InputInterface = null;
+        if (c.range_search) {
+            for (const ni of NumberInputComponent.components) {
+                if (ni.tag === column || ni.name === column) {
+                    input = ni;
+                    break;
+                }
+            }
+            if (input === null) {
+                return;
+            }
+            value = String(value);
+            this.cd.markForCheck();
+        } else {
+            for (const s2 of Select2Component.components) {
+                if (s2.tag === column || s2.name === column) {
+                    input = s2;
+                    break;
+                }
+            }
+            if (input === null) {
+                return;
+            }
+            value = String(value);
+            this.comparisonComponent.criteriaChanged([value], c);
+            this.comparisonComponent.change();
+        }
+        input.addToGui(value);
     }
 }
