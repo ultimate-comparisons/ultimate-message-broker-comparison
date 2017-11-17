@@ -29,7 +29,7 @@ _Description_
 - ZMTP
 
 ## Platforms
-- Linus
+- Linux
 - OSX
 - Windows
 
