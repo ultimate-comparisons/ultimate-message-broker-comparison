@@ -17,8 +17,6 @@ EnMasse is an open source messaging platform, with focus on scalability and perf
 - Linux
 
 ## Working examples
-- Yes
-    - _Example_
 - No
 
 ## JMS support
