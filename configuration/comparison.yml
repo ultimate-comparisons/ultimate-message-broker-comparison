@@ -1,0 +1,166 @@
+title: Ultimate Message Broker Comparison
+subtitle: Ultimate comparison of open source message brokern
+selectTitle: Criteria
+tableTitle: Comparison of Message Broker
+repository: 'https://github.com/ultimate-comparisons/ultimate-message-broker-comparison'
+details:
+  header:
+    nameRef: id
+    urlRef: inline
+  body:
+    title: Description
+    bodyRef: Description
+citation:
+  csl: apa.csl
+  bib: literature.bib
+criteria:
+  - id:
+      name: Name
+      search: false
+      table: true
+      detail: false
+  - description:
+      name: Short description
+      search: false
+      detail: false
+      type: markdown
+  - Description:
+      search: false
+      detail: true
+      type: markdown
+      table: false
+  - License:
+      name: SPDX License
+      table: true
+      andSearch: false
+      description: License of the message broker.
+      placeholder: Select license ...
+      type: label
+      values:
+        EPL-1.0:
+          description: '[EPL-1.0](https://spdx.org/licenses/EPL-1.0.html)'
+          class: label-blue
+        LGPL-3.0:
+          description: '[LGPL-3.0](https://spdx.org/licenses/LGPL-3.0.html)'
+          class: label-blue
+        Apache-2.0:
+          description: '[Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)'
+          class: label-blue
+        MIT:
+          description: '[MIT](https://spdx.org/licenses/MIT.html)'
+          class: label-blue
+        MPL-2.0:
+          description: '[MPL-2.0](https://spdx.org/licenses/MPL-2.0.html)'
+          class: label-blue
+        BSD-2-Clause:
+          description: '[BSD-2-Clause](https://spdx.org/licenses/BSD-2-Clause.html)'
+          class: label-blue
+        BSD-3-Clause:
+          description: '[BSD-3-Clause](https://spdx.org/licenses/BSD-3-Clause.html)'
+          class: label-blue
+        MPL-1.1:
+          description: '[MPL-1.1](https://spdx.org/licenses/MPL-1.1.html)'
+          class: label-blue
+  - Protocols:
+      table: true
+      search: true
+      description: Supported protocols of the message broker.
+      placeholder: Select protocols ...
+      andSearch: false
+      type: label
+      values:
+        AMQP:
+          description: http://www.amqp.org/
+        AUTO:
+        Beanstalkd:
+        memcached:
+          description: https://github.com/memcached/memcached/blob/master/doc/protocol.txt
+        Gearman:
+          description: http://gearman.org/protocol/
+        MQTT:
+          description: http://mqtt.org/
+        OpenWire:
+          description: http://www.openwire.org/
+        RESP:
+        STOMP:
+          description: https://stomp.github.io/
+        text:
+        thrift:
+        ZMTP:
+          description: http://zmtp.org/
+  - Platforms:
+      table: true
+      search: true
+      description:
+      placeholder: Select platform ...
+      andSearch: false
+      type: label
+      values:
+        Linux:
+        OSX:
+        Windows:
+  - JMS support:
+      table: true
+      search: true
+      description:
+      placeholder: Select JMS support ...
+      andSearch: true
+      type: label
+      values:
+        Yes:
+          class: label-success
+        No:
+          class: label-danger
+  - Working examples:
+      name: Working example availability
+      table: true
+      search: true
+      description:
+      placeholder: Select Working example availability ...
+      andSearch: true
+      type: label
+      values:
+        Yes:
+          class: label-success
+        No:
+          class: label-danger
+  - Broker Backend:
+      table: true
+      search: true
+      description: If the software needs a another Message Broker as the backend ...
+      placeholder: Select Broker Backend ...
+      andSearch: true
+      type: label
+      values:
+        None:
+          class: label-success
+        HornetQ:
+        RabbitMQ:
+        Redis:
+  - Active Development:
+      table: true
+      search: true
+      description: Is the software in active development
+      placeholder: Select activity state...
+      andSearch: false
+      type: repository
+      values:
+        Active:
+          minAge: -1
+          maxAge: 1
+          minAgeUnit: months
+          maxAgeUnit: months
+          class: label-success
+          description: The state of the repository is active.
+        Inactive:
+          minAge: 6
+          minAgeUnit: months
+          class: label-danger
+          description: The state of the repository is inactive.
+        Not Sure:
+          minAge: 1
+          maxAge: 6
+          minAgeUnit: months
+          maxAgeUnit: months
+          class: label-warning
+          description: The state of the repository is not sure.
